@@ -1,0 +1,107 @@
+{
+  "schema": "NexMindNegativeControlEncodedMediaValidationV1",
+  "status": "PASS",
+  "count": 10,
+  "controls": [
+    {
+      "id": "NC01",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC01.mp4",
+      "sha256": "dff50fdd641e4998694b52743f308e636b638c61a1df6cbb7c5fa239bb1e4150",
+      "manifestSha256": "dff50fdd641e4998694b52743f308e636b638c61a1df6cbb7c5fa239bb1e4150",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC02",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC02.mp4",
+      "sha256": "9cfbb0e4e91b1ff230a26ded3ed62273c89e61e08eb28b5347b77501ec98c628",
+      "manifestSha256": "9cfbb0e4e91b1ff230a26ded3ed62273c89e61e08eb28b5347b77501ec98c628",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC03",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC03.mp4",
+      "sha256": "56d75e0cecdd5efd18a4f4daeabbbbe024f431fc2ecffe7a02aa1117c0b51a56",
+      "manifestSha256": "56d75e0cecdd5efd18a4f4daeabbbbe024f431fc2ecffe7a02aa1117c0b51a56",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC04",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC04.mp4",
+      "sha256": "a34b9223b9fa149b4bcb2f46f31c0f7ac87e40123d0c3fba424aab67f5f743e1",
+      "manifestSha256": "a34b9223b9fa149b4bcb2f46f31c0f7ac87e40123d0c3fba424aab67f5f743e1",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC05",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC05.mp4",
+      "sha256": "b0df2d3f96a27e1ad52c3da5a452b036ecf6e6d9ef067d336208ae81e48b10b1",
+      "manifestSha256": "b0df2d3f96a27e1ad52c3da5a452b036ecf6e6d9ef067d336208ae81e48b10b1",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC06",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC06.mp4",
+      "sha256": "ebbbb9f0b8bbbedb83bd825da83d2c259e118bd1a997eb2308725107a1ff77e0",
+      "manifestSha256": "ebbbb9f0b8bbbedb83bd825da83d2c259e118bd1a997eb2308725107a1ff77e0",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC07",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC07.mp4",
+      "sha256": "57e8cc63a576685e48e89e355492b4ec030f9cde194d66f0dd6055fa599351eb",
+      "manifestSha256": "57e8cc63a576685e48e89e355492b4ec030f9cde194d66f0dd6055fa599351eb",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC08",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC08.mp4",
+      "sha256": "d2517120e11cd250bed3dc5b3e928d85fe473a0a65de460889b5526ab25e66c7",
+      "manifestSha256": "d2517120e11cd250bed3dc5b3e928d85fe473a0a65de460889b5526ab25e66c7",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC09",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC09.mp4",
+      "sha256": "04f5fd4cafa4f639382a28699bc2dfd62cf241689ff1e92a9405c6a3322285d0",
+      "manifestSha256": "04f5fd4cafa4f639382a28699bc2dfd62cf241689ff1e92a9405c6a3322285d0",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    },
+    {
+      "id": "NC10",
+      "file": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC10.mp4",
+      "sha256": "9ab2383130cd4a4d2eae6783e1977c18100a00def4e5fd19b5ce13e405d0697e",
+      "manifestSha256": "9ab2383130cd4a4d2eae6783e1977c18100a00def4e5fd19b5ce13e405d0697e",
+      "hashMatches": true,
+      "sampleRate": "48000",
+      "channels": 2,
+      "pass": true
+    }
+  ]
+}

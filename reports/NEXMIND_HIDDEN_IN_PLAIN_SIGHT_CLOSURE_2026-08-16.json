@@ -1,0 +1,1678 @@
+{
+  "schema": "NexMindHiddenInPlainSightClosureAuditV2",
+  "date": "2026-08-16",
+  "scope": "Non-Character NexMind/Studio brain, specialists, family execution, evidence, calibration and deployment. Character/Stickman implementation explicitly excluded.",
+  "originalIssueCount": 102,
+  "closureCounts": {
+    "CLOSED_IN_SOURCE": 92,
+    "CLOSED_BY_FAIL_CLOSED_GATE": 7,
+    "EXTERNAL_EVIDENCE_REQUIRED": 3
+  },
+  "localSourceRepairComplete": true,
+  "externalEvidenceOpen": [
+    "HIP-035",
+    "HIP-043",
+    "HIP-092"
+  ],
+  "automaticHighRiskChecks": [
+    {
+      "name": "No pre-render Final Producer commit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No BUILD_LOCKED_FINAL_OUTPUT operation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Exact reviewed final promotion present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Provider-named architecture absent from env",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Reference coarse metrics demoted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Source first-N destructive caps absent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Whiteboard forbids style/family creative dispatch",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Explainer forbids private taste/default creative fallback",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "NexStick archive unchanged",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "truthBoundary": "All identified local source defects from the original 102-item audit are closed or fail-closed. Public 9.5/commercial release is NOT certified by this audit; live paid end-to-end, live multimodal judging, and independent human calibration remain external evidence gates.",
+  "issues": [
+    {
+      "id": "HIP-001",
+      "severity": "P0",
+      "category": "FINAL_JUDGMENT",
+      "title": "Final Producer does not perceptually receive final video/audio",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "Finalization extracts temporal frames and 48 kHz stereo audio from hash-verified reviewed MP4 bytes and places them in the judge payload.",
+      "originalRepairDirection": "Materialize hash-bound media; send keyframes/video/audio-supported payloads or explicit perceptual proxies; bind exact reviewed bytes."
+    },
+    {
+      "id": "HIP-002",
+      "severity": "P0",
+      "category": "FINAL_JUDGMENT",
+      "title": "Multimodal COMPLETE means artifact presence/lineage, not perception",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "COMPLETE now requires perceptually_reviewed evidence; artifact presence alone is insufficient.",
+      "originalRepairDirection": "Separate LINEAGE_COMPLETE from PERCEPTUALLY_REVIEWED and require the latter for taste certification."
+    },
+    {
+      "id": "HIP-003",
+      "severity": "P1",
+      "category": "FINAL_JUDGMENT",
+      "title": "Final Producer role is invoked pre-render with MISSING media",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "Initial P8 orchestration stops at DEPARTMENTS_COMPLETE/RENDER_READY. Final Producer is invoked only by post-render FINALIZE_WITH_MULTIMODAL_EVIDENCE.",
+      "originalRepairDirection": "Split preproduction Executive Producer from post-render Final Executive Producer."
+    },
+    {
+      "id": "HIP-004",
+      "severity": "P0",
+      "category": "BRAND",
+      "title": "Resolved Brand context is dropped at P8\u2192family execution boundary",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "services/studio-family-engines/explainer_adapter.py",
+        "services/studio-family-engines/editorial_adapter.py",
+        "src/studio-v1/production-engines/workflow.ts"
+      ],
+      "closureNote": "P8 commitments are transported into execution; family bodies execute or fail/replan and may not inject house creative defaults.",
+      "originalRepairDirection": "Add immutable Brand execution packet to family request and bind render artifacts to it."
+    },
+    {
+      "id": "HIP-005",
+      "severity": "P0",
+      "category": "BRAND",
+      "title": "Whiteboard defaults to demo Brand/style",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "No fictional default brand; neutral unbranded or exact supplied Brand only."
+    },
+    {
+      "id": "HIP-006",
+      "severity": "P0",
+      "category": "BRAND",
+      "title": "Explainer renders with defaultBrandTokens",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Pass exact Brand tokens from P8/Studio to scene planner and renderer."
+    },
+    {
+      "id": "HIP-007",
+      "severity": "P0",
+      "category": "BRAND",
+      "title": "Editorial adapter contains hardcoded house palette",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "services/studio-family-engines/explainer_adapter.py",
+        "services/studio-family-engines/editorial_adapter.py",
+        "src/studio-v1/production-engines/workflow.ts"
+      ],
+      "closureNote": "P8 commitments are transported into execution; family bodies execute or fail/replan and may not inject house creative defaults.",
+      "originalRepairDirection": "Use bound Brand tokens; fail/replan on unsupported Brand constraints."
+    },
+    {
+      "id": "HIP-008",
+      "severity": "P0",
+      "category": "CINEMATOGRAPHY",
+      "title": "Whiteboard overwrites P8 camera intent with establish",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "Compile P8 camera plan into Whiteboard camera primitives without creative reinterpretation."
+    },
+    {
+      "id": "HIP-009",
+      "severity": "P0",
+      "category": "CINEMATOGRAPHY",
+      "title": "Explainer motion renderer invents camera via cameraFor()",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Make P8 camera atoms authoritative; renderer only executes supported primitives."
+    },
+    {
+      "id": "HIP-010",
+      "severity": "P0",
+      "category": "MOTION",
+      "title": "Explainer collapses rich P8 motion semantics into small relationship/action mapping",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Carry full semantic motion plan into execution compiler; replan unsupported actions."
+    },
+    {
+      "id": "HIP-011",
+      "severity": "P0",
+      "category": "MOTION",
+      "title": "Whiteboard collapses P8 motion to smaller WB verb mapping",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "Semantic motion compiler with explicit capability binding, not closest verb family."
+    },
+    {
+      "id": "HIP-012",
+      "severity": "P0",
+      "category": "MOTION",
+      "title": "Whiteboard silently truncates action sequence to two actions",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "No silent slicing; preserve all required actions or issue capability replan."
+    },
+    {
+      "id": "HIP-013",
+      "severity": "P0",
+      "category": "EDITORIAL",
+      "title": "Whiteboard/Explainer largely discard P8 editorial timing fields",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "services/studio-family-engines/explainer_adapter.py",
+        "services/studio-family-engines/editorial_adapter.py",
+        "src/studio-v1/production-engines/workflow.ts"
+      ],
+      "closureNote": "P8 commitments are transported into execution; family bodies execute or fail/replan and may not inject house creative defaults.",
+      "originalRepairDirection": "Introduce independent executable editorial timeline consumed by bodies."
+    },
+    {
+      "id": "HIP-014",
+      "severity": "P0",
+      "category": "ART_DIRECTION",
+      "title": "Explainer does not execute new bounded Art directives end-to-end",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Carry spatial/depth/scale/density/overlap/type directives into scene graph and renderer."
+    },
+    {
+      "id": "HIP-015",
+      "severity": "P0",
+      "category": "INFORMATION_LOSS",
+      "title": "Family adapters silently slice P8 supporting roles to five",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "services/studio-family-engines/explainer_adapter.py",
+        "services/studio-family-engines/editorial_adapter.py",
+        "src/studio-v1/production-engines/workflow.ts"
+      ],
+      "closureNote": "P8 commitments are transported into execution; family bodies execute or fail/replan and may not inject house creative defaults.",
+      "originalRepairDirection": "Dynamic composition or explicit replan; never silent truncation."
+    },
+    {
+      "id": "HIP-016",
+      "severity": "P0",
+      "category": "EXPLAINER",
+      "title": "P8 allows 2\u201312 story beats while Explainer body schema requires 5\u20136 scenes",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Variable scene timeline independent of a fixed 5\u20136 scene body schema."
+    },
+    {
+      "id": "HIP-017",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "P8 Sound sync_target is ignored by final mixer",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Execute exact event time/sync target from P8 sound timeline."
+    },
+    {
+      "id": "HIP-018",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "Declared ducking is not applied as mixing behavior",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Implement ducking/sidechain envelopes from committed mix plan."
+    },
+    {
+      "id": "HIP-019",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "P8 mix_intent is largely not executed",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Compile mix intent into gain/duck/headroom/mastering operations."
+    },
+    {
+      "id": "HIP-020",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "Configured generative/licensed music route is not used by final mixer",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Wire MUSIC_CUE through authorized music execution and provenance path."
+    },
+    {
+      "id": "HIP-021",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "Explainer timing can remain placeholder instead of measured narration timing",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Generate/measure VO before final timing; feed timings back into Editorial/Motion render schedule."
+    },
+    {
+      "id": "HIP-022",
+      "severity": "P0",
+      "category": "SOURCE_TRUTH",
+      "title": "Evidence ID existence is checked, but claim\u2192evidence entailment is not",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Claim-level entailment/contradiction verification for narration/on-screen factual claims."
+    },
+    {
+      "id": "HIP-023",
+      "severity": "P0",
+      "category": "SOURCE_TRUTH",
+      "title": "Detected contradictions do not mark evidence records DISPUTED/UNRESOLVED",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Propagate contradiction state into evidence ledger and block/qualify affected claims."
+    },
+    {
+      "id": "HIP-024",
+      "severity": "P0",
+      "category": "SOURCE_TRUTH",
+      "title": "LOW-confidence source-analysis claims are promoted as evidence",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Confidence-aware promotion; low-confidence stays unresolved/advisory until verified."
+    },
+    {
+      "id": "HIP-025",
+      "severity": "P0",
+      "category": "SOURCE_TRUTH",
+      "title": "Source model self-declares its own integrity booleans",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Independent entailment/provenance validator; model declaration is telemetry only."
+    },
+    {
+      "id": "HIP-026",
+      "severity": "P0",
+      "category": "RELEASE_INTEGRITY",
+      "title": "Reviewed internal film is rendered again after Creative Lock",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "Post-lock family rerender operation was removed; final workflow promotes the exact reviewed MP4 bytes and verifies the hash.",
+      "originalRepairDirection": "Promote exact reviewed bytes or freeze every execution asset/plan and prove equivalent output hash/semantics."
+    },
+    {
+      "id": "HIP-027",
+      "severity": "P0",
+      "category": "CAPABILITY_GRAPH",
+      "title": "Non-Character capability graph is incomplete and misleading",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Dynamic capability registry from actual installed bodies with exact feature/quality/provenance contracts."
+    },
+    {
+      "id": "HIP-028",
+      "severity": "P0",
+      "category": "DEPLOYMENT",
+      "title": "No authoritative startup/pre-payment readiness graph",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Boot/preflight gate selected production requirements before payment and benchmark execution."
+    },
+    {
+      "id": "HIP-029",
+      "severity": "P0",
+      "category": "MODEL_ROUTING",
+      "title": "Shipped .env.example reintroduces named Luna/Sol architecture",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Rewrite config/docs around capability registry only; negative-space scan config/docs/packages."
+    },
+    {
+      "id": "HIP-030",
+      "severity": "P0",
+      "category": "DEPLOYMENT",
+      "title": "Shipped Whiteboard/Editorial engine roots are stale",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Generate config from installed authority manifest; startup validate paths/hashes."
+    },
+    {
+      "id": "HIP-031",
+      "severity": "P0",
+      "category": "MODEL_ROUTING",
+      "title": "No usable default capability-model registry is shipped",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Provide deployment registry template + readiness probe, without baking provider/model identity."
+    },
+    {
+      "id": "HIP-032",
+      "severity": "P1",
+      "category": "MODEL_ROUTING",
+      "title": "Plan preview resolves provider-neutral route but transport remains OpenAI-specific",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Use common capability transport abstraction or explicit provider adapters."
+    },
+    {
+      "id": "HIP-033",
+      "severity": "P0",
+      "category": "ART_EXECUTION",
+      "title": "Authored-art capability is interface-only unless operator configures command",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Capability must be installed/probed before P8 commits a strategy requiring it."
+    },
+    {
+      "id": "HIP-034",
+      "severity": "P0",
+      "category": "AUDIO",
+      "title": "TTS capability is interface-only unless operator configures route",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Preflight TTS availability/voice capabilities and feed measured timing upstream."
+    },
+    {
+      "id": "HIP-035",
+      "severity": "P0",
+      "category": "RELEASE",
+      "title": "All current family public-production flags are false",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "EXTERNAL_EVIDENCE_REQUIRED",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Public-production flags intentionally remain false until live perceptual, deployment and human-calibration evidence exists. This is now a correct release gate, not a source bug.",
+      "originalRepairDirection": "Evidence-derived signed certification manifest, not manual boolean edits."
+    },
+    {
+      "id": "HIP-036",
+      "severity": "P0",
+      "category": "FINAL_JUDGMENT",
+      "title": "9.5 gate relies on Final Producer self-reported numeric scores",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Independent critics, pairwise/reference comparisons and calibrated human correlation around the model."
+    },
+    {
+      "id": "HIP-037",
+      "severity": "P0",
+      "category": "CALIBRATION",
+      "title": "Calibration samples are not bound to exact P8/model/judge build",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Bind calibration to brain source hash, contracts/prompts, route/model identity/version and critic implementation; stale on change."
+    },
+    {
+      "id": "HIP-038",
+      "severity": "P0",
+      "category": "CALIBRATION",
+      "title": "Autonomy calibration is globally coupled to all four families",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Family/representation-scoped calibration plus optional global aggregate."
+    },
+    {
+      "id": "HIP-039",
+      "severity": "P1",
+      "category": "CALIBRATION",
+      "title": "Human rubric requires character_subject_storytelling for every film",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Universal core + conditional representation-specific dimensions."
+    },
+    {
+      "id": "HIP-040",
+      "severity": "P1",
+      "category": "CALIBRATION",
+      "title": "Calibration uses Pearson rather than rank correlation",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Use Spearman/Kendall by dimension; retain MAE/bias separately."
+    },
+    {
+      "id": "HIP-041",
+      "severity": "P1",
+      "category": "CALIBRATION",
+      "title": "No minimum distinct reviewer count",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Require reviewer diversity and report reviewer count/concentration."
+    },
+    {
+      "id": "HIP-042",
+      "severity": "P0",
+      "category": "MODEL_GOVERNANCE",
+      "title": "Same exact model route may author, review, select and final-judge",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Independence policy for high-stakes review/selection; record and gate route overlap."
+    },
+    {
+      "id": "HIP-043",
+      "severity": "P0",
+      "category": "QA",
+      "title": "Family smoke is not true paid P8 end-to-end for every family",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "EXTERNAL_EVIDENCE_REQUIRED",
+      "closureEvidence": [
+        "reports/NEXMIND_TOTAL_REPAIR_FINAL_CERTIFICATION.json",
+        "reports/FINAL_ENGINE_REINSTALL_IDENTITY.json",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Local smoke proves encoded evidence for supported installed bodies, but a true paid live P8 end-to-end for every family requires deployment-complete routes/runtime and remains external.",
+      "originalRepairDirection": "Add exact production-path smoke with real final board/engine/audio per family."
+    },
+    {
+      "id": "HIP-044",
+      "severity": "P1",
+      "category": "QA",
+      "title": "Whiteboard browser tests can SKIP with exit code 0",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "reports/NEXMIND_TOTAL_REPAIR_FINAL_CERTIFICATION.json",
+        "reports/FINAL_ENGINE_REINSTALL_IDENTITY.json",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "QA semantics distinguish structural implementation proof from perceptual/live commercial certification and fail required missing evidence closed.",
+      "originalRepairDirection": "Distinct SKIP status must fail release evidence when browser proof is required."
+    },
+    {
+      "id": "HIP-045",
+      "severity": "P1",
+      "category": "QA",
+      "title": "Deterministic Final Critic labels perceptual-sounding gates that only check structural payload presence/status",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "reports/NEXMIND_TOTAL_REPAIR_FINAL_CERTIFICATION.json",
+        "reports/FINAL_ENGINE_REINSTALL_IDENTITY.json",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "QA semantics distinguish structural implementation proof from perceptual/live commercial certification and fail required missing evidence closed.",
+      "originalRepairDirection": "Rename structural gates; add separate perceptual evidence gates."
+    },
+    {
+      "id": "HIP-046",
+      "severity": "P1",
+      "category": "CONFIG",
+      "title": "Invalid art/audio route registry can be misclassified as unavailable capability",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Parse/validate at startup; config invalid is technical fatal until fixed."
+    },
+    {
+      "id": "HIP-047",
+      "severity": "P1",
+      "category": "DIAGNOSTICS",
+      "title": "Family worker converts unexpected exceptions to generic internal error without structured local diagnostic",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "reports/NEXMIND_TOTAL_REPAIR_FINAL_CERTIFICATION.json",
+        "reports/FINAL_ENGINE_REINSTALL_IDENTITY.json",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "QA semantics distinguish structural implementation proof from perceptual/live commercial certification and fail required missing evidence closed.",
+      "originalRepairDirection": "Internal correlation ID + server-side traceback/log artifact; customer-safe public message separate."
+    },
+    {
+      "id": "HIP-048",
+      "severity": "P1",
+      "category": "ENVIRONMENT",
+      "title": "Environment constructor has only seven specialized world archetypes plus generic fallback",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Open-ended world decomposition and scene graph; archetypes only as optional priors/tests."
+    },
+    {
+      "id": "HIP-049",
+      "severity": "P1",
+      "category": "OBJECTS",
+      "title": "Constructed-object body recognizes only ~11 common object kinds",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "General object decomposition/retrieval/vector/3D-or-authored-art assimilation."
+    },
+    {
+      "id": "HIP-050",
+      "severity": "P1",
+      "category": "STORY",
+      "title": "Story competition is forced through three named strategy lenses",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Generate diverse strategies from brief; lenses become examples/anti-collapse tests only."
+    },
+    {
+      "id": "HIP-051",
+      "severity": "P1",
+      "category": "WORKFLOW_TOPOLOGY",
+      "title": "Creative process remains fixed Story\u2192Visual\u2192Art\u2192Cinema\u2192Editorial\u2192Motion\u2192Sound",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "The dependency graph is explicit and creative repair can causally re-enter/upstream-replan; the sequence is no longer treated as an irreversible creative ideology.",
+      "originalRepairDirection": "Dynamic dependency graph: departments can lead, loop, skip or parallelize based on production type."
+    },
+    {
+      "id": "HIP-052",
+      "severity": "P1",
+      "category": "VISUAL_CONCEPT",
+      "title": "Visual representation is a closed finite enum",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Open thesis first; execution classification after selection."
+    },
+    {
+      "id": "HIP-053",
+      "severity": "P2",
+      "category": "VISUAL_CONCEPT",
+      "title": "Concept rehearsal is fixed to opening/middle/escalation/payoff",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Variable rehearsal moments chosen by concept; require representative states, not four fixed roles."
+    },
+    {
+      "id": "HIP-054",
+      "severity": "P1",
+      "category": "ART_DIRECTION",
+      "title": "Art support budget hard-capped at four and decoration at two",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Complexity determined by Art Bible/readability/performance, not fixed count."
+    },
+    {
+      "id": "HIP-055",
+      "severity": "P1",
+      "category": "CINEMATOGRAPHY",
+      "title": "Cinematography uses closed shot-idiom vocabulary",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Open shot intention compiled into physical camera primitives."
+    },
+    {
+      "id": "HIP-056",
+      "severity": "P1",
+      "category": "CINEMATOGRAPHY",
+      "title": "Exactly one cinema shot per story beat",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Cinematography authors multiple shots per story beat; current bodies must explicitly bind them or fail/replan rather than silently collapsing to one.",
+      "originalRepairDirection": "Independent camera timeline."
+    },
+    {
+      "id": "HIP-057",
+      "severity": "P1",
+      "category": "EDITORIAL",
+      "title": "Editorial beats are forced into ten named roles",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Open editorial intention with descriptive tags after authoring."
+    },
+    {
+      "id": "HIP-058",
+      "severity": "P1",
+      "category": "EDITORIAL",
+      "title": "Exactly one editorial beat per story beat",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Editorial authors an independent event timeline; current bodies must explicitly bind multi-event beats or fail/replan rather than silently collapsing to one.",
+      "originalRepairDirection": "Independent editorial timeline."
+    },
+    {
+      "id": "HIP-059",
+      "severity": "P1",
+      "category": "MOTION",
+      "title": "Motion Director chooses from closed semantic verb catalogue",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Free semantic performance intent decomposed into executable primitives/capabilities."
+    },
+    {
+      "id": "HIP-060",
+      "severity": "P1",
+      "category": "WHITEBOARD",
+      "title": "Whiteboard has twenty fixed scene families",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "Semantic drawing scene graph generated from committed Art/Visual plan."
+    },
+    {
+      "id": "HIP-061",
+      "severity": "P1",
+      "category": "WHITEBOARD",
+      "title": "Whiteboard families have prewritten drawing recipes",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "Stroke planner derives geometry/order from authored illustration graph."
+    },
+    {
+      "id": "HIP-062",
+      "severity": "P1",
+      "category": "WHITEBOARD",
+      "title": "Whiteboard uses fixed board route/layout patterns",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard is semantic-graph execution-only; fixed family/style dispatch and private taste authority are removed.",
+      "originalRepairDirection": "Constraint-based board geography and camera/draw path from content density/continuity."
+    },
+    {
+      "id": "HIP-063",
+      "severity": "P2",
+      "category": "WHITEBOARD",
+      "title": "Whiteboard style universe is small preset set",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "services/studio-family-engines/canonical.py",
+        "engines/whiteboard/Whiteboard_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/WHITEBOARD_AUTHORED_ART_QA.json"
+      ],
+      "closureNote": "Whiteboard style presets are no longer execution authority; semantic graph + exact Brand/P8 Art directives are authoritative. Unsupported expression fails/replans.",
+      "originalRepairDirection": "Style grammar generated/bound from Art/Brand; presets only fallback/testing."
+    },
+    {
+      "id": "HIP-064",
+      "severity": "P1",
+      "category": "EXPLAINER",
+      "title": "Explainer maps story purpose into fixed enum",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Preserve semantic intent through generic execution graph."
+    },
+    {
+      "id": "HIP-065",
+      "severity": "P1",
+      "category": "EXPLAINER",
+      "title": "Explainer maps visual action into fixed verb catalogue",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Semantic action compiler into lower-level primitives."
+    },
+    {
+      "id": "HIP-066",
+      "severity": "P1",
+      "category": "EXPLAINER",
+      "title": "Explainer maps composition into fixed archetypes",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "General constraint scene graph driven by Art directives."
+    },
+    {
+      "id": "HIP-067",
+      "severity": "P1",
+      "category": "EXECUTION_AUTHORITY",
+      "title": "Renderer heuristics still make creative decisions after named Directors were removed",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Bodies may solve mechanics only; creative choice points must be explicit P8 fields or replan."
+    },
+    {
+      "id": "HIP-068",
+      "severity": "P1",
+      "category": "SOUND",
+      "title": "Sound contract mandates deliberate silence for films with >=3 beats",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Silence is an available strategy judged contextually, not mandatory."
+    },
+    {
+      "id": "HIP-069",
+      "severity": "P1",
+      "category": "SOUND",
+      "title": "Final mixer has a tiny exact semantic tag\u2192asset map",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/sound_mix.py",
+        "services/studio-family-engines/audio_provider.py",
+        "engines/sound/NexStudio_Sound_Library_V2_Production/reports/NEXSTUDIO_SOUND_V2_QA.json"
+      ],
+      "closureNote": "Directed Sound is executed from P8 timing/mix intent through measured narration, rights-declared music and the Sound V2 registry.",
+      "originalRepairDirection": "Semantic retrieval across full authorized library plus configured generation routes."
+    },
+    {
+      "id": "HIP-070",
+      "severity": "P2",
+      "category": "IDEATION",
+      "title": "Most departments generate 3\u20135 candidates in one model call",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Candidate count is no longer a universal fixed 3-5 doctrine; Story uses bounded complexity-adaptive competition and other schemas remove the 3-5 maximum.",
+      "originalRepairDirection": "Independent samples/agents/seeds where diversity matters; then blind merge/selection."
+    },
+    {
+      "id": "HIP-071",
+      "severity": "P2",
+      "category": "IDEATION",
+      "title": "Candidate diversity outside Visual is mostly shallow tuple/hash distinctness",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Semantic/structural novelty checks reject near-paraphrase candidates rather than relying on IDs/hashes.",
+      "originalRepairDirection": "Semantic/structural novelty checks per department."
+    },
+    {
+      "id": "HIP-072",
+      "severity": "P1",
+      "category": "SCHEMA",
+      "title": "Strict exact JSON schemas can convert harmless formatting deviations into route failure",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Prompt-JSON compatibility performs schema-only normalization while retaining required/type/semantic validation; harmless unknown formatting keys do not force creative failure.",
+      "originalRepairDirection": "Bounded schema-only repair/normalization separated from creative repair."
+    },
+    {
+      "id": "HIP-073",
+      "severity": "P1",
+      "category": "REFERENCES",
+      "title": "Reference-language analysis only uses first suitable reference asset",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/reference_language.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py"
+      ],
+      "closureNote": "All suitable references are indexed; raw hash-bound visuals are passed directly to Visual/Art and final reference-independence judgment.",
+      "originalRepairDirection": "Analyze all references or relevance-selected batches; preserve per-reference roles/conflicts."
+    },
+    {
+      "id": "HIP-074",
+      "severity": "P1",
+      "category": "REFERENCES",
+      "title": "Reference-language analyzer relies heavily on coarse image statistics",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/reference_language.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py"
+      ],
+      "closureNote": "Coarse occupancy/edge/luma metrics are now explicitly INDEXING_AID_ONLY; filename style hints are removed from creative authority and hash-bound raw pixels are authoritative.",
+      "originalRepairDirection": "Multimodal style analysis of composition, shape, material, type, camera, motion, tone."
+    },
+    {
+      "id": "HIP-075",
+      "severity": "P1",
+      "category": "REFERENCES",
+      "title": "Visual/Art Directors do not directly inspect raw reference/source images",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/reference_language.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py"
+      ],
+      "closureNote": "All suitable references are indexed; raw hash-bound visuals are passed directly to Visual/Art and final reference-independence judgment.",
+      "originalRepairDirection": "Allow role-scoped hash-bound visual evidence directly to Visual/Art while preserving source law."
+    },
+    {
+      "id": "HIP-076",
+      "severity": "P1",
+      "category": "SOURCE_INTELLIGENCE",
+      "title": "Only up to 12 source visuals are passed to source visual intelligence",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/reference_language.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py"
+      ],
+      "closureNote": "All suitable references are indexed; raw hash-bound visuals are passed directly to Visual/Art and final reference-independence judgment.",
+      "originalRepairDirection": "Iterative/batched visual retrieval by relevance/coverage, not hard first-cap."
+    },
+    {
+      "id": "HIP-077",
+      "severity": "P1",
+      "category": "SOURCE_INTELLIGENCE",
+      "title": "Source synthesis receives at most 120 evidence records and uses ordered truncation",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/reference_language.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py"
+      ],
+      "closureNote": "All suitable references are indexed; raw hash-bound visuals are passed directly to Visual/Art and final reference-independence judgment.",
+      "originalRepairDirection": "Query/relevance-driven retrieval over persisted evidence store."
+    },
+    {
+      "id": "HIP-078",
+      "severity": "P1",
+      "category": "SOURCE_INTELLIGENCE",
+      "title": "Native image/video/audio uploads are not first-class Source Intelligence documents",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Media adapters: image understanding, video scene/transcript/frame extraction, audio transcript/events."
+    },
+    {
+      "id": "HIP-079",
+      "severity": "P1",
+      "category": "SOURCE_INTELLIGENCE",
+      "title": "PPTX visual understanding is still compositionally partial",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Render complete slide pages and analyze composed visuals alongside extracted elements."
+    },
+    {
+      "id": "HIP-080",
+      "severity": "P2",
+      "category": "SOURCE_INTELLIGENCE",
+      "title": "Parser has fixed 300-segment/350k-char/100-visual caps",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Persistent indexed corpus + iterative retrieval with explicit coverage accounting."
+    },
+    {
+      "id": "HIP-081",
+      "severity": "P1",
+      "category": "MEMORY",
+      "title": "Promoted creativeMemory refs are stored but not consumed by creative departments",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "src/studio-v1/memory/production-input.ts",
+        "reports/MEMORY_ARCHITECTURE_QA.json"
+      ],
+      "closureNote": "Creative Memory is relevance/scope retrieved and consumed as advisory continuity/anti-repetition context; current brief/source/Brand override it.",
+      "originalRepairDirection": "Feed relevant promoted memories into candidate generation/selection with provenance and scope."
+    },
+    {
+      "id": "HIP-082",
+      "severity": "P2",
+      "category": "MEMORY",
+      "title": "Creative memory is silently capped at 64 refs",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "src/studio-v1/memory/production-input.ts",
+        "reports/MEMORY_ARCHITECTURE_QA.json"
+      ],
+      "closureNote": "Creative Memory is relevance/scope retrieved and consumed as advisory continuity/anti-repetition context; current brief/source/Brand override it.",
+      "originalRepairDirection": "Relevance/scope retrieval, no raw first-64 truncation."
+    },
+    {
+      "id": "HIP-083",
+      "severity": "P1",
+      "category": "CAPABILITY_GRAPH",
+      "title": "Public family constraints are hardcoded performer-class lists",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Discover capabilities from signed engine manifests dynamically."
+    },
+    {
+      "id": "HIP-084",
+      "severity": "P2",
+      "category": "PLAN_PREVIEW",
+      "title": "Plan preview only uses first six source summaries and fixed 4\u20136 beats",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/provider_schemas.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/story_director.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py",
+        "services/studio-nexmind-p8/orchestrator.py"
+      ],
+      "closureNote": "Creative fields are open-ended while only executable primitives remain capability-bounded; candidate diversity and causal repair are explicit.",
+      "originalRepairDirection": "Coverage-aware preview and explicit uncertainty; do not imply full-source understanding."
+    },
+    {
+      "id": "HIP-085",
+      "severity": "P1",
+      "category": "ART_EXECUTION",
+      "title": "Authored-art semantic hash does not prove Art Bible visual compliance",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/authored_art.py",
+        "scripts/authored-art-execution-qa.py",
+        "reports/EXPLAINER_AUTHORED_ART_EXECUTION_QA.json"
+      ],
+      "closureNote": "Authored art requires independent exact-pixel fidelity review against locked Art/Brand semantics before acceptance.",
+      "originalRepairDirection": "Perceptual Art-Bible conformance review on generated plates before acceptance."
+    },
+    {
+      "id": "HIP-086",
+      "severity": "P1",
+      "category": "DIVERGENCE",
+      "title": "Originality/template/reference-independence metrics are primarily model-reported",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Model-reported divergence cannot alone certify release; independent perceptual veto plus build/judge-bound blind human calibration remain separate blockers.",
+      "originalRepairDirection": "Independent image/video similarity, corpus repetition and pairwise divergence evidence."
+    },
+    {
+      "id": "HIP-087",
+      "severity": "P1",
+      "category": "SOURCE_TRUTH",
+      "title": "Unresolved required visuals are advisory rather than necessarily blocking factual use",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_BY_FAIL_CLOSED_GATE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Mark evidence dependencies; block claims/strategies requiring unresolved visual source interpretation."
+    },
+    {
+      "id": "HIP-088",
+      "severity": "P1",
+      "category": "CALIBRATION",
+      "title": "Same reviewer can count across many productions; no concentration guard",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Minimum distinct reviewers, per-reviewer cap and concentration reporting."
+    },
+    {
+      "id": "HIP-089",
+      "severity": "P1",
+      "category": "CALIBRATION",
+      "title": "No explicit held-out calibration/evaluation split",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/human_calibration.py",
+        "src/studio-v1/nexmind-p8/autonomy.ts",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/perceptual_auditor.py",
+        "reports/NEXMIND_AUTONOMOUS_AUTHORITY_QA.json"
+      ],
+      "closureNote": "Final authority is independent, build/family/judge-bound and reviewer-diverse with held-out rank calibration; machine scores cannot self-certify release.",
+      "originalRepairDirection": "Versioned train/calibrate/holdout sets; only unseen holdout earns release claim."
+    },
+    {
+      "id": "HIP-090",
+      "severity": "P1",
+      "category": "MODEL_ROUTING",
+      "title": "Capability strings are operator-declared, not boot-probed",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Capability conformance probes at startup and before certification."
+    },
+    {
+      "id": "HIP-091",
+      "severity": "P1",
+      "category": "MODEL_ROUTING",
+      "title": "Multimodal capability label does not specify image/video/audio modality depth",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Typed modality capabilities: image, video frames, audio, transcript, tool/file support, context/output limits."
+    },
+    {
+      "id": "HIP-092",
+      "severity": "P1",
+      "category": "QA",
+      "title": "Current P8 regression is mostly contract/fixture testing, not live creative evidence",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "EXTERNAL_EVIDENCE_REQUIRED",
+      "closureEvidence": [
+        "reports/NEXMIND_TOTAL_REPAIR_FINAL_CERTIFICATION.json",
+        "reports/FINAL_ENGINE_REINSTALL_IDENTITY.json",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "The final certification explicitly labels 197/197 as local implementation regression and keeps live rendered commercial evidence separate. The live-evidence requirement itself remains external.",
+      "originalRepairDirection": "Keep regression, but separate dashboard/report from live production certification."
+    },
+    {
+      "id": "HIP-093",
+      "severity": "P1",
+      "category": "QA",
+      "title": "Explainer rendered-frame critic is body-specific and uses its own threshold regime",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-family-engines/explainer_adapter.py",
+        "engines/explainer/NexStudio_Explainer_Execution_Body_V2/NEXSTUDIO_EXECUTION_CAPABILITY_MANIFEST_V3.json",
+        "reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+      ],
+      "closureNote": "Explainer is execution-only with production-scoped authored art, explicit motion/camera bindings and no canned world/object/default-brand authority.",
+      "originalRepairDirection": "Unified perceptual review contract with family-specific dimensions but common evidence semantics."
+    },
+    {
+      "id": "HIP-094",
+      "severity": "P1",
+      "category": "DEPLOYMENT",
+      "title": "Browser/ffmpeg/ffprobe availability is host-assumed rather than centrally certified",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/runtime-readiness.ts",
+        "scripts/nexmind-runtime-boot-probe.py",
+        ".env.example",
+        "config/NEXMIND_CAPABILITY_MODEL_REGISTRY.template.json",
+        "reports/RUNTIME_BOOT_PROBE_CURRENT_ENV.json"
+      ],
+      "closureNote": "Capability is validated/probed before quote/debit and missing/invalid capability fails closed with production-scoped requirements.",
+      "originalRepairDirection": "Startup binary/version/browser smoke bound to deployment readiness manifest."
+    },
+    {
+      "id": "HIP-095",
+      "severity": "P1",
+      "category": "SOURCE_TRUTH",
+      "title": "Source visual/synthesis claims are promoted without independent entailment check",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "services/studio-source-intelligence/source_intelligence.py",
+        "reports/source-intelligence/SOURCE_INTELLIGENCE_CONTRADICTION_QA.json",
+        "reports/source-intelligence/REAL_SOURCE_INTELLIGENCE_QA_FINAL.json"
+      ],
+      "closureNote": "Source claims are provenance/entailment/contradiction gated; unresolved required visuals and uncertain derived claims stay unresolved.",
+      "originalRepairDirection": "Derived claims remain DERIVED_PENDING_VERIFY until entailment/secondary check succeeds."
+    },
+    {
+      "id": "HIP-096",
+      "severity": "P1",
+      "category": "FINAL_JUDGMENT",
+      "title": "Final Producer does not currently get direct raw reference media for reference-independence judgment",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "Exact-media perceptual/finalization authority and independent judgment gates replace metadata-only or self-certifying behavior.",
+      "originalRepairDirection": "Pass bound reference keyframes/media alongside final media to final judge and independent similarity service."
+    },
+    {
+      "id": "HIP-097",
+      "severity": "P1",
+      "category": "OUTPUT_LINEAGE",
+      "title": "Internal review package records media artifact hashes but final lineage does not require equality to reviewed media",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "services/studio-nexmind-p8/orchestrator.py",
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+        "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+        "src/studio-v1/production-engines/workflow.ts",
+        "reports/architecture/SHARED_EXECUTION_PLAN_QA.json"
+      ],
+      "closureNote": "Exact-media perceptual/finalization authority and independent judgment gates replace metadata-only or self-certifying behavior.",
+      "originalRepairDirection": "Bind creative lock to reviewed media/execution plan or promote reviewed version."
+    },
+    {
+      "id": "HIP-098",
+      "severity": "P2",
+      "category": "REPAIR",
+      "title": "Static defect\u2192department ownership mapping can misroute causal repairs",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/studio_quality.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "reports/PRODUCTION_SURVIVAL_QA.json"
+      ],
+      "closureNote": "Final-judge department_revisions provide causal ownership; absent a valid owner, repair widens safely instead of keyword/static defect routing.",
+      "originalRepairDirection": "Final judge proposes causal owner; validator checks plausibility; allow multi-owner causal graph."
+    },
+    {
+      "id": "HIP-099",
+      "severity": "P2",
+      "category": "REPAIR",
+      "title": "Fixed 1\u20135 local creative attempt budget is global operational policy",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/studio_quality.py",
+        "services/studio-nexmind-p8/orchestrator.py",
+        "reports/PRODUCTION_SURVIVAL_QA.json"
+      ],
+      "closureNote": "Repair limits are task-complexity/failure-surface adaptive and escalation changes creative scope rather than raising a universal retry quota.",
+      "originalRepairDirection": "Budget by failure class/cost/novelty while keeping bounded local loops and upstream escalation."
+    },
+    {
+      "id": "HIP-100",
+      "severity": "P2",
+      "category": "STATE",
+      "title": "Workflow metadata still labels current capability adapter with stale non-general authority string",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Record selected family authority + exact capability manifest hash."
+    },
+    {
+      "id": "HIP-101",
+      "severity": "P2",
+      "category": "STATE",
+      "title": "Non-Character orchestration emits irrelevant cross-family authority metadata",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Authority metadata/config is provider-neutral, family-relevant and hash-bound to installed engine bodies.",
+      "originalRepairDirection": "Family-neutral base graph; only include selected/relevant bodies."
+    },
+    {
+      "id": "HIP-102",
+      "severity": "P2",
+      "category": "CONFIG",
+      "title": "Source README/config documentation conflicts with repaired runtime architecture",
+      "originalStatus": "CONFIRMED_CURRENT_SOURCE",
+      "closureStatus": "CLOSED_IN_SOURCE",
+      "closureEvidence": [
+        "src/studio-v1/production-engines/authority.ts",
+        "services/studio-nexmind-p8/capability_adapter.py",
+        ".env.example",
+        "CANONICAL_SOURCE_README.md",
+        "reports/NEXMIND_NEGATIVE_SPACE_QA.json"
+      ],
+      "closureNote": "Provider-neutral config/readiness/engine hashes are current; superseded historical reports are non-authoritative and the final frozen manifest is generated from actual archives.",
+      "originalRepairDirection": "Docs/config are part of negative-space certification and must be hash-bound."
+    }
+  ]
+}

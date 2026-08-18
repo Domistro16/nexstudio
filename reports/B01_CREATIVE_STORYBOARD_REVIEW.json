@@ -1,0 +1,75 @@
+{
+  "schema": "NexMindCreativeStoryboardReviewV1",
+  "sourceAuthority": "DETERMINISTIC_VIEW_OF_COMMITTED_P8_STATE",
+  "makesNewCreativeDecisions": false,
+  "brief": {
+    "id": "B01",
+    "family": "EXPLAINER",
+    "domain": "consumer-product",
+    "brief": "A portable induction cooktop brand wants a 30-second film that makes precise heat control feel surprisingly human and useful, without turning into a feature list.",
+    "duration_seconds": 30
+  },
+  "run": {
+    "status": "PROVIDER_UNAVAILABLE",
+    "code": "LIVE_PROVIDER_CALL_FAILED",
+    "productionId": "diagnostic-B01",
+    "revision": 0,
+    "stateHash": "087098bff9d1858e7ed4ccefeab8bf8eaa27759fb9e4f12a8f7f758d1c1551e6",
+    "decisionSlots": [],
+    "renderReady": false,
+    "finalProducerInvoked": false,
+    "creativeLockCommitted": false,
+    "unresolvedDepartments": []
+  },
+  "film": {
+    "central_argument": null,
+    "film_kind": null,
+    "audience_before": null,
+    "audience_after": null,
+    "hero_kind": null,
+    "camera_idea": null,
+    "opening_contract": null,
+    "final_payoff": null,
+    "tone": null,
+    "emotional_trajectory": [],
+    "visual_trajectory": [],
+    "anti_goals": [],
+    "story_notes": []
+  },
+  "selectedCreativeSystem": {
+    "visual_concept": {},
+    "art_direction": {},
+    "form_resolution": {},
+    "cinematography": {},
+    "editorial_rhythm": {},
+    "motion_performance": {},
+    "sound_direction": {}
+  },
+  "beats": [],
+  "producerAssessments": {},
+  "nonBlockingCreativeNotes": [],
+  "blockingIssuesOnCommittedWork": [],
+  "productionValidationRequirements": [],
+  "attempts": {
+    "currentLineage": {},
+    "lifetime": {},
+    "repairLedgerEntries": 0,
+    "broaderStrategyReplans": 0
+  },
+  "providerPerformance": {
+    "provider_call_count": 1,
+    "provider_total_latency_ms": 1375,
+    "provider_retry_count": 0,
+    "provider_failed_call_count": 1,
+    "provider_schema_repair_count": 0,
+    "by_task": {
+      "story": {
+        "calls": 1,
+        "latency_ms": 1375,
+        "retries": 0,
+        "failures": 1,
+        "schema_repairs": 0
+      }
+    }
+  }
+}

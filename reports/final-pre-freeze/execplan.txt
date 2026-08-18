@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/scripts/shared-execution-plan-qa.py", line 22, in <module>
+    compat=compatibility_board(plan)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/execution_plan.py", line 156, in compatibility_board
+    validate_execution_plan(plan)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/execution_plan.py", line 134, in validate_execution_plan
+    raise AdapterBlocked("EXECUTION_PLAN_BRAND_AUTHORITY_MISSING")
+contracts.AdapterBlocked: EXECUTION_PLAN_BRAND_AUTHORITY_MISSING

@@ -1,0 +1,225 @@
+{
+  "schema": "EnvironmentObjectExecutionQAV2",
+  "pass": false,
+  "passed": 3,
+  "total": 42,
+  "checks": [
+    {
+      "name": "Actual TypeScript constructors execute",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "office: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "office: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "office: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-office']"
+    },
+    {
+      "name": "office: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "home: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "home: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "home: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-home']"
+    },
+    {
+      "name": "home: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "education: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "education: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "education: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-education']"
+    },
+    {
+      "name": "education: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "health: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "health: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "health: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-health']"
+    },
+    {
+      "name": "health: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "retail: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "retail: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "retail: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-retail']"
+    },
+    {
+      "name": "retail: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "logistics: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "logistics: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "logistics: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-logistics']"
+    },
+    {
+      "name": "logistics: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "city: semantic world selected",
+      "ok": false,
+      "detail": "no-explicit-authored-environment"
+    },
+    {
+      "name": "city: scene graph world + four depth layers",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "city: contextual world has >=2 props and no blocker",
+      "ok": false,
+      "detail": "props=0 blockers=['PRODUCTION_SCOPED_AUTHORED_ENVIRONMENT_REQUIRED:qa-city']"
+    },
+    {
+      "name": "city: world is inline authored SVG, not bg id",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object phone: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object laptop computer: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object document report: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object package parcel: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object wallet payment card: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object coffee cup: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object chair seat: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object table desk: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object water bottle: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object wrench tool: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "object dashboard screen: recognizable vector binding",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "Unknown object fails closed instead of generic icon substitution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Environment SVG proof renders",
+      "ok": true,
+      "detail": "7/7"
+    }
+  ],
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Execution-body coverage and construction proof only. It does not certify 9.5 visual taste or commercial finish.",
+  "proofDirectory": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/environment-object-proof-v2",
+  "sourceHashes": {
+    "environmentConstructor": "5f17f725870bf3d3f4e80e4f434e6fbd84bc064e5cf3c0f93ce614c0adc05b2f",
+    "constructedObject": "dbaad8b225d9e72cb8c009eacd548d1a59fc0764d4e5a1abf15f0405758e09eb"
+  }
+}

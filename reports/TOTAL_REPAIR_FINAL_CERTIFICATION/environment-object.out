@@ -1,0 +1,54 @@
+{
+  "schema": "EnvironmentObjectExecutionQAV3",
+  "pass": true,
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "name": "No finite world-kind catalogue remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No prose-to-inline-world constructor remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No finite prose-to-object catalogue remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Constructed-object compatibility symbol fails closed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Asset body does not call canned constructed object",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Environment requires explicit authored world",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Known noun also fails closed without explicit authored binding",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Environment/object execution sources transpile",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Fail-closed execution-authority proof. Arbitrary worlds/objects require P8 production-scoped authored art or explicit approved bindings; no finite house catalogue is accepted as creative authority.",
+  "sourceHashes": {
+    "environmentConstructor": "5f17f725870bf3d3f4e80e4f434e6fbd84bc064e5cf3c0f93ce614c0adc05b2f",
+    "constructedObject": "dbaad8b225d9e72cb8c009eacd548d1a59fc0764d4e5a1abf15f0405758e09eb"
+  }
+}

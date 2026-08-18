@@ -1,0 +1,61 @@
+import json,re,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+public=(ROOT/'src/studio-v1/react/StudioPublicExperience.tsx').read_text()
+css=(ROOT/'app/studio-v1.css').read_text()
+light=(ROOT/'src/studio-v1/react/NexStudioLightRays.tsx').read_text()
+checks=[]
+def add(name, ok, detail=''): checks.append({'name':name,'ok':bool(ok),'detail':detail})
+
+add('Approved hero headline retained','Make something worth watching.' in public)
+add('Approved Light Rays authority retained','<NexStudioLightRays' in public and 'secondaryColor="#e89cc4"' in public)
+add('Primary prompt composer retained','id="studio-create"' in public and 'id="studio-intent"' in public)
+add('Four production categories sit immediately after composer',public.index('className="nxs-family-quick"') > public.index('id="studio-create"') and public.index('className="nxs-family-quick"') < public.index('</section>', public.index('id="studio-create"')))
+add('Production categories come from canonical family registry','PRODUCTION_REGISTRY.families.map' in public and 'className="nxs-family-choice"' in public)
+add('Four family-specific visual treatments exist',all(x in css for x in ['data-family="explainer"','data-family="whiteboard"','data-family="stickman"','data-family="editorial-motion"']))
+add('Family boxes use custom visual art rather than fake video','function FamilyVisual' in public and all(x in public for x in ['nxs-explainer-panel','nxs-board-stroke','nxs-stick-head','nxs-editorial-type']))
+
+add('Certified film gallery follows category rail',public.index('nxs-film-gallery') > public.index('nxs-family-quick'))
+add('Film gallery renders only when certified work exists','{certifiedWork.length ? <section className="nxs-film-gallery"' in public)
+add('Film source is certified-only','certifiedWork = useMemo(() => publicTypes.filter' in public and 'getPublicVideoTypes(PRODUCTION_REGISTRY' in public)
+add('Film gallery has family filters','WORK_FILTERS.map' in public and 'role="tablist"' in public)
+add('Film previews use viewport-aware playback','function ShowcaseFilm' in public and 'IntersectionObserver' in public and 'intersectionRatio >= 0.58' in public)
+add('No fake work media URLs',not re.search(r'<(?:video|img)[^>]+(?:src|poster)=["\'](?:https?:|/)', public, re.I))
+
+add('Format stage exists','nxs-format-stage' in public and 'One production. Every screen.' in public)
+add('Only contracted public ratios are presented',all(x in public for x in ['ratio: "16:9"','ratio: "9:16"','ratio: "1:1"']))
+add('Source-context stage exists','nxs-source-stage' in public and 'Give Studio what you already have.' in public)
+add('Source cards avoid arbitrary document promises',all(x in public for x in ['Your brief','Links + references','Images + video','Brand context']) and 'PDF' not in public)
+add('Persistent production stage exists','nxs-journey-stage' in public and all(x in public for x in ['"Brief", "Direction", "Production", "Screening", "Revision"']))
+add('Final CTA is concise, not a duplicate long composer','nxs-final-signal' in public and 'Start creating' in public and 'studio-intent-final' not in public)
+
+add('Mobile navigation uses dedicated app sheet','nxs-mobile-menu' in public and 'nxs-mobile-menu-sheet' in public and 'aria-modal="true"' in public)
+add('Mobile persistent create dock exists','nxs-mobile-create-dock' in public and 'mobileDockVisible' in public)
+add('Mobile safe-area handling exists','env(safe-area-inset-top)' in css and 'env(safe-area-inset-bottom)' in css)
+add('Mobile desktop navigation is removed','.nxs-desktop-nav{display:none!important}' in css)
+add('Mobile category rail is touch-scrollable','nxs-family-quick' in css and '-webkit-overflow-scrolling:touch' in css and 'scroll-snap-type:x mandatory' in css)
+add('Mobile film gallery is a media rail','.nxs-film-grid{display:flex' in css and 'scroll-snap-type:x mandatory' in css)
+add('Mobile formats are swipeable','.nxs-format-deck{display:flex' in css and 'scroll-snap-align:center' in css)
+add('Mobile source cards are swipeable','.nxs-source-deck{display:flex' in css)
+add('Mobile production journey is swipeable','.nxs-journey-visual{min-height:23.5rem;display:flex' in css)
+add('Mobile create dock uses large action target','min-height:4rem' in css and 'width:3rem;height:3rem' in css)
+
+add('Old text-heavy homepage modules are absent from JSX',all(x not in public for x in ['nxs-process','nxs-family-showcase','nxs-confidence','nxs-final-create','nxs-work-empty']))
+add('No internal release-gate language in customer JSX','commercial certification gate' not in public.lower() and 'certification registry' not in public.lower() and 'release-pipeline' not in public.lower())
+add('Sticky navigation scrolled state exists','headerScrolled' in public and 'sv1-header-premium.is-scrolled' in css)
+add('Motion is used for product continuity','motion.button' in public and 'whileInView' in public and 'AnimatePresence' in public)
+add('GSAP not gratuitously added to homepage','from "gsap"' not in public and "from 'gsap'" not in public)
+add('No additional recognizable React Bits components',all(x not in public+css for x in ['SpotlightCard','TiltedCard','SoftAurora','AnimatedBeam','Galaxy']))
+add('Legacy decorative AI theatre absent',all(x not in public for x in ['sv1-orbit','sv1-production-light','sv1-live-dot']))
+keyframes=re.findall(r'@keyframes\s+([A-Za-z0-9_-]+)',css)
+add('Only approved ambient homepage keyframes remain',all(x in {'nxs-bloom-a','nxs-bloom-b'} for x in keyframes),str(keyframes))
+add('Reduced-motion path retained','prefers-reduced-motion:reduce' in css and 'useReducedMotion' in public and 'reducedMotion' in public)
+add('No fabricated progress or ETA',not re.search(r'(?<![A-Za-z])\d{1,3}%|\bETA\b|\bestimated finish\b',public,re.I))
+add('Footer navigation remains minimal','nxs-home-footer-final' in public and 'Footer navigation' in public)
+add('CSS braces balanced',css.count('{')==css.count('}'),f"{css.count('{')} opens / {css.count('}')} closes")
+add('Light Rays reduced-motion support retained','prefers-reduced-motion' in light and 'IntersectionObserver' in light)
+
+report={'schema':'NexStudioPublicHomepageVisualAuthorityQA V3','pass':all(c['ok'] for c in checks),'passed':sum(c['ok'] for c in checks),'total':len(checks),'checks':checks}
+out=ROOT/'reports/public-experience/HOMEPAGE_VISUAL_AUTHORITY_QA_V3.json';out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(report,indent=2)+'\n')
+print(json.dumps({'pass':report['pass'],'passed':report['passed'],'total':report['total'],'failed':[c['name'] for c in checks if not c['ok']]},indent=2))
+sys.exit(0 if report['pass'] else 1)

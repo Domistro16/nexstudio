@@ -1,0 +1,145 @@
+{
+  "schema": "StudioFourFamilyPublicEnablementRecommendationsV1",
+  "recommendations": [
+    {
+      "family": "explainer",
+      "subtypes": [
+        {
+          "id": "product-explainer",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "how-it-works",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "technical-explainer",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "educational-explainer",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "data-insight-explainer",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "concept-explainer",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        }
+      ]
+    },
+    {
+      "family": "whiteboard",
+      "subtypes": [
+        {
+          "id": "concept-breakdown",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "process-explanation",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "lesson-teaching",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "problem-solution",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "comparison",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "story-led-whiteboard",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        }
+      ]
+    },
+    {
+      "family": "stickman",
+      "subtypes": [
+        {
+          "id": "short-story",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "conversation",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "workplace-scenario",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "everyday-life",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "teach-present",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "funny-scenario",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        }
+      ]
+    },
+    {
+      "family": "editorial-motion",
+      "subtypes": [
+        {
+          "id": "kinetic-text-story",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "announcement",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "idea-manifesto",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "data-story",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "quote-narrative",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        },
+        {
+          "id": "mixed-editorial",
+          "publicEnabled": false,
+          "reason": "No fresh end-to-end live-P8 blind subtype film + calibrated commercial review exists in this environment."
+        }
+      ]
+    }
+  ]
+}

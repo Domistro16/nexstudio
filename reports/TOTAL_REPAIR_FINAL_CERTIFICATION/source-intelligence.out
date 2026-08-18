@@ -1,0 +1,133 @@
+{
+  "schema": "StudioSourceIntelligenceQA V1",
+  "pass": true,
+  "passed": 25,
+  "total": 25,
+  "checks": [
+    {
+      "name": ".docx sidecar exits cleanly",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "DOCX extracts paragraph and table",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "DOCX table text is not duplicated as body paragraphs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "DOCX embedded image becomes visual evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": ".pptx sidecar exits cleanly",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PPTX extracts slide text",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PPTX extracts chart data",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PPTX embedded image becomes visual evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": ".pdf sidecar exits cleanly",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PDF extracts text with page locator",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PDF renders provenance-bound page evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PDF marks visual-only page",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PDF marks visually complex page evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": ".txt sidecar exits cleanly",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Text source extracts safely",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 source-packet executable test runs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 packet carries extracted evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 packet carries hashed provenance",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 packet carries visual references",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 reads persisted StudioProductionInput Source.extracted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Filename-only sourcePacket authority removed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Text source understanding precedes Story",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Visual source understanding is capability-optional",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Text source synthesis is capability-optional without dropping extracted evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "DOCX/PPTX are secure accepted MIME types",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

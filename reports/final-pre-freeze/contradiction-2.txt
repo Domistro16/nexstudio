@@ -1,0 +1,35 @@
+{
+  "schema": "StudioSourceIntelligenceContradictionQAV1",
+  "pass": true,
+  "passed": 5,
+  "total": 5,
+  "checks": [
+    {
+      "name": "Contradiction survives source analysis",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contradiction does not invent resolved evidence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Unknown provenance ID is rejected",
+      "ok": true,
+      "detail": "SOURCE_INTELLIGENCE_UNKNOWN_PROVENANCE_ID"
+    },
+    {
+      "name": "Invented/reconciled source analysis is rejected",
+      "ok": true,
+      "detail": "SOURCE_INTELLIGENCE_NEGATIVE_INTEGRITY_ADMISSION"
+    },
+    {
+      "name": "Unavailable specialist preserves raw evidence",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Provenance/contradiction integrity and resilience only; this does not prove live source reasoning quality."
+}

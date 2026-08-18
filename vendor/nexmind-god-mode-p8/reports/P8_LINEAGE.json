@@ -1,0 +1,9 @@
+{
+  "schema": "NexMindP8LineageV1",
+  "date": "2026-08-12",
+  "parent_p7_package": "NexMind_God_Mode_P7_Sound_2026-08-12.zip",
+  "parent_p7_sha256": "7af551f2a41381cf7ed5300ddaa82e96171f0741f29413a17e872fd874d6f4cd",
+  "authoritative_gates_modified": false,
+  "phase_branch": "isolated successor over P7; no in-place modification of authoritative Gates source",
+  "human_calibration_real_reviews": 0
+}

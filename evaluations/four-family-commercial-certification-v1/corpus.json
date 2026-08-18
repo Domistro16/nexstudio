@@ -1,0 +1,1832 @@
+{
+  "schema": "StudioFourFamilyCommercialCertificationCorpusV1",
+  "createdAt": "2026-08-14",
+  "caseCount": 48,
+  "policy": "Two fresh unseen cases per public subtype: one normal and one adversarial/stress. A subtype cannot become public if either case lacks release-grade evidence or falls below the commercial threshold.",
+  "cases": [
+    {
+      "id": "explainer:product-explainer:normal",
+      "family": "explainer",
+      "subtype": "product-explainer",
+      "subtypeName": "Product Explainer",
+      "mode": "normal",
+      "sealedBrief": "Explain a new privacy-preserving family calendar that lets relatives coordinate care without exposing everyone\u2019s full schedules. Make the product understandable through a real human use case.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "explanation",
+        "product-visualization",
+        "narrative-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:product-explainer:stress",
+      "family": "explainer",
+      "subtype": "product-explainer",
+      "subtypeName": "Product Explainer",
+      "mode": "stress",
+      "sealedBrief": "A hardware product has one capability the current renderer may not faithfully depict: a compact lab instrument with a multi-axis robotic sample stage. If literal depiction cannot be achieved, refuse rather than substitute a generic app dashboard.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "explanation",
+        "product-visualization",
+        "narrative-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:how-it-works:normal",
+      "family": "explainer",
+      "subtype": "how-it-works",
+      "subtypeName": "How It Works",
+      "mode": "normal",
+      "sealedBrief": "Explain how a neighborhood battery can store midday solar power and release it during the evening peak, without turning the film into a generic flowchart.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "explanation",
+        "process-visualization",
+        "sequencing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:how-it-works:stress",
+      "family": "explainer",
+      "subtype": "how-it-works",
+      "subtypeName": "How It Works",
+      "mode": "stress",
+      "sealedBrief": "Explain a process with two concurrent branches that later merge. Do not falsely serialize simultaneous steps simply because linear animation is easier.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "explanation",
+        "process-visualization",
+        "sequencing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:technical-explainer:normal",
+      "family": "explainer",
+      "subtype": "technical-explainer",
+      "subtypeName": "Technical Explainer",
+      "mode": "normal",
+      "sealedBrief": "Explain how passkeys replace shared secrets with public-key cryptography for a non-technical product team while preserving the important security mechanism.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "technical-explanation",
+        "diagramming",
+        "concept-modeling"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:technical-explainer:stress",
+      "family": "explainer",
+      "subtype": "technical-explainer",
+      "subtypeName": "Technical Explainer",
+      "mode": "stress",
+      "sealedBrief": "Explain a heat-recovery ventilation exchanger with counter-flow air paths. If the mechanism cannot be represented accurately, fail closed instead of using a decorative airflow icon.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "technical-explanation",
+        "diagramming",
+        "concept-modeling"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:educational-explainer:normal",
+      "family": "explainer",
+      "subtype": "educational-explainer",
+      "subtypeName": "Educational Explainer",
+      "mode": "normal",
+      "sealedBrief": "Teach why antibiotics do not treat viral infections to a general adult audience, with one memorable visual idea and no medical overclaiming.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "teaching",
+        "explanation",
+        "learning-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:educational-explainer:stress",
+      "family": "explainer",
+      "subtype": "educational-explainer",
+      "subtypeName": "Educational Explainer",
+      "mode": "stress",
+      "sealedBrief": "Teach a sensitive historical topic where causal claims must remain sourced and neutral; do not invent facts to improve the story.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "teaching",
+        "explanation",
+        "learning-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:data-insight-explainer:normal",
+      "family": "explainer",
+      "subtype": "data-insight-explainer",
+      "subtypeName": "Data / Insight Explainer",
+      "mode": "normal",
+      "sealedBrief": "A city has bus punctuality data showing that average on-time performance improved while the worst routes became less reliable. Explain how both can be true and what the distribution reveals.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "data-storytelling",
+        "charting",
+        "explanation"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:data-insight-explainer:stress",
+      "family": "explainer",
+      "subtype": "data-insight-explainer",
+      "subtypeName": "Data / Insight Explainer",
+      "mode": "stress",
+      "sealedBrief": "The supplied data contains missing values and a misleading average. Detect the ambiguity and refuse a confident visual conclusion unless the evidence is sufficient.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "data-storytelling",
+        "charting",
+        "explanation"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:concept-explainer:normal",
+      "family": "explainer",
+      "subtype": "concept-explainer",
+      "subtypeName": "Concept Explainer",
+      "mode": "normal",
+      "sealedBrief": "Explain opportunity cost to a first-time entrepreneur without using coins flying upward, scales, or a classroom-board clich\u00e9.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "concept-modeling",
+        "metaphor",
+        "explanation"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "explainer:concept-explainer:stress",
+      "family": "explainer",
+      "subtype": "concept-explainer",
+      "subtypeName": "Concept Explainer",
+      "mode": "stress",
+      "sealedBrief": "Explain a concept whose obvious metaphor would distort the meaning. Prefer a literal structural representation or refuse the metaphor rather than forcing novelty.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white movements(1).mp4",
+      "requiredCapabilities": [
+        "concept-modeling",
+        "metaphor",
+        "explanation"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:concept-breakdown:normal",
+      "family": "whiteboard",
+      "subtype": "concept-breakdown",
+      "subtypeName": "Concept Breakdown",
+      "mode": "normal",
+      "sealedBrief": "Break down why a queue can grow even while every service desk is continuously busy. The board should preserve the evolving logic rather than reset every beat.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "concept-modeling",
+        "progressive-reveal"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:concept-breakdown:stress",
+      "family": "whiteboard",
+      "subtype": "concept-breakdown",
+      "subtypeName": "Concept Breakdown",
+      "mode": "stress",
+      "sealedBrief": "The concept includes a conditional exception. Preserve the exception on the board; do not flatten it into an always-true rule.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "concept-modeling",
+        "progressive-reveal"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:process-explanation:normal",
+      "family": "whiteboard",
+      "subtype": "process-explanation",
+      "subtypeName": "Process Explanation",
+      "mode": "normal",
+      "sealedBrief": "Show the process by which a customer return moves from intake to inspection, restocking or refurbishment, and refund approval.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "process-visualization",
+        "sequencing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:process-explanation:stress",
+      "family": "whiteboard",
+      "subtype": "process-explanation",
+      "subtypeName": "Process Explanation",
+      "mode": "stress",
+      "sealedBrief": "The process has a loop back after failed inspection. Represent the loop correctly or fail closed; do not hide it to keep the board tidy.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "process-visualization",
+        "sequencing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:lesson-teaching:normal",
+      "family": "whiteboard",
+      "subtype": "lesson-teaching",
+      "subtypeName": "Lesson / Teaching",
+      "mode": "normal",
+      "sealedBrief": "Teach the difference between weather and climate to a 12-year-old using cumulative board construction and simple examples.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "teaching",
+        "learning-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:lesson-teaching:stress",
+      "family": "whiteboard",
+      "subtype": "lesson-teaching",
+      "subtypeName": "Lesson / Teaching",
+      "mode": "stress",
+      "sealedBrief": "The lesson needs a negative example and a correction. Avoid making the incorrect state visually dominant long enough to teach the wrong thing.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "teaching",
+        "learning-structure"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:problem-solution:normal",
+      "family": "whiteboard",
+      "subtype": "problem-solution",
+      "subtypeName": "Problem \u2192 Solution",
+      "mode": "normal",
+      "sealedBrief": "A small team keeps losing decisions across chat messages. Explain the problem and a lightweight decision-log solution through one coherent whiteboard world.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "problem-solution-structure",
+        "progressive-reveal"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:problem-solution:stress",
+      "family": "whiteboard",
+      "subtype": "problem-solution",
+      "subtypeName": "Problem \u2192 Solution",
+      "mode": "stress",
+      "sealedBrief": "The proposed \u201csolution\u201d only mitigates the symptom, not the cause. The board must preserve that distinction rather than claim full resolution.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "problem-solution-structure",
+        "progressive-reveal"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:comparison:normal",
+      "family": "whiteboard",
+      "subtype": "comparison",
+      "subtypeName": "Comparison",
+      "mode": "normal",
+      "sealedBrief": "Compare leasing and buying a delivery van for a small business without recommending one universally; make the tradeoffs visually obvious.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "comparison",
+        "layout-contrast"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:comparison:stress",
+      "family": "whiteboard",
+      "subtype": "comparison",
+      "subtypeName": "Comparison",
+      "mode": "stress",
+      "sealedBrief": "The two options have unequal information. Mark unknowns instead of inventing symmetrical criteria.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "comparison",
+        "layout-contrast"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:story-led-whiteboard:normal",
+      "family": "whiteboard",
+      "subtype": "story-led-whiteboard",
+      "subtypeName": "Story-led Whiteboard",
+      "mode": "normal",
+      "sealedBrief": "Tell a short story about a caf\u00e9 owner who discovers that a busy-looking queue is caused by one hidden bottleneck, then explain the principle.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "storytelling",
+        "continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "whiteboard:story-led-whiteboard:stress",
+      "family": "whiteboard",
+      "subtype": "story-led-whiteboard",
+      "subtypeName": "Story-led Whiteboard",
+      "mode": "stress",
+      "sealedBrief": "The story requires two recurring people and an object handoff. If multi-actor continuity cannot remain coherent, fail rather than swap identities between beats.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 hand draw(1).mp4",
+      "requiredCapabilities": [
+        "whiteboard-drawing",
+        "storytelling",
+        "continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:short-story:normal",
+      "family": "stickman",
+      "subtype": "short-story",
+      "subtypeName": "Short Story",
+      "mode": "normal",
+      "sealedBrief": "Tell a 30-second story about two neighbors trying to return a misdelivered package, ending with a small human payoff rather than a product pitch.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "storytelling",
+        "scene-continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:short-story:stress",
+      "family": "stickman",
+      "subtype": "short-story",
+      "subtypeName": "Short Story",
+      "mode": "stress",
+      "sealedBrief": "The story needs a seated character to stand, carry an object, turn and hand it to another character. Unsupported or unstable actions must fail closed rather than teleport the prop.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "storytelling",
+        "scene-continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:conversation:normal",
+      "family": "stickman",
+      "subtype": "conversation",
+      "subtypeName": "Conversation",
+      "mode": "normal",
+      "sealedBrief": "Two coworkers disagree about whether an urgent-looking email is legitimate. Stage the conversation, verification step, and reactions naturally.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "dialogue-staging",
+        "reaction-performance"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:conversation:stress",
+      "family": "stickman",
+      "subtype": "conversation",
+      "subtypeName": "Conversation",
+      "mode": "stress",
+      "sealedBrief": "Stage overlapping conversational attention without lip-sync claims. If reaction timing or two-person staging breaks, do not release.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "dialogue-staging",
+        "reaction-performance"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:workplace-scenario:normal",
+      "family": "stickman",
+      "subtype": "workplace-scenario",
+      "subtypeName": "Workplace Scenario",
+      "mode": "normal",
+      "sealedBrief": "Show a warehouse worker and supervisor discovering that an item marked \u201cin stock\u201d is actually inaccessible behind a blocked aisle, then resolving the operational mismatch.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "environment-staging",
+        "object-interaction"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:workplace-scenario:stress",
+      "family": "stickman",
+      "subtype": "workplace-scenario",
+      "subtypeName": "Workplace Scenario",
+      "mode": "stress",
+      "sealedBrief": "A worker must pick up a medium box from a low shelf, carry it around an obstacle and place it on a table. Heavy carry or obstacle navigation outside the admitted envelope must be rejected.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "environment-staging",
+        "object-interaction"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:everyday-life:normal",
+      "family": "stickman",
+      "subtype": "everyday-life",
+      "subtypeName": "Everyday Life",
+      "mode": "normal",
+      "sealedBrief": "Show a parent juggling groceries, a ringing phone and a door key, then simplifying the moment through a believable sequence of actions.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "everyday-actions",
+        "scene-continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:everyday-life:stress",
+      "family": "stickman",
+      "subtype": "everyday-life",
+      "subtypeName": "Everyday Life",
+      "mode": "stress",
+      "sealedBrief": "The action sequence includes opening a tight jar. If that manipulation is not admitted, refuse or reframe truthfully rather than fake hand-object contact.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "everyday-actions",
+        "scene-continuity"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:teach-present:normal",
+      "family": "stickman",
+      "subtype": "teach-present",
+      "subtypeName": "Teach / Present",
+      "mode": "normal",
+      "sealedBrief": "A presenter explains three signs that a meeting should become an asynchronous update, using gestures and simple supporting props rather than slides.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "presenting",
+        "gesture-direction"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:teach-present:stress",
+      "family": "stickman",
+      "subtype": "teach-present",
+      "subtypeName": "Teach / Present",
+      "mode": "stress",
+      "sealedBrief": "The presenter is asked to rotate 180 degrees and write on a board. The current captured turn envelope is about 90 degrees; do not procedurally fake the unsupported turn.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "presenting",
+        "gesture-direction"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:funny-scenario:normal",
+      "family": "stickman",
+      "subtype": "funny-scenario",
+      "subtypeName": "Funny Scenario",
+      "mode": "normal",
+      "sealedBrief": "A character repeatedly chooses the wrong reusable shopping bag because three identical bags contain wildly different things; build a clean visual setup and payoff.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "comic-timing",
+        "reaction-performance"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "stickman:funny-scenario:stress",
+      "family": "stickman",
+      "subtype": "funny-scenario",
+      "subtypeName": "Funny Scenario",
+      "mode": "stress",
+      "sealedBrief": "The joke depends on a precise fall/slapstick collision. If physical performance is not admitted, refuse the gag rather than using a decorative bounce.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "Pexo-level commercial stick-figure motion reference",
+      "requiredCapabilities": [
+        "character-performance",
+        "comic-timing",
+        "reaction-performance"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:kinetic-text-story:normal",
+      "family": "editorial-motion",
+      "subtype": "kinetic-text-story",
+      "subtypeName": "Kinetic Text Story",
+      "mode": "normal",
+      "sealedBrief": "Build a short editorial film around the line \u201cSpeed is not the same as progress,\u201d using typography, pacing and sound to reveal the distinction.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "editorial-timing",
+        "sound-sync"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:kinetic-text-story:stress",
+      "family": "editorial-motion",
+      "subtype": "kinetic-text-story",
+      "subtypeName": "Kinetic Text Story",
+      "mode": "stress",
+      "sealedBrief": "The copy contains long unbreakable legal language. Preserve legibility and meaning; do not make unreadable type motion to maintain tempo.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "editorial-timing",
+        "sound-sync"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:announcement:normal",
+      "family": "editorial-motion",
+      "subtype": "announcement",
+      "subtypeName": "Announcement",
+      "mode": "normal",
+      "sealedBrief": "Announce that a community library is extending weekend opening hours, with clear hierarchy, warmth and no fake urgency.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "announcement-structure",
+        "editorial-timing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:announcement:stress",
+      "family": "editorial-motion",
+      "subtype": "announcement",
+      "subtypeName": "Announcement",
+      "mode": "stress",
+      "sealedBrief": "The announcement contains a date and eligibility condition. Both must remain readable and semantically intact across all ratios.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "announcement-structure",
+        "editorial-timing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:idea-manifesto:normal",
+      "family": "editorial-motion",
+      "subtype": "idea-manifesto",
+      "subtypeName": "Idea / Manifesto",
+      "mode": "normal",
+      "sealedBrief": "Create a concise manifesto around \u201cSoftware should leave people more capable, not more dependent,\u201d using type, graphic rhythm and restrained imagery.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "manifesto-structure",
+        "editorial-composition"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:idea-manifesto:stress",
+      "family": "editorial-motion",
+      "subtype": "idea-manifesto",
+      "subtypeName": "Idea / Manifesto",
+      "mode": "stress",
+      "sealedBrief": "Avoid motion for motion\u2019s sake: if the piece becomes a sequence of generic animated slogans without a progressing visual argument, it fails creative QA.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "manifesto-structure",
+        "editorial-composition"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:data-story:normal",
+      "family": "editorial-motion",
+      "subtype": "data-story",
+      "subtypeName": "Data Story",
+      "mode": "normal",
+      "sealedBrief": "Use supplied retention data to show why a product with stable monthly averages can still be losing its newest cohort faster than before.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "data-storytelling",
+        "editorial-composition",
+        "charting"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:data-story:stress",
+      "family": "editorial-motion",
+      "subtype": "data-story",
+      "subtypeName": "Data Story",
+      "mode": "stress",
+      "sealedBrief": "The data includes confidence intervals and one statistically noisy spike. Do not animate the spike as a certain trend.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "data-storytelling",
+        "editorial-composition",
+        "charting"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:quote-narrative:normal",
+      "family": "editorial-motion",
+      "subtype": "quote-narrative",
+      "subtypeName": "Quote / Narrative",
+      "mode": "normal",
+      "sealedBrief": "Build an editorial motion piece around a short founder quotation about changing course after listening to customers; keep the quote central but not visually static.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "narrative-structure",
+        "editorial-timing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:quote-narrative:stress",
+      "family": "editorial-motion",
+      "subtype": "quote-narrative",
+      "subtypeName": "Quote / Narrative",
+      "mode": "stress",
+      "sealedBrief": "The quote attribution is uncertain. Do not render a named attribution as fact unless the source packet supports it.",
+      "durationSeconds": 30,
+      "aspectRatio": "9:16",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "narrative-structure",
+        "editorial-timing"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:mixed-editorial:normal",
+      "family": "editorial-motion",
+      "subtype": "mixed-editorial",
+      "subtypeName": "Mixed Editorial",
+      "mode": "normal",
+      "sealedBrief": "Combine supplied product screenshots, one portrait, short text and simple graphics into a cohesive editorial story about a research tool moving from notes to a shared evidence trail.",
+      "durationSeconds": 30,
+      "aspectRatio": "16:9",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "mixed-media-compositing",
+        "editorial-composition"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    },
+    {
+      "id": "editorial-motion:mixed-editorial:stress",
+      "family": "editorial-motion",
+      "subtype": "mixed-editorial",
+      "subtypeName": "Mixed Editorial",
+      "mode": "stress",
+      "sealedBrief": "Supplied imagery has mixed aspect ratios and one low-resolution asset. Preserve provenance and composition quality; do not upscale a weak hero image into a blurry full-frame centerpiece.",
+      "durationSeconds": 30,
+      "aspectRatio": "1:1",
+      "commercialReference": "01 white motion(1).mp4",
+      "requiredCapabilities": [
+        "kinetic-typography",
+        "mixed-media-compositing",
+        "editorial-composition"
+      ],
+      "executionPolicy": {
+        "p8SoleCreativeAuthority": true,
+        "noManualSceneRescue": true,
+        "noDeveloperAuthoredArtDirection": true,
+        "noPostRenderCorrection": true,
+        "boundedAutonomousRepairOnly": true,
+        "failClosedWhenQualityUnachievable": true
+      },
+      "requiredEvidence": [
+        "P8 provider audit",
+        "canonical creative-state artifact/hash",
+        "family authority id/hash",
+        "encoded video",
+        "48 kHz audio or explicit justified silent design",
+        "contact sheet/keyframes",
+        "technical QA",
+        "multimodal final review",
+        "independent blind human review",
+        "commercial-reference comparison",
+        "poster extracted from certified final film",
+        "lineage manifest"
+      ]
+    }
+  ]
+}

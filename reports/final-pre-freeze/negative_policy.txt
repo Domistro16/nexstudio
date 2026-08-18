@@ -1,0 +1,169 @@
+{
+  "schema": "NexMindP8CreativeNegativeControlsPolicyQAV3",
+  "status": "FAIL",
+  "passed": 0,
+  "total": 10,
+  "commercial_score_evidence": false,
+  "results": [
+    {
+      "id": "NC01",
+      "class": "polished-but-boring",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "visual_concept"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC02",
+      "class": "beautiful-but-wrong",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "HARD_GATES_NOT_ALL_PASS"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "film_thesis"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC03",
+      "class": "technically-clean-but-generic",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "visual_concept"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC04",
+      "class": "derivative-reference-copy",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "visual_concept"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC05",
+      "class": "emotionally-mismatched",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "art_direction"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC06",
+      "class": "strong-opening-weak-payoff",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "CRAFT_MEAN_BELOW_9_5",
+        "CRAFT_DIMENSION_BELOW_9",
+        "CRITICAL_CRAFT_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "film_thesis"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC07",
+      "class": "good-story-poor-art",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "CRAFT_MEAN_BELOW_9_5",
+        "CRAFT_DIMENSION_BELOW_9"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "art_direction"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC08",
+      "class": "under-authored-environment",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "art_direction"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC09",
+      "class": "templated-repeat-production",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TEMPLATE_SIMILARITY_TOO_HIGH"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "visual_concept",
+        "art_direction",
+        "cinematography",
+        "editorial_rhythm",
+        "motion_performance",
+        "sound_direction"
+      ],
+      "pass": false
+    },
+    {
+      "id": "NC10",
+      "class": "weak-brand-fit",
+      "status": "FAIL_CLOSED",
+      "reasons": [
+        "MULTIMODAL_EVIDENCE_INCOMPLETE",
+        "TASTE_MEAN_BELOW_9_5",
+        "TASTE_DIMENSION_BELOW_9",
+        "CRITICAL_TASTE_BELOW_9_5"
+      ],
+      "repair_scope": "RESPONSIBLE_DEPARTMENT",
+      "invalidate_slots": [
+        "art_direction"
+      ],
+      "pass": false
+    }
+  ]
+}

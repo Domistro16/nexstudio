@@ -1,0 +1,481 @@
+test_429_retries_idempotently (test_live_provider.LiveProviderTests.test_429_retries_idempotently) ... ok
+test_agentrouter_chat_schema_exact_sol (test_live_provider.LiveProviderTests.test_agentrouter_chat_schema_exact_sol) ... ok
+test_ambiguous_alias_is_rejected (test_live_provider.LiveProviderTests.test_ambiguous_alias_is_rejected) ... ok
+test_capability_registry_fails_over_only_to_declared_compatible_route (test_live_provider.LiveProviderTests.test_capability_registry_fails_over_only_to_declared_compatible_route) ... ok
+test_custom_provider_label_is_runtime_configuration_not_architecture (test_live_provider.LiveProviderTests.test_custom_provider_label_is_runtime_configuration_not_architecture) ... ok
+test_explicit_provider_alias_is_accepted (test_live_provider.LiveProviderTests.test_explicit_provider_alias_is_accepted) ... ok
+test_missing_agentrouter_base_is_explicit_blocker (test_live_provider.LiveProviderTests.test_missing_agentrouter_base_is_explicit_blocker) ... FAIL
+test_missing_openai_key_is_explicit_blocker (test_live_provider.LiveProviderTests.test_missing_openai_key_is_explicit_blocker) ... ok
+test_model_family_mismatch_is_rejected (test_live_provider.LiveProviderTests.test_model_family_mismatch_is_rejected) ... ok
+test_no_architecture_owned_model_defaults (test_live_provider.LiveProviderTests.test_no_architecture_owned_model_defaults) ... ok
+test_nontransient_401_does_not_retry_or_fallback (test_live_provider.LiveProviderTests.test_nontransient_401_does_not_retry_or_fallback) ... ok
+test_provider_qualified_model_alias_is_accepted (test_live_provider.LiveProviderTests.test_provider_qualified_model_alias_is_accepted) ... ok
+test_responses_api_uses_strict_schema_reasoning_and_exact_model (test_live_provider.LiveProviderTests.test_responses_api_uses_strict_schema_reasoning_and_exact_model) ... ok
+test_showrunner_uses_sol_and_parses (test_live_provider.LiveProviderTests.test_showrunner_uses_sol_and_parses) ... ok
+test_source_visual_payload_keeps_images_out_of_text_json (test_live_provider.LiveProviderTests.test_source_visual_payload_keeps_images_out_of_text_json) ... ERROR
+test_visual_schema_path_parses (test_live_provider.LiveProviderTests.test_visual_schema_path_parses) ... ok
+test_agentrouter_model_overrides_all_review_lane_defaults (test_operator_model_routing.OperatorModelRoutingTests.test_agentrouter_model_overrides_all_review_lane_defaults) ... ERROR
+test_ambiguous_operator_model_is_still_rejected (test_operator_model_routing.OperatorModelRoutingTests.test_ambiguous_operator_model_is_still_rejected) ... ok
+test_capability_registry_selects_runtime_model_by_capability_and_priority (test_operator_model_routing.OperatorModelRoutingTests.test_capability_registry_selects_runtime_model_by_capability_and_priority) ... ok
+test_gateway_model_does_not_mutate_to_canonical_default (test_operator_model_routing.OperatorModelRoutingTests.test_gateway_model_does_not_mutate_to_canonical_default) ... ok
+test_logical_lane_aliases_work_when_provider_model_vars_absent (test_operator_model_routing.OperatorModelRoutingTests.test_logical_lane_aliases_work_when_provider_model_vars_absent) ... ok
+test_no_model_configuration_fails_closed_without_named_default (test_operator_model_routing.OperatorModelRoutingTests.test_no_model_configuration_fails_closed_without_named_default) ... ok
+test_openai_model_overrides_all_creative_lane_defaults (test_operator_model_routing.OperatorModelRoutingTests.test_openai_model_overrides_all_creative_lane_defaults) ... ok
+test_prompt_json_payload_sends_operator_model_verbatim (test_operator_model_routing.OperatorModelRoutingTests.test_prompt_json_payload_sends_operator_model_verbatim) ... ok
+test_prompt_json_review_payload_sends_operator_model_verbatim (test_operator_model_routing.OperatorModelRoutingTests.test_prompt_json_review_payload_sends_operator_model_verbatim) ... ok
+test_provider_label_alone_cannot_smuggle_a_model_from_another_lane (test_operator_model_routing.OperatorModelRoutingTests.test_provider_label_alone_cannot_smuggle_a_model_from_another_lane) ... ok
+test_role_specific_model_has_highest_precedence (test_operator_model_routing.OperatorModelRoutingTests.test_role_specific_model_has_highest_precedence) ... ok
+test_source_understanding_accepts_dedicated_or_creative_reasoning_capability (test_operator_model_routing.OperatorModelRoutingTests.test_source_understanding_accepts_dedicated_or_creative_reasoning_capability) ... ok
+test_source_visual_understanding_requires_declared_multimodal_capability (test_operator_model_routing.OperatorModelRoutingTests.test_source_visual_understanding_requires_declared_multimodal_capability) ... ERROR
+test_all_unrelated_briefs_reach_p2_gate (test_p1p2.P1P2IntelligenceTests.test_all_unrelated_briefs_reach_p2_gate) ... ok
+test_all_visuals_rejected_forces_real_replan_and_new_candidates (test_p1p2.P1P2IntelligenceTests.test_all_visuals_rejected_forces_real_replan_and_new_candidates) ... ok
+test_candidate_tamper_after_review_is_detected (test_p1p2.P1P2IntelligenceTests.test_candidate_tamper_after_review_is_detected) ... ok
+test_checkpoint_resume_preserves_p2_state (test_p1p2.P1P2IntelligenceTests.test_checkpoint_resume_preserves_p2_state) ... ok
+test_direct_commit_to_governed_slot_is_blocked (test_p1p2.P1P2IntelligenceTests.test_direct_commit_to_governed_slot_is_blocked) ... ok
+test_generic_first_candidate_is_rejected_every_time (test_p1p2.P1P2IntelligenceTests.test_generic_first_candidate_is_rejected_every_time) ... ok
+test_model_authority_injection_is_rejected (test_p1p2.P1P2IntelligenceTests.test_model_authority_injection_is_rejected) ... ok
+test_no_cross_case_exact_film_thesis_reuse (test_p1p2.P1P2IntelligenceTests.test_no_cross_case_exact_film_thesis_reuse) ... ok
+test_no_cross_case_exact_selected_visual_strategy_reuse (test_p1p2.P1P2IntelligenceTests.test_no_cross_case_exact_selected_visual_strategy_reuse) ... ok
+test_p0_kernel_is_byte_identical_to_frozen_base_copy (test_p1p2.P1P2IntelligenceTests.test_p0_kernel_is_byte_identical_to_frozen_base_copy) ... ok
+test_p2_does_not_falsely_claim_final_creative_lock (test_p1p2.P1P2IntelligenceTests.test_p2_does_not_falsely_claim_final_creative_lock) ... ok
+test_producer_authority_injection_is_rejected (test_p1p2.P1P2IntelligenceTests.test_producer_authority_injection_is_rejected) ... ok
+test_production_source_contains_no_fixture_topics_or_ids (test_p1p2.P1P2IntelligenceTests.test_production_source_contains_no_fixture_topics_or_ids) ... ok
+test_provider_call_order_is_auditable (test_p1p2.P1P2IntelligenceTests.test_provider_call_order_is_auditable) ... ok
+test_recorded_provider_is_explicitly_not_live_inference (test_p1p2.P1P2IntelligenceTests.test_recorded_provider_is_explicitly_not_live_inference) ... ok
+test_rejected_candidate_cannot_commit_even_with_real_review_token (test_p1p2.P1P2IntelligenceTests.test_rejected_candidate_cannot_commit_even_with_real_review_token) ... ok
+test_renderer_code_leak_is_rejected (test_p1p2.P1P2IntelligenceTests.test_renderer_code_leak_is_rejected) ... ok
+test_review_token_cannot_be_reused_for_another_candidate (test_p1p2.P1P2IntelligenceTests.test_review_token_cannot_be_reused_for_another_candidate) ... ok
+test_showrunner_selection_is_not_the_first_legal_idea (test_p1p2.P1P2IntelligenceTests.test_showrunner_selection_is_not_the_first_legal_idea) ... ok
+test_stale_producer_review_cannot_commit_after_replan (test_p1p2.P1P2IntelligenceTests.test_stale_producer_review_cannot_commit_after_replan) ... ok
+test_story_changes_audience_state_and_uses_evidence (test_p1p2.P1P2IntelligenceTests.test_story_changes_audience_state_and_uses_evidence) ... ok
+test_story_geometry_leak_is_rejected (test_p1p2.P1P2IntelligenceTests.test_story_geometry_leak_is_rejected) ... ok
+test_story_hallucinated_evidence_is_rejected (test_p1p2.P1P2IntelligenceTests.test_story_hallucinated_evidence_is_rejected) ... ok
+test_visual_geometry_leak_is_rejected (test_p1p2.P1P2IntelligenceTests.test_visual_geometry_leak_is_rejected) ... ok
+test_visual_sets_are_meaningfully_diverse (test_p1p2.P1P2IntelligenceTests.test_visual_sets_are_meaningfully_diverse) ... ok
+test_art_contract_requires_three_material_candidates (test_p3_art_storyboard.P3Tests.test_art_contract_requires_three_material_candidates) ... ERROR
+test_art_director_binds_visual_lineage_after_provider_inference (test_p3_art_storyboard.P3Tests.test_art_director_binds_visual_lineage_after_provider_inference) ... ERROR
+test_art_director_does_not_mask_support_over_hard_maximum (test_p3_art_storyboard.P3Tests.test_art_director_does_not_mask_support_over_hard_maximum) ... ok
+test_art_director_raises_support_budget_to_authored_role_count (test_p3_art_storyboard.P3Tests.test_art_director_raises_support_budget_to_authored_role_count) ... ERROR
+test_art_live_schema_does_not_delegate_visual_foreign_key_to_model (test_p3_art_storyboard.P3Tests.test_art_live_schema_does_not_delegate_visual_foreign_key_to_model) ... ok
+test_art_rejects_coordinate_leak (test_p3_art_storyboard.P3Tests.test_art_rejects_coordinate_leak) ... ok
+test_art_rejects_settled_state_that_needs_motion_to_make_sense (test_p3_art_storyboard.P3Tests.test_art_rejects_settled_state_that_needs_motion_to_make_sense) ... ok
+test_art_rejects_support_overload (test_p3_art_storyboard.P3Tests.test_art_rejects_support_overload) ... ok
+test_existing_computer_form_resolves_from_phase3_bank (test_p3_art_storyboard.P3Tests.test_existing_computer_form_resolves_from_phase3_bank) ... ok
+test_full_p3_council_art_and_storyboard_reaches_p3_gate (test_p3_art_storyboard.P3Tests.test_full_p3_council_art_and_storyboard_reaches_p3_gate) ... ERROR
+test_nonillustration_route_does_not_fake_form (test_p3_art_storyboard.P3Tests.test_nonillustration_route_does_not_fake_form) ... ok
+test_p3_cannot_falsely_claim_final_creative_lock (test_p3_art_storyboard.P3Tests.test_p3_cannot_falsely_claim_final_creative_lock) ... ERROR
+test_p3_direct_art_commit_is_blocked (test_p3_art_storyboard.P3Tests.test_p3_direct_art_commit_is_blocked) ... ok
+test_p3_rejected_art_cannot_commit (test_p3_art_storyboard.P3Tests.test_p3_rejected_art_cannot_commit) ... ok
+test_p3_review_token_binds_payload (test_p3_art_storyboard.P3Tests.test_p3_review_token_binds_payload) ... ok
+test_production_source_contains_no_p3_test_topics (test_p3_art_storyboard.P3Tests.test_production_source_contains_no_p3_test_topics) ... ok
+test_recognizable_hero_gets_deterministic_high_art_budget_floor (test_p3_art_storyboard.P3Tests.test_recognizable_hero_gets_deterministic_high_art_budget_floor) ... ERROR
+test_storyboard_compiles_required_rehearsal_states (test_p3_art_storyboard.P3Tests.test_storyboard_compiles_required_rehearsal_states) ... ok
+test_storyboard_gate_blocks_form_gap (test_p3_art_storyboard.P3Tests.test_storyboard_gate_blocks_form_gap) ... ok
+test_storyboard_gate_blocks_generic_card_grid (test_p3_art_storyboard.P3Tests.test_storyboard_gate_blocks_generic_card_grid) ... ok
+test_storyboard_gate_passes_strong_settled_states (test_p3_art_storyboard.P3Tests.test_storyboard_gate_passes_strong_settled_states) ... ok
+test_unknown_form_can_request_production_scoped_generation (test_p3_art_storyboard.P3Tests.test_unknown_form_can_request_production_scoped_generation) ... ok
+test_unknown_recognizable_form_fails_closed_not_diagram (test_p3_art_storyboard.P3Tests.test_unknown_recognizable_form_fails_closed_not_diagram) ... ok
+test_art_responses_strict_schema (test_p3_live_provider.P3LiveProviderTests.test_art_responses_strict_schema) ... ok
+test_art_review_sol (test_p3_live_provider.P3LiveProviderTests.test_art_review_sol) ... ok
+test_art_showrunner_selection_sol (test_p3_live_provider.P3LiveProviderTests.test_art_showrunner_selection_sol) ... ok
+test_p3_routes_exact_models (test_p3_live_provider.P3LiveProviderTests.test_p3_routes_exact_models) ... ok
+test_storyboard_review_sol (test_p3_live_provider.P3LiveProviderTests.test_storyboard_review_sol) ... ok
+test_camera_move_every_beat_requires_explicit_story_rule (test_p45_cinema_editorial.P45Tests.test_camera_move_every_beat_requires_explicit_story_rule) ... ok
+test_cinema_contract_accepts_diverse_semantic_candidates (test_p45_cinema_editorial.P45Tests.test_cinema_contract_accepts_diverse_semantic_candidates) ... ok
+test_cinema_rejects_coordinate_leak (test_p45_cinema_editorial.P45Tests.test_cinema_rejects_coordinate_leak) ... ok
+test_cinema_rejects_unmotivated_move (test_p45_cinema_editorial.P45Tests.test_cinema_rejects_unmotivated_move) ... ok
+test_editorial_peak_budget_enforced (test_p45_cinema_editorial.P45Tests.test_editorial_peak_budget_enforced) ... ok
+test_editorial_rejects_accidental_equal_subdivision (test_p45_cinema_editorial.P45Tests.test_editorial_rejects_accidental_equal_subdivision) ... ok
+test_editorial_rejects_float_time (test_p45_cinema_editorial.P45Tests.test_editorial_rejects_float_time) ... ok
+test_editorial_timeline_is_otio_compatible_boundary (test_p45_cinema_editorial.P45Tests.test_editorial_timeline_is_otio_compatible_boundary) ... ok
+test_editorial_uses_rational_frames_only (test_p45_cinema_editorial.P45Tests.test_editorial_uses_rational_frames_only) ... ok
+test_full_p45_council_reaches_p45_gate_but_not_final_lock (test_p45_cinema_editorial.P45Tests.test_full_p45_council_reaches_p45_gate_but_not_final_lock) ... ERROR
+test_hold_is_first_class_and_has_no_fake_intensity (test_p45_cinema_editorial.P45Tests.test_hold_is_first_class_and_has_no_fake_intensity) ... ok
+test_p45_direct_cinema_commit_blocked (test_p45_cinema_editorial.P45Tests.test_p45_direct_cinema_commit_blocked) ... ok
+test_p45_rejected_cinema_cannot_commit (test_p45_cinema_editorial.P45Tests.test_p45_rejected_cinema_cannot_commit) ... ok
+test_p45_review_becomes_stale_after_replan (test_p45_cinema_editorial.P45Tests.test_p45_review_becomes_stale_after_replan) ... ok
+test_p45_review_token_binds_exact_payload (test_p45_cinema_editorial.P45Tests.test_p45_review_token_binds_exact_payload) ... ok
+test_production_source_contains_no_fixture_topics (test_p45_cinema_editorial.P45Tests.test_production_source_contains_no_fixture_topics) ... ok
+test_same_duration_different_film_functions_select_different_pacing (test_p45_cinema_editorial.P45Tests.test_same_duration_different_film_functions_select_different_pacing) ... ok
+test_temporal_storyboard_cannot_commit_before_cinema_editorial (test_p45_cinema_editorial.P45Tests.test_temporal_storyboard_cannot_commit_before_cinema_editorial) ... ok
+test_temporal_storyboard_marks_motion_and_sound_unresolved (test_p45_cinema_editorial.P45Tests.test_temporal_storyboard_marks_motion_and_sound_unresolved) ... ERROR
+test_cinematography_live_transport_uses_strict_nested_schema (test_p45_live_provider.P45LiveProviderTests.test_cinematography_live_transport_uses_strict_nested_schema) ... ok
+test_editorial_live_transport_uses_rational_integer_schema (test_p45_live_provider.P45LiveProviderTests.test_editorial_live_transport_uses_rational_integer_schema) ... ok
+test_p45_reviews_and_showrunner_use_sol (test_p45_live_provider.P45LiveProviderTests.test_p45_reviews_and_showrunner_use_sol) ... ok
+test_p45_routes_exact_models (test_p45_live_provider.P45LiveProviderTests.test_p45_routes_exact_models) ... ok
+test_motion_schema_is_strict_nested (test_p6_live_provider.P6LiveProviderTests.test_motion_schema_is_strict_nested) ... ok
+test_motion_transport_uses_schema (test_p6_live_provider.P6LiveProviderTests.test_motion_transport_uses_schema) ... ok
+test_p6_exact_routes (test_p6_live_provider.P6LiveProviderTests.test_p6_exact_routes) ... ok
+test_dependency_missing_blocked (test_p6_motion_performance.P6Tests.test_dependency_missing_blocked) ... ok
+test_direct_handoff_rewrites_only_when_semantically_safe (test_p6_motion_performance.P6Tests.test_direct_handoff_rewrites_only_when_semantically_safe) ... ok
+test_direct_motion_commit_blocked (test_p6_motion_performance.P6Tests.test_direct_motion_commit_blocked) ... ok
+test_director_resolves_safe_handoff (test_p6_motion_performance.P6Tests.test_director_resolves_safe_handoff) ... ok
+test_full_p6_council_gate_and_final_lock_truth (test_p6_motion_performance.P6Tests.test_full_p6_council_gate_and_final_lock_truth) ... ok
+test_heavy_carry_fails_closed (test_p6_motion_performance.P6Tests.test_heavy_carry_fails_closed) ... ok
+test_idle_bobbing_rejected (test_p6_motion_performance.P6Tests.test_idle_bobbing_rejected) ... ok
+test_motion_contract_diverse (test_p6_motion_performance.P6Tests.test_motion_contract_diverse) ... ok
+test_performance_storyboard_replaces_motion_unresolved_only (test_p6_motion_performance.P6Tests.test_performance_storyboard_replaces_motion_unresolved_only) ... ok
+test_pickup_missing_grip_fails_closed (test_p6_motion_performance.P6Tests.test_pickup_missing_grip_fails_closed) ... ok
+test_producer_rejects_capability_gap (test_p6_motion_performance.P6Tests.test_producer_rejects_capability_gap) ... ok
+test_production_source_no_fixture_subject (test_p6_motion_performance.P6Tests.test_production_source_no_fixture_subject) ... ok
+test_raw_joint_or_geometry_leak_blocked (test_p6_motion_performance.P6Tests.test_raw_joint_or_geometry_leak_blocked) ... ok
+test_review_stale_after_replan (test_p6_motion_performance.P6Tests.test_review_stale_after_replan) ... ok
+test_review_token_payload_bound (test_p6_motion_performance.P6Tests.test_review_token_payload_bound) ... ok
+test_robot_grasp_not_invented (test_p6_motion_performance.P6Tests.test_robot_grasp_not_invented) ... ok
+test_sidestep_fails_closed (test_p6_motion_performance.P6Tests.test_sidestep_fails_closed) ... ok
+test_stickman_pickup_supported_with_real_requirements (test_p6_motion_performance.P6Tests.test_stickman_pickup_supported_with_real_requirements) ... ok
+test_walk_run_dance_admitted (test_p6_motion_performance.P6Tests.test_walk_run_dance_admitted) ... ok
+test_p7_routes (test_p7_live_provider.T.test_p7_routes) ... ok
+test_sound_schema_strict (test_p7_live_provider.T.test_sound_schema_strict) ... ok
+test_authorized_index_is_real_and_mapped (test_p7_sound.T.test_authorized_index_is_real_and_mapped) ... ok
+test_continuous_purposeful_sound_does_not_require_house_silence_quota (test_p7_sound.T.test_continuous_purposeful_sound_does_not_require_house_silence_quota) ... ok
+test_director_resolves_authorized_assets_and_rejects_unavailable_music (test_p7_sound.T.test_director_resolves_authorized_assets_and_rejects_unavailable_music) ... ok
+test_full_p7_council_leaves_only_final_producer (test_p7_sound.T.test_full_p7_council_leaves_only_final_producer) ... ok
+test_generic_full_length_music_bed_rejected (test_p7_sound.T.test_generic_full_length_music_bed_rejected) ... ok
+test_sound_candidates_diverse (test_p7_sound.T.test_sound_candidates_diverse) ... ok
+test_sound_direct_commit_blocked (test_p7_sound.T.test_sound_direct_commit_blocked) ... ok
+test_sound_storyboard_resolves_sound_only (test_p7_sound.T.test_sound_storyboard_resolves_sound_only) ... ok
+test_tts_and_music_are_body_specialist_ports (test_p7_sound.T.test_tts_and_music_are_body_specialist_ports) ... ok
+test_unknown_optional_sound_is_omitted (test_p7_sound.T.test_unknown_optional_sound_is_omitted) ... ok
+test_unknown_required_sound_fails_closed (test_p7_sound.T.test_unknown_required_sound_fails_closed) ... ok
+test_autonomy_requires_strong_studio_calibration (test_p8_autonomous_authority.AutonomousAuthorityTests.test_autonomy_requires_strong_studio_calibration) ... FAIL
+test_calibration_is_scoped_to_exact_family_build_and_judges (test_p8_autonomous_authority.AutonomousAuthorityTests.test_calibration_is_scoped_to_exact_family_build_and_judges) ... ok
+test_director_slot_boundary_is_enforced (test_p8_autonomous_authority.AutonomousAuthorityTests.test_director_slot_boundary_is_enforced) ... ok
+test_machine_false_accept_blocks_calibration (test_p8_autonomous_authority.AutonomousAuthorityTests.test_machine_false_accept_blocks_calibration) ... ok
+test_machine_uncertainty_routes_exceptional_human_even_when_calibrated (test_p8_autonomous_authority.AutonomousAuthorityTests.test_machine_uncertainty_routes_exceptional_human_even_when_calibrated) ... FAIL
+test_one_weak_dimension_cannot_be_laundered_by_average (test_p8_autonomous_authority.AutonomousAuthorityTests.test_one_weak_dimension_cannot_be_laundered_by_average) ... ok
+test_only_promoted_memory_enters_live_state (test_p8_autonomous_authority.AutonomousAuthorityTests.test_only_promoted_memory_enters_live_state) ... ok
+test_pure_calibrated_uncertainty_routes_exceptional_human_judgment (test_p8_autonomous_authority.AutonomousAuthorityTests.test_pure_calibrated_uncertainty_routes_exceptional_human_judgment) ... FAIL
+test_repair_scope_escalates_without_terminal_creative_exhaustion (test_p8_autonomous_authority.AutonomousAuthorityTests.test_repair_scope_escalates_without_terminal_creative_exhaustion) ... ok
+test_story_now_competes_three_distinct_narrative_strategies_before_commit (test_p8_autonomous_authority.AutonomousAuthorityTests.test_story_now_competes_three_distinct_narrative_strategies_before_commit) ... FAIL
+test_synthetic_reviews_never_unlock_autonomy (test_p8_autonomous_authority.AutonomousAuthorityTests.test_synthetic_reviews_never_unlock_autonomy) ... ok
+test_contract_fixture_path_cannot_be_commercial_benchmark (test_p8_blind_benchmark_policy.BlindBenchmarkPolicyTests.test_contract_fixture_path_cannot_be_commercial_benchmark) ... ok
+test_live_candidate_blinding_hides_original_ids_and_maps_back (test_p8_blind_benchmark_policy.BlindBenchmarkPolicyTests.test_live_candidate_blinding_hides_original_ids_and_maps_back) ... ok
+test_recorded_provider_cannot_be_commercial_benchmark (test_p8_blind_benchmark_policy.BlindBenchmarkPolicyTests.test_recorded_provider_cannot_be_commercial_benchmark) ... ok
+test_bad_hash_cannot_fake_render_evidence (test_p8_evidence_feedback.T.test_bad_hash_cannot_fake_render_evidence) ... ok
+test_feedback_ledger_is_structured_and_non_mutating (test_p8_evidence_feedback.T.test_feedback_ledger_is_structured_and_non_mutating) ... ok
+test_multimodal_evidence_needs_visual_and_audio (test_p8_evidence_feedback.T.test_multimodal_evidence_needs_visual_and_audio) ... ok
+test_accept_cannot_hide_blocking_issue_or_revision (test_p8_final_producer.T.test_accept_cannot_hide_blocking_issue_or_revision) ... ok
+test_calibration_does_not_count_synthetic (test_p8_final_producer.T.test_calibration_does_not_count_synthetic) ... ok
+test_contract_forbids_single_score (test_p8_final_producer.T.test_contract_forbids_single_score) ... ok
+test_contract_hard_fail_cannot_accept (test_p8_final_producer.T.test_contract_hard_fail_cannot_accept) ... ok
+test_council_and_dossier_keep_truth_boundary (test_p8_final_producer.T.test_council_and_dossier_keep_truth_boundary) ... ok
+test_direct_final_producer_commit_blocked (test_p8_final_producer.T.test_direct_final_producer_commit_blocked) ... ok
+test_ensemble_detects_missing_department (test_p8_final_producer.T.test_ensemble_detects_missing_department) ... ok
+test_ensemble_passes_complete_semantic_state (test_p8_final_producer.T.test_ensemble_passes_complete_semantic_state) ... ok
+test_final_producer_escalates_without_human_calibration (test_p8_final_producer.T.test_final_producer_escalates_without_human_calibration) ... ok
+test_final_review_bound_to_complete_state_and_board (test_p8_final_producer.T.test_final_review_bound_to_complete_state_and_board) ... ok
+test_hard_gate_failure_overrides_model_accept (test_p8_final_producer.T.test_hard_gate_failure_overrides_model_accept) ... ok
+test_human_elite_thresholds (test_p8_final_producer.T.test_human_elite_thresholds) ... ok
+test_human_review_must_be_blind_independent (test_p8_final_producer.T.test_human_review_must_be_blind_independent) ... ok
+test_machine_accept_still_blocks_creative_lock_without_human_review (test_p8_final_producer.T.test_machine_accept_still_blocks_creative_lock_without_human_review) ... ok
+test_real_elite_human_review_unlocks_fixture (test_p8_final_producer.T.test_real_elite_human_review_unlocks_fixture) ... ok
+test_weak_human_review_does_not_unlock (test_p8_final_producer.T.test_weak_human_review_does_not_unlock) ... ok
+test_final_producer_route_is_exact (test_p8_live_provider.T.test_final_producer_route_is_exact) ... ERROR
+test_final_producer_schema_is_strict_and_has_no_overall_score (test_p8_live_provider.T.test_final_producer_schema_is_strict_and_has_no_overall_score) ... ok
+test_live_schemas_require_premium_fields (test_premium_visual_art_contracts.PremiumCreativeContracts.test_live_schemas_require_premium_fields) ... ok
+test_premium_art_contract (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_art_contract) ... ok
+test_premium_art_partial_beat_rejected (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_art_partial_beat_rejected) ... ok
+test_premium_visual_candidate_set_rejects_duplicate_theses (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_visual_candidate_set_rejects_duplicate_theses) ... FAIL
+test_premium_visual_contract (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_visual_contract) ... ok
+test_premium_visual_partial_contract_rejected (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_visual_partial_contract_rejected) ... ok
+test_selection_requires_specific_reasoning_when_premium_fields_present (test_premium_visual_art_contracts.PremiumCreativeContracts.test_selection_requires_specific_reasoning_when_premium_fields_present) ... ok
+test_storyboard_carries_art_and_visual_bible (test_premium_visual_art_contracts.PremiumCreativeContracts.test_storyboard_carries_art_and_visual_bible) ... ok
+test_bad_mode_is_rejected (test_prompt_json_compat.PromptJsonCompatTests.test_bad_mode_is_rejected) ... ok
+test_compat_switch_moves_both_logical_providers_to_prompt_json_chat (test_prompt_json_compat.PromptJsonCompatTests.test_compat_switch_moves_both_logical_providers_to_prompt_json_chat) ... ok
+test_creative_lane_works_on_chat_only_gateway (test_prompt_json_compat.PromptJsonCompatTests.test_creative_lane_works_on_chat_only_gateway) ... ok
+test_dependency_free_validator_catches_nested_type_mismatch (test_prompt_json_compat.PromptJsonCompatTests.test_dependency_free_validator_catches_nested_type_mismatch) ... ok
+test_full_chat_completions_endpoint_is_not_double_appended (test_prompt_json_compat.PromptJsonCompatTests.test_full_chat_completions_endpoint_is_not_double_appended) ... ok
+test_model_alias_guard_still_applies (test_prompt_json_compat.PromptJsonCompatTests.test_model_alias_guard_still_applies) ... ok
+test_per_lane_mode_can_be_enabled_without_global_switch (test_prompt_json_compat.PromptJsonCompatTests.test_per_lane_mode_can_be_enabled_without_global_switch) ... ok
+test_prompt_json_is_locally_schema_validated (test_prompt_json_compat.PromptJsonCompatTests.test_prompt_json_is_locally_schema_validated) ... ok
+test_prompt_json_runtime_has_no_external_jsonschema_dependency (test_prompt_json_compat.PromptJsonCompatTests.test_prompt_json_runtime_has_no_external_jsonschema_dependency) ... ok
+test_review_lane_works_on_same_chat_only_gateway (test_prompt_json_compat.PromptJsonCompatTests.test_review_lane_works_on_same_chat_only_gateway) ... ok
+test_live_story_schema_requires_reviewer_owned_fields (test_story_review_contract_v2.StoryReviewContractV2Tests.test_live_story_schema_requires_reviewer_owned_fields) ... ok
+test_producer_receives_explicit_editable_contract (test_story_review_contract_v2.StoryReviewContractV2Tests.test_producer_receives_explicit_editable_contract) ... ok
+test_story_candidate_metadata_is_authored_not_adapter_placeholder (test_story_review_contract_v2.StoryReviewContractV2Tests.test_story_candidate_metadata_is_authored_not_adapter_placeholder) ... ok
+test_story_proposal_and_review_candidate_agree (test_story_review_contract_v2.StoryReviewContractV2Tests.test_story_proposal_and_review_candidate_agree) ... ok
+
+======================================================================
+ERROR: test_source_visual_payload_keeps_images_out_of_text_json (test_live_provider.LiveProviderTests.test_source_visual_payload_keeps_images_out_of_text_json)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_live_provider.py", line 127, in test_source_visual_payload_keeps_images_out_of_text_json
+    p=LiveCreativeModelProvider(); route=RoleRouter().resolve('source_visual_understanding')
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 311, in resolve
+    return self.resolve_candidates(task)[0]
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 283, in resolve_candidates
+    self._assert_route_modalities(task,route)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 234, in _assert_route_modalities
+    raise ProviderError(f"LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:{task}:missing=images")
+nexmind_god_mode.provider.ProviderError: LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:source_visual_understanding:missing=images
+
+======================================================================
+ERROR: test_agentrouter_model_overrides_all_review_lane_defaults (test_operator_model_routing.OperatorModelRoutingTests.test_agentrouter_model_overrides_all_review_lane_defaults)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_operator_model_routing.py", line 26, in test_agentrouter_model_overrides_all_review_lane_defaults
+    self.assertEqual(r.resolve(task).model,'virtuals/reviewer-model-y',task)
+                     ~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 311, in resolve
+    return self.resolve_candidates(task)[0]
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 305, in resolve_candidates
+    self._assert_route_modalities(task,route)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 237, in _assert_route_modalities
+    if missing: raise ProviderError(f"LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:{task}:missing={','.join(missing)}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+nexmind_god_mode.provider.ProviderError: LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:final_producer:missing=images,audio
+
+======================================================================
+ERROR: test_source_visual_understanding_requires_declared_multimodal_capability (test_operator_model_routing.OperatorModelRoutingTests.test_source_visual_understanding_requires_declared_multimodal_capability)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_operator_model_routing.py", line 108, in test_source_visual_understanding_requires_declared_multimodal_capability
+    route=RoleRouter().resolve('source_visual_understanding')
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 311, in resolve
+    return self.resolve_candidates(task)[0]
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 283, in resolve_candidates
+    self._assert_route_modalities(task,route)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 234, in _assert_route_modalities
+    raise ProviderError(f"LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:{task}:missing=images")
+nexmind_god_mode.provider.ProviderError: LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:source_visual_understanding:missing=images
+
+======================================================================
+ERROR: test_art_contract_requires_three_material_candidates (test_p3_art_storyboard.P3Tests.test_art_contract_requires_three_material_candidates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 183, in test_art_contract_requires_three_material_candidates
+    self.assertEqual(len(validate_art_output(out,{"B1","B2","B3"},"V-COMPUTER-1")),3)
+                         ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.99
+
+======================================================================
+ERROR: test_art_director_binds_visual_lineage_after_provider_inference (test_p3_art_storyboard.P3Tests.test_art_director_binds_visual_lineage_after_provider_inference)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 140, in test_art_director_binds_visual_lineage_after_provider_inference
+    out=ArtDirector(WrongForeignKeyProvider()).propose("P",{"topic":"computer"},story(),visual(),{}, {})
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.99
+
+======================================================================
+ERROR: test_art_director_raises_support_budget_to_authored_role_count (test_p3_art_storyboard.P3Tests.test_art_director_raises_support_budget_to_authored_role_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 167, in test_art_director_raises_support_budget_to_authored_role_count
+    out=ArtDirector(UnderDeclaredSupportProvider()).propose("P",{"topic":"computer"},story(),visual(),{}, {})
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 83, in validate_art_output
+    x=validate_art_candidate(c,beat_ids,visual_candidate_id)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 68, in validate_art_candidate
+    if not isinstance(b["supporting_roles"],list) or len(b["supporting_roles"])>comp["support_budget"]: raise ContractViolation("beat support exceeds budget")
+                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+nexmind_god_mode.contracts.ContractViolation: beat support exceeds budget
+
+======================================================================
+ERROR: test_full_p3_council_art_and_storyboard_reaches_p3_gate (test_p3_art_storyboard.P3Tests.test_full_p3_council_art_and_storyboard_reaches_p3_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 246, in test_full_p3_council_art_and_storyboard_reaches_p3_gate
+    art_result=council.develop_art(s,v)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/council_p3.py", line 17, in develop_art
+    candidates=self.art.propose(self.showrunner.state["production_id"],self.showrunner.state["brief"],story,visual,self.showrunner.state["creative_doctrine"],self.showrunner.state["capability_graph"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.95
+
+======================================================================
+ERROR: test_p3_cannot_falsely_claim_final_creative_lock (test_p3_art_storyboard.P3Tests.test_p3_cannot_falsely_claim_final_creative_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 257, in test_p3_cannot_falsely_claim_final_creative_lock
+    ar=council.develop_art(s,v); selected=council.select_art(s,v,ar); council.compile_and_review_storyboard(s,v,selected); sr.p3_ready_gate()
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/council_p3.py", line 17, in develop_art
+    candidates=self.art.propose(self.showrunner.state["production_id"],self.showrunner.state["brief"],story,visual,self.showrunner.state["creative_doctrine"],self.showrunner.state["capability_graph"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.95
+
+======================================================================
+ERROR: test_recognizable_hero_gets_deterministic_high_art_budget_floor (test_p3_art_storyboard.P3Tests.test_recognizable_hero_gets_deterministic_high_art_budget_floor)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p3_art_storyboard.py", line 157, in test_recognizable_hero_gets_deterministic_high_art_budget_floor
+    out=ArtDirector(UnderBudgetProvider()).propose("P",{"topic":"computer"},story(),visual(),{}, {})
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.99
+
+======================================================================
+ERROR: test_full_p45_council_reaches_p45_gate_but_not_final_lock (test_p45_cinema_editorial.P45Tests.test_full_p45_council_reaches_p45_gate_but_not_final_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p45_cinema_editorial.py", line 154, in test_full_p45_council_reaches_p45_gate_but_not_final_lock
+    p=P45Provider(); sr=NexMindSupremeShowrunnerP45('P',{'topic':'How a computer works'}); s,v,a,key=seed_p3(sr,p)
+                                                                                                     ~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p45_cinema_editorial.py", line 84, in seed_p3
+    ar=c.develop_art(s,v); sel=c.select_art(s,v,ar); board=c.compile_and_review_storyboard(s,v,sel)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/council_p3.py", line 17, in develop_art
+    candidates=self.art.propose(self.showrunner.state["production_id"],self.showrunner.state["brief"],story,visual,self.showrunner.state["creative_doctrine"],self.showrunner.state["capability_graph"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.95
+
+======================================================================
+ERROR: test_temporal_storyboard_marks_motion_and_sound_unresolved (test_p45_cinema_editorial.P45Tests.test_temporal_storyboard_marks_motion_and_sound_unresolved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p45_cinema_editorial.py", line 150, in test_temporal_storyboard_marks_motion_and_sound_unresolved
+    p=P45Provider(); sr=NexMindSupremeShowrunnerP45('P',{'topic':'How a computer works'}); s,v,a,key=seed_p3(sr,p)
+                                                                                                     ~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p45_cinema_editorial.py", line 84, in seed_p3
+    ar=c.develop_art(s,v); sel=c.select_art(s,v,ar); board=c.compile_and_review_storyboard(s,v,sel)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/council_p3.py", line 17, in develop_art
+    candidates=self.art.propose(self.showrunner.state["production_id"],self.showrunner.state["brief"],story,visual,self.showrunner.state["creative_doctrine"],self.showrunner.state["capability_graph"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_director.py", line 40, in propose
+    return validate_art_output(payload,{x["beat_id"] for x in story["beats"]},visual["candidate_id"])
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/art_contracts.py", line 86, in validate_art_output
+    assert_semantic_candidate_diversity(out,label="art candidates")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/contracts.py", line 262, in assert_semantic_candidate_diversity
+    raise ContractViolation(f"{label} set lacks semantic/structural novelty: pair={i+1}/{j+1} similarity={similarity:.2f}")
+nexmind_god_mode.contracts.ContractViolation: art candidates set lacks semantic/structural novelty: pair=1/2 similarity=0.95
+
+======================================================================
+ERROR: test_final_producer_route_is_exact (test_p8_live_provider.T.test_final_producer_route_is_exact)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p8_live_provider.py", line 9, in test_final_producer_route_is_exact
+    os.environ['NEXMIND_REVIEW_MODEL']='test-review-model';os.environ['NEXMIND_REVIEW_BASE_URL']='https://router.invalid/v1';r=RoleRouter().resolve('final_producer');self.assertEqual((r.provider,r.model,r.role),('runtime','test-review-model','IndependentFinalExecutiveProducer'))
+                                                                                                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 311, in resolve
+    return self.resolve_candidates(task)[0]
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 305, in resolve_candidates
+    self._assert_route_modalities(task,route)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py", line 237, in _assert_route_modalities
+    if missing: raise ProviderError(f"LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:{task}:missing={','.join(missing)}")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+nexmind_god_mode.provider.ProviderError: LIVE_PROVIDER_ROUTE_MODALITY_MISMATCH:final_producer:missing=images,audio
+
+======================================================================
+FAIL: test_missing_agentrouter_base_is_explicit_blocker (test_live_provider.LiveProviderTests.test_missing_agentrouter_base_is_explicit_blocker)
+----------------------------------------------------------------------
+nexmind_god_mode.provider.ProviderError: LIVE_PROVIDER_BLOCKED_MISSING_BASE_URL:runtime
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_live_provider.py", line 112, in test_missing_agentrouter_base_is_explicit_blocker
+    with self.assertRaisesRegex(ProviderError,'LIVE_PROVIDER_BLOCKED_MISSING_BASE_URL:agentrouter'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "LIVE_PROVIDER_BLOCKED_MISSING_BASE_URL:agentrouter" does not match "LIVE_PROVIDER_BLOCKED_MISSING_BASE_URL:runtime"
+
+======================================================================
+FAIL: test_autonomy_requires_strong_studio_calibration (test_p8_autonomous_authority.AutonomousAuthorityTests.test_autonomy_requires_strong_studio_calibration)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p8_autonomous_authority.py", line 107, in test_autonomy_requires_strong_studio_calibration
+    self.assertEqual(strong["status"], "CALIBRATED")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'CALIBRATION_WEAK' != 'CALIBRATED'
+- CALIBRATION_WEAK
++ CALIBRATED
+
+
+======================================================================
+FAIL: test_machine_uncertainty_routes_exceptional_human_even_when_calibrated (test_p8_autonomous_authority.AutonomousAuthorityTests.test_machine_uncertainty_routes_exceptional_human_even_when_calibrated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p8_autonomous_authority.py", line 126, in test_machine_uncertainty_routes_exceptional_human_even_when_calibrated
+    self.assertEqual(q["status"], "REPAIR")  # issue-bearing uncertainty is never silently accepted
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HUMAN_CALIBRATION_REQUIRED' != 'REPAIR'
+- HUMAN_CALIBRATION_REQUIRED
++ REPAIR
+
+
+======================================================================
+FAIL: test_pure_calibrated_uncertainty_routes_exceptional_human_judgment (test_p8_autonomous_authority.AutonomousAuthorityTests.test_pure_calibrated_uncertainty_routes_exceptional_human_judgment)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p8_autonomous_authority.py", line 135, in test_pure_calibrated_uncertainty_routes_exceptional_human_judgment
+    self.assertEqual(q["status"], "HUMAN_JUDGMENT_REQUIRED")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'HUMAN_CALIBRATION_REQUIRED' != 'HUMAN_JUDGMENT_REQUIRED'
+- HUMAN_CALIBRATION_REQUIRED
++ HUMAN_JUDGMENT_REQUIRED
+
+
+======================================================================
+FAIL: test_story_now_competes_three_distinct_narrative_strategies_before_commit (test_p8_autonomous_authority.AutonomousAuthorityTests.test_story_now_competes_three_distinct_narrative_strategies_before_commit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_p8_autonomous_authority.py", line 96, in test_story_now_competes_three_distinct_narrative_strategies_before_commit
+    self.assertEqual(provider.story_lenses,[None,None,None])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: ['INVENT_A_BRIEF_SPECIFIC_NARRATIVE_STRATE[808 chars]'}]"] != [None, None, None]
+
+First differing element 0:
+'INVENT_A_BRIEF_SPECIFIC_NARRATIVE_STRATEGY'
+None
+
+Diff is 939 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_premium_visual_candidate_set_rejects_duplicate_theses (test_premium_visual_art_contracts.PremiumCreativeContracts.test_premium_visual_candidate_set_rejects_duplicate_theses)
+----------------------------------------------------------------------
+nexmind_god_mode.contracts.ContractViolation: visual candidate set contains duplicate creative thesis: V1 and V2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/vendor/nexmind-god-mode-p8/tests/test_premium_visual_art_contracts.py", line 35, in test_premium_visual_candidate_set_rejects_duplicate_theses
+    with self.assertRaisesRegex(ContractViolation,'material diversity|semantic/structural novelty'):
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: "material diversity|semantic/structural novelty" does not match "visual candidate set contains duplicate creative thesis: V1 and V2"
+
+----------------------------------------------------------------------
+Ran 197 tests in 12.581s
+
+FAILED (failures=6, errors=12)

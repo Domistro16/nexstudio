@@ -1,0 +1,48 @@
+{
+  "schema": "NexMindP8CommercialBrainBenchmarkProtocolV2",
+  "status": "READY_FOR_LIVE_CAMPAIGN",
+  "minimum_live_briefs": 20,
+  "target_live_briefs": 30,
+  "candidate_presentation": {
+    "randomize_order": true,
+    "opaque_ids": true,
+    "position_signal_forbidden": true,
+    "audit_required": true
+  },
+  "forbidden_evidence": [
+    "RecordedModelProvider output",
+    "P1P2 recorded nine-topic fixture",
+    "developer-authored candidate answers",
+    "patterned V1/V2/V3 preference",
+    "fixture Director output"
+  ],
+  "required_pipeline": [
+    "live P8 Story",
+    "live P8 Visual",
+    "live P8 Art",
+    "live P8 Cinematography",
+    "live P8 Editorial",
+    "live P8 Motion",
+    "live P8 Sound",
+    "encoded video+audio",
+    "P8 Independent Final Producer review",
+    "blind human review"
+  ],
+  "negative_controls": [
+    "polished-but-boring",
+    "beautiful-but-wrong",
+    "technically-clean-but-generic",
+    "emotionally-mismatched",
+    "strong-opening-weak-payoff",
+    "good-story-poor-art",
+    "good-art-poor-story",
+    "recent real failed production"
+  ],
+  "human_calibration": {
+    "minimum_independent_reviews_before_correlation": 12,
+    "recommended_reviewers_per_film": 3,
+    "compare_by_dimension": true,
+    "global_score_only_forbidden": true
+  },
+  "pass_intent": "P8 must detect weak finished work before delivery, identify the responsible department, and issue actionable revision instructions that correlate with independent humans by dimension."
+}

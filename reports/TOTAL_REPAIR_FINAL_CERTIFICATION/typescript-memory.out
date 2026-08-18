@@ -1,0 +1,74 @@
+{
+  "schema": "StudioMemoryTypeScriptSyntaxQA V1",
+  "passed": 13,
+  "total": 13,
+  "implementationPass": true,
+  "typescriptVersion": "5.8.3",
+  "checks": [
+    {
+      "file": "src/studio-v1/memory/contracts.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/memory/policies.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/memory/service.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/memory/resolver.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/memory/production-input.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/workflow.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/production-engines/workflow.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/studio/memory/route.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/studio/memory/[id]/route.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/studio/brands/route.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/studio/cast/route.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/studio/series/route.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/memory/route.ts",
+      "passed": true,
+      "diagnostics": []
+    }
+  ]
+}

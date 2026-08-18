@@ -1,0 +1,7 @@
+whiteboard: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/whiteboard
+explainer: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/explainer
+editorial: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/editorial
+stickman: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/stickman
+sound: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/sound
+
+Engine source installed, shared Paper Motion dependencies assembled, and runtime package boundaries applied. Use the paths in .env.example.

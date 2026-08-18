@@ -1,0 +1,152 @@
+{
+  "schema": "StudioPublic10PublicExperienceSourceQA V1",
+  "pass": true,
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "name": "Public shell routes include Home, Work and Pricing",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Exactly four public production families retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "All 24 subtype contracts retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Current certification remains fail-closed",
+      "ok": true,
+      "detail": "0/24 public-enabled"
+    },
+    {
+      "name": "No uncertified showcase media is attached",
+      "ok": true,
+      "detail": "0 subtype media records"
+    },
+    {
+      "name": "No development-only unverified public bypass remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Direct public draft creation enforces certified subtype",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "New-production URL cannot bypass public gate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Studio recommendation chooses only public-certified candidates",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Recommendation fails closed instead of inventing a type",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Work gallery renders only public-certified video types",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No placeholder preview remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Decorative AI theatre removed",
+      "ok": true,
+      "detail": "approved ambient keyframes: ['nxs-bloom-a', 'nxs-bloom-b']"
+    },
+    {
+      "name": "Production status has no fabricated percentage",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Pricing page uses canonical base rate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Homepage does not lead with price",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Complimentary plan remains pre-payment",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Low-balance continuation exists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Screening room supports revision and approval",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Version history is owner-scoped",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Historical output is owner-scoped and version-addressable",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision stays in same paid production",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Public copy does not expose internal creative authorities",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Public sign-in dialog has focus trap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production auth continuation has focus trap",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced-motion path remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Responsive breakpoints retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Header/compact action targets are 44px minimum",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "currentPublicState": {
+    "publicEnabledSubtypes": 0,
+    "certifiedShowcaseMedia": 0
+  }
+}

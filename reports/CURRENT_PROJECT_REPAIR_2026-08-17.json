@@ -1,0 +1,64 @@
+{
+  "schema": "NexMindCurrentProjectRepairSummaryV1",
+  "sourceUpload": "nexstudio-test-chatgpt-upload.zip",
+  "p8BuildHash": "89619a11209b51e6922a50909df21e033b39062d835dc6d1e96a741ad60b5b46",
+  "repairs": [
+    {
+      "id": "SAME_MODEL_MULTI_ROLE",
+      "status": "FIXED",
+      "law": "One capable model/API key may serve all NexMind roles; independence is role/process based."
+    },
+    {
+      "id": "PROMPT_JSON_VISUAL_SCHEMA_REPAIR",
+      "status": "FIXED",
+      "law": "Strict schema remains mandatory; one bounded same-route repair call may correct missing/invalid fields, then full revalidation is required."
+    },
+    {
+      "id": "ORCHESTRATOR_IMPORT_RE",
+      "status": "VERIFIED_PRESENT"
+    }
+  ],
+  "tests": {
+    "p8": "200/200 PASS",
+    "promptJsonCompat": "12/12 PASS",
+    "sameModelMultiRole": "7/7 PASS",
+    "studioAutonomousFinalize": "5/5 PASS",
+    "standaloneQA": "PASS"
+  },
+  "changedExistingFiles": [
+    ".env.example",
+    "AGENTROUTER_CONFIGURABLE_MODELS_UPDATE_2026-08-14.md",
+    "CANONICAL_SOURCE_README.md",
+    "reports/STANDALONE_SOURCE_QA.json",
+    "services/studio-nexmind-p8/orchestrator.py",
+    "services/studio-nexmind-p8/tests/test_autonomous_finalize.py",
+    "src/studio-v1/nexmind-p8/autonomy.ts",
+    "src/studio-v1/runtime-readiness.ts",
+    "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/live_provider.py",
+    "vendor/nexmind-god-mode-p8/tests/test_operator_model_routing.py",
+    "vendor/nexmind-god-mode-p8/tests/test_prompt_json_compat.py"
+  ],
+  "addedFiles": [
+    "reports/P8_BUILD_HASH_POST_CURRENT_FIX.txt",
+    "reports/P8_CURRENT_REGRESSION_POST_CURRENT_FIX.txt",
+    "reports/P8_CURRENT_REGRESSION_POST_CURRENT_FIX_CLEAN.txt",
+    "reports/PROMPT_JSON_SCHEMA_REPAIR_QA.txt",
+    "reports/SAME_MODEL_REPAIR/SAME_MODEL_MULTI_ROLE_QA.json",
+    "reports/STANDALONE_QA_POST_CURRENT_FIX.txt",
+    "reports/STUDIO_NEXMIND_SERVICE_TESTS_POST_CURRENT_FIX.txt",
+    "scripts/nexmind-same-model-multi-role-qa.py"
+  ],
+  "removedFiles": [],
+  "notes": [
+    "No user .env was present in the uploaded ZIP, so credentials/config were not modified.",
+    "Family engine archives were not modified by these two repairs.",
+    "Existing Windows portability changes in the uploaded project were preserved."
+  ],
+  "familyEngineHashes": {
+    "WHITEBOARD": "25f87cb57d4a8ca99d004b443c0bd8df85a13d667596ddb0780d2c8f3884002c",
+    "EXPLAINER": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b",
+    "EDITORIAL_MOTION": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660",
+    "STICKMAN_UNCHANGED": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178",
+    "SOUND_V2_UNCHANGED": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+  }
+}

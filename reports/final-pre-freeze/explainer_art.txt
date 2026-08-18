@@ -1,0 +1,63 @@
+{
+  "schema": "NexStudioExplainerAuthoredArtExecutionQA V1",
+  "evidenceClass": "MECHANICAL_CONTRACT_ONLY_NOT_CREATIVE_QUALITY",
+  "passed": 11,
+  "total": 11,
+  "checks": [
+    {
+      "name": "Explainer adapter discovers authored-art by capability rather than provider name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Missing authored-art capability escalates to P8 replan, never generic fallback",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Every active P8 Explainer beat requires production-scoped authored art",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Runner carries a semantic-locked production-scoped art binding",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Execution body rejects plate semantics that do not cover exact construction hero/supports",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Production-scoped plate bypasses weaker stock/procedural substrate rather than duplicating it",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Family body is execution-fidelity only; commercial critic authority removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Production-scoped art carries provenance into production-art plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No retired P14 creative authority label remains in the active runner",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Explainer adapter Python syntax",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Modified Explainer TypeScript parses",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

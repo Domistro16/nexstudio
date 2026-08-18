@@ -1,0 +1,679 @@
+{
+  "schema": "StudioPublicExperienceFinalTypeScriptSyntaxQA V1",
+  "pass": true,
+  "typescriptVersion": "5.8.3",
+  "total": 134,
+  "failed": [],
+  "files": [
+    {
+      "file": "app/api/v1/account/data/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/account/sessions/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/admin/studio/productions/[productionId]/multimodal-review-package/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/admin/studio/productions/[productionId]/nexmind-review/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/auth/email/request/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/auth/email/verify/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/auth/logout/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/delivery/[token]/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/payments/stripe/webhook/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/delivery-ticket/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/memory/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/output/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/poster/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/preview/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/review/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/assets/[id]/content/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/assets/[id]/delivery/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/assets/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/balance/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/billing/history/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/brands/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/cast/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/funding-intents/reconcile/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/funding-intents/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/memory/[id]/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/memory/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/notifications/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/plan-preview/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/[id]/auth-handoff/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/[id]/claim/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/[id]/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/resume/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/[productionId]/purchase/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/[productionId]/quote/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/[productionId]/versions/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/[productionId]/workflow/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/recommendation/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/series/[id]/next-episode/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/series/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/dashboard/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/layout.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/pricing/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/production/[id]/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/production/new/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/work/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/domain/studio-production-draft.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/audit-log.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/auth.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/db.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/delivery-tickets.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/env.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/http.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/nexmind-routing.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/nexmind.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/object-storage.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/payment-provider.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/rate-limit.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/roles.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/route-auth.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-anonymous-session.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-governance.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-client.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-core.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-http.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-promotion-contract.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-repository.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-production-draft-request.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/studio-workflow.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/lib/upload-security.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/architecture/audit.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/architecture/core.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/architecture/hash.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/architecture/lineage.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/architecture/workflow-durability.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/billing.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/adapters/gateway.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/adapters/http-dashboard-gateway.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/adapters/legacy-studio-adapter.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/adapters/production-draft-adapter.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/assets.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/billing.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/contracts.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/creative-memory.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/dashboard.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/domain/production-state.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/index.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/api.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/AssetsRoute.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/AuthenticatedStudioShell.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/BillingRoute.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/BrandRoute.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/MemoryPanel.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/ProjectCard.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/SeriesRoute.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/WorkRoute.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/components/shared.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/context.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/dashboard/react/hooks.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/memory/contracts.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/memory/policies.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/memory/production-input.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/memory/resolver.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/memory/service.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/autonomy.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/bridge.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/contract.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/creative-state.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/human-review.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/reference-language.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/nexmind-p8/workflow.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/plan-preview.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/production-engines/authority.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/production-engines/bridge.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/production-engines/workflow.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/public/certification/certification-gate.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/public/registry/index.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/public/registry/production-family-registry.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/public/registry/selectors.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/public/registry/types.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/NewProductionBrief.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/ProductionMemoryControls.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/ProductionWorkspace.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioDashboardExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioPricingExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioPublicExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioWorkExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/revisions.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "scripts/studio-account-data-worker.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "scripts/studio-upload-scan-worker.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "scripts/studio-worker.ts",
+      "pass": true,
+      "errors": []
+    }
+  ]
+}

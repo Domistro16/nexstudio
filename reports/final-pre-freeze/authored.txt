@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/scripts/authored-art-execution-qa.py", line 39, in <module>
+    m2=execute_scene(scene,'WHITEBOARD','style.whiteboard-editorial','16:9',Path(td)/'cmd')
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/authored_art.py", line 169, in execute_scene
+    manifest["pixel_fidelity_proof"]=_review_pixel_fidelity(req,manifest)
+                                     ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/authored_art.py", line 130, in _review_pixel_fidelity
+    rec=_capability_record(FIDELITY_CAPABILITY)
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/authored_art.py", line 41, in _capability_record
+    if not isinstance(rec,dict): raise ArtExecutionUnavailable(f"ART_CAPABILITY_NOT_CONFIGURED:{name}")
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+authored_art.ArtExecutionUnavailable: ART_CAPABILITY_NOT_CONFIGURED:authored_scene_pixel_fidelity_review

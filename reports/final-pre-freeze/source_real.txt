@@ -1,0 +1,3 @@
+usage: source-intelligence-real-samples-qa.py [-h] --pdf PDF --docx DOCX
+                                              --pptx PPTX [--out OUT]
+source-intelligence-real-samples-qa.py: error: the following arguments are required: --pdf, --docx, --pptx

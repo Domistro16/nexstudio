@@ -1,0 +1,18 @@
+{
+  "schema": "NexMindP8VerificationSummaryV1",
+  "status": "PASS_FINAL_PRODUCER_CONTROL__HUMAN_CALIBRATION_AND_LIVE_MULTIMODAL_REVIEW_BLOCKED",
+  "unit_integration": {
+    "passed": 138,
+    "run": 138
+  },
+  "adversarial": {
+    "passed": 17650,
+    "total": 17650,
+    "failed": 0
+  },
+  "live_final_producer_gate": "BLOCKED_MISSING_OR_UNAVAILABLE_PROVIDER",
+  "human_calibration": "INSUFFICIENT_HUMAN_CALIBRATION",
+  "real_human_reviews": 0,
+  "final_creative_lock": "BLOCKED_HUMAN_REVIEW",
+  "public_ready": false
+}

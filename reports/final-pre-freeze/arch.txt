@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/scripts/architecture-core-qa.py", line 48, in <module>
+    add('Durable successor work is queued before predecessor completion',nexmind.index('queueStandaloneFamilyReviewEvidence') < nexmind.index('completeStudioActivity(activity.id, activity.workerId', nexmind.index('export async function runStandaloneNexMindP8Activity')) and nexmind.index('queueStandaloneLockedFinalOutput', nexmind.index('export async function runFinalizeStandaloneNexMindP8Activity')) < nexmind.index('completeStudioActivity(activity.id, activity.workerId', nexmind.index('export async function runFinalizeStandaloneNexMindP8Activity')))
+                                                                                                                                                                                                                                                                                  ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: substring not found

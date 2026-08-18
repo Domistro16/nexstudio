@@ -1,0 +1,87 @@
+{
+  "schema": "StudioStandaloneSourceQA V1",
+  "pass": true,
+  "checks": [
+    {
+      "name": "Standalone package identity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No legacy host application/source/session references",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "No browser route mounted at /studio",
+      "ok": true,
+      "detail": "[]"
+    },
+    {
+      "name": "Root Studio application routes present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "All five authoritative engine archives present",
+      "ok": true,
+      "detail": "{\"WHITEBOARD_ENGINE_SOURCE.zip\": {\"expected\": \"0ab50cb5b62eb9381ca01a2e4d26ba8ad11963319869a62c02d5866a01056ac4\", \"actual\": \"0ab50cb5b62eb9381ca01a2e4d26ba8ad11963319869a62c02d5866a01056ac4\", \"ok\": true}, \"EXPLAINER_ENGINE_SOURCE.zip\": {\"expected\": \"77e0474bb75f4ad36f0a24751e29fcccb49aadc46f6447c2bd9004dd4da402b0\", \"actual\": \"77e0474bb75f4ad36f0a24751e29fcccb49aadc46f6447c2bd9004dd4da402b0\", \"ok\": true}, \"EDITORIAL_MOTION_ENGINE_SOURCE.zip\": {\"expected\": \"b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660\", \"actual\": \"b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660\", \"ok\": true}, \"STICKMAN_V5_1_ENGINE_SOURCE.zip\": {\"expected\": \"67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178\", \"actual\": \"67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178\", \"ok\": true}, \"SOUND_LIBRARY_V2_SOURCE.zip\": {\"expected\": \"ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428\", \"actual\": \"ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428\", \"ok\": true}}"
+    },
+    {
+      "name": "P8 vendor snapshot present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Public homepage does not lead with $2 pricing",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Public navigation has Dashboard, not Projects",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Pricing is disclosed subtly at saved brief/payment boundary",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Customer review/revision path is present",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "engineArchives": {
+    "WHITEBOARD_ENGINE_SOURCE.zip": {
+      "expected": "0ab50cb5b62eb9381ca01a2e4d26ba8ad11963319869a62c02d5866a01056ac4",
+      "actual": "0ab50cb5b62eb9381ca01a2e4d26ba8ad11963319869a62c02d5866a01056ac4",
+      "ok": true
+    },
+    "EXPLAINER_ENGINE_SOURCE.zip": {
+      "expected": "77e0474bb75f4ad36f0a24751e29fcccb49aadc46f6447c2bd9004dd4da402b0",
+      "actual": "77e0474bb75f4ad36f0a24751e29fcccb49aadc46f6447c2bd9004dd4da402b0",
+      "ok": true
+    },
+    "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+      "expected": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660",
+      "actual": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660",
+      "ok": true
+    },
+    "STICKMAN_V5_1_ENGINE_SOURCE.zip": {
+      "expected": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178",
+      "actual": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178",
+      "ok": true
+    },
+    "SOUND_LIBRARY_V2_SOURCE.zip": {
+      "expected": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428",
+      "actual": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428",
+      "ok": true
+    }
+  },
+  "environment": {
+    "python": "3.13.5",
+    "node": "v22.16.0"
+  }
+}

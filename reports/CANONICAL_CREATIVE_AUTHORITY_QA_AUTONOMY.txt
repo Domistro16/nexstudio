@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "out": "/mnt/data/studio_autonomy/work/reports/CANONICAL_CREATIVE_AUTHORITY_QA_V2.json"
+}

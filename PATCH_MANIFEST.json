@@ -1,0 +1,398 @@
+{
+  "schema": "StudioPublicExperienceCurrentOverlayManifestV1",
+  "date": "2026-08-14",
+  "baseArchive": "STUDIO_PUBLIC_10_10_PUBLIC_EXPERIENCE_INTEGRATED_SOURCE_2026-08-14.zip",
+  "baseSha256": "5d97f4af04bf5a775852913e7e2707118ea12cd6c68e20fe5e411eba682de6ce",
+  "overlayRule": "Apply deletions, then overlay these files. Do not use this patch as a NexMind creative-authority patch.",
+  "files": [
+    {
+      "path": ".env.example",
+      "bytes": 2835,
+      "sha256": "bdf8664ffbd9562aae37e9454ae63a8f8ab38937059de64612973edc66701562"
+    },
+    {
+      "path": "DELETION_MANIFEST.txt",
+      "bytes": 257,
+      "sha256": "f495098a25d1c58119a0fac14b81fb83b2652c1c33e8e8557988cf900d4e377d"
+    },
+    {
+      "path": "HANDOFF.md",
+      "bytes": 3439,
+      "sha256": "b11c075fdb375bfa62cbc60245c405144b978f0e0f023ec63fabad524dc3cda4"
+    },
+    {
+      "path": "PATCH_APPLY.md",
+      "bytes": 1123,
+      "sha256": "f7e978a070dccb4ed2c289edfbd563c3847a6e55d6779f1e18a5e289c133f2ab"
+    },
+    {
+      "path": "STUDIO_PUBLIC_10_10_PUBLIC_EXPERIENCE_FINAL_HANDOFF_2026-08-14.md",
+      "bytes": 3439,
+      "sha256": "b11c075fdb375bfa62cbc60245c405144b978f0e0f023ec63fabad524dc3cda4"
+    },
+    {
+      "path": "app/api/v1/account/data/route.ts",
+      "bytes": 3596,
+      "sha256": "39a1522968a2756acdd3eae82c722725a0abf763352cb087891417edd336149c"
+    },
+    {
+      "path": "app/api/v1/account/sessions/route.ts",
+      "bytes": 1320,
+      "sha256": "59bc23ebc396d3e8a5dfd139f0187a3e36355a4fc7548e1fcf1f2bbcc555d090"
+    },
+    {
+      "path": "app/api/v1/auth/email/request/route.ts",
+      "bytes": 3284,
+      "sha256": "25f08e2978c28959ec0bca198abd4b3d79c6ecdb4ae9545e8d61c16f91f0fff3"
+    },
+    {
+      "path": "app/api/v1/auth/email/verify/route.ts",
+      "bytes": 3305,
+      "sha256": "ce1e7fb1aceeec857bc983e2c420d81923bb60c42b3744cd63bb4dc70dfa5140"
+    },
+    {
+      "path": "app/api/v1/auth/logout/route.ts",
+      "bytes": 881,
+      "sha256": "5ed97d0046e0a2f3f1a2013283eadad9c3f786ea203867e57f4fc10fe0faae37"
+    },
+    {
+      "path": "app/api/v1/delivery/[token]/route.ts",
+      "bytes": 1719,
+      "sha256": "76d8dce7b88f05a65ad3ceabfa303f6a07de6773bd93f044caa6d1cffb99a537"
+    },
+    {
+      "path": "app/api/v1/payments/stripe/webhook/route.ts",
+      "bytes": 2052,
+      "sha256": "7ae2b149cefdab5e23c2e12d8c17d8727fda9aaa01dfd0ef72f9afa7d7b9df10"
+    },
+    {
+      "path": "app/api/v1/productions/[id]/delivery-ticket/route.ts",
+      "bytes": 1569,
+      "sha256": "43da97a3d552119dbcdb00c91346d2d1258af5cd74f7d195f6bd938b0a266747"
+    },
+    {
+      "path": "app/api/v1/productions/[id]/memory/route.ts",
+      "bytes": 8309,
+      "sha256": "11f7dfc5a0a946a36e4cff4d8fdcf3940c86b115bca482f7cc1af66d2c6dd198"
+    },
+    {
+      "path": "app/api/v1/productions/[id]/poster/route.ts",
+      "bytes": 1418,
+      "sha256": "24da664bcc132db068f108404db1924c5ee5f0b48ac79856ff6b956b0e205451"
+    },
+    {
+      "path": "app/api/v1/productions/[id]/preview/route.ts",
+      "bytes": 1384,
+      "sha256": "21e0290bf649c888e10d8a69dc761e880bdeae5c8266d6188a30480d2b0ca59d"
+    },
+    {
+      "path": "app/api/v1/studio/assets/[id]/content/route.ts",
+      "bytes": 1217,
+      "sha256": "30b71094e0885e8dd69de86dbc869ab28a361ca6cae63b573481dc79b43779a8"
+    },
+    {
+      "path": "app/api/v1/studio/assets/[id]/delivery/route.ts",
+      "bytes": 1477,
+      "sha256": "db2a1c58db8b6f2b866390491ea8eed659d8120d164bd34b85da1eb7bd41d165"
+    },
+    {
+      "path": "app/api/v1/studio/assets/route.ts",
+      "bytes": 4917,
+      "sha256": "f9920035ec0fd19477348e137a7079db310c62d1175efa7338d4ace3a64f28a3"
+    },
+    {
+      "path": "app/api/v1/studio/brands/route.ts",
+      "bytes": 2352,
+      "sha256": "b8dacbd33ce97da6e0cdaeabf6a666718b83f65348bdad9e2c3ee017f6f73193"
+    },
+    {
+      "path": "app/api/v1/studio/funding-intents/reconcile/route.ts",
+      "bytes": 2428,
+      "sha256": "6e2b6e644ae62ecb2db89354c7766e737db0c8498137c2ab532207b9dbf5afdb"
+    },
+    {
+      "path": "app/api/v1/studio/funding-intents/route.ts",
+      "bytes": 4253,
+      "sha256": "0fdc28aaaf538cdec851fc176a2fa34da3a29fd7534c7e12029cb11d1a639143"
+    },
+    {
+      "path": "app/api/v1/studio/notifications/route.ts",
+      "bytes": 1148,
+      "sha256": "4800a41031b54996e3bbb36939031d40d59ce184f407ff6442c22d62d5234c38"
+    },
+    {
+      "path": "app/api/v1/studio/productions/route.ts",
+      "bytes": 2001,
+      "sha256": "ca1c40f843a04b2b8bf912974d4d237cef0903291b5a50910d1a303ba59bf109"
+    },
+    {
+      "path": "app/api/v1/studio/series/[id]/next-episode/route.ts",
+      "bytes": 3902,
+      "sha256": "c2d3be1bb96e3ce418ca3f8a09b3df407be7681d367af599ac1a485ae6000e8d"
+    },
+    {
+      "path": "app/studio-v1.css",
+      "bytes": 29884,
+      "sha256": "cee2e18b77d832ace1a8ba32f52727f03d7a2bad566cf33ef34289e75db2cfd9"
+    },
+    {
+      "path": "next.config.ts",
+      "bytes": 1409,
+      "sha256": "67cd3425479b6a909a47484cb166cb520ea8517b774b12a3ffc46fc8bb6c3e9c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2120,
+      "sha256": "bbe83b4c6f527bff026468f3f7dd4856e434c79391653fb1a3ae193129990165"
+    },
+    {
+      "path": "prisma/migrations/20260814160000_studio_trust_commerce_account/migration.sql",
+      "bytes": 5081,
+      "sha256": "30ddabbd187c231049c7546cb4f83f36e99d6e6d78dff3b5b5da2c4e695b343d"
+    },
+    {
+      "path": "prisma/schema.prisma",
+      "bytes": 33751,
+      "sha256": "71f5175ff0a28c68d26c8008395754fe985830d1b310248c208969271ebc2446"
+    },
+    {
+      "path": "qa/public-experience-harness.html",
+      "bytes": 18069,
+      "sha256": "0e03b53a255fca9dd7ebe2d956827913c562d909467f2430c58da8fa15704486"
+    },
+    {
+      "path": "qa/record_interactions.py",
+      "bytes": 2692,
+      "sha256": "3c05f80f170c59d446c37d092b3b19aadaeac3745bf5c247a7a393b8c69d36f2"
+    },
+    {
+      "path": "qa/run_browser_qa.py",
+      "bytes": 5676,
+      "sha256": "e2318a45b61e355d7f106b6d6ceceb5bf739adb9e6146a3b6f01dba4f7a8e094"
+    },
+    {
+      "path": "scripts/authenticated-production-desk-qa.py",
+      "bytes": 5230,
+      "sha256": "b43e5b39c11cc1fc679e68454a5637350a082f2dd675d4bf765b127454b19318"
+    },
+    {
+      "path": "scripts/memory-domain-tests.mjs",
+      "bytes": 5470,
+      "sha256": "d4e6f03bda4c847af8989f2b3e25778133ef71d5ac0149343b019441520c2a96"
+    },
+    {
+      "path": "scripts/studio-account-data-worker.ts",
+      "bytes": 7140,
+      "sha256": "2fe97c90e34a5f83274c34c51ccff2934c0d273b4f1c8c0ce74675e6133e972f"
+    },
+    {
+      "path": "scripts/studio-upload-scan-worker.ts",
+      "bytes": 2336,
+      "sha256": "bc6e2bd21f678350c234907a16d0239bcc49c5fbe408274cb6e41feb7970115d"
+    },
+    {
+      "path": "scripts/studio-worker.ts",
+      "bytes": 4010,
+      "sha256": "6fbbea2c0b45cf93223ec927c8850aa5dbee9fa13fff68260a597e34fafca0cc"
+    },
+    {
+      "path": "scripts/trust-commerce-security-qa.py",
+      "bytes": 11165,
+      "sha256": "c8542a263f5d55956a8d202c96eaa4242e2d9e0ca8542df0a242a1652f46a362"
+    },
+    {
+      "path": "src/lib/audit-log.ts",
+      "bytes": 750,
+      "sha256": "f236eb484a4fe8e78aff79c8e2ca7afefde4b4b589aabbb81336b71dcc15b729"
+    },
+    {
+      "path": "src/lib/auth.ts",
+      "bytes": 3761,
+      "sha256": "28a6c24dde02170fba28a14edd71212ffe90b8a87af7a549d1b932cd9d908307"
+    },
+    {
+      "path": "src/lib/delivery-tickets.ts",
+      "bytes": 865,
+      "sha256": "cbd2970acd8eafd691e31a1e832bdd04e6782daa0f85de03373ee7200f0f7da6"
+    },
+    {
+      "path": "src/lib/env.ts",
+      "bytes": 3246,
+      "sha256": "367a67a3a6f4859c38f446b9858c4b4ccb9ce5fbbe88b80a37095a1efe377b6d"
+    },
+    {
+      "path": "src/lib/payment-provider.ts",
+      "bytes": 4127,
+      "sha256": "2f91bd4866dbb1d131adab77f7dd1c795f69144950f38212892f0c06b59a64ac"
+    },
+    {
+      "path": "src/lib/rate-limit.ts",
+      "bytes": 1143,
+      "sha256": "e20a33a2bd46af9e0cb0230599bf11f2d406b6a1515658812507c7f442f55c25"
+    },
+    {
+      "path": "src/lib/route-auth.ts",
+      "bytes": 2170,
+      "sha256": "cf8a7671e20a4210f0e9a20d003d812d935db5254b791628a2e162dff3f8e2f5"
+    },
+    {
+      "path": "src/lib/studio-production-draft-core.ts",
+      "bytes": 10992,
+      "sha256": "145de804c9ef45b5d154bb62100b843d3deb5f522b251c395efbc3c8ebdc7417"
+    },
+    {
+      "path": "src/lib/upload-security.ts",
+      "bytes": 4320,
+      "sha256": "ab54b5c28a3e29301d61975b33af6fdbcce8bea75f4a6f55e39029c7562f7c25"
+    },
+    {
+      "path": "src/studio-v1/billing.ts",
+      "bytes": 33285,
+      "sha256": "89f3e27d39a4a1a621d391c28795cd2f38eac6b2b337beab6162d27ed4bb8b97"
+    },
+    {
+      "path": "src/studio-v1/dashboard/adapters/gateway.ts",
+      "bytes": 1040,
+      "sha256": "1d52cacfef9d77f4ccd1f4246c03d35ae4444f48958e649f0d3331fcac365cf1"
+    },
+    {
+      "path": "src/studio-v1/dashboard/adapters/http-dashboard-gateway.ts",
+      "bytes": 3630,
+      "sha256": "17e239d38432fef0a4f194321af9fa838aabe93bf141c742f9ad95caf65dcbe2"
+    },
+    {
+      "path": "src/studio-v1/dashboard/adapters/production-draft-adapter.ts",
+      "bytes": 1286,
+      "sha256": "329db7085d51e280825581d84652656b743ea909e4ad6d6c12d9c9eec2581060"
+    },
+    {
+      "path": "src/studio-v1/dashboard/domain/billing.ts",
+      "bytes": 815,
+      "sha256": "e4bbf3aee7fd4c5c41fe455f87f20b8877a27eaba40653c46cd5f18e9ccf20f0"
+    },
+    {
+      "path": "src/studio-v1/dashboard/domain/contracts.ts",
+      "bytes": 727,
+      "sha256": "323149b8bc49b1a2888994bea0d09a7924e951646a2f4a6b596352c865f49ee3"
+    },
+    {
+      "path": "src/studio-v1/dashboard/domain/creative-memory.ts",
+      "bytes": 2297,
+      "sha256": "73479560e8b341735df45e0577385dc18efb64e2d0695f7cfd9fd77c315015a8"
+    },
+    {
+      "path": "src/studio-v1/dashboard/domain/dashboard.ts",
+      "bytes": 1667,
+      "sha256": "6b30050973c1da1a4b7ee986cd0e7ef5f7277a0d8fa5d2de00ad996d8d3ed242"
+    },
+    {
+      "path": "src/studio-v1/dashboard/index.ts",
+      "bytes": 486,
+      "sha256": "f74742208b2b9af7e9ad839d169b980cdc18a8e88c13f3a26dd952b4c7206952"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/api.ts",
+      "bytes": 624,
+      "sha256": "d7ba83dcfc0a777092406f2449e2116209bd8a30290e1fe3e4b136f5881925b7"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/AssetsRoute.tsx",
+      "bytes": 7161,
+      "sha256": "d321b037118f695201452cb9d9bcd1d36856f9325829ec99d3232d3135a04162"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/AuthenticatedStudioShell.tsx",
+      "bytes": 1781,
+      "sha256": "ededef201875ab2ed4f7f69c793e7f6df569f4dc1971de1e735a660107c7c6cc"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/BrandRoute.tsx",
+      "bytes": 5315,
+      "sha256": "4b132f0c945a21d10198290935e687b9774a1064415df2ab62878506b190958f"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/MemoryPanel.tsx",
+      "bytes": 8435,
+      "sha256": "7e7e944056d90eaac1baa413ce8a12842fba1dc6fb7292c617f8de51ad27a701"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/ProjectCard.tsx",
+      "bytes": 1565,
+      "sha256": "ece5317ca9a15a43ff8f66e7a2219cfc25c01e733f8ee8e66aa227f2ec89b821"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/SeriesRoute.tsx",
+      "bytes": 9111,
+      "sha256": "d5be2da06c320da020e106653321cdc95b6c5c10abdee239e5315ad071ddd5d3"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/components/WorkRoute.tsx",
+      "bytes": 2642,
+      "sha256": "f902e566e18f43bd023e9ddee8bfe481b46a060c441b1670747c95e701aa03ce"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/hooks.ts",
+      "bytes": 2940,
+      "sha256": "7b52ac246316f9f635477c581a2d8729e5d45e2e655193e94404bdcabb80ced1"
+    },
+    {
+      "path": "src/studio-v1/dashboard/react/studio-dashboard.css",
+      "bytes": 16808,
+      "sha256": "eb3934d5cb9758c39b19be6b8975cc790f97b8b79f6933ec6c7065b5288e0a70"
+    },
+    {
+      "path": "src/studio-v1/public/certification/four-family-capability-registry.json",
+      "bytes": 41583,
+      "sha256": "5ec1d6c29d7e812e912100cdc7b042858652d132f1a4aee5409fe1139bf5871b"
+    },
+    {
+      "path": "src/studio-v1/react/ProductionMemoryControls.tsx",
+      "bytes": 7550,
+      "sha256": "967cf8da1518bc34eb91e33d8f5de10c9c983af5245f6d467707e45cc9cfc2e2"
+    },
+    {
+      "path": "src/studio-v1/react/ProductionWorkspace.tsx",
+      "bytes": 30298,
+      "sha256": "3ca34c69b67b1508f94192d704e68c0c50aad8074432d39c6aef87e6b7744921"
+    },
+    {
+      "path": "src/studio-v1/react/StudioPublicExperience.tsx",
+      "bytes": 12650,
+      "sha256": "dbb67d5b7a2ddb432469aa89a1246030d75769dac53fbeaa38bc8452877f4176"
+    },
+    {
+      "path": "tests/trust-commerce/REAL_DB_ADVERSARIAL_GATES.md",
+      "bytes": 2142,
+      "sha256": "751cfee47f46981f1e09b974664df859577ee69eb0f0468f0599a60142d508b6"
+    },
+    {
+      "path": "tests/trust-commerce/adversarial_billing_model_test.py",
+      "bytes": 5953,
+      "sha256": "015af727067a5f5b3efb6e2f58fee15ea1e33fec893120900573bcab25d7556f"
+    },
+    {
+      "path": "tests/trust-commerce/real_db_adversarial_test.ts",
+      "bytes": 15144,
+      "sha256": "9b96affcc05b534f82c0ed46e8cecf509f3b8d1d03ebcc3044d4d5c1efb94fd0"
+    },
+    {
+      "path": "tests/trust-commerce/runtime_security_unit_test.cjs",
+      "bytes": 3226,
+      "sha256": "01f2221aa3cd66e3c7e961af25c321a60df4569e66fc56b7bd932a398175c732"
+    }
+  ],
+  "deleted": [
+    "app/api/v1/studio/agent-api/route.ts",
+    "app/api/v1/studio/brand/route.ts",
+    "src/studio-v1/dashboard/domain/api-agents.ts",
+    "src/studio-v1/dashboard/domain/brand.ts",
+    "src/studio-v1/dashboard/react/components/ApiAgentsRoute.tsx"
+  ],
+  "visibleAuthority": "Public Experience ProductionWorkspace + StudioPublicExperience",
+  "integratedCustomerContracts": [
+    "Authenticated Production Desk",
+    "Creative Memory/Brand/Cast/Series",
+    "Trust/Commerce/Account"
+  ],
+  "creativeAuthorityBoundary": "NexMind P8 V3 remains independently owned; not blindly overlaid because its package targets the clean P8 V2 base."
+}

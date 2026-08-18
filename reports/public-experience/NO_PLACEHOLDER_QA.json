@@ -1,0 +1,9 @@
+{
+  "schema": "StudioPublicExperienceNoPlaceholderQA V1",
+  "pass": true,
+  "fabricatedContentMarkers": {},
+  "uncertifiedSubtypeMediaAttached": [],
+  "inputHintPlaceholders": 7,
+  "inputHintPolicy": "Native form placeholders are permitted only as field-entry hints; they are not showcase, project, production, poster or film content.",
+  "qaHarnessPolicy": "The browser QA harness is test-only and is not part of the customer application or public media registry."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "StudioPublicExperiencePerformanceQA V1",
+  "harnessEvidence": [
+    {
+      "viewport": "desktop",
+      "resources": 0,
+      "htmlBytes": 50839,
+      "domNodes": 75
+    },
+    {
+      "viewport": "tablet",
+      "resources": 0,
+      "htmlBytes": 50839,
+      "domNodes": 75
+    },
+    {
+      "viewport": "mobile",
+      "resources": 0,
+      "htmlBytes": 50839,
+      "domNodes": 75
+    }
+  ],
+  "networkRequests": 0,
+  "pass": true,
+  "deploymentBuildStatus": "BLOCKED_BY_NODE24_DEPENDENCY_ENVIRONMENT",
+  "note": "Performance evidence covers the dependency-free production-CSS harness. Production Next.js metrics must be rerun under repository-required Node >=24 with installed dependencies."
+}

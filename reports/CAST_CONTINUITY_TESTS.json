@@ -1,0 +1,48 @@
+{
+  "schema": "StudioCastContinuityTestsV1",
+  "passed": 8,
+  "total": 8,
+  "implementationPass": true,
+  "checks": [
+    {
+      "name": "Stable identity fingerprint is deterministic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Stored pose is stripped from stable identity",
+      "passed": true,
+      "detail": "{\"castMemberId\":\"c1\",\"identityKey\":\"CHAR-ADA\",\"name\":\"Ada\",\"identity\":{\"cast.identity\":{\"family\":\"adult-woman\",\"hair\":\"braided-bob\",\"clothing\":{\"top\":\"navy-jacket\"}}},\"performanceAuthority\":{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"},\"performanceDirection\":\"RESOLVE_FRESH_FROM_CURRENT_SCENE_INTENT\"}"
+    },
+    {
+      "name": "Stored joint trajectory is stripped",
+      "passed": true,
+      "detail": "{\"castMemberId\":\"c1\",\"identityKey\":\"CHAR-ADA\",\"name\":\"Ada\",\"identity\":{\"cast.identity\":{\"family\":\"adult-woman\",\"hair\":\"braided-bob\",\"clothing\":{\"top\":\"navy-jacket\"}}},\"performanceAuthority\":{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"},\"performanceDirection\":\"RESOLVE_FRESH_FROM_CURRENT_SCENE_INTENT\"}"
+    },
+    {
+      "name": "Morphology remains stable",
+      "passed": true,
+      "detail": "{\"castMemberId\":\"c1\",\"identityKey\":\"CHAR-ADA\",\"name\":\"Ada\",\"identity\":{\"cast.identity\":{\"family\":\"adult-woman\",\"hair\":\"braided-bob\",\"clothing\":{\"top\":\"navy-jacket\"}}},\"performanceAuthority\":{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"},\"performanceDirection\":\"RESOLVE_FRESH_FROM_CURRENT_SCENE_INTENT\"}"
+    },
+    {
+      "name": "Clothing identity remains stable",
+      "passed": true,
+      "detail": "{\"castMemberId\":\"c1\",\"identityKey\":\"CHAR-ADA\",\"name\":\"Ada\",\"identity\":{\"cast.identity\":{\"family\":\"adult-woman\",\"hair\":\"braided-bob\",\"clothing\":{\"top\":\"navy-jacket\"}}},\"performanceAuthority\":{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"},\"performanceDirection\":\"RESOLVE_FRESH_FROM_CURRENT_SCENE_INTENT\"}"
+    },
+    {
+      "name": "Performance is resolved fresh",
+      "passed": true,
+      "detail": "{\"castMemberId\":\"c1\",\"identityKey\":\"CHAR-ADA\",\"name\":\"Ada\",\"identity\":{\"cast.identity\":{\"family\":\"adult-woman\",\"hair\":\"braided-bob\",\"clothing\":{\"top\":\"navy-jacket\"}}},\"performanceAuthority\":{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"},\"performanceDirection\":\"RESOLVE_FRESH_FROM_CURRENT_SCENE_INTENT\"}"
+    },
+    {
+      "name": "V5.1 remains performance authority",
+      "passed": true,
+      "detail": "{\"name\":\"NexStick Master V2 — Unified Performance V5.1\",\"masterVersion\":\"2.1.0-unified-performance-v5.1\",\"performanceEngine\":\"NexPerformanceUnifiedV5@5.1.0-skin-safe-angular-continuity\",\"registrySha256\":\"64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3\",\"law\":\"CAST_IDENTITY_IS_STABLE_PERFORMANCE_IS_CONTEXTUALLY_DIRECTED\"}"
+    },
+    {
+      "name": "V5.1 registry hash is exact",
+      "passed": true,
+      "detail": "64056fed5b4354e13fe945f71e0fa2f88db68d2be2b146bc3d1bc61d21844ef3"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "NexMindP8RepairScope2to8HandoffV1",
+  "date": "2026-08-15",
+  "implementationStatus": "PASS",
+  "commercial95Certification": "OPEN_NOT_CLAIMED",
+  "characterScope": "EXCLUDED_UNMODIFIED",
+  "engineHashes": {
+    "whiteboard": "621f37b01886c41c0faa560880177408bfddd0c6d75b4c39a5892907e7b5d696",
+    "explainer": "19e703e28528248ddf2fbb9363ac9b9be3e789bfd19f63c7fde169ee7cecfdb7",
+    "editorial": "d146f672c07e7a3651a0ad9bc53e11d5b3fa7ce44715ec190df61c0a15859679",
+    "externalStickmanUnmodified": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+  },
+  "freshQA": {
+    "p8": "197/197",
+    "environmentObject": "42/42",
+    "authoredArtCore": "8/8",
+    "explainerAuthoredArt": "11/11",
+    "whiteboardAuthoredArt": "6/6",
+    "editorial": "9/9",
+    "sourceIntelligence": "25/25",
+    "sourceContradiction": "5/5",
+    "realSources": "18/18",
+    "negativeControlPolicy": "10/10",
+    "explainerIntegration": "23/23",
+    "productionSurvival": "11/11",
+    "fourFamilyContract": "64/64",
+    "standaloneArchiveHash": "PASS",
+    "negativeSpace": "PASS"
+  },
+  "liveEvidence": {
+    "blindCampaignStatus": "BLOCKED_PRE_INFERENCE_NO_COMPATIBLE_MODEL",
+    "finalNegativeMediaStatus": "BLOCKED_NO_ENCODED_NEGATIVE_CONTROL_MEDIA",
+    "commercialScoreEmitted": false
+  },
+  "truthBoundary": "Implementation and adversarial-policy repair complete for scope 2-8; 9.5 remains unclaimed until live blind encoded-film and independent human evidence passes."
+}

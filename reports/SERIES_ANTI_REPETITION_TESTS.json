@@ -1,0 +1,43 @@
+{
+  "schema": "StudioSeriesAntiRepetitionTestsV1",
+  "passed": 7,
+  "total": 7,
+  "implementationPass": true,
+  "checks": [
+    {
+      "name": "Blocks default repeated environment",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":2,\"collisions\":[{\"dimension\":\"environments\",\"repeated\":[\"warehouse\"],\"continuityReason\":null,\"blocked\":true},{\"dimension\":\"cameras\",\"repeated\":[\"lateral-track\"],\"continuityReason\":null,\"blocked\":true}],\"blockedDimensions\":[\"environments\",\"cameras\"],\"passes\":false,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "Blocks default repeated camera",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":2,\"collisions\":[{\"dimension\":\"environments\",\"repeated\":[\"warehouse\"],\"continuityReason\":null,\"blocked\":true},{\"dimension\":\"cameras\",\"repeated\":[\"lateral-track\"],\"continuityReason\":null,\"blocked\":true}],\"blockedDimensions\":[\"environments\",\"cameras\"],\"passes\":false,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "Allows explicit continuity repetition",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":2,\"collisions\":[{\"dimension\":\"motifs\",\"repeated\":[\"amber-line\"],\"continuityReason\":\"The recurring line is the series identity motif and evolves in color/meaning.\",\"blocked\":false}],\"blockedDimensions\":[],\"passes\":true,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "Allows fresh candidate",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":2,\"collisions\":[],\"blockedDimensions\":[],\"passes\":true,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "Blocks repeated card-grid default",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":1,\"collisions\":[{\"dimension\":\"cardGrid\",\"repeated\":[\"true\"],\"continuityReason\":null,\"blocked\":true}],\"blockedDimensions\":[\"cardGrid\"],\"passes\":false,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "Continuity reason can preserve a necessary repeated device",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":1,\"collisions\":[{\"dimension\":\"floatingObjects\",\"repeated\":[\"true\"],\"continuityReason\":\"Episode intentionally returns to the same established memory space.\",\"blocked\":false}],\"blockedDimensions\":[],\"passes\":true,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    },
+    {
+      "name": "History window is bounded",
+      "passed": true,
+      "detail": "{\"historyWindow\":2,\"historyCount\":2,\"collisions\":[],\"blockedDimensions\":[],\"passes\":true,\"law\":\"REPETITION_REQUIRES_CONTINUITY_REASON_OR_RANKED_ALTERNATIVE\"}"
+    }
+  ]
+}

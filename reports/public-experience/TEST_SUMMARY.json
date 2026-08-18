@@ -1,0 +1,79 @@
+{
+  "schema": "StudioPublic10PublicExperienceFinalTestSummary V2",
+  "implementationPass": true,
+  "gates": {
+    "standaloneRegression": "10/10 PASS",
+    "architectureCore": "32/32 PASS",
+    "memoryArchitecture": "40/40 PASS",
+    "seriesAntiRepetition": "7/7 PASS",
+    "castContinuity": "8/8 PASS",
+    "authenticatedProductionDesk": "26/26 PASS",
+    "trustSecurity": "43/43 PASS",
+    "billingAdversarialModel": "14/14 PASS (model only)",
+    "runtimeSecurity": "7/7 PASS",
+    "publicExperienceSource": "28/28 PASS",
+    "browserResponsive": "45/45 PASS",
+    "accessibility": "9/9 PASS",
+    "noPlaceholder": "PASS",
+    "typescriptSyntax": "134/134 PASS",
+    "canonicalCreativeAuthority": "10/10 PASS",
+    "p14_3Unified": "23/23 PASS",
+    "performanceHarness": "PASS",
+    "interactionRecordings": "2 regenerated"
+  },
+  "browserEvidence": {
+    "screenshots": 45,
+    "surfaces": [
+      "auth",
+      "brief",
+      "context",
+      "family",
+      "historical",
+      "home",
+      "lowbalance",
+      "plan",
+      "planning",
+      "pricing",
+      "production",
+      "quote",
+      "revision",
+      "screening",
+      "work"
+    ],
+    "viewports": {
+      "desktop": [
+        1440,
+        1000
+      ],
+      "tablet": [
+        1024,
+        1366
+      ],
+      "mobile": [
+        390,
+        844
+      ]
+    }
+  },
+  "publicRegistry": {
+    "families": 4,
+    "subtypes": 24,
+    "publicEnabled": 0,
+    "certifiedMediaEntries": 0
+  },
+  "productionBuild": {
+    "status": "BLOCKED",
+    "nodeObserved": "v22.16.0",
+    "nodeRequired": ">=24.0.0",
+    "attemptExitCode": 127,
+    "firstMissingDependency": "prisma"
+  },
+  "publicReleaseCertification": false,
+  "releaseBlockers": [
+    "0/24 subtypes are currently public-enabled by commercial certification, so there are no certified showcase films/posters for Work or homepage.",
+    "The repository requires Node >=24; this runner is Node 22.16.0 and does not have the dependency tree/Prisma CLI, so dependency-complete Next/Prisma build and staging performance cannot be certified.",
+    "Live four-family commercial blind-film evidence remains outside this visible-experience branch; the UI correctly stays fail-closed until that evidence enables real media."
+  ],
+  "integrationBoundary": "The visible branch absorbs current authenticated-desk and Trust/Commerce customer-facing contracts without redesigning NexMind. The later P8 V3 bounded-repair patch remains a separate creative-authority dependency because its package explicitly targets the clean P8 V2 base and cannot be blindly overlaid without regressing newer memory/calibration contracts.",
+  "truthBoundary": "Visible implementation evidence passes. Public 10/10 release certification is intentionally not claimed."
+}

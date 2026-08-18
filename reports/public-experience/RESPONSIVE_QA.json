@@ -1,0 +1,43 @@
+{
+  "schema": "StudioPublicExperienceResponsiveQA V2",
+  "pass": true,
+  "viewports": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "tablet": [
+      1024,
+      1366
+    ],
+    "mobile": [
+      390,
+      844
+    ]
+  },
+  "surfacesPerViewport": 15,
+  "surfaces": [
+    "auth",
+    "brief",
+    "context",
+    "family",
+    "historical",
+    "home",
+    "lowbalance",
+    "plan",
+    "planning",
+    "pricing",
+    "production",
+    "quote",
+    "revision",
+    "screening",
+    "work"
+  ],
+  "totalSurfaceViewportChecks": 45,
+  "overflowFailures": [],
+  "targetSizeFailures": [],
+  "landmarkFailures": [],
+  "unnamedInteractiveNodes": [],
+  "screenshotRoot": "qa/screenshots",
+  "note": "Full-page Chromium evidence uses the exact final production stylesheet and current customer-facing copy through the deterministic UI harness. It is layout/interaction evidence, not a dependency-complete Next.js staging certification."
+}

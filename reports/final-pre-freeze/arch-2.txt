@@ -1,0 +1,170 @@
+{
+  "schema": "StudioPublicArchitectureCoreQA V1",
+  "implementationPass": false,
+  "checks": [
+    {
+      "name": "Exactly four production families remain canonical",
+      "ok": true,
+      "detail": "['EDITORIAL_MOTION', 'EXPLAINER', 'STICKMAN', 'WHITEBOARD']"
+    },
+    {
+      "name": "Production is canonical lifecycle authority",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Claim promotes the same stable Draft id into canonical Production",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Browser list reads Production state before Draft compatibility mirror",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "State transitions are immutable audit rows",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Clarification transition PLANNING -> DRAFT is first-class",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Source relationships are owner-scoped before relational binding",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Paid production input is immutably snapshotted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision input is immutably snapshotted",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final output lineage binds input, entitlement, Creative Lock, execution and output",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ProductionVersion stores direct lineage identifiers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ProductionVersion number allocation occurs under canonical Production row lock",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final object keys are retry-stable project-version/content addressed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final output retries reuse the same lineage version",
+      "ok": false,
+      "detail": ""
+    },
+    {
+      "name": "Artifact writes are content-addressed and idempotent",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Workflow events are content-idempotent and sequence allocation is serialized",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Activities use leases, heartbeat and stale RUNNING recovery",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Worker identity cannot repeat on normal process restart",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Only the current worker claimant can commit/complete",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Durable successor work is queued before predecessor completion",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Atomic purchase binds debit + entitlement + durable workflow and canonical PRODUCTION state",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Entitlement has unique workflow binding",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Low balance is a state transition without debit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision uses same entitlement and no new debit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision records FINAL_REVIEW -> REVISION_REQUESTED -> PRODUCTION",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Customer approval records canonical FINAL_REVIEW -> COMPLETE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Trusted Studio flows no longer directly write Draft studioState outside canonical mirror",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture migration backfills canonical Production state from Draft",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Migration adds lineage/source/audit/durability persistence",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Migration includes relational integrity for output lineage",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No browser-authored price is accepted in purchase service",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Owner-scoped audit loader exists",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "passed": 31,
+  "total": 32,
+  "deploymentCertificationPass": false,
+  "deploymentCertificationNote": "Requires dependency-complete Node >=24 + Prisma 7 schema/migration validation against a real PostgreSQL staging database."
+}

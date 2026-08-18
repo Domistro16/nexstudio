@@ -1,0 +1,30 @@
+{
+  "schema": "NexStudioFinalEngineReinstallIdentityV1",
+  "status": "PASS",
+  "checks": {
+    "WHITEBOARD_ENGINE_SOURCE.zip": {
+      "archiveFileCount": 162,
+      "installedFileCount": 162,
+      "missing": [],
+      "extra": [],
+      "changed": [],
+      "pass": true
+    },
+    "EXPLAINER_ENGINE_SOURCE.zip": {
+      "archiveFileCount": 2787,
+      "installedFileCount": 2787,
+      "missing": [],
+      "extra": [],
+      "changed": [],
+      "pass": true
+    },
+    "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+      "archiveFileCount": 224,
+      "installedFileCount": 224,
+      "missing": [],
+      "extra": [],
+      "changed": [],
+      "pass": true
+    }
+  }
+}

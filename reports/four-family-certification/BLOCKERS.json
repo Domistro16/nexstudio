@@ -1,0 +1,47 @@
+{
+  "schema": "StudioFourFamilyCertificationBlockersV1",
+  "blockers": [
+    {
+      "id": "B1",
+      "scope": "ALL",
+      "severity": "SHIP_BLOCKER",
+      "blocker": "Live P8 provider credentials/provider availability missing in this execution environment.",
+      "effect": "No fresh blind prompt-to-final production can be honestly completed; all 24 subtype commercial gates remain closed."
+    },
+    {
+      "id": "B2",
+      "scope": "EXPLAINER",
+      "severity": "SHIP_BLOCKER",
+      "blocker": "Full P14.3 encoded execution requires installed Node production dependencies; observed Node is v22.16.0 while Architecture Core requires >=24.",
+      "effect": "Explainer cannot emit a valid fresh encoded blind film here."
+    },
+    {
+      "id": "B3",
+      "scope": "ALL",
+      "severity": "SHIP_BLOCKER",
+      "blocker": "Independent blind human calibration has not reached the required commercial review count.",
+      "effect": "Machine QA cannot self-certify taste; no family may be public-enabled."
+    },
+    {
+      "id": "B4",
+      "scope": "AUDIO",
+      "severity": "SHIP_BLOCKER_FOR_NARRATED_SUBTYPES",
+      "blocker": "No launch-quality generated voice provider is certified/configured in this run.",
+      "effect": "Narration/voice cannot be promised publicly merely from voicePreference schema support."
+    },
+    {
+      "id": "B5",
+      "scope": "STICKMAN",
+      "severity": "CERTIFICATION_BLOCKER",
+      "blocker": "No canonical commercial Stickman benchmark video is present in the recovered certification set.",
+      "effect": "Pexo-level visual/performance comparison cannot be scored until a benchmark video is pinned."
+    },
+    {
+      "id": "B6",
+      "scope": "HOMEPAGE",
+      "severity": "SHIP_BLOCKER",
+      "blocker": "No release-pipeline showcase film has passed the blind commercial threshold.",
+      "effect": "Homepage previewVideo/posterFrame slots must stay empty; engine smokes are not acceptable marketing demos."
+    }
+  ]
+}

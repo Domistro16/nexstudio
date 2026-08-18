@@ -1,0 +1,18 @@
+{
+  "schema": "FamilyCertificationTypeScriptSyntaxQA V1",
+  "passed": 2,
+  "total": 2,
+  "implementationPass": true,
+  "checks": [
+    {
+      "file": "src/studio-v1/public/certification/certification-gate.ts",
+      "passed": true,
+      "diagnostics": []
+    },
+    {
+      "file": "src/studio-v1/public/registry/production-family-registry.ts",
+      "passed": true,
+      "diagnostics": []
+    }
+  ]
+}

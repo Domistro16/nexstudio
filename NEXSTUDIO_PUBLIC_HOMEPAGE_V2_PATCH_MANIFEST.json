@@ -1,0 +1,44 @@
+{
+  "schema": "NexStudioPublicHomepageV2PatchManifest",
+  "date": "2026-08-15",
+  "scope": "public homepage only",
+  "order": [
+    "hero+composer",
+    "4 visual production categories",
+    "certified film rail",
+    "minimal footer"
+  ],
+  "changedOrAddedFiles": [
+    {
+      "path": "src/studio-v1/react/StudioPublicExperience.tsx",
+      "bytes": 24713,
+      "sha256": "41f5f3289c95d26a66ff0bcedfe42e949d0bc15346b2c7502e25733aa437afec"
+    },
+    {
+      "path": "app/studio-v1.css",
+      "bytes": 76252,
+      "sha256": "ac4629096415b8885fa324778c14ba5b703269cafe5d158f21b833e74cd29f2f"
+    },
+    {
+      "path": "qa/homepage_visual_authority_qa.py",
+      "bytes": 4846,
+      "sha256": "26c1b29d46d2a0eba8e1205ceb48fe6f3e009348a05a7729f936e6233404f7ad"
+    },
+    {
+      "path": "reports/public-experience/HOMEPAGE_VISUAL_AUTHORITY_QA.json",
+      "bytes": 3187,
+      "sha256": "311869782b935a21ca55307f48dfdcf6b35b2c70ee6ce9ec8c6529538eb4a5ce"
+    },
+    {
+      "path": "reports/public-experience/NO_PLACEHOLDER_QA.json",
+      "bytes": 468,
+      "sha256": "8facf68dd6c9203aba760483ee093b0d5e17209a11d3809646ad41f7b145745a"
+    },
+    {
+      "path": "NEXSTUDIO_PUBLIC_HOMEPAGE_V2_HANDOFF_2026-08-15.md",
+      "bytes": 3240,
+      "sha256": "c799f0d10f60a1439322417786e4d480e1f6f637cc63273ebf6311ff4c046b6a"
+    }
+  ],
+  "certifiedMediaPolicy": "film rail renders certifiedWork only; no synthetic fallback"
+}

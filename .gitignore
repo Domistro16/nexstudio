@@ -1,0 +1,66 @@
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+
+# JavaScript/Next.js dependencies and build output
+/node_modules/
+/.next/
+/out/
+/dist/
+/.vercel/
+/.turbo/
+
+# Python environments and caches
+/.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+*.tsbuildinfo
+
+# Generated/runtime assets
+/engines/
+/local-renders/
+/uploads/
+/tmp/
+/backups/
+/_chatgpt_backups/
+/.nexmind-backups/
+
+# Historical patch/release snapshots kept outside the canonical source tree
+/art-causal-replan-fix/
+/current-project-fix/
+/malformed-json-fix/
+/nexmind-final-release/
+/nexmind-final-release-v6-1/
+/nexmind-story-fix-v7/
+/nexmind-storyboard-v8/
+/nexmind-v10/
+/nexmind-v10-1/
+/nexmind-v10-2/
+/repair-governance-fix/
+/same-model-docs-fix/
+
+# Local certificates and keys
+/certs/
+*.key
+*.crt
+
+# Local databases and logs
+*.db
+*.sqlite
+*.sqlite3
+*.log
+
+# Exported bundles and archives; authoritative source archives are retained
+*.zip
+!engine_sources/
+!engine_sources/*.zip
+
+# Operating-system/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

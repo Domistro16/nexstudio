@@ -1,0 +1,97 @@
+{
+  "schema": "StudioStandaloneFamilyEngineSmokeV1",
+  "pass": true,
+  "sourceRoot": ".",
+  "families": {
+    "WHITEBOARD": {
+      "ok": true,
+      "status": "EVIDENCE_READY",
+      "authorityId": "WHITEBOARD_EXECUTION_BODY_V2_P8_UNIFIED",
+      "technicalQa": "PASS",
+      "finalVideoAudioSampleRate": "48000",
+      "artifacts": [
+        {
+          "kind": "VIDEO",
+          "bytes": 34485,
+          "sha256": "f0eb461420b6984985b7f10cc242b9f6f14acc4fcd19adf8e8bcecbca24a8b29",
+          "hashMatches": true
+        },
+        {
+          "kind": "AUDIO_MIX",
+          "bytes": 192044,
+          "sha256": "e483a678d7ac61e6cc4817076a5b924a3a66a3faa01560f1cc276d8de1d7b31f",
+          "hashMatches": true
+        },
+        {
+          "kind": "CONTACT_SHEET",
+          "bytes": 83479,
+          "sha256": "e1b5cce3530dcd24141c7ec59e71a1834478f8b03751e6106a9296f4f5b1a922",
+          "hashMatches": true
+        }
+      ]
+    },
+    "EXPLAINER": {
+      "ok": true,
+      "status": "SOURCE_AND_SPINE_READY__LIVE_EXECUTION_ENV_REQUIRED",
+      "authorityId": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+      "technicalQa": "EXECUTION_BODY_V2_QA",
+      "finalVideoAudioSampleRate": null,
+      "artifacts": [],
+      "truthBoundary": "No fake P8 board is used for Explainer smoke. Live P8 + installed Node dependencies are required for encoded evidence."
+    },
+    "EDITORIAL_MOTION": {
+      "ok": true,
+      "status": "EVIDENCE_READY",
+      "authorityId": "EDITORIAL_EXECUTION_BODY_V2_P8_UNIFIED",
+      "technicalQa": "PASS",
+      "finalVideoAudioSampleRate": "48000",
+      "artifacts": [
+        {
+          "kind": "VIDEO",
+          "bytes": 39849,
+          "sha256": "b586e1666ca739419c7fe1d6130bc24e214981de7ae8cea082546c48bc10354d",
+          "hashMatches": true
+        },
+        {
+          "kind": "AUDIO_MIX",
+          "bytes": 576102,
+          "sha256": "74ab72708d916385d394254171e66d6e44e69337372667ffef693ce58c8f1b40",
+          "hashMatches": true
+        },
+        {
+          "kind": "CONTACT_SHEET",
+          "bytes": 145378,
+          "sha256": "262cfb88c5ac5701c630e9c9bff1b7629f9018719f70601c5f36387793ddee16",
+          "hashMatches": true
+        }
+      ]
+    },
+    "STICKMAN": {
+      "ok": true,
+      "status": "EVIDENCE_READY",
+      "authorityId": "NEXSTICK_MASTER_V2_PERFORMANCE_V5_1",
+      "technicalQa": "PASS",
+      "finalVideoAudioSampleRate": "48000",
+      "artifacts": [
+        {
+          "kind": "VIDEO",
+          "bytes": 18936,
+          "sha256": "3041ba4d912d2d27cf0754f70a8b8c5ee5d89f5e525cabea24e5da72e5d6c546",
+          "hashMatches": true
+        },
+        {
+          "kind": "AUDIO_MIX",
+          "bytes": 576102,
+          "sha256": "74ab72708d916385d394254171e66d6e44e69337372667ffef693ce58c8f1b40",
+          "hashMatches": true
+        },
+        {
+          "kind": "CONTACT_SHEET",
+          "bytes": 95868,
+          "sha256": "9a35bbecbfe785b1cdc89ec27965b3a7f5b66ae087b542544c1486e8761955c2",
+          "hashMatches": true
+        }
+      ]
+    }
+  }
+}

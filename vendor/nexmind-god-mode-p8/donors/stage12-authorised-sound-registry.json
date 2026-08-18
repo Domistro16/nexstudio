@@ -1,0 +1,843 @@
+{
+  "schemaVersion": "1.0.0",
+  "stage": "phase1-stage12",
+  "authorisedSourceArchive": "NexStudio%20Sound%20ffects.zip",
+  "sourceArchiveSha256": "074ba323491bfdc84048203ecef7c61c81962a20a2c7b1b96a3b85127cad51f7",
+  "sourceFileCount": 29,
+  "activeUniqueCount": 28,
+  "duplicateExcludedCount": 1,
+  "productionPolicy": {
+    "activeSource": "NexStudio%20Sound%20ffects.zip",
+    "batch14Selectable": false,
+    "mastersPreserved": true,
+    "productionFormat": "WAV PCM s16le 48 kHz stereo"
+  },
+  "entries": [
+    {
+      "id": "ui_tick_short_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "47313572-ui-sounds-pack-4-2-359741.mp3",
+        "sha256": "067fda821407b4e8a5d67526175cbc30f8792b27bfe413ab3e1cd0d8ab2dd19d",
+        "durationMs": 183,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_tick_short_01.wav",
+        "path": "assets/audio/authorised/production/ui_tick_short_01.wav",
+        "sha256": "a9784c73df91afbd51c1a7f2a0a5a3fa41a5dfa59a2f237850fd7ea46da78bf7",
+        "durationMs": 66,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 27,
+        "trailingTrimMs": 90,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_tick_bright_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "47313572-ui-sounds-pack-5-1-359753.mp3",
+        "sha256": "52cd2fe1462c2605efc4fe06dc24077a9eeb1f6fb08e07169e319aa0cfc17726",
+        "durationMs": 235,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_tick_bright_01.wav",
+        "path": "assets/audio/authorised/production/ui_tick_bright_01.wav",
+        "sha256": "b7cd151b6f5f82b83298b811efa451c3be8af4e0abfc4c8a86c49a1b0e09674c",
+        "durationMs": 123,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 39,
+        "trailingTrimMs": 73,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_click_dry_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "denielcz-immersivecontrol-button-click-sound-463065.mp3",
+        "sha256": "8d81cbfe9a05b30da6730f03c1976e59143cb425f8fa4d9e4129df6f65643b7a",
+        "durationMs": 48,
+        "channels": 1,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_click_dry_01.wav",
+        "path": "assets/audio/authorised/production/ui_click_dry_01.wav",
+        "sha256": "66f38961762e2c0b3d11ecee8e45bb18a41be91f8bd6505c99c7510baf2eb0b8",
+        "durationMs": 48,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 26,
+        "trailingTrimMs": 18,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_popup_mechanical_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "epic_stock_media-user-interface-wrist-watch-pop-up-apocalyptic-game-333828.mp3",
+        "sha256": "0c1bfb31e4b1e314825dcb57b0080889ca6653f632ca15c72c4a2c163d086bc5",
+        "durationMs": 470,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_popup_mechanical_01.wav",
+        "path": "assets/audio/authorised/production/ui_popup_mechanical_01.wav",
+        "sha256": "21a990967497efe0d098c307216c9b2ae33010140fd0bf60f9381eb6f2045ac0",
+        "durationMs": 256,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 45,
+        "trailingTrimMs": 169,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "paper_rustle_heavy_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "floraphonic-handle-paper-foley-1-172688.mp3",
+        "sha256": "4339dda3724b8ef58c3f403d3454eda2ebb44ae811f5485c554a6ad5f0e2e2b4",
+        "durationMs": 1416,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "paper_rustle_heavy_01.wav",
+        "path": "assets/audio/authorised/production/paper_rustle_heavy_01.wav",
+        "sha256": "5ed83ee45459dc7064b2f624c8adc1ce56b24db36d1b8521fc60097db704d601",
+        "durationMs": 1194,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 61,
+        "trailingTrimMs": 161,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "paper_rustle_light_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "floraphonic-handle-paper-foley-2-172689.mp3",
+        "sha256": "d31a70e44140781aca7922a6115d570b5bb894615c041c396c503aba65680e99",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "paper_rustle_light_01.wav",
+        "path": "assets/audio/authorised/production/paper_rustle_light_01.wav",
+        "sha256": "0b26df767bd66eebbb58832b6239b2a0fe2eca9e4fb65ad86b4c356580bd5324",
+        "durationMs": 871,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 45,
+        "trailingTrimMs": 116,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_pop_bright_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "floraphonic-minimal-pop-click-ui-1-198301.mp3",
+        "sha256": "fb2cd4956612655bbd6cb56afaae27ebb344ada37c4171ffa2c6fbbaebec4dd8",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_pop_bright_01.wav",
+        "path": "assets/audio/authorised/production/ui_pop_bright_01.wav",
+        "sha256": "180a98481bafe1164ad5be9f739d7ae6d988cb03b12e2ea399c1052cee87d71b",
+        "durationMs": 1032,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 23,
+        "trailingTrimMs": 980,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_pop_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "floraphonic-minimal-pop-click-ui-2-198302.mp3",
+        "sha256": "61a1226c85bd37e1147f78d6cf9c9bca9a6d3ca3503e8ba3a826926a1837fee7",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_pop_soft_01.wav",
+        "path": "assets/audio/authorised/production/ui_pop_soft_01.wav",
+        "sha256": "f53e2f6f8ef4b65aacf131b8be91e12c0425155e6dd659aac15d94804cc0ee3e",
+        "durationMs": 1032,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 23,
+        "trailingTrimMs": 992,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "paper_stack_shuffle_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "floraphonic-newspaper-foley-4-196721.mp3",
+        "sha256": "cc1821f52e657c51723fa8186ac7de3d195c78d22eba5f63f96443f50c6ff7f2",
+        "durationMs": 1200,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "paper_stack_shuffle_01.wav",
+        "path": "assets/audio/authorised/production/paper_stack_shuffle_01.wav",
+        "sha256": "ca3d0892e5968424cd3628991336625ddf0bda6ec4cb46dd76ec41e18838514c",
+        "durationMs": 768,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 61,
+        "trailingTrimMs": 371,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "duplicate-excluded:freesound_community-camera-97735 (1).mp3",
+      "status": "duplicate-excluded",
+      "original": {
+        "filename": "freesound_community-camera-97735 (1).mp3",
+        "sha256": "e77cebc68ec10dd1a8b30b9eab5379aa5e83dd2328ccb2f7dbcb436117e6da25",
+        "durationMs": 1728,
+        "channels": 2,
+        "frameRate": 24000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "duplicateOf": "freesound_community-camera-97735.mp3"
+    },
+    {
+      "id": "camera_shutter_mechanical_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "freesound_community-camera-97735.mp3",
+        "sha256": "e77cebc68ec10dd1a8b30b9eab5379aa5e83dd2328ccb2f7dbcb436117e6da25",
+        "durationMs": 1728,
+        "channels": 2,
+        "frameRate": 24000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "camera_shutter_mechanical_01.wav",
+        "path": "assets/audio/authorised/production/camera_shutter_mechanical_01.wav",
+        "sha256": "8cb441c967972545d2f9c7b2d68cd524e43a05eec7fe9b0f78e2e0a86e4b376d",
+        "durationMs": 1487,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 199,
+        "trailingTrimMs": 42,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "camera_shutter_crisp_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "freesound_community-camera-shutter-107889.mp3",
+        "sha256": "0f72ed325eadf5ed0b55f263d7270411f1424a3526d24102a58ae4fe9ee410a7",
+        "durationMs": 1752,
+        "channels": 2,
+        "frameRate": 24000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "camera_shutter_crisp_01.wav",
+        "path": "assets/audio/authorised/production/camera_shutter_crisp_01.wav",
+        "sha256": "755e81dc1dbc03b628b5b57e26d483f5d62ee9276c22116dc805a2f6d043a7d5",
+        "durationMs": 135,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 648,
+        "trailingTrimMs": 969,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "object_place_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "freesound_community-place-something-42719.mp3",
+        "sha256": "9158249e7f57db7a3b4cee980b902ccc6b7be04bf368f106781440a5220c1668",
+        "durationMs": 1176,
+        "channels": 2,
+        "frameRate": 24000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "object_place_soft_01.wav",
+        "path": "assets/audio/authorised/production/object_place_soft_01.wav",
+        "sha256": "2e3ea78a5204b810b9cd000146ba9d107dc4491c05bc9b654296d225d9848304",
+        "durationMs": 927,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 108,
+        "trailingTrimMs": 141,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_notification_light_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-24-527861.mp3",
+        "sha256": "18c67b300c8e4f373adce9d27124f532258d2e68a60b44873638189a9205d604",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_notification_light_01.wav",
+        "path": "assets/audio/authorised/production/ui_notification_light_01.wav",
+        "sha256": "90bb3b393e92573b54f0f92455786625ed9d895ef2aad269a3920c0156cb2860",
+        "durationMs": 376,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 25,
+        "trailingTrimMs": 631,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_level_tick_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-54-527832.mp3",
+        "sha256": "effe4671b3d0fbd136cd856b5dd41865dc12cda51c1402b0d49aa88cb55ecd65",
+        "durationMs": 744,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_level_tick_01.wav",
+        "path": "assets/audio/authorised/production/ui_level_tick_01.wav",
+        "sha256": "9936aa891a244df6e8cb40c65dd7bcc90076f327f9858b066b8424b8b48dc79a",
+        "durationMs": 239,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 29,
+        "trailingTrimMs": 476,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_button_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-56-527824.mp3",
+        "sha256": "6fd70dce574fb64e3f28064b0533192e37184b1d46c5680b89e6591e152969ac",
+        "durationMs": 936,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_button_soft_01.wav",
+        "path": "assets/audio/authorised/production/ui_button_soft_01.wav",
+        "sha256": "6fcd2509213d3325a83898e5975ffe430f1df0747a71571d0556f43cdcf91508",
+        "durationMs": 206,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 26,
+        "trailingTrimMs": 704,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_transition_ping_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-57-527851.mp3",
+        "sha256": "4bc51ac9a7aeedfc8d5633e3303e85be4a91198cd27f013bbead30be4fb2c102",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_transition_ping_01.wav",
+        "path": "assets/audio/authorised/production/ui_transition_ping_01.wav",
+        "sha256": "615a4a28df100bf2ff3b011c4430a6285e4622c77570ed6fdd905016ae954d7a",
+        "durationMs": 217,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 25,
+        "trailingTrimMs": 790,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_confirm_chime_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-70-527837.mp3",
+        "sha256": "15b63bf42d1e1d22a74e55b520ca62fb8822e60b818e37a82b66000bfc38f40a",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_confirm_chime_01.wav",
+        "path": "assets/audio/authorised/production/ui_confirm_chime_01.wav",
+        "sha256": "ade4349179240fad80e529b3ad7f781640dfdf94a7550ab13a0b47d0806832fe",
+        "durationMs": 150,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 41,
+        "trailingTrimMs": 841,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_tap_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "juniorsoundays-ui-sound-72-527849.mp3",
+        "sha256": "4e0ca1a6a518315ba96923fddda115db34a1e2295f4305f6340909e34d9037b3",
+        "durationMs": 1032,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_tap_soft_01.wav",
+        "path": "assets/audio/authorised/production/ui_tap_soft_01.wav",
+        "sha256": "31699c60d987e93ec08fe8c68f1c9d8922b0ae50b8c6d2b83e7e86a5c03d4b7d",
+        "durationMs": 373,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 23,
+        "trailingTrimMs": 636,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_hover_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "litupsubway-ui-hover-sfx-513360.mp3",
+        "sha256": "8d0651ae3916b8f768a78b451181d1ff1e514a07ecdf9ac3b819ff900b3b6946",
+        "durationMs": 705,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_hover_soft_01.wav",
+        "path": "assets/audio/authorised/production/ui_hover_soft_01.wav",
+        "sha256": "52465a26b0f1f8c43145413ce42ee8b875610666c91562279eea5e90ea98e4d1",
+        "durationMs": 179,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 26,
+        "trailingTrimMs": 500,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_open_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "litupsubway-ui-open-sfx-513358.mp3",
+        "sha256": "0a7cd668fd93e3bacd314c43be125da55cdf725c33afbdae8586785e867bf913",
+        "durationMs": 784,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_open_soft_01.wav",
+        "path": "assets/audio/authorised/production/ui_open_soft_01.wav",
+        "sha256": "22e73b3265b1e9f046c87a98e4f10c64d95bb0d1546382afd24e4bfe08f23690",
+        "durationMs": 228,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 25,
+        "trailingTrimMs": 531,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "paper_tear_slice_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "lucas_lesc-knife-foley-308653.mp3",
+        "sha256": "74922e0f99ae93364ba1e07fd724ef8d13049e4f3af7b901d8f62e08fb2c7842",
+        "durationMs": 1728,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "paper_tear_slice_01.wav",
+        "path": "assets/audio/authorised/production/paper_tear_slice_01.wav",
+        "sha256": "333d8c32145341893c5b5548ecffee3d2020ea315f3d2d5db190443315ec543a",
+        "durationMs": 978,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 208,
+        "trailingTrimMs": 542,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_confirm_success_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "miraclei-sample_confirm_success02_kofi_by_miraclei-360154.mp3",
+        "sha256": "60f410ef81322f7649c4752b0ef7216b4360adf551f07edfdab63baaf3a63b98",
+        "durationMs": 1593,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_confirm_success_01.wav",
+        "path": "assets/audio/authorised/production/ui_confirm_success_01.wav",
+        "sha256": "ac6274a69f9d9e79b0b0c06d038602acd1e582aaa46aa350afffa5ea766457b8",
+        "durationMs": 656,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 50,
+        "trailingTrimMs": 887,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_click_bright_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "musicholder-click-sfx-287654.mp3",
+        "sha256": "6726327167d6a4398e0d1417715f4883553c4e30cebad2d1a8d29f444c40c623",
+        "durationMs": 496,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_click_bright_01.wav",
+        "path": "assets/audio/authorised/production/ui_click_bright_01.wav",
+        "sha256": "0ba1f9d0c52ee611bd11fbe9e0a69c358358eb71760179fb827bc8143980161f",
+        "durationMs": 112,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 25,
+        "trailingTrimMs": 359,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_cancel_dry_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "nomagician-ui-button-sound-cancel-back-exit-continue-467877.mp3",
+        "sha256": "c8477769be097535c94dfb14f1d0f4b8e02271d0289766215e9eaab1a08c6612",
+        "durationMs": 1202,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_cancel_dry_01.wav",
+        "path": "assets/audio/authorised/production/ui_cancel_dry_01.wav",
+        "sha256": "810cac88f73456d8d57bcca9209020efb6cfd595211729af76b970e3450065c8",
+        "durationMs": 480,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 98,
+        "trailingTrimMs": 624,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "book_close_soft_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "oxidvideos-book-closing-466850.mp3",
+        "sha256": "b40f7ec40b9e8dd1f4317fabc0d6a997ce06373bff9238bab36219c6f4374886",
+        "durationMs": 696,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "book_close_soft_01.wav",
+        "path": "assets/audio/authorised/production/book_close_soft_01.wav",
+        "sha256": "bbe276f28f101a06728eac777392c095e45f68db61407eecd74da8c5a37d6a5a",
+        "durationMs": 215,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 48,
+        "trailingTrimMs": 433,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_navigation_swipe_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "soundshelfstudio-ui-swipe-navigation-soft-523625.mp3",
+        "sha256": "ef9386a71a7d467ecc7e0056e424f50f8c6684d81ed764b4efc83dfbdfc79d2e",
+        "durationMs": 1384,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_navigation_swipe_01.wav",
+        "path": "assets/audio/authorised/production/ui_navigation_swipe_01.wav",
+        "sha256": "439bc72632dcf832749b2573c1da797bb5d2c880684ab64e7e08de4cc4f1cef9",
+        "durationMs": 389,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 29,
+        "trailingTrimMs": 966,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_level_up_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "universfield-level-up-03-199576.mp3",
+        "sha256": "63d3ed13b0de5f1506aa4f8d8cfe47999fcd54882831440fbc12ae7212c75439",
+        "durationMs": 2142,
+        "channels": 2,
+        "frameRate": 44100,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_level_up_01.wav",
+        "path": "assets/audio/authorised/production/ui_level_up_01.wav",
+        "sha256": "d352cd036a06caf74f75424fd308060e2e6457f5fa3f3e75063e8e51f0c5200b",
+        "durationMs": 673,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 67,
+        "trailingTrimMs": 1402,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    },
+    {
+      "id": "ui_pop_tap_01",
+      "status": "active-authorised",
+      "original": {
+        "filename": "virtual_vibes-pop-tap-click-fx-383733.mp3",
+        "sha256": "a2c7f24ede43dcb3d802124aa6c717a61b4eaf078819839df24f68fecf5bdb66",
+        "durationMs": 2136,
+        "channels": 2,
+        "frameRate": 48000,
+        "sampleWidthBytes": 2,
+        "format": "mp3"
+      },
+      "production": {
+        "filename": "ui_pop_tap_01.wav",
+        "path": "assets/audio/authorised/production/ui_pop_tap_01.wav",
+        "sha256": "2e98f450a44aa3432af862e90ebc20a54a316998cc45378faad2e4d0690bed97",
+        "durationMs": 173,
+        "channels": 2,
+        "sampleRate": 48000,
+        "codec": "pcm_s16le"
+      },
+      "processing": {
+        "leadingTrimMs": 117,
+        "trailingTrimMs": 1846,
+        "fadeInMs": 6,
+        "fadeOutMs": 12,
+        "peakTargetDbfs": -3.0
+      }
+    }
+  ]
+}

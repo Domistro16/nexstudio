@@ -1,0 +1,466 @@
+{
+  "schema": "StudioNexMindAutonomousCreativeAuthorityFinalQAV2",
+  "date": "2026-08-14",
+  "implementationStatus": "PASS",
+  "commercialAutonomyCertification": "BLOCKED_EXTERNAL_EVIDENCE",
+  "tenOutOfTenClaim": false,
+  "checks": {
+    "autonomousAuthority": {
+      "passed": 29,
+      "total": 29
+    },
+    "memoryArchitecture": {
+      "passed": 40,
+      "total": 40
+    },
+    "seriesAntiRepetition": {
+      "passed": 7,
+      "total": 7
+    },
+    "castContinuity": {
+      "passed": 8,
+      "total": 8
+    },
+    "memoryTypeScriptSyntax": {
+      "passed": 13,
+      "total": 13
+    },
+    "familyCertification": {
+      "passed": 64,
+      "total": 64
+    },
+    "familyCertificationTypeScriptSyntax": {
+      "passed": 2,
+      "total": 2
+    },
+    "canonicalCreativeAuthority": {
+      "passed": 10,
+      "total": 10
+    },
+    "p14_3": {
+      "passed": 23,
+      "total": 23
+    },
+    "architectureCore": {
+      "passed": 32,
+      "total": 32,
+      "deploymentCertificationPass": false
+    },
+    "standaloneSourceQA": {
+      "status": "PASS"
+    },
+    "p8VendorSuite": {
+      "log": "reports/final-cert/p8_vendor.log",
+      "passed": 156,
+      "subtestsPassed": 9,
+      "rawTail": "........................................................................ [ 86%]\n.....................                                                    [100%]\n156 passed, 9 subtests passed in 8.19s"
+    },
+    "autonomyAdversarial": {
+      "log": "reports/final-cert/autonomy_adversarial.log",
+      "passed": 11,
+      "subtestsPassed": 0,
+      "rawTail": "...........                                                              [100%]\n11 passed in 0.08s"
+    },
+    "studioFinalization": {
+      "log": "reports/final-cert/studio_finalization.log",
+      "passed": 4,
+      "subtestsPassed": 0,
+      "rawTail": "....                                                                     [100%]\n4 passed in 0.07s"
+    },
+    "familyEngineSmoke": {
+      "status": "PASS",
+      "file": "reports/STANDALONE_FAMILY_ENGINE_SMOKE.json"
+    },
+    "pythonCompile": "PASS"
+  },
+  "blindCampaign": {
+    "schema": "NexMindAutonomousCreativeAuthorityBlindPreflightV1",
+    "brief_count": 30,
+    "sealed_brief_metadata": {
+      "creative_benchmark_eligible": true,
+      "recorded_answers_present": false,
+      "expected_candidate_present": false,
+      "preferred_strategy_present": false
+    },
+    "credentials_present": {
+      "OPENAI_API_KEY": false,
+      "AGENTROUTER_API_KEY": false,
+      "AGENTROUTER_BASE_URL": false
+    },
+    "families_covered": [
+      "EDITORIAL_MOTION",
+      "EXPLAINER",
+      "STICKMAN",
+      "WHITEBOARD"
+    ],
+    "story_phase_entered": 30,
+    "provider_unavailable": 30,
+    "films_completed": 0,
+    "commercial_score_emitted": false,
+    "truth_boundary": "This is a live-path preflight only. With no configured live creative-model credentials, it cannot measure commercial creative quality.",
+    "rows": [
+      {
+        "id": "B01",
+        "family": "EXPLAINER",
+        "domain": "consumer-product",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B02",
+        "family": "WHITEBOARD",
+        "domain": "b2b-software",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B03",
+        "family": "STICKMAN",
+        "domain": "fintech",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B04",
+        "family": "EDITORIAL_MOTION",
+        "domain": "healthcare-operations",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B05",
+        "family": "EXPLAINER",
+        "domain": "climate-urbanism",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B06",
+        "family": "WHITEBOARD",
+        "domain": "logistics",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B07",
+        "family": "STICKMAN",
+        "domain": "nonprofit",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B08",
+        "family": "EDITORIAL_MOTION",
+        "domain": "workplace",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B09",
+        "family": "EXPLAINER",
+        "domain": "ai-software",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B10",
+        "family": "WHITEBOARD",
+        "domain": "robotics",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B11",
+        "family": "STICKMAN",
+        "domain": "crypto-finance",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B12",
+        "family": "EDITORIAL_MOTION",
+        "domain": "insurance",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B13",
+        "family": "EXPLAINER",
+        "domain": "cybersecurity",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B14",
+        "family": "WHITEBOARD",
+        "domain": "culture-conservation",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B15",
+        "family": "STICKMAN",
+        "domain": "building-science",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B16",
+        "family": "EDITORIAL_MOTION",
+        "domain": "manufacturing",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B17",
+        "family": "EXPLAINER",
+        "domain": "commerce",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B18",
+        "family": "WHITEBOARD",
+        "domain": "cybersecurity-human",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B19",
+        "family": "STICKMAN",
+        "domain": "energy",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B20",
+        "family": "EDITORIAL_MOTION",
+        "domain": "utilities",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B21",
+        "family": "EXPLAINER",
+        "domain": "education",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B22",
+        "family": "WHITEBOARD",
+        "domain": "travel",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B23",
+        "family": "STICKMAN",
+        "domain": "creator-economy",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B24",
+        "family": "EDITORIAL_MOTION",
+        "domain": "privacy",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B25",
+        "family": "EXPLAINER",
+        "domain": "public-policy",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B26",
+        "family": "WHITEBOARD",
+        "domain": "agriculture",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B27",
+        "family": "STICKMAN",
+        "domain": "retail-operations",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B28",
+        "family": "EDITORIAL_MOTION",
+        "domain": "personal-finance",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B29",
+        "family": "EXPLAINER",
+        "domain": "operations",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      },
+      {
+        "id": "B30",
+        "family": "WHITEBOARD",
+        "domain": "human-product-story",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+        "phases": [
+          "CAPABILITY_GRAPH_VALIDATED",
+          "STORY"
+        ]
+      }
+    ]
+  },
+  "commercialBenchmark": {
+    "overallCommercialBrain": 7.2,
+    "architectureControl": 9.3,
+    "supervisedCommercialUse": 7.8,
+    "autonomousPaidProductionTrust": 6.4,
+    "finalCommercialJudgment": 6.1,
+    "liveMultimodalHumanValidation": 2.5
+  },
+  "calibration": {
+    "realBlindReviews": 0,
+    "autonomousLockMin": 36,
+    "distinctProductionsMin": 12,
+    "reviewsPerFamilyMin": 6,
+    "machineFalseAcceptCeiling": 0,
+    "status": "INSUFFICIENT_HUMAN_CALIBRATION"
+  },
+  "publicFamilyCertification": {
+    "subtypesTotal": 24,
+    "publicEnabled": 0,
+    "sealedCases": 48,
+    "freshBlindFilmsCompleted": 0
+  },
+  "integrity": {
+    "p0Sha256": "023dd12005a74ffb2fa926c39f765192858dd262a8dba548dc444371a6c04f72",
+    "billingSha256": "0e2a7fd45d4362b1c78c075aabb8bc55bbfb053d94b7d2cc45b0e0cb3c646571"
+  },
+  "remainingExternalGates": [
+    "LIVE_P8_PROVIDER_EXECUTION",
+    "REAL_BLIND_HUMAN_CALIBRATION",
+    "NODE_24_PRISMA_7_POSTGRES_STAGING_DEPLOYMENT",
+    "FRESH_COMMERCIAL_FAMILY_FILMS_AND_RELEASE_EVIDENCE"
+  ]
+}

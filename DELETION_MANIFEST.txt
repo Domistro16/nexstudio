@@ -1,0 +1,6 @@
+Removed from canonical integrated source:
+src/studio-v1/dashboard/react/components/ApiAgentsRoute.tsx
+src/studio-v1/dashboard/domain/api-agents.ts
+src/studio-v1/dashboard/domain/brand.ts
+app/api/v1/studio/agent-api/route.ts
+app/api/v1/studio/brand/route.ts

@@ -1,0 +1,9 @@
+{
+  "schema": "StudioP8RegressionFinalV1",
+  "pass": true,
+  "testsRun": 197,
+  "result": "OK",
+  "command": "PYTHONPATH=vendor/nexmind-god-mode-p8/src:services/studio-nexmind-p8 python -m unittest discover -s vendor/nexmind-god-mode-p8/tests -p 'test_*.py'",
+  "source": "fresh post-reference-authority-fix run against final repaired P8 source",
+  "truthBoundary": "Contract/runtime implementation regression; not live commercial creative evidence."
+}

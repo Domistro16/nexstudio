@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/scripts/editorial-execution-body-qa.py", line 14, in <module>
+    plan=m._render_plan(req);scene=plan['renderProgram']['scenes'][0];bindings=scene['assetBindings']
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/editorial_adapter.py", line 180, in _render_plan
+    root=_root();catalog=_catalog(root);reference_media=request.get('referenceMedia') or []
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/editorial_adapter.py", line 51, in _root
+    if not p.exists(): raise AdapterBlocked('EDITORIAL_ENGINE_ROOT_INVALID',str(root))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+contracts.AdapterBlocked: /mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/engines/editorial/explainer-motion/faceless-public-levels-v1

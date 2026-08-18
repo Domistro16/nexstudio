@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+import json,re,subprocess,sys
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+checks=[]
+def add(name,ok,detail=""): checks.append({"name":name,"ok":bool(ok),"detail":detail})
+def text(rel): return (ROOT/rel).read_text(errors="ignore")
+shell=text('src/studio-v1/dashboard/react/components/AuthenticatedStudioShell.tsx')
+work=text('src/studio-v1/dashboard/react/components/WorkRoute.tsx')
+project=text('src/studio-v1/dashboard/react/components/ProjectCard.tsx')
+brand=text('src/studio-v1/dashboard/react/components/BrandRoute.tsx')
+assets=text('src/studio-v1/dashboard/react/components/AssetsRoute.tsx')
+series=text('src/studio-v1/dashboard/react/components/SeriesRoute.tsx')
+memory=text('src/studio-v1/dashboard/react/components/MemoryPanel.tsx')
+prodmem=text('src/studio-v1/react/ProductionMemoryControls.tsx')
+prodroute=text('app/api/v1/studio/productions/route.ts')
+memroute=text('app/api/v1/productions/[id]/memory/route.ts')
+nextroute=text('app/api/v1/studio/series/[id]/next-episode/route.ts')
+css=text('src/studio-v1/dashboard/react/studio-dashboard.css')
+add('Top-level signed-in actions are Dashboard and Create', '>Dashboard<' in shell and '>Create<' in shell and '>Projects<' not in shell)
+add('Production desk sections are present', all(x in shell for x in ['Your work','Series','Brand','Assets','Billing']))
+add('Needs you / In production / Recent work implemented from real work data', all(x in work for x in ['Needs you','In production','Recent work','useStudioWork']))
+add('No fake project fixture or template marketplace', not re.search(r'fake project|sample project|template marketplace|templates marketplace', (shell+work+project+brand+assets+series).lower()))
+add('No unfinished API/Agents surface remains', not (ROOT/'src/studio-v1/dashboard/react/components/ApiAgentsRoute.tsx').exists() and not (ROOT/'app/api/v1/studio/agent-api/route.ts').exists() and 'API / Agents' not in shell)
+add('No legacy singular Brand settings authority route remains', not (ROOT/'app/api/v1/studio/brand/route.ts').exists())
+add('Real production poster lineage wired', 'thumbnailObjectKey' in prodroute and '/poster' in prodroute and '<img src={project.coverUrl}' in project)
+add('Real production preview lineage wired', 'previewObjectKey' in prodroute and '/preview' in prodroute and '<video src=' in project)
+add('Decorative family fake-cover gradients removed', 'sf-family-explainer' not in css and 'sf-family-whiteboard' not in css and 'sf-family-stickman' not in css)
+add('Files use owned persisted content for media previews', '/api/v1/studio/assets/${row.id}/content' in text('app/api/v1/studio/assets/route.ts') and (ROOT/'app/api/v1/studio/assets/[id]/content/route.ts').exists())
+add('Character creation and profiles are contract-backed', '/api/v1/studio/cast' in assets and 'Character profile' in assets and 'Create character' in assets and 'MemoryPanel scope="CAST"' in assets)
+add('Brand creation and Brand memory are contract-backed', '/api/v1/studio/brands' in brand and 'MemoryPanel scope="BRAND"' in brand)
+add('Series creation and Series Bible are contract-backed', '/api/v1/studio/series' in series and 'Series Bible' in series and 'MemoryPanel scope="SERIES"' in series)
+add('Next episode creation is real and fail-closed to certified public types', '/next-episode' in series and 'publicEnabled' in nextroute and 'verification.status!=="verified"' in nextroute and 'studioSeriesEpisode.create' in nextroute)
+for mode in ['THIS_PRODUCTION_ONLY','REMEMBER_FOR_BRAND','REMEMBER_FOR_SERIES','UPDATE_CHARACTER_GOING_FORWARD','UPDATE_FROM_FUTURE_EPISODE']:
+    add(f'Contextual memory mode {mode}', mode in prodmem)
+add('Production context uses canonical configure action', 'action:"configure"' in prodmem and 'action:z.literal("configure")' in memroute)
+add('Production memory inputs lock before paid execution', 'PRODUCTION_MEMORY_INPUT_LOCKED' in memroute and 'CONFIGURABLE_STATES' in memroute)
+add('Memory inspect/edit/delete UI uses append-only/tombstone endpoints', 'Version history' in memory and 'PATCH' in memory and 'DELETE' in memory)
+add('Desktop/tablet/mobile responsive gates present', '@media(max-width:900px)' in css and '@media(max-width:680px)' in css and 'grid-template-columns:210px' in css)
+add('Keyboard focus and reduced-motion handling present', ':focus-visible' in css and 'prefers-reduced-motion' in css)
+add('No analytics chart vocabulary in desk components', not re.search(r'chart|metric|analytics|kpi', (shell+work+brand+assets+series).lower()))
+add('Billing remains balance/history, not analytics', 'Balance and history.' in text('src/studio-v1/dashboard/react/components/BillingRoute.tsx'))
+report={"schema":"StudioAuthenticatedProductionDeskQA V1","pass":all(x['ok'] for x in checks),"passed":sum(x['ok'] for x in checks),"total":len(checks),"checks":checks,"environment":{"python":sys.version.split()[0],"node":subprocess.run(['node','-v'],capture_output=True,text=True).stdout.strip()}}
+(ROOT/'reports').mkdir(exist_ok=True);(ROOT/'reports/AUTHENTICATED_PRODUCTION_DESK_QA.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));raise SystemExit(0 if report['pass'] else 1)

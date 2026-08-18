@@ -1,0 +1,136 @@
+{
+  "schema": "NexStudioIllustrationCapabilityIndexV1",
+  "created": "2026-08-12",
+  "status": "PHASE3_PROOF_BANK",
+  "commercialReadiness": "NOT_CERTIFIED",
+  "records": [
+    {
+      "illustrationId": "nexstudio.heart.anatomical.v1",
+      "concept": "human heart / circulation",
+      "representation": "AUTHORED_ILLUSTRATION",
+      "heroArtBudget": "HIGH",
+      "canonicalAsset": "F03-heart-phase3/heart.canonical.svg",
+      "provenanceRecordId": "NEXSTUDIO_AUTHORED",
+      "semanticParts": [
+        "heart.outer_silhouette",
+        "heart.right_atrium",
+        "heart.right_ventricle",
+        "heart.left_atrium",
+        "heart.left_ventricle",
+        "heart.interventricular_septum",
+        "heart.valves",
+        "heart.superior_vena_cava",
+        "heart.inferior_vena_cava",
+        "heart.pulmonary_artery",
+        "heart.pulmonary_veins.left",
+        "heart.pulmonary_veins.right",
+        "heart.aorta"
+      ],
+      "capabilities": [
+        "draw.main_contour",
+        "reveal.chambers",
+        "highlight.chamber",
+        "trace_flow",
+        "highlight.vessel",
+        "de_emphasize.side",
+        "return_to_whole"
+      ],
+      "styles": [
+        "whiteboard",
+        "explainer"
+      ],
+      "proof": "F03-heart-phase3/F03_Heart_Phase3_Form_First_24s_24fps.mp4"
+    },
+    {
+      "illustrationId": "nexstudio.plant.photosynthesis.v1",
+      "concept": "plant / leaf / photosynthesis",
+      "representation": "AUTHORED_ILLUSTRATION",
+      "heroArtBudget": "HIGH",
+      "canonicalAsset": "F02-photosynthesis-phase3/plant.canonical.svg",
+      "provenanceRecordId": "NEXSTUDIO_AUTHORED",
+      "semanticParts": [
+        "plant.roots",
+        "plant.stem",
+        "plant.leaves",
+        "leaf.selected"
+      ],
+      "capabilities": [
+        "draw.stem",
+        "reveal.leaves",
+        "highlight.leaf",
+        "trace_flow.water",
+        "trace_flow.light",
+        "trace_flow.co2",
+        "zoom_into.chloroplast",
+        "return_to_whole"
+      ],
+      "styles": [
+        "whiteboard",
+        "explainer"
+      ],
+      "proof": "F02-photosynthesis-phase3/F02-photosynthesis-phase3_24s_24fps.mp4"
+    },
+    {
+      "illustrationId": "nexstudio.computer.laptop.v1",
+      "concept": "laptop computer / internal processing",
+      "representation": "AUTHORED_ILLUSTRATION",
+      "heroArtBudget": "HIGH",
+      "canonicalAsset": "F01-computer-phase3/computer.canonical.svg",
+      "provenanceRecordId": "NEXSTUDIO_AUTHORED",
+      "semanticParts": [
+        "computer.hero",
+        "computer.keyboard",
+        "computer.internals",
+        "cpu",
+        "computer.output"
+      ],
+      "capabilities": [
+        "highlight.input",
+        "open.cutaway",
+        "highlight.cpu",
+        "highlight.memory",
+        "trace_data",
+        "render.output",
+        "return_to_whole"
+      ],
+      "styles": [
+        "whiteboard",
+        "explainer"
+      ],
+      "proof": "F01-computer-phase3/F01-computer-phase3_24s_24fps.mp4"
+    },
+    {
+      "illustrationId": "nexstudio.recycling.line.v1",
+      "concept": "plastic recycling physical line",
+      "representation": "ASSEMBLED_ILLUSTRATION",
+      "heroArtBudget": "HIGH",
+      "canonicalAsset": "F04-recycling-phase3/recycling_line.canonical.svg",
+      "provenanceRecordId": "NEXSTUDIO_AUTHORED",
+      "semanticParts": [
+        "material.persistent",
+        "sorting.mechanism",
+        "washing.mechanism",
+        "shredder.mechanism",
+        "extruder.mechanism",
+        "remake.mechanism",
+        "material.flakes",
+        "material.remade"
+      ],
+      "capabilities": [
+        "move.material",
+        "sort",
+        "wash",
+        "shred",
+        "transform.flakes",
+        "melt",
+        "remake",
+        "return_to_whole"
+      ],
+      "styles": [
+        "whiteboard",
+        "explainer"
+      ],
+      "proof": "F04-recycling-phase3/F04-recycling-phase3_24s_24fps.mp4"
+    }
+  ]
+}

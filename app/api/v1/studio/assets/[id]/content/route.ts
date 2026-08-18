@@ -1,0 +1,6 @@
+import { requireSession } from "@/lib/route-auth";
+import { getPrisma } from "@/lib/db";
+import { problem } from "@/lib/http";
+import { readObject } from "@/lib/object-storage";
+export const runtime="nodejs";
+export async function GET(request:Request,context:{params:Promise<{id:string}>}){const auth=await requireSession(request);if(auth.response)return auth.response;const{id}=await context.params;const source=await getPrisma()!.source.findFirst({where:{id,ownerUserId:auth.session!.userId,isReusable:true,status:"READY",securityStatus:"CLEAN"}});if(!source?.objectKey)return problem(auth.id,404,"ASSET_CONTENT_NOT_FOUND","File preview unavailable","This reusable file has no persisted previewable content.");const bytes=await readObject(source.objectKey).catch(()=>null);if(!bytes)return problem(auth.id,404,"ASSET_CONTENT_MISSING","File preview unavailable","The persisted file could not be read.");const contentType=source.mimeType||"application/octet-stream";return new Response(bytes,{headers:{"content-type":contentType,"content-length":String(bytes.byteLength),"cache-control":"private, no-store","x-content-type-options":"nosniff","content-disposition":"inline","x-studio-media":"account-owned-asset"}});}

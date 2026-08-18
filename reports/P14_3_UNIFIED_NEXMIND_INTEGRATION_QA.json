@@ -1,0 +1,254 @@
+{
+  "schema": "NexStudioP14_3UnifiedNexMindIntegrationQA V1",
+  "status": "PASS",
+  "passed": 23,
+  "total": 23,
+  "checks": [
+    {
+      "name": "Explainer execution-only body passes its current contract",
+      "pass": true,
+      "detail": {
+        "status": "PASS",
+        "passed": 46,
+        "total": 46,
+        "out": "/mnt/data/nexstudio-repair/work/source/engines/explainer/NexStudio_Explainer_Execution_Body_V2/EXECUTION_BODY_QA.json"
+      }
+    },
+    {
+      "name": "Explainer archive SHA matches P14.3 authority",
+      "pass": true,
+      "detail": "f55de19d4dda1df3162c576c25bcec0ce7d2c88cd6a20d209aa8f3a6b12465ce"
+    },
+    {
+      "name": "Explainer archive remains below 50 MB",
+      "pass": true,
+      "detail": 26610594
+    },
+    {
+      "name": "Explainer archive ZIP integrity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Standalone authority is P14.3 and hash-bound",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Active Explainer adapter has no DirectorV3/canonical P14.1 mapper",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Explainer adapter requires committed P8 board and checkpoint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P8 is sole top-level authority inside unified runner",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unified runner gates actual rendered frames through strict critic",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Unmappable P8 visual verbs fail closed",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Reference-language analysis runs before P8 creative execution",
+      "pass": true,
+      "detail": {
+        "referenceAnalysisIndex": 10210,
+        "p8Index": 33874
+      }
+    },
+    {
+      "name": "P8 brief receives reference-language profile and style hint",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Production workflow rematerializes/passes reference media",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Standalone environment exposes P8 + critic provider contracts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P8 capability adapter resolves installed NexStick V5.1 registry",
+      "pass": true,
+      "detail": "/mnt/data/nexstudio-repair/work/source/engines/stickman/NEXSTICK_MASTER_V2_UNIFIED_PERFORMANCE_V5_1_CLEAN_2026-08-13/NEXSTICK_MASTER_V2_CAPABILITY_REGISTRY.json"
+    },
+    {
+      "name": "Actual P8 run reaches provider-agnostic model-capability boundary and fails recoverably",
+      "pass": true,
+      "detail": {
+        "schema": "StudioNexMindP8ResultV1",
+        "status": "PROVIDER_UNAVAILABLE",
+        "code": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG",
+        "detail": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:creative_reasoning:story"
+      }
+    },
+    {
+      "name": "Actual Explainer adapter run fails closed when Node deps are absent",
+      "pass": true,
+      "detail": {
+        "schema": "StudioFamilyEngineResultV1",
+        "status": "BLOCKED",
+        "code": "EXPLAINER_EXECUTION_BODY_DEPENDENCIES_NOT_INSTALLED",
+        "detail": "tsx not found. Install Standalone Studio production dependencies before rendering.",
+        "executionPlanSchema": "StudioCanonicalExecutionPlanV1",
+        "executionPlanHash": "ed58111f34cf2298c2de61dbf8f020e0ffae5bd0387562b8a1ee8a06e0fa66fa",
+        "executionPlanAuthority": {
+          "creativeAuthority": "NEXMIND_P8",
+          "compilerRole": "DETERMINISTIC_EXECUTION_NORMALIZER",
+          "creativeChoiceIntroduced": false,
+          "sourceFinalBoardSchema": "NexMindCanonicalSoundStoryboardV4",
+          "sourceFinalBoardHash": "e1aab537150468b4d403086f9e83b93529eeb283130b909971fc3be71cc95f5c",
+          "creativeStateArtifactId": "smoke-state",
+          "creativeStateArtifactHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        }
+      }
+    },
+    {
+      "name": "All three user benchmark references produce usable pre-P8 visual-language evidence",
+      "pass": true,
+      "detail": [
+        {
+          "name": "01 white movements(1).mp4",
+          "styleHint": "authored-illustrated-motion",
+          "profile": {
+            "version": "reference-language.v1",
+            "sourceIds": [
+              "01 white movements(1).mp4"
+            ],
+            "sourceKinds": [
+              "video/mp4"
+            ],
+            "frameCount": 7,
+            "meanNonWhiteOccupancy": 0.2088,
+            "meanEdgeDensity": 0.1171,
+            "meanLumaStd": 52.09,
+            "meanFrameDelta": 0.0897,
+            "whiteField": true,
+            "authoredSceneBias": 0.845,
+            "densityTarget": "rich",
+            "textDominanceMax": 0.18,
+            "minimumForegroundOccupancy": 0.15,
+            "maximumDeadWhiteRatio": 0.7,
+            "notes": [
+              "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+              "Treat white/near-white as an actively composed field, not unused canvas.",
+              "Prefer authored scene density and environmental storytelling over presentation layouts."
+            ],
+            "durationSec": 4.341995
+          }
+        },
+        {
+          "name": "01 hand draw(1).mp4",
+          "styleHint": "hand-drawn-whiteboard",
+          "profile": {
+            "version": "reference-language.v1",
+            "sourceIds": [
+              "01 hand draw(1).mp4"
+            ],
+            "sourceKinds": [
+              "video/mp4"
+            ],
+            "frameCount": 4,
+            "meanNonWhiteOccupancy": 0.1677,
+            "meanEdgeDensity": 0.0925,
+            "meanLumaStd": 56.42,
+            "meanFrameDelta": 0.0394,
+            "whiteField": true,
+            "authoredSceneBias": 0.646,
+            "densityTarget": "rich",
+            "textDominanceMax": 0.18,
+            "minimumForegroundOccupancy": 0.121,
+            "maximumDeadWhiteRatio": 0.7,
+            "notes": [
+              "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+              "Treat white/near-white as an actively composed field, not unused canvas.",
+              "Prefer authored scene density and environmental storytelling over presentation layouts."
+            ],
+            "durationSec": 0.602993
+          }
+        },
+        {
+          "name": "01 white motion(1).mp4",
+          "styleHint": "authored-illustrated-motion",
+          "profile": {
+            "version": "reference-language.v1",
+            "sourceIds": [
+              "01 white motion(1).mp4"
+            ],
+            "sourceKinds": [
+              "video/mp4"
+            ],
+            "frameCount": 6,
+            "meanNonWhiteOccupancy": 0.3009,
+            "meanEdgeDensity": 0.1532,
+            "meanLumaStd": 57.81,
+            "meanFrameDelta": 0.0936,
+            "whiteField": true,
+            "authoredSceneBias": 1,
+            "densityTarget": "rich",
+            "textDominanceMax": 0.18,
+            "minimumForegroundOccupancy": 0.217,
+            "maximumDeadWhiteRatio": 0.7,
+            "notes": [
+              "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+              "Treat white/near-white as an actively composed field, not unused canvas.",
+              "Prefer authored scene density and environmental storytelling over presentation layouts."
+            ],
+            "durationSec": 3.785011
+          }
+        }
+      ]
+    },
+    {
+      "name": "Modified Python integration files compile",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Modified TypeScript files parse without syntax errors",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Standalone source QA passes after authority hash update",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "No active Standalone source still declares P14.1 Explainer authority",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Current sandbox correctly remains outside certified production runtime",
+      "pass": true,
+      "detail": {
+        "requiredNode": ">=24.0.0",
+        "currentNode": "v22.16.0",
+        "nodeModulesPresent": false
+      }
+    }
+  ],
+  "truthBoundary": {
+    "sourceIntegration": "VERIFIED",
+    "liveP8Inference": "BLOCKED_MISSING_PROVIDER_CREDENTIALS_IN_THIS_SANDBOX",
+    "encodedP14_3Benchmark": "NOT_RUN",
+    "productionRuntime": "REQUIRES_NODE_24_PLUS_DEPENDENCY_INSTALL_AND_LIVE_PROVIDER_SECRETS",
+    "humanCreativeCertification": "NOT_CLAIMED"
+  }
+}

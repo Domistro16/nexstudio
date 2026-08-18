@@ -1,0 +1,700 @@
+{
+  "schema": "StudioPublicExperienceBrowserQA V1",
+  "pass": true,
+  "viewports": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "tablet": [
+      1024,
+      1366
+    ],
+    "mobile": [
+      390,
+      844
+    ]
+  },
+  "checks": [
+    {
+      "viewport": "desktop",
+      "surface": "home",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Make something worth watching."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "family",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Choose a starting point."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "work",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Finished films, not promises."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "pricing",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Pay for the finished duration."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "brief",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "context",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "auth",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "planning",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Your brief is being developed."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "plan",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Here\u2019s how the story will move."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "quote",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Start the production."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "lowbalance",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Add balance, then continue."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "production",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Production is underway."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "screening",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Watch the finished film."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "historical",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Compare an earlier version."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "desktop",
+      "surface": "revision",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Request a precise change."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "home",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Make something worth watching."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "family",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Choose a starting point."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "work",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Finished films, not promises."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "pricing",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Pay for the finished duration."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "brief",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "context",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "auth",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "planning",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Your brief is being developed."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "plan",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Here\u2019s how the story will move."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "quote",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Start the production."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "lowbalance",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Add balance, then continue."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "production",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Production is underway."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "screening",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Watch the finished film."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "historical",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Compare an earlier version."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "tablet",
+      "surface": "revision",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Request a precise change."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "home",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Make something worth watching."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "family",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Choose a starting point."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "work",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Finished films, not promises."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "pricing",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Pay for the finished duration."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "brief",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "context",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "auth",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Tell us what to make."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "planning",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Your brief is being developed."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "plan",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Here\u2019s how the story will move."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "quote",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Start the production."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "lowbalance",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Add balance, then continue."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "production",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Production is underway."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "screening",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Watch the finished film."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "historical",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Compare an earlier version."
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "mobile",
+      "surface": "revision",
+      "overflow": false,
+      "tinyTargets": [],
+      "landmarks": {
+        "header": true,
+        "main": true,
+        "nav": true
+      },
+      "h1": [
+        "Request a precise change."
+      ],
+      "pass": true
+    }
+  ],
+  "accessibilityTree": {
+    "unnamedInteractiveNodes": [],
+    "pass": true
+  },
+  "note": "Chromium renders the exact production stylesheet and customer copy through Page.setDocumentContent because local file/localhost navigation is blocked by the execution policy. This is browser evidence for the UI layer, not a dependency-complete Next.js deployment certification."
+}

@@ -1,0 +1,18 @@
+{
+  "schema": "NexStudioPublicHomepageV3PatchManifest",
+  "date": "2026-08-15",
+  "base": "NEXSTUDIO_PUBLIC_HOMEPAGE_V2_INTEGRATED_SOURCE_2026-08-15",
+  "scope": "public homepage only",
+  "changed": [
+    "src/studio-v1/react/StudioPublicExperience.tsx",
+    "app/studio-v1.css",
+    "qa/homepage_visual_authority_qa.py"
+  ],
+  "added": [
+    "reports/public-experience/HOMEPAGE_VISUAL_AUTHORITY_QA_V3.json",
+    "NEXSTUDIO_PUBLIC_HOMEPAGE_V3_HANDOFF_2026-08-15.md",
+    "NEXSTUDIO_PUBLIC_HOMEPAGE_V3_PATCH_MANIFEST.json"
+  ],
+  "mediaPolicy": "certified-registry-only; no fake or borrowed showcase media",
+  "mobileAuthority": "first-class app-level composition with safe areas, navigation sheet, swipe rails and persistent create dock"
+}

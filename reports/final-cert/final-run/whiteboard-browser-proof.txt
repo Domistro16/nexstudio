@@ -1,0 +1,20 @@
+{
+  "errors": [],
+  "capabilities": {
+    "gsap": false,
+    "drawSVG": false,
+    "nativeSeekFallback": true
+  },
+  "seekDeterministic": true,
+  "snapshot": {
+    "version": "1.0.0",
+    "time": 15.8,
+    "itemCount": 21,
+    "annotationCount": 3,
+    "textStrokeCount": 88,
+    "eraseCount": 11,
+    "cameraKeyframes": 7
+  },
+  "audioEventCount": 123,
+  "status": "PASS"
+}

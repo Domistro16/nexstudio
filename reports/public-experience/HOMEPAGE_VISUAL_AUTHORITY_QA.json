@@ -1,0 +1,148 @@
+{
+  "schema": "NexStudioPublicHomepageVisualAuthorityQA V2",
+  "pass": true,
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "name": "Approved hero headline retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Approved Light Rays authority retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Primary prompt composer retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Four production categories sit immediately after composer",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production categories come from canonical family registry",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Four family-specific visual treatments exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Family boxes use custom visual art rather than fake video",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile category rail is horizontal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Video showcase follows category rail",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Video showcase renders only when certified work exists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Video source is certified-only",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No fake work media URLs",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No synthetic empty video placeholders",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Long explanatory homepage sections removed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No internal registry language in public homepage copy",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Sticky navigation scrolled state exists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Motion used for restrained entry and film continuity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "GSAP not added to public homepage",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No additional recognizable React Bits components",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Legacy decorative AI theatre absent",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Only approved ambient homepage keyframes remain",
+      "ok": true,
+      "detail": "['nxs-bloom-a', 'nxs-bloom-b']"
+    },
+    {
+      "name": "Reduced-motion path retained",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Responsive homepage breakpoints exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No customer-visible NexMind internals",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No fabricated progress or ETA",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Footer navigation remains minimal",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CSS braces balanced",
+      "ok": true,
+      "detail": "685 opens / 685 closes"
+    },
+    {
+      "name": "Light Rays reduced-motion support retained",
+      "ok": true,
+      "detail": ""
+    }
+  ]
+}

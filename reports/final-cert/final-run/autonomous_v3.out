@@ -1,0 +1,184 @@
+{
+  "schema": "StudioNexMindAutonomousAuthorityQA V2",
+  "pass": false,
+  "passed": 34,
+  "total": 35,
+  "checks": [
+    {
+      "name": "P8 has explicit governed decision-slot authority",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final Producer cannot be committed as an ordinary department",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Story strategies are brief-specific rather than three house lenses",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Story candidate diversity is mandatory before commit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Paid Studio path uses Story competition",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Commercial craft/taste means are locked at 9.5",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Every creative dimension has a 9.0 floor and critical dimensions 9.5",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Quality evaluator uses 9.5 means and 9.0 per-dimension floor",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Boring/generic/derivative work is an explicit Final Producer rejection class",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Creative defects cannot be laundered by human calibration",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Creative recovery preserves quality floor",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Creative BLOCKED/REVISE states keep production running",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Family execution inability routes back to P8 replan",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Worker exhaustion enters technical recovery, not production failure",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Expired activity exhaustion requeues durable workflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Provider failure stays technical retry",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No named model fallback in P8 provider",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Plan preview is capability-routed with no named fallback",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Autonomy calibration is exact family/build/judge bound with a real-review floor",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Autonomy calibration does not mix unrelated families",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Machine false accepts block calibration",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Synthetic reviews cannot count",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Studio creative state validates P8 ownership",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Autonomous Creative Lock mode exists",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Explainer is a neutral execution-only body beneath P8",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "All public family release gates remain fail-closed until evidence passes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "References are analyzed before P8 creative execution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reference media bytes are materialized for execution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Five-scope persistent Creative Memory is canonical",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Paid P8 freezes MEMORY_INPUT before creative execution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final lineage binds MEMORY_INPUT and emits FILM_MEMORY",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Creative workflow does not import billing authority",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Autonomous finalization unit tests",
+      "ok": false,
+      "detail": ".F..\n======================================================================\nFAIL: test_calibrated_multimodal_can_lock_without_per_job_human (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_calibrated_multimodal_can_lock_without_per_job_human)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-nexmind-p8/tests/test_autonomous_finalize.py\", line 126, in test_calibrated_multimodal_can_lock_without_per_job_human\n    self.assertEqual(r[\"status\"],\"CREATIVE_LOCKED\")\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: 'HUMAN_REVIEW_REQUIRED' != 'CREATIVE_LOCKED'\n- HUMAN_REVIEW_REQUIRED\n+ CREATIVE_LOCKED\n\n\n----------------------------------------------------------------------\nRan 4 tests in 0.055s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "name": "Negative-space authority QA",
+      "ok": true,
+      "detail": "{\n  \"schema\": \"NexMindNegativeSpaceQAV2\",\n  \"status\": \"PASS\",\n  \"checks\": {\n    \"plan_preview_capability_routed\": true,\n    \"plan_preview_no_named_default\": true,\n    \"model_registry_supported\": true,\n    \"no_default_provider_identity\": true,\n    \"missing_config_fails_as_capability_config\": true,\n    \"whiteboard_archive_execution_only\": true,\n    \"editorial_archive_execution_only\": true,\n    \"editorial_adapter_imports_execution_only_renderer\": true,\n    \"active_scan_clean\": true\n  },\n  \"violations\": []\n}\n"
+    },
+    {
+      "name": "Production-survival QA",
+      "ok": true,
+      "detail": "{\n  \"schema\": \"StudioProductionSurvivalQAV2\",\n  \"status\": \"PASS\",\n  \"checks\": {\n    \"worker_does_not_terminal_fail_on_retry_exhaustion\": true,\n    \"worker_enters_technical_recovery\": true,\n    \"lease_exhaustion_requeues\": true,\n    \"lease_recovery_preserves_workflow\": true,\n    \"family_creative_replan_routes_to_p8\": true,\n    \"replan_never_weakens_quality\": true,\n    \"family_contract_preserves_paid_production\": true,\n    \"family_adapter_block_is_recoverable_status\": true,\n    \"family_result_contract_has_no_terminal_blocked\": true,\n    \"internal_evidence_technical_fault_requeues\": true,\n    \"reviewed_final_promotion_is_byte_identity_path\": true\n  }\n}\n"
+    }
+  ],
+  "truthBoundary": "Authority/recovery/model-routing implementation QA only; does not award 9.5 creative taste without blind rendered evidence."
+}

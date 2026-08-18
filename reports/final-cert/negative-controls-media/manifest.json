@@ -1,0 +1,387 @@
+{
+  "schema": "NexMindP8EncodedNegativeControlsManifestV1",
+  "controls": [
+    {
+      "id": "NC01",
+      "class": "polished-but-boring",
+      "expected_owner": "VISUAL_CONCEPT",
+      "expected_reason": "engagement_memorability",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC01.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC01.wav",
+      "video_sha256": "dff50fdd641e4998694b52743f308e636b638c61a1df6cbb7c5fa239bb1e4150",
+      "audio_sha256": "4575c92a9e5784037a39e93f6511af7e76bc49987e78f5b8be36ba66b5ac46c3",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC02",
+      "class": "beautiful-but-wrong",
+      "expected_owner": "STORY",
+      "expected_reason": "hard_gate",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC02.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC02.wav",
+      "video_sha256": "9cfbb0e4e91b1ff230a26ded3ed62273c89e61e08eb28b5347b77501ec98c628",
+      "audio_sha256": "dfc74fad27ef32520697b686d6288b93d71ed79c7a4c40810190f780771a788a",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC03",
+      "class": "technically-clean-but-generic",
+      "expected_owner": "VISUAL_CONCEPT",
+      "expected_reason": "authorship_specificity",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC03.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC03.wav",
+      "video_sha256": "56d75e0cecdd5efd18a4f4daeabbbbe024f431fc2ecffe7a02aa1117c0b51a56",
+      "audio_sha256": "b9a37162dec2b50d389599478e18298ab026821d36d033ae5d93de7adf6e2a38",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC04",
+      "class": "derivative-reference-copy",
+      "expected_owner": "VISUAL_CONCEPT",
+      "expected_reason": "reference_independence",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC04.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC04.wav",
+      "video_sha256": "a34b9223b9fa149b4bcb2f46f31c0f7ac87e40123d0c3fba424aab67f5f743e1",
+      "audio_sha256": "1382ddab42012a1fa7d9eafccd2c2f8f53770a424aea20f1d4fbbcfcdff6b54a",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC05",
+      "class": "emotionally-mismatched",
+      "expected_owner": "ART_DIRECTION",
+      "expected_reason": "emotional_resonance",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC05.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC05.wav",
+      "video_sha256": "b0df2d3f96a27e1ad52c3da5a452b036ecf6e6d9ef067d336208ae81e48b10b1",
+      "audio_sha256": "224d819dc9bd4828749e790a7d5620f9162d8531713b9f4452a1c44bb4c8bcbe",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC06",
+      "class": "strong-opening-weak-payoff",
+      "expected_owner": "STORY",
+      "expected_reason": "final_payoff",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC06.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC06.wav",
+      "video_sha256": "ebbbb9f0b8bbbedb83bd825da83d2c259e118bd1a997eb2308725107a1ff77e0",
+      "audio_sha256": "673284e0a05a6f54f85c63a5d64d240b23e60dc4814c20a1ecc37724ee345010",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC07",
+      "class": "good-story-poor-art",
+      "expected_owner": "ART_DIRECTION",
+      "expected_reason": "art_craft",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC07.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC07.wav",
+      "video_sha256": "57e8cc63a576685e48e89e355492b4ec030f9cde194d66f0dd6055fa599351eb",
+      "audio_sha256": "ea1b458315cd0b64631061a7ab3faf6ad104850fd0038909bdc6ec1381f4be2e",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC08",
+      "class": "under-authored-environment",
+      "expected_owner": "ART_DIRECTION",
+      "expected_reason": "aesthetic_coherence",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC08.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC08.wav",
+      "video_sha256": "d2517120e11cd250bed3dc5b3e928d85fe473a0a65de460889b5526ab25e66c7",
+      "audio_sha256": "8574bae71b20739458adbac3d97e68935ab4a3d2296010cf6ebc59f396f4854e",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC09",
+      "class": "templated-repeat-production",
+      "expected_owner": "VISUAL_CONCEPT",
+      "expected_reason": "template_similarity",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC09.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC09.wav",
+      "video_sha256": "04f5fd4cafa4f639382a28699bc2dfd62cf241689ff1e92a9405c6a3322285d0",
+      "audio_sha256": "d084878116015384144161f5ee1f0bcb9ac1738530fc5cbca84d8989d565b7e6",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    },
+    {
+      "id": "NC10",
+      "class": "weak-brand-fit",
+      "expected_owner": "ART_DIRECTION",
+      "expected_reason": "contextual_appropriateness",
+      "video": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC10.mp4",
+      "audio": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/final-cert/negative-controls-media/NC10.wav",
+      "video_sha256": "9ab2383130cd4a4d2eae6783e1977c18100a00def4e5fd19b5ce13e405d0697e",
+      "audio_sha256": "b464dd9ea7d72ebf8fad96e04b90734c7d84c73ccd80692d5e327586dfb6baf5",
+      "video_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 640,
+            "height": 360
+          },
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "audio_probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "fixture_law": "DELIBERATELY_BAD_ENCODED_NEGATIVE_CONTROL__NOT_COMMERCIAL_EVIDENCE"
+    }
+  ],
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Encoded adversarial fixtures only. They prove the final-judgment gate can be fed real media; they do not prove creative quality or model rejection behavior without a live multimodal judge."
+}

@@ -1,0 +1,1780 @@
+{
+  "schema": "NexMindAutonomousCreativeAuthorityBlindPreflightV1",
+  "brief_count": 1,
+  "pack_brief_count": 30,
+  "brief_limit": 1,
+  "sealed_brief_metadata": {
+    "creative_benchmark_eligible": true,
+    "recorded_answers_present": false,
+    "expected_candidate_present": false,
+    "preferred_strategy_present": false
+  },
+  "provider_neutral_registry_configured": true,
+  "provider_neutral_default_credential_present": true,
+  "families_covered": [
+    "EXPLAINER"
+  ],
+  "story_phase_entered": 1,
+  "provider_unavailable": 0,
+  "films_completed": 0,
+  "commercial_score_emitted": false,
+  "truth_boundary": "This is a live-path preflight only. Configured live routes are exercised, but this does not measure commercial creative quality.",
+  "rows": [
+    {
+      "id": "B01",
+      "family": "EXPLAINER",
+      "domain": "consumer-product",
+      "status": "REVISE",
+      "code": "P8_BROADER_STRATEGY_REPLAN_REQUIRED",
+      "detail": "",
+      "phases": [
+        "CAPABILITY_GRAPH_VALIDATED",
+        "STORY",
+        "STORY",
+        "VISUAL_CONCEPT",
+        "VISUAL_CONCEPT",
+        "ART_DIRECTION",
+        "ART_DIRECTION",
+        "ART_DIRECTION",
+        "BROADER_STRATEGY_REPLAN"
+      ],
+      "diagnostic": {
+        "department": "ART_DIRECTION",
+        "attempts": 3,
+        "maxAttempts": 3,
+        "repairRequest": {
+          "schema": "StudioAutonomousCreativeRepairRequestV2",
+          "round": 1,
+          "escalation_scope": "BROADER_CREATIVE_STRATEGY",
+          "owner_department": "VISUAL_CONCEPT",
+          "source_department": "ART_DIRECTION",
+          "invalidate_slots": [
+            "visual_concept",
+            "art_direction",
+            "storyboard",
+            "cinematography",
+            "storyboard_temporal",
+            "motion_performance",
+            "sound_direction",
+            "final_producer"
+          ],
+          "issues": [
+            {
+              "severity": "MAJOR",
+              "area": "Director output contract",
+              "issue": "beat_art must cover every beat",
+              "required_change": "Repair the ART_DIRECTION output so it satisfies this exact contract requirement while preserving the creative intent and all accepted upstream decisions."
+            }
+          ],
+          "revision_plan": [
+            "The previous ART_DIRECTION output was structurally invalid: beat_art must cover every beat. Return a materially equivalent or stronger creative answer that satisfies the contract exactly. Do not weaken the concept merely to pass validation."
+          ],
+          "quality_reasons": [
+            "LOCAL_CREATIVE_LINEAGE_EXHAUSTED",
+            "ART_DIRECTION Director output contract requires autonomous repair"
+          ],
+          "production_disposition": "CONTINUE_REPLANNING",
+          "quality_floor_may_weaken": false,
+          "silent_generic_fallback_allowed": false,
+          "law": "LOCAL_IDEA_MAY_FAIL__PAID_PRODUCTION_REPLANS__NEVER_LOWER_QUALITY_GATE"
+        },
+        "providerAuditsTail": [
+          {
+            "task": "producer",
+            "role": "ExecutiveProducer",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "55a8e3beb03a92291a62b3df9cfb18f5567dd0bcf4bbc922f8084601934696d7",
+            "response_hash": "9ab563318a4711e72202cdb96ca0d33ea73d7905ad3047eb996137ffbbdfbc73",
+            "provider_request_id": "gen-1786999848-DWsBHA5jUu0rPJ1QfceE",
+            "input_tokens": 6125,
+            "cached_input_tokens": 1221,
+            "output_tokens": 2931,
+            "reasoning_tokens": 1922,
+            "duration_ms": 60485,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "visual",
+            "role": "VisualConceptDirector",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-luna",
+            "resolved_model": "openai-gpt-56-luna",
+            "reasoning": "high",
+            "request_hash": "06e3394622516aa366da105d31889d39b1413ef11b5a6c8c9a42e2331fa4627d",
+            "response_hash": "573230e32b7517498ac1a9d8bba290d27460ce141f0e17da00110ade18208129",
+            "provider_request_id": "gen-1786999909-GTGbNOON4v3rzmXUq6qB",
+            "input_tokens": 13004,
+            "cached_input_tokens": 0,
+            "output_tokens": 7643,
+            "reasoning_tokens": 2912,
+            "duration_ms": 70391,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "producer",
+            "role": "ExecutiveProducer",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "21f10516522aabbe7451a3455dee5e480a28e5e08c8181519032bf2d8c23a0b5",
+            "response_hash": "c71b64b9b899a12d036cec248d17a91a13e9fc8a530fe9773498a72bb0aa6eee",
+            "provider_request_id": "gen-1786999980-Bq4HLTPxqm1DtXCfP8vY",
+            "input_tokens": 19257,
+            "cached_input_tokens": 0,
+            "output_tokens": 1011,
+            "reasoning_tokens": 516,
+            "duration_ms": 23125,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "producer",
+            "role": "ExecutiveProducer",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "a47a9e3fafeaf0c59fe74192928618aad08edc98d03343cfe7974cb45e0ada4d",
+            "response_hash": "4fb1d086703585f0c7912d8ab60f412b60737ccc05167872cfcfa1e1c5b9ea5d",
+            "provider_request_id": "gen-1787000003-IqNeq0dAI7nuViCYLiDq",
+            "input_tokens": 18932,
+            "cached_input_tokens": 1221,
+            "output_tokens": 1009,
+            "reasoning_tokens": 516,
+            "duration_ms": 22483,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "showrunner_select",
+            "role": "NexMindSupremeShowrunner",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "07c30d6eb1ff39d124e3f9356b31476a51fe8a825935b1bb3367a1bddc932407",
+            "response_hash": "050c8b159ae20acdabed4230694f7920cf7d49aa5e25e7704bc94cfec05e9750",
+            "provider_request_id": "gen-1787000025-3fQJFOMx68L1qR5QMraL",
+            "input_tokens": 15061,
+            "cached_input_tokens": 0,
+            "output_tokens": 1168,
+            "reasoning_tokens": 268,
+            "duration_ms": 22093,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art",
+            "role": "ArtDirector",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-luna",
+            "resolved_model": "openai-gpt-56-luna",
+            "reasoning": "high",
+            "request_hash": "49d5721d650cda8800f6480bd6d2a5443590a63c1e2f956d0d8ab88024135bbd",
+            "response_hash": "79d249a4d80601cb939136340a22dc932160b4aa358acd44df88735d18b23694",
+            "provider_request_id": "gen-1787000047-FVdubs8YKEaeDYXRz1xI",
+            "input_tokens": 22948,
+            "cached_input_tokens": 0,
+            "output_tokens": 14553,
+            "reasoning_tokens": 1365,
+            "duration_ms": 113937,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 1
+          },
+          {
+            "task": "art_review",
+            "role": "ExecutiveProducerArt",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "ee14101c0b21f6f0b0987efa277809e5a781a8b5fdee1b579227f02819de1ea4",
+            "response_hash": "4ca2d4eaf0a48970ff762ce32b5430a6364a8634476eae3943f6f6c8140e22c8",
+            "provider_request_id": "gen-1787000161-9azbQzfkZthfqFrrzq83",
+            "input_tokens": 8693,
+            "cached_input_tokens": 0,
+            "output_tokens": 2733,
+            "reasoning_tokens": 1637,
+            "duration_ms": 55187,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art_review",
+            "role": "ExecutiveProducerArt",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "b03f0e220b81fadbe75114f193e626e94abdd3ed8cfa7421e8eaad6ed43ebd0e",
+            "response_hash": "0f7a249919d1832d2420bdea31f68bd9909ecdfb2e009edfe0fcc25ed82d293a",
+            "provider_request_id": "gen-1787000216-340VcWzywalEnNxVNS6t",
+            "input_tokens": 8849,
+            "cached_input_tokens": 1222,
+            "output_tokens": 2174,
+            "reasoning_tokens": 872,
+            "duration_ms": 45312,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art",
+            "role": "ArtDirector",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-luna",
+            "resolved_model": "openai-gpt-56-luna",
+            "reasoning": "high",
+            "request_hash": "497dfff4e33a0e23646c2092c1c0a8ebfd21042c836a97f2897ee115bf6d317e",
+            "response_hash": "49ef6377d9346afc1b64fefe33af4e091beb787a7aaa956bb69707816eaa227d",
+            "provider_request_id": "gen-1787000262-RlPP7kpibcxQ9Ogmfujx",
+            "input_tokens": 15158,
+            "cached_input_tokens": 0,
+            "output_tokens": 8343,
+            "reasoning_tokens": 1107,
+            "duration_ms": 77531,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art_review",
+            "role": "ExecutiveProducerArt",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "7e281287d9560c741b73fa00c542cb60be8fc388e65c348917ad52ebe109d8ac",
+            "response_hash": "3830131c4f72f3a7c84ab19671338c250c42b7f658d3666946aa425cc5277d7d",
+            "provider_request_id": "gen-1787000339-oMCMCaMxhuFazPmTRxYU",
+            "input_tokens": 16285,
+            "cached_input_tokens": 0,
+            "output_tokens": 2358,
+            "reasoning_tokens": 1527,
+            "duration_ms": 44718,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art_review",
+            "role": "ExecutiveProducerArt",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-sol",
+            "resolved_model": "openai-gpt-56-sol",
+            "reasoning": "high",
+            "request_hash": "33c18f3ff857a31d206789afd531fd09acaacc7c4d5eb14aa6999257b1e5e9d7",
+            "response_hash": "7e2a73521f4a87bb71c665d7cbf62ddb8fcb95f3cf2e08c8b57df2cdda49b2c0",
+            "provider_request_id": "gen-1787000384-TQh4Xyx11iTiRUyxfEgt",
+            "input_tokens": 16332,
+            "cached_input_tokens": 1222,
+            "output_tokens": 1962,
+            "reasoning_tokens": 940,
+            "duration_ms": 39953,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          },
+          {
+            "task": "art",
+            "role": "ArtDirector",
+            "requested_provider": "virtuals",
+            "resolved_provider": "virtuals",
+            "requested_model": "openai-gpt-56-luna",
+            "resolved_model": "openai-gpt-56-luna",
+            "reasoning": "high",
+            "request_hash": "f122d95b3ea46628c2603aea190a2b38db42ab9bc944ddf37d90043c6cb1a7c1",
+            "response_hash": "c241fae205c8e40b188ab43c6caf975f2e3881e797426e028ab890e08a51b8c8",
+            "provider_request_id": "gen-1787000424-Ishs7JB0XmRJaFV8Q5mO",
+            "input_tokens": 15192,
+            "cached_input_tokens": 0,
+            "output_tokens": 7397,
+            "reasoning_tokens": 1274,
+            "duration_ms": 72062,
+            "retries": 0,
+            "status": "PASS",
+            "error": "",
+            "schema_repairs": 0
+          }
+        ],
+        "autonomousRepair": {
+          "attempt_limits_by_department": {
+            "STORY": 2,
+            "VISUAL_CONCEPT": 3,
+            "ART_DIRECTION": 3,
+            "CINEMATOGRAPHY": 2,
+            "EDITORIAL_RHYTHM": 2,
+            "MOTION_PERFORMANCE": 3,
+            "SOUND_DIRECTION": 2
+          },
+          "attempts": {
+            "STORY": 2,
+            "VISUAL_CONCEPT": 2,
+            "ART_DIRECTION": 3
+          },
+          "lifetime_attempts": {
+            "STORY": 2,
+            "VISUAL_CONCEPT": 2,
+            "ART_DIRECTION": 3
+          },
+          "ledgerTail": [
+            {
+              "department": "STORY",
+              "reason": "No Producer-accepted Story candidate",
+              "from_revision": 0,
+              "to_revision": 1,
+              "attempt_completed": 1,
+              "next_attempt": 2,
+              "invalidated_slots": [
+                "film_thesis",
+                "visual_concept",
+                "art_direction",
+                "storyboard",
+                "cinematography",
+                "editorial_rhythm",
+                "storyboard_temporal",
+                "motion_performance",
+                "sound_direction",
+                "final_producer"
+              ],
+              "preserved_slots": [],
+              "downstream_budget_resets": {},
+              "context_hash": "c592eb1b33ca4cdfb2b55875dbcd96476a05c11e92d231ceeef55b33a25080e4",
+              "context": {
+                "schema": "NexMindAutonomousRevisionContextV1",
+                "department": "STORY",
+                "from_revision": 0,
+                "to_revision": 1,
+                "attempt_completed": 1,
+                "next_attempt": 2,
+                "max_attempts": 2,
+                "reason": "No Producer-accepted Story candidate",
+                "preserve_decision_slots": [],
+                "issues": [
+                  {
+                    "severity": "MAJOR",
+                    "issue": "The central argument is clear, but its current expression is transferable to almost any responsive cooktop. A bubbling pot, one adjustment, and a generic nearby person do not yet create a signature specific to portable induction or this brief.",
+                    "impact": "The film may communicate calm control but remain indistinguishable from conventional appliance advertising.",
+                    "required_change": "Within hero_kind, camera_idea, visual_trajectory, opening_contract, final_payoff, and beat hero states, anchor the action in a shared tabletop cooking situation made natural by the portable format. Give the human exchange a specific task that precise heat visibly enables rather than leaving it as an unspecified lifestyle interaction."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "issue": "The strongest causal event occurs in B2. After the bubbling settles, B3 through B5 largely repeat the idea of regained attention without escalating it through new visible consequences.",
+                    "impact": "The second half risks becoming warm coverage rather than a developing visual argument, weakening memorability and the final payoff.",
+                    "required_change": "Create a progressive hand-to-hand action across the beats: the hand initially trapped hovering over the pot becomes available to guide another person's cooking gesture; that person then completes the gesture; the shared meal resolves from that transfer. Keep the controlled food state visible through the progression so every human consequence remains causally connected to the heat adjustment."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "issue": "The reveal that the cook cannot safely step away, combined with the promise of less watching, can imply that precise control makes reduced supervision inherently safe.",
+                    "impact": "That interpretation exceeds the supplied brief and could create an avoidable product or cooking-safety claim.",
+                    "required_change": "Revise the editable reveals, audience states, and hero states so the benefit is freedom from hovering and repeated correction while the cook remains present in the cooking environment. Do not build the transformation around leaving food unattended."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "issue": "The current camera principle begins with disciplined pot-and-hands continuity but ultimately lets the cooktop recede into a generic background while the emotional payoff moves elsewhere.",
+                    "impact": "The audience may remember a pleasant meal without clearly crediting precise heat as the causal hero.",
+                    "required_change": "Make the final payoff preserve the controlled pot, the product, and the completed human action within one governing visual relationship. The frame may widen emotionally, but it should not sever the visible cause-and-effect chain."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "area": "Concept signature",
+                    "issue": "The listening-versus-wrestling thesis is clear, but rhythm moving from agitated to calm is an obvious first-answer metaphor. It could advertise cookware, a conventional range, or several responsive appliances without meaningful change.",
+                    "required_change": "Make the shared-pulse idea inseparable from one specific, fragile cooking event whose visible stages carry the entire argument."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "area": "Hero specificity",
+                    "issue": "The pan and its unspecified contents are too generic to make precision legible. Bubbling and steam becoming calmer can read simply as turning heat down, not as intentional control protecting a desired culinary result.",
+                    "required_change": "Define a concrete food hero with an observable jeopardy, a recognizable recovery after one adjustment, and a finished state that depends on preserving\u2014not merely suppressing\u2014its activity. Any claimed behavior must be validated later through food-styling and cooktop testing."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "area": "Product distinctiveness",
+                    "issue": "Nothing in the causal premise makes the portable induction cooktop essential. The same beats could occur over any controllable heat source.",
+                    "required_change": "Use the editable thesis, opening, payoff, and beat states to place the cooking moment somewhere enabled by a portable cooktop, while keeping precise control\u2014not portability itself\u2014as the central benefit."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "area": "Escalation and continuity",
+                    "issue": "The middle beats repeat one state change\u2014agitation settles\u2014rather than building a three-stage proof. The finishing action and human exchange are placeholders, so the promised shared rhythm does not yet become a memorable visual payoff.",
+                    "required_change": "Create a continuous progression in which the same food behavior changes meaning across every beat: imminent loss, measured intervention, protected transformation, then a human action timed to that transformed behavior. Carry one visible or audible motif through all four states."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "area": "Commercial payoff",
+                    "issue": "The final serving exchange is emotionally agreeable but generic and weakly causal. It does not reveal why this exact moment required precision or why the audience should remember this cooktop.",
+                    "required_change": "Specify a payoff in which another person directly experiences the delicate result at the intended instant, completing the cook-pan-person relationship established in the opening."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "category": "CONCEPT_SPECIFICITY",
+                    "finding": "The interrupted-spoon device expresses attention relief, but the same argument could advertise almost any responsive cooktop, stove, or kitchen appliance. Portable induction is not yet essential to the situation.",
+                    "remedy": "Reframe the editable story premise around a meal happening where the compact cooktop uniquely belongs\u2014such as cooking at the shared table\u2014so precise control preserves participation in that immediate human circle rather than merely freeing a cook to walk elsewhere."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "category": "VISIBLE_CAUSALITY",
+                    "finding": "The decisive heat correction is described abstractly as the pan settling into a controlled rhythm. Without a concrete food behavior, the audience may not read precision, causality, or why the correction was needed.",
+                    "remedy": "Define one visually unmistakable, physically plausible transition in the editable hero states and reveals: for example, an over-eager bubbling sauce begins to climb while the spoon departs, the cook makes one deliberate correction, and the same bubbling visibly returns to a steady simmer before the handoff resumes. Treat exact food behavior and response timing as downstream production-validation requirements."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "category": "REHEARSAL_SEQUENCE",
+                    "finding": "The beat treatments often restate strategic meaning instead of authoring escalating physical action. The opening promises repeated loops, but the beats do not specify a compelling progression of interruption, recognition, intervention, and release.",
+                    "remedy": "Strengthen the editable beat progression: first interrupted departure, a second attempt that reveals the pattern and raises social friction, one intentional correction, then a mirrored uninterrupted departure and completed handoff. Preserve spatial and object continuity so the same pan, spoon, recipient, and unfinished social exchange carry through every beat."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "category": "HUMAN_PAYOFF",
+                    "finding": "The waiting people are generic and arrive mainly as a final emotional destination, making the handoff feel more like a mechanism demonstration than a relationship event.",
+                    "remedy": "Give the spoon a specific recipient and unfinished interaction from the opening\u2014such as a family member holding out a bowl or continuing a story\u2014so the final completed handoff resolves both a physical route and a human beat."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "category": "CLAIM_DISCIPLINE",
+                    "finding": "The current final state risks suggesting that one adjustment allows the appliance to continue working without attention, which approaches the stated unattended-cooking anti-goal.",
+                    "remedy": "Keep the cook beside the tabletop cooktop and visibly engaged in the meal after the correction. Frame the benefit as reduced interruption and smoother participation, not freedom to abandon active cooking."
+                  }
+                ],
+                "strengths_to_preserve": [
+                  "There is one coherent thesis: precise heat is valuable because it reduces hovering and returns attention to the human purpose of cooking.",
+                  "The single-dish continuity and one deliberate adjustment avoid a feature catalogue and provide a legible causal spine.",
+                  "The tension-to-relief trajectory is appropriate for 30 seconds and makes a technical capability emotionally accessible.",
+                  "The changing behavior of the food and the cook's hands offers a filmable demonstration rather than relying entirely on verbal explanation.",
+                  "The concept avoids clinical futurism, exaggerated culinary spectacle, and obvious reference imitation.",
+                  "There is one coherent central argument: precision feels like responsiveness rather than technical labor.",
+                  "The pan provides a legible on-screen hero, and the single deliberate adjustment establishes clean causality without becoming a feature list.",
+                  "The audience-state change is commercially useful, moving control from an abstract setting to a calmer human behavior.",
+                  "The sensory contrast between noise and composure gives the film a viable sound-and-image spine.",
+                  "The restrained voiceover supports the film instead of over-explaining it, and the anti-goals correctly avoid specifications, graphics, and generic panic.",
+                  "The concept has one clear thesis: precision matters because it preserves the human flow of a meal.",
+                  "The serving spoon provides a coherent visual thread with a clean interrupted-to-complete payoff.",
+                  "The product benefit is dramatized through consequence rather than a settings or feature checklist.",
+                  "The audience-state change\u2014from heat control as technical management to a small human convenience\u2014is commercially relevant and emotionally accessible.",
+                  "The anti-goals correctly avoid unsupported specifications, safety implications, and generic feature enumeration.",
+                  "The planned transition from comic friction to relief is suitable for a concise 30-second explainer."
+                ],
+                "revision_briefs": [
+                  "Preserve the human thesis, single-dish continuity, one deliberate control action, and tension-to-relief trajectory. Reauthor only the editable story fields to create a brief-specific visual signature: place the portable induction unit at a shared table where another person is learning a concrete cooking gesture, such as folding a dumpling, while the cook manages a pot of broth. In B1, an overly active surface traps the cook's guiding hand above the control while the unfinished gesture waits beside it. In B2, one intentional adjustment changes the food from erratic activity to a stable gentle rhythm, and the hand withdraws. In B3, that same freed hand becomes a guiding hand over the other person's hand while the steady pot remains visibly present. In B4, the learner completes the gesture and the meal advances because attention can now be shared. In B5, resolve the product, steady food state, and completed human exchange in one causal composition. Replace the premise of safely stepping away with remaining present without hovering or repeatedly correcting. The memorable device should be the hand's transformation from anxious monitor to patient guide, supported by the food surface changing from disorder to an even pulse.",
+                  "Preserve the listening-versus-wrestling thesis, the single measured control input, the sensory sound transition, and the four-beat movement from unease to ease. Rebuild the editable story fields around one named, visually delicate food event rather than anonymous bubbling. The opening must show a specific desired result visibly at risk; the response must remain one intentional adjustment; the third beat must show the food continuing to develop in a newly controlled but still active state; and the payoff must let another person encounter that exact preserved result at its ideal moment. Make portability part of the narrative circumstance by locating the meal where the compact cooktop enables the human exchange, without diluting the precision-control thesis into a portability demonstration. Replace the broad shared-pulse treatment with a distinctive continuity motif generated by the chosen food\u2014an observable pattern, sound, surface behavior, or repeated finishing rhythm\u2014that evolves causally through every beat. Do not add measurements or claim verified response performance; define the observable behavior that downstream food-styling and product testing must validate.",
+                  "Preserve the single-spoon visual thread, the one-correction structure, the human thesis, and the avoidance of feature-list storytelling. Revise only the editable story fields so portable induction becomes indispensable: place the active cooktop within the shared meal rather than in a generic kitchen-to-table commute. Make the spoon travel toward one established recipient whose bowl or exchange is waiting from the opening. Author a clear escalation across the beats: the first departure is interrupted by a visibly rising cooking rhythm; a second attempt exposes the frustrating pattern; one deliberate adjustment produces an observable, physically plausible return to a steady rhythm; the same spoon then completes the same route without interruption. Keep the cook present beside the appliance so the resolution communicates smoother participation, not unattended cooking. Ensure every beat hands forward the same pan state, spoon, recipient, and unfinished interaction. Exact food choice, response timing, and repeatable pan behavior must be validated downstream through food styling and production tests rather than asserted as proven here."
+                ],
+                "rejected_candidates": [
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "story-r0-c1",
+                      "representation": "NARRATIVE_ARGUMENT",
+                      "visual_thesis": "Precise heat control matters because it removes the need to hover and second-guess, allowing cooking to remain attentive, intuitive, and human.",
+                      "hero_kind": "The controllable heat is the causal hero, made visible through the changing state of one dish and the cook's hands moving from anxious correction to relaxed intent.",
+                      "transformation": "The audience sees heat control as a technical task requiring constant monitoring and correction. -> The audience feels precise heat as a quiet form of support that lets a cook stay present with the people and moments around the meal.",
+                      "hash": "af321c11cb8bbc6fca62aa598cd5a5920dd6f43f5af3f09e77d5bee5f157362e"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "story-r0-c2",
+                      "representation": "NARRATIVE_ARGUMENT",
+                      "visual_thesis": "Precise heat control makes cooking feel like listening rather than wrestling: one intentional adjustment lets a delicate moment land the way the cook intends.",
+                      "hero_kind": "The pan\u2019s visible cooking rhythm is the on-screen hero; the cook\u2019s single precise adjustment is the causal agent that changes it.",
+                      "transformation": "They see heat control as a technical setting or something that must be constantly monitored. -> They understand precise control as a small, useful act of responsiveness that makes cooking feel more intuitive and composed.",
+                      "hash": "f1ce0ff77c2e6b375ec243a84f72c134a78a6e32694152b91163d30d900a08d5"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "story-r0-c3",
+                      "representation": "NARRATIVE_ARGUMENT",
+                      "visual_thesis": "Precise heat control is useful because it lets a meal keep moving: one intentional correction turns a repeated interruption into a completed human handoff.",
+                      "hero_kind": "The portable induction cooktop's precise heat control, made visible through the cook's interrupted-to-complete handoff.",
+                      "transformation": "They see heat control as a technical task that keeps competing with the human reason for cooking. -> They feel precise heat control as a small, human convenience that gives the cook a moment back without making the film a feature list.",
+                      "hash": "8b25e64305c2bbc60c7d32e4e2e37c6a6462aa76af6e9377f0b427633f1d1ea3"
+                    }
+                  }
+                ],
+                "previous_output": {
+                  "candidate_id": "story-r0-c1",
+                  "representation": "NARRATIVE_ARGUMENT",
+                  "visual_thesis": "Precise heat control matters because it removes the need to hover and second-guess, allowing cooking to remain attentive, intuitive, and human.",
+                  "hero_kind": "The controllable heat is the causal hero, made visible through the changing state of one dish and the cook's hands moving from anxious correction to relaxed intent.",
+                  "transformation": "The audience sees heat control as a technical task requiring constant monitoring and correction. -> The audience feels precise heat as a quiet form of support that lets a cook stay present with the people and moments around the meal.",
+                  "camera_idea": "Keep the visual relationship centered on the same pot, the same hands, and the same evolving meal; as heat becomes precise, the frame's attention gradually shifts from the cooktop's demand to the cook's life around it.",
+                  "rationale": "End with the cook no longer managing the heat as a separate task; precise control has made room for the human moment the meal was meant to support.",
+                  "beat_treatments": [
+                    {
+                      "beat_id": "B1",
+                      "hero_state": "The pot's contents are visibly too active, while the cook's hand hovers over the control and the body leans in to monitor it.",
+                      "visual_action": "The real problem is not lack of effort; it is that the cook cannot safely step away from the heat.",
+                      "audience_takeaway": "The audience recognizes the small but real burden of having to watch a dish instead of being present."
+                    },
+                    {
+                      "beat_id": "B2",
+                      "hero_state": "The cook makes one deliberate adjustment; the bubbling settles into a steady state, and the hovering hand withdraws.",
+                      "visual_action": "Precision is shown as the dish becoming calm when the cook asks it to become calm.",
+                      "audience_takeaway": "The audience senses that control can be quiet, immediate, and useful without demanding attention."
+                    },
+                    {
+                      "beat_id": "B3",
+                      "hero_state": "The cook's hands leave the control, continue preparing the meal, and turn naturally toward a nearby person or shared exchange while the pot remains steady.",
+                      "visual_action": "The cook is no longer managing the cooktop as a separate task; the meal and the moment can proceed together.",
+                      "audience_takeaway": "The audience connects controlled heat with freedom to stay engaged in the wider human moment."
+                    },
+                    {
+                      "beat_id": "B4",
+                      "hero_state": "The dish reaches its intended serving moment; the cook's posture is open, the hands are unhurried, and the meal enters a shared space.",
+                      "visual_action": "The product's value is not more activity at the cooktop, but a calmer human presence around the food.",
+                      "audience_takeaway": "The audience feels precision as care: a calmer way to make something for people."
+                    },
+                    {
+                      "beat_id": "B5",
+                      "hero_state": "The cooktop remains composed in the background while the cook and meal occupy the foreground with calm confidence.",
+                      "visual_action": "Precise heat is useful because it gives the moment back to the person cooking.",
+                      "audience_takeaway": "The audience remembers the cooktop as a quiet partner that makes room for the person behind the meal."
+                    }
+                  ],
+                  "story": {
+                    "film_thesis": {
+                      "central_argument": "Precise heat control matters because it removes the need to hover and second-guess, allowing cooking to remain attentive, intuitive, and human.",
+                      "film_kind": "A 30-second human-use explainer commercial built around one small cooking moment that visibly gives the cook their attention back.",
+                      "audience_before": "The audience sees heat control as a technical task requiring constant monitoring and correction.",
+                      "audience_after": "The audience feels precise heat as a quiet form of support that lets a cook stay present with the people and moments around the meal.",
+                      "hero_kind": "The controllable heat is the causal hero, made visible through the changing state of one dish and the cook's hands moving from anxious correction to relaxed intent.",
+                      "camera_idea": "Keep the visual relationship centered on the same pot, the same hands, and the same evolving meal; as heat becomes precise, the frame's attention gradually shifts from the cooktop's demand to the cook's life around it.",
+                      "emotional_trajectory": [
+                        "Tension",
+                        "Recognition",
+                        "Relief",
+                        "Warmth"
+                      ],
+                      "visual_trajectory": [
+                        "A dish edges toward a stressful moment while the cook hovers over it.",
+                        "The heat settles in response to the cook's intention, and the hands stop correcting.",
+                        "The meal continues steadily while the cook's attention returns to a human exchange.",
+                        "The finished moment feels calm, shared, and earned rather than technically demonstrated."
+                      ],
+                      "opening_contract": "Open on a familiar micro-crisis: the cook is forced to hover because the dish is asking for less heat right now.",
+                      "final_payoff": "End with the cook no longer managing the heat as a separate task; precise control has made room for the human moment the meal was meant to support.",
+                      "anti_goals": [
+                        "Do not present a feature checklist or cycle through controls as the story.",
+                        "Do not make precision feel clinical, futuristic, or overly technical.",
+                        "Do not use exaggerated culinary spectacle instead of a relatable human benefit.",
+                        "Do not imply unsupported performance claims beyond the supplied brief."
+                      ]
+                    },
+                    "beats": [
+                      {
+                        "beat_id": "B1",
+                        "purpose": "Establish the everyday tension that makes precise control emotionally useful.",
+                        "question": "What does imprecise heat take away from a human cooking moment?",
+                        "audience_before": "The audience is outside a familiar kitchen problem, expecting a conventional product demonstration.",
+                        "audience_after": "The audience recognizes the small but real burden of having to watch a dish instead of being present.",
+                        "hero_state": "The pot's contents are visibly too active, while the cook's hand hovers over the control and the body leans in to monitor it.",
+                        "reveal": "The real problem is not lack of effort; it is that the cook cannot safely step away from the heat.",
+                        "required_claim_ids": [
+                          "USER-BRIEF-1"
+                        ],
+                        "narration_mode": "VOICEOVER",
+                        "narration_text": "Some cooking moments ask for less.",
+                        "narration_purpose": "Frame the problem as a human need rather than introduce a product feature."
+                      },
+                      {
+                        "beat_id": "B2",
+                        "purpose": "Turn precise heat from an abstract capability into an observable response to intention.",
+                        "question": "What changes when the heat meets the moment exactly?",
+                        "audience_before": "The audience feels the cook is trapped in constant correction.",
+                        "audience_after": "The audience senses that control can be quiet, immediate, and useful without demanding attention.",
+                        "hero_state": "The cook makes one deliberate adjustment; the bubbling settles into a steady state, and the hovering hand withdraws.",
+                        "reveal": "Precision is shown as the dish becoming calm when the cook asks it to become calm.",
+                        "required_claim_ids": [
+                          "USER-BRIEF-1"
+                        ],
+                        "narration_mode": "VOICEOVER",
+                        "narration_text": "Less heat. Less watching. Less second-guessing.",
+                        "narration_purpose": "Compress the functional benefit into a memorable human rhythm without listing features."
+                      },
+                      {
+                        "beat_id": "B3",
+                        "purpose": "Demonstrate the regained attention as the practical payoff.",
+                        "question": "What does the cook do with the attention that precision gives back?",
+                        "audience_before": "The audience understands that the dish is stable but has not yet seen why that stability matters.",
+                        "audience_after": "The audience connects controlled heat with freedom to stay engaged in the wider human moment.",
+                        "hero_state": "The cook's hands leave the control, continue preparing the meal, and turn naturally toward a nearby person or shared exchange while the pot remains steady.",
+                        "reveal": "The cook is no longer managing the cooktop as a separate task; the meal and the moment can proceed together.",
+                        "required_claim_ids": [
+                          "USER-BRIEF-1"
+                        ],
+                        "narration_mode": "VOICEOVER",
+                        "narration_text": "When the heat can meet you there, your hands come back to what matters.",
+                        "narration_purpose": "Make the causal bridge from precise control to human usefulness."
+                      },
+                      {
+                        "beat_id": "B4",
+                        "purpose": "Resolve the emotional transformation through the meal's finished state and the cook's changed presence.",
+                        "question": "What does precision feel like once it has done its work?",
+                        "audience_before": "The audience sees practical freedom but is still waiting for the larger emotional meaning.",
+                        "audience_after": "The audience feels precision as care: a calmer way to make something for people.",
+                        "hero_state": "The dish reaches its intended serving moment; the cook's posture is open, the hands are unhurried, and the meal enters a shared space.",
+                        "reveal": "The product's value is not more activity at the cooktop, but a calmer human presence around the food.",
+                        "required_claim_ids": [
+                          "USER-BRIEF-1"
+                        ],
+                        "narration_mode": "SILENT",
+                        "narration_text": "",
+                        "narration_purpose": "Let the visible change in posture, pace, and shared meal deliver the emotional conclusion without explanation."
+                      },
+                      {
+                        "beat_id": "B5",
+                        "purpose": "Leave the audience with a concise brandable thesis rather than a feature recap.",
+                        "question": "What should the audience remember about precise heat control?",
+                        "audience_before": "The audience has experienced the benefit as a human transformation but has not yet received the distilled takeaway.",
+                        "audience_after": "The audience remembers the cooktop as a quiet partner that makes room for the person behind the meal.",
+                        "hero_state": "The cooktop remains composed in the background while the cook and meal occupy the foreground with calm confidence.",
+                        "reveal": "Precise heat is useful because it gives the moment back to the person cooking.",
+                        "required_claim_ids": [
+                          "USER-BRIEF-1"
+                        ],
+                        "narration_mode": "VOICEOVER",
+                        "narration_text": "Precise heat. More room for you.",
+                        "narration_purpose": "Distill the film's argument into a short closing line that preserves the human benefit."
+                      }
+                    ]
+                  }
+                },
+                "repair_anchor_hash": "af321c11cb8bbc6fca62aa598cd5a5920dd6f43f5af3f09e77d5bee5f157362e",
+                "sticky_requirements": [
+                  "Within hero_kind, camera_idea, visual_trajectory, opening_contract, final_payoff, and beat hero states, anchor the action in a shared tabletop cooking situation made natural by the portable format. Give the human exchange a specific task that precise heat visibly enables rather than leaving it as an unspecified lifestyle interaction.",
+                  "Create a progressive hand-to-hand action across the beats: the hand initially trapped hovering over the pot becomes available to guide another person's cooking gesture; that person then completes the gesture; the shared meal resolves from that transfer. Keep the controlled food state visible through the progression so every human consequence remains causally connected to the heat adjustment.",
+                  "Revise the editable reveals, audience states, and hero states so the benefit is freedom from hovering and repeated correction while the cook remains present in the cooking environment. Do not build the transformation around leaving food unattended.",
+                  "Make the final payoff preserve the controlled pot, the product, and the completed human action within one governing visual relationship. The frame may widen emotionally, but it should not sever the visible cause-and-effect chain.",
+                  "Make the shared-pulse idea inseparable from one specific, fragile cooking event whose visible stages carry the entire argument.",
+                  "Define a concrete food hero with an observable jeopardy, a recognizable recovery after one adjustment, and a finished state that depends on preserving\u2014not merely suppressing\u2014its activity. Any claimed behavior must be validated later through food-styling and cooktop testing.",
+                  "Use the editable thesis, opening, payoff, and beat states to place the cooking moment somewhere enabled by a portable cooktop, while keeping precise control\u2014not portability itself\u2014as the central benefit.",
+                  "Create a continuous progression in which the same food behavior changes meaning across every beat: imminent loss, measured intervention, protected transformation, then a human action timed to that transformed behavior. Carry one visible or audible motif through all four states.",
+                  "Specify a payoff in which another person directly experiences the delicate result at the intended instant, completing the cook-pan-person relationship established in the opening.",
+                  "The interrupted-spoon device expresses attention relief, but the same argument could advertise almost any responsive cooktop, stove, or kitchen appliance. Portable induction is not yet essential to the situation.",
+                  "The decisive heat correction is described abstractly as the pan settling into a controlled rhythm. Without a concrete food behavior, the audience may not read precision, causality, or why the correction was needed.",
+                  "The beat treatments often restate strategic meaning instead of authoring escalating physical action. The opening promises repeated loops, but the beats do not specify a compelling progression of interruption, recognition, intervention, and release.",
+                  "The waiting people are generic and arrive mainly as a final emotional destination, making the handoff feel more like a mechanism demonstration than a relationship event.",
+                  "The current final state risks suggesting that one adjustment allows the appliance to continue working without attention, which approaches the stated unattended-cooking anti-goal."
+                ],
+                "deferred_production_validations": [],
+                "requirements": [
+                  "Resolve every material Producer issue; do not merely paraphrase the rejected work.",
+                  "Preserve the listed strengths and every upstream decision slot not invalidated by this repair.",
+                  "Do not lower the quality gate or substitute a generic/simpler treatment just to obtain ACCEPT.",
+                  "Produce a materially improved creative answer that can be independently re-reviewed.",
+                  "When previous_output is present, repair that exact anchor rather than reopening candidate competition; preserve all anchor decisions not implicated by the listed issues.",
+                  "Treat sticky_requirements as binding non-regression constraints for this repair lineage.",
+                  "Do not fabricate empirical or physical test results; carry production-only validation requirements downstream instead of inventing evidence."
+                ]
+              }
+            },
+            {
+              "department": "VISUAL_CONCEPT",
+              "reason": "No Producer-accepted Visual Concept candidate",
+              "from_revision": 1,
+              "to_revision": 2,
+              "attempt_completed": 1,
+              "next_attempt": 2,
+              "invalidated_slots": [
+                "visual_concept",
+                "art_direction",
+                "storyboard",
+                "cinematography",
+                "storyboard_temporal",
+                "motion_performance",
+                "sound_direction",
+                "final_producer"
+              ],
+              "preserved_slots": [
+                "film_thesis"
+              ],
+              "downstream_budget_resets": {},
+              "context_hash": "394c8e3f5d5e7306ca27a239fd9537ab14d4ede76dbb42237058fc00c17c1dde",
+              "context": {
+                "schema": "NexMindAutonomousRevisionContextV1",
+                "department": "VISUAL_CONCEPT",
+                "from_revision": 1,
+                "to_revision": 2,
+                "attempt_completed": 1,
+                "next_attempt": 2,
+                "max_attempts": 3,
+                "reason": "No Producer-accepted Visual Concept candidate",
+                "preserve_decision_slots": [
+                  "film_thesis"
+                ],
+                "issues": [
+                  {
+                    "severity": "MATERIAL",
+                    "area": "Physical causality",
+                    "issue": "The current sequence implies that a wonton skin already pulling apart stops and effectively recovers after the heat adjustment. Lowering the boil can prevent further damage, but it cannot restore a split wrapper.",
+                    "required_change": "Re-stage the opening as imminent failure: violent bubbles buffet the wonton, flex a vulnerable seam, or catch a loose edge without showing an irreversible tear. After the adjustment, show the same seam remaining intact in the steady simmer."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "area": "Product differentiation",
+                    "issue": "The intervention can currently read as the familiar instruction to turn any burner down, which weakens the intended perception of precise induction control.",
+                    "required_change": "Without adding specifications or a settings demonstration, sharpen the before-and-after into a deliberately selected cooking state: the adjustment should preserve a visibly active, uniform simmer rather than merely reduce bubbling. Keep the hand-to-human transformation as the benefit proof."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "area": "Thirty-second clarity",
+                    "issue": "Five states, two simultaneous hand activities, food-state continuity, serving, tasting, and three voiceover thoughts create a risk that the central transformation becomes over-choreographed.",
+                    "required_change": "Compress the progression into three dominant visual movements: threatened wonton and interrupted lesson; measured adjustment and hand changing jobs; completed fold and intact serving. Treat tasting as the final punctuation within the serving composition rather than an additional narrative event."
+                  },
+                  {
+                    "severity": "MINOR",
+                    "area": "Food-handling continuity",
+                    "issue": "Leo's contact with an unfinished dumpling immediately before tasting could create an avoidable raw-food or cross-contamination reading, depending on filling and utensil choreography.",
+                    "required_change": "Specify a visually safe continuity solution within the concept, such as a vegetable filling, clean tasting utensil, or an unambiguous separation between folding hands and eating action, without distracting from the film."
+                  },
+                  {
+                    "severity": "MATERIAL",
+                    "area": "Food-state continuity",
+                    "issue": "B1 describes the wonton skin as pulling open, while B2 and B4 treat that same wonton as intact. Once visibly opened, it cannot credibly be restored by reducing heat, weakening the core causal proof.",
+                    "required_change": "Revise the opening rehearsal state and B1 treatment so the wonton is visibly threatened but not ruptured\u2014for example, a seam straining or wrapper edge fluttering\u2014then let the steady simmer prevent further deterioration. Preserve the active simmer and intact serving payoff."
+                  },
+                  {
+                    "severity": "MATERIAL",
+                    "area": "Human payoff and camera strategy",
+                    "issue": "A predominantly overhead view makes the tabletop causality highly legible but risks reducing Leo's tasting and the cook's emotional presence to diagrammatic hand choreography. The final audience-state change needs a more human release than the current calm overhead arrangement promises.",
+                    "required_change": "Retain the overhead tabletop score as the governing visual system, but revise the camera idea and final beat treatment to allow a restrained human-facing transition or angle within the same connected table geography. Leo's recognition and the cook's released attention should register without severing the visible cooktop, pot, spoon, and bowl relationship."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "area": "Rhythm metaphor",
+                    "issue": "Timing each pleat directly to recurring bubbles risks becoming overly literal and mechanically cute, suggesting synchronization for its own sake rather than useful control. It may also imply a repeatable physical cadence that has not been validated.",
+                    "required_change": "Use rhythm as perceptual organization rather than exact beat matching. Let unstable boiling interrupt actions, then let the steady simmer create uninterrupted space in which teaching and serving can flow naturally. Preserve the missed-beat-to-shared-tempo transformation without making human gestures appear controlled by individual bubbles."
+                  },
+                  {
+                    "severity": "PRODUCTION_VALIDATION",
+                    "area": "Observable food and appliance behavior",
+                    "issue": "The concept depends on a readable transition from an over-active boil to a gentle active simmer, visible wrapper preservation, and credible timing after one adjustment. These are appropriate requirements but are not yet verified.",
+                    "required_change": "Keep these as downstream food-styling and cooktop-validation requirements. Do not add measurements or imply testing has already occurred; ensure the revised concept describes only the observable behavior production must validate."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "title": "The candidate promotes the wrong narrative hero",
+                    "detail": "The approved thesis makes the delicate wonton and changing broth rhythm the on-screen hero, with precise heat as the causal agent. C3 instead declares the serving spoon the narrative hero. That hierarchy risks making the film feel like an elegant utensil relay rather than a compelling demonstration of protected food and reclaimed attention.",
+                    "required_change": "Within hero_kind, visual_thesis, transformation, rationale, concept_signature, rehearsal_states, and beat_treatments, restore the wonton and broth state as the hero. Keep the spoon as the continuity spine that makes the consequence easy to follow."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "title": "The spoon route does not fully govern the middle of the film",
+                    "detail": "The concept says the camera follows one uninterrupted spoon journey, but the spoon waits near the pot while the camera follows the other hand into the folding lesson and later returns. Calling that interruption a route that becomes a lesson is more conceptual than visibly literal.",
+                    "required_change": "Clarify the choreography as a coordinated two-hand argument: the right hand's spoon route pauses and later resumes, while the left hand changes from control monitoring to guiding Leo. Make that complementary action, rather than an overstated continuous spoon journey, the governing visual logic."
+                  },
+                  {
+                    "severity": "MAJOR",
+                    "title": "The food transformation currently implies impossible recovery",
+                    "detail": "Several states describe the wonton skin beginning to split or pull apart and then becoming intact after the adjustment. Precise control can prevent imminent failure, but it cannot visibly repair an already torn wrapper.",
+                    "required_change": "Revise all rehearsal and beat language so the wrapper is visibly threatened but not yet torn: the seam strains, the wrapper is buffeted, or an edge begins to lift. After the adjustment, the movement settles and the still-intact wonton continues cooking."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "title": "The single-take ambition could obscure the proof of precision",
+                    "detail": "A continuous move is commercially attractive, but the film depends on the audience clearly reading large uneven bubbles, one deliberate adjustment, a sustained small simmer, and the preserved wrapper. If the camera prioritizes its relay movement, the central product consequence may register only as generic heat reduction.",
+                    "required_change": "Build explicit visual holds into camera_idea and beat_treatments at the threatened state, the adjustment, and the stabilized active simmer. The movement should serve those proof moments rather than advertise itself as a stunt."
+                  },
+                  {
+                    "severity": "MODERATE",
+                    "title": "Hand custody and food terminology need cleaner continuity",
+                    "detail": "The opening establishes a left control hand and right spoon hand, but later descriptions can be read as the guiding hand immediately taking up the spoon. The concept also alternates between wonton and dumpling, weakening the exact relationship between Leo's lesson and the food being served.",
+                    "required_change": "Maintain clear hand roles throughout: the right hand retains the serving spoon while the left hand adjusts and then guides. Identify Leo's unfinished item consistently as the same kind of wonton being cooked and served, while avoiding any implication that a raw-food hand transfers directly to the serving utensil."
+                  }
+                ],
+                "strengths_to_preserve": [
+                  "There is one clear visual argument: stabilizing the broth's rhythm releases a hand from monitoring and converts it into a teaching hand.",
+                  "The wonton, half-finished fold, spoon route, and shared portable tabletop make the concept unusually specific to this brief and resistant to transplantation.",
+                  "The broth rhythm is an effective image-and-sound memorability device that carries both functional and emotional meaning.",
+                  "The portable cooktop remains causally present through the human payoff rather than disappearing into a generic lifestyle ending.",
+                  "The rehearsal states escalate coherently from threatened result to controlled state, transferred attention, completed participation, and serving.",
+                  "The concept avoids a mechanism catalogue, specification claims, and unattended-cooking implications.",
+                  "The originality guard correctly identifies generic macro food imagery as a risk and ties every beauty image to food consequence and hand choreography.",
+                  "The audience-state change is commercially legible: precision moves from technical management to quiet support for presence.",
+                  "There is one clear visual argument: controlled heat restores a shared tabletop rhythm and converts monitoring into teaching.",
+                  "The concept is unusually specific to clear broth, delicate wontons, dumpling pleats, a serving spoon, and a communal portable-cooktop setting; it passes the transplant test.",
+                  "The cooktop functions as a causal agent rather than the subject of a feature catalogue.",
+                  "The rehearsal-state progression is coherent and escalating: disruption, intervention, restored flow, learner independence, and shared payoff.",
+                  "The same pot, spoon, hands, folding action, and recipient remain connected across beats, giving the film strong continuity and a legible cause-and-effect chain.",
+                  "The distinction between shutting heat off and maintaining a gentle active simmer is commercially useful and clearly expressed.",
+                  "The originality guard correctly identifies the danger of stylized rhythm becoming detached from product truth and keeps the food state as proof.",
+                  "The communal tabletop setting makes portability useful rather than merely displayed.",
+                  "The blocked-and-completed serving route gives the 30-second film a clear beginning, escalation, and payoff.",
+                  "The transformation from a hovering hand to a teaching hand is specific, human, and directly connected to the heat-control benefit.",
+                  "The concept avoids a feature list and keeps the pot actively cooking under present supervision.",
+                  "The final origin-route-recipient composition preserves the causal connection among cooktop, food, spoon, and Leo.",
+                  "The originality guard correctly identifies the danger of allowing one-take technique to hide the food-state proof."
+                ],
+                "revision_briefs": [
+                  "Preserve the clear-broth wonton hero, shared-table portability, changing bubble rhythm, same-hand transformation, spoon continuity, and final product-food-person composition. Repair the physical logic by showing a wrapper under visible threat but not already torn; the controlled simmer must prevent failure rather than reverse it. Make the selected simmer feel meaningfully exact through sustained uniform activity and preserved food behavior, not through specifications or control-panel coverage. Simplify the 30-second choreography into three dominant movements while retaining the completed fold and intact serving as the joined payoff. Resolve any raw-food handling ambiguity unobtrusively. Downstream food styling and cooktop testing must validate the achievable broth pattern, wrapper response, adjustment timing, and continuity; the concept must state the intended observable behavior without presenting those checks as completed evidence.",
+                  "Preserve the tabletop-score concept, communal portable setting, delicate-wonton hero, single adjustment, same-spoon continuity, and transformation from hovering hand to teaching hand. Repair the food logic so the opening wonton is endangered but never already ruptured. Make the rhythmic synchronization natural rather than bubble-for-pleat literal: erratic heat interrupts the lesson, while a steady active simmer allows uninterrupted teaching and serving. Evolve the predominantly overhead camera strategy at the payoff so Leo's response and the cook's emotional release become humanly legible while the cooktop, active pot, spoon, and bowl remain in one causal geography. Maintain all empirical food behavior and response timing as downstream validation requirements rather than asserted proof.",
+                  "Revise C3 without replacing its communal-table setting, continuous tabletop movement, interrupted serving route, or final connected composition. Reframe the delicate wonton and its broth rhythm as the narrative hero, precise heat as the enabling cause, and the serving spoon as a continuity device. Base the visual argument on coordinated hands: the right-hand spoon route pauses at the threatened pot, the left hand makes one deliberate adjustment and then becomes the hand guiding Leo, and the right-hand route resumes to serve the intact wonton after Leo completes his own fold. Replace every suggestion of a wrapper already splitting and then recovering with a plausible near-failure that stabilization prevents. Use consistent wonton terminology and give the unstable broth, adjustment, and sustained gentle simmer sufficient visual hold time to be unmistakable. Preserve the active supervised cooking state, avoid specifications or unattended-cooking implications, and retain the final image connecting product, preserved result, completed lesson, and recipient."
+                ],
+                "rejected_candidates": [
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "C1",
+                      "representation": "Premium live-action tabletop film built around macro food photography, practical broth behavior, choreographed hands, and a tactile sound design that turns bubbling into an emotional rhythm.",
+                      "visual_thesis": "The broth has an anxious rhythm when the cook is forced to monitor it; one precise response settles that rhythm, allowing the cook's attention to move from protecting the wonton to teaching Leo.",
+                      "hero_kind": "The clear broth and delicate wonton are the primary hero, with the cook's hovering hand becoming the human transformation that proves the value of precise heat.",
+                      "transformation": "Large uneven bubbles tug at the wonton skin and trap one hand at the control; a measured adjustment creates a small even simmer, releasing the hand to guide a fold, complete a lesson, and serve an intact wonton.",
+                      "hash": "60203970bf8d3570ac88f855e040e3720937e227dc76d230bbc668794053bdd7"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "C2",
+                      "representation": "Authored overhead live-action composition in which the communal table behaves like a musical score: broth pulses, spoon movement, dumpling pleats, and hands fall out of rhythm, then synchronize after the precise heat response.",
+                      "visual_thesis": "Precise heat gives the table a shared tempo. When the broth is erratic, every human gesture is interrupted; when the simmer becomes even, cooking and teaching can perform in the same rhythm.",
+                      "hero_kind": "The hero is a tactile duet between broth rhythm and human hand choreography, with the portable cooktop acting as the quiet conductor rather than a visual appliance demonstration.",
+                      "transformation": "The table begins in competing rhythms\u2014large bubbles, a stalled spoon, and a broken folding gesture\u2014then resolves into one coordinated sequence: steady simmer, guided pleat, completed fold, intact serving.",
+                      "hash": "9e0e853bba2f75bd9a4de6da84002f15433f33e9ec005dfb32c07d0beb333edc"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "C3",
+                      "representation": "Premium single-take tabletop relay filmed as a continuous camera movement that follows one serving spoon's route from threatened pot to Leo's bowl, with the same hand changing roles along the way.",
+                      "visual_thesis": "The cook's attention is a relay: when unstable heat forces the first hand to stop the route, the spoon cannot reach Leo and the lesson cannot finish. Precise heat restarts the route and turns the interruption into a human handoff.",
+                      "hero_kind": "The serving spoon is the narrative hero and visual spine, while the portable cooktop's controlled simmer is the enabling cause that lets the spoon, hand, and lesson complete one uninterrupted journey.",
+                      "transformation": "The spoon's route is blocked by an over-active boil and a hovering control hand; after one adjustment, the route resumes through the pot, across Leo's fold, and into his bowl with the wonton intact.",
+                      "hash": "3da94718a66e286c2ed661d6cba3c4711f01a727a8906929adec08db1c6a8b44"
+                    }
+                  }
+                ],
+                "previous_output": {
+                  "candidate_id": "C1",
+                  "representation": "Premium live-action tabletop film built around macro food photography, practical broth behavior, choreographed hands, and a tactile sound design that turns bubbling into an emotional rhythm.",
+                  "visual_thesis": "The broth has an anxious rhythm when the cook is forced to monitor it; one precise response settles that rhythm, allowing the cook's attention to move from protecting the wonton to teaching Leo.",
+                  "hero_kind": "The clear broth and delicate wonton are the primary hero, with the cook's hovering hand becoming the human transformation that proves the value of precise heat.",
+                  "transformation": "Large uneven bubbles tug at the wonton skin and trap one hand at the control; a measured adjustment creates a small even simmer, releasing the hand to guide a fold, complete a lesson, and serve an intact wonton.",
+                  "camera_idea": "Stay at intimate tabletop height and keep the cooktop, pot, spoon, hands, Leo, and bowl in one governed spatial relationship. Move from low macro proximity to a slightly wider shared composition as the broth settles, so the camera itself seems to regain human breathing room.",
+                  "rationale": "This is the clearest premium commercial expression of the brief because the product benefit is never abstracted from its consequence. The audience sees a specific fragile food state change, then watches the freed hand create a specific human moment. Practical bubbling, the pulling wonton skin, the spoon route, and the finished fold provide recognizable hero quality without becoming a feature demonstration.",
+                  "concept_signature": {
+                    "brief_specific_hook": "A delicate wonton skin visibly responds to the broth's changing pulse while Leo waits with a half-folded dumpling.",
+                    "governing_visual_logic": "The broth's bubble rhythm controls the choreography of every hand, spoon, and human exchange at the table.",
+                    "emotional_engine": "Anxiety over losing a fragile result becomes relief when precision preserves both the food and the lesson.",
+                    "memorability_device": "The sound and image of large irregular bubbles resolving into small, even pulses, followed by the same hand changing jobs.",
+                    "transplant_test": "Remove the clear-broth wonton, the half-folded dumpling, or the spoon's route from pot to bowl and the visual argument collapses; it cannot transfer unchanged to an unrelated cooking brief."
+                  },
+                  "rehearsal_states": [
+                    {
+                      "label": "The Interrupted Fold",
+                      "state": "A shared tabletop is already active: the broth rolls too hard, a wonton skin begins to pull apart, the cook hovers at the control, and Leo holds an unfinished fold.",
+                      "purpose": "Make the cooking problem steal a precise human exchange rather than create generic kitchen stress."
+                    },
+                    {
+                      "label": "The Measured Pulse",
+                      "state": "One deliberate adjustment changes the large irregular bubbles into a small, even simmer while the wonton holds its shape.",
+                      "purpose": "Show precision as preservation of active cooking, not shutdown or abandonment."
+                    },
+                    {
+                      "label": "The Hand Changes Jobs",
+                      "state": "The cook's former control hand crosses the same tabletop and settles over Leo's fingers, guiding the next pleat while the pot remains visibly steady.",
+                      "purpose": "Convert the technical benefit into a concrete human action."
+                    },
+                    {
+                      "label": "The Lesson Completes",
+                      "state": "Leo completes the fold independently as the cook follows the established spoon route from the steady pot to his waiting bowl.",
+                      "purpose": "Prove that the protected food state has lasted long enough for participation to finish."
+                    },
+                    {
+                      "label": "The Preserved Moment",
+                      "state": "Leo tastes the intact wonton and broth beside the still-gently-active cooktop while the cook remains present with an open, unhovering hand.",
+                      "purpose": "Distill precise heat as support for staying inside the shared moment."
+                    }
+                  ],
+                  "originality_guard": {
+                    "reference_independence": "Built directly from the brief's specific wonton, broth, spoon, folding lesson, and portable tabletop relationship rather than from an external visual reference.",
+                    "template_risk": "Macro bubbling could become a generic food beauty device, so every close view must show the wonton's physical response and connect to the next human hand action.",
+                    "why_not_obvious": "It does not illustrate heat settings or end on a generic family smile; the core image is a changing rhythm that visibly reallocates one hand from control to teaching."
+                  },
+                  "beat_treatments": [
+                    {
+                      "beat_id": "B1",
+                      "hero_state": "The clear-broth pot on the portable induction cooktop rolls with uneven, overly large bubbles; one delicate wonton skin begins to pull open while the cook's left hand hovers over the control and the right hand pauses with the serving spoon. Leo holds a half-folded dumpling beside his waiting bowl.",
+                      "visual_action": "Use a low macro view that lets a large bubble break beside the loosening wonton, then reveal the hovering hand, paused spoon, and Leo in the same tabletop axis.",
+                      "audience_takeaway": "The heat problem is interrupting a specific cooking lesson and threatening a fragile result.",
+                      "supporting_elements": [
+                        "Half-folded dumpling",
+                        "Waiting bowl",
+                        "Serving spoon held above the pot",
+                        "Leo's patient but unfinished hands",
+                        "Clear broth surface"
+                      ],
+                      "world_state": "The communal table is warm and occupied, but the active cooking zone has become visually and rhythmically unstable.",
+                      "visual_consequence": "The wonton skin pulls apart and the cook cannot complete either the spoon handoff or Leo's fold.",
+                      "continuity_handoff": "The hovering hand remains above the control as the frame holds on the unstable bubbles, motivating one deliberate intervention."
+                    },
+                    {
+                      "beat_id": "B2",
+                      "hero_state": "The cook makes one measured adjustment; the broth continues cooking but changes from large irregular bubbles to a small, even simmer, and the wonton holds its shape.",
+                      "visual_action": "Stay close enough to see the bubble rhythm reorganize around the intact wonton, then let the hand withdraw from the control without cutting away from the pot.",
+                      "audience_takeaway": "Precise heat means preserving the desired active state, not simply turning the food off.",
+                      "supporting_elements": [
+                        "Portable induction control",
+                        "Intact wonton skin",
+                        "Same clear broth",
+                        "Cook's withdrawing hand",
+                        "Serving spoon returning toward the pot"
+                      ],
+                      "world_state": "The pot remains alive and gently active, but its behavior is now predictable and protective.",
+                      "visual_consequence": "The threat visibly stops while the simmer and cooking progress continue.",
+                      "continuity_handoff": "The withdrawing hand travels across the same tabletop toward Leo as the spoon resumes its route beside the pot."
+                    },
+                    {
+                      "beat_id": "B3",
+                      "hero_state": "The cook's former monitoring hand settles over Leo's fingers and guides the next pleat of the dumpling while the broth keeps its even pulse.",
+                      "visual_action": "Track the hand's physical journey from the control to Leo's fingers, keeping the steady pot and spoon visible behind the lesson.",
+                      "audience_takeaway": "The benefit is freedom from hovering, not freedom from presence.",
+                      "supporting_elements": [
+                        "Leo's half-folded dumpling",
+                        "Cook's guiding fingers",
+                        "Steady clear-broth pot",
+                        "Serving spoon at the pot's edge",
+                        "Intact wontons visible below the surface"
+                      ],
+                      "world_state": "Cooking and teaching now coexist in one connected tabletop space.",
+                      "visual_consequence": "Leo's fold advances because the cook's attention has become available without sacrificing the food state.",
+                      "continuity_handoff": "The cook releases pressure gradually as Leo takes over the fold, while the spoon remains positioned for the next handoff."
+                    },
+                    {
+                      "beat_id": "B4",
+                      "hero_state": "Leo completes the fold himself; the cook releases his hand and uses the same serving spoon to lift an intact wonton with clear broth into Leo's waiting bowl.",
+                      "visual_action": "Follow the finished fold into the spoon's arc, allowing the bowl to enter the composition without losing sight of the gently simmering pot.",
+                      "audience_takeaway": "A controlled cooking moment gives the learner enough uninterrupted time to complete the gesture.",
+                      "supporting_elements": [
+                        "Completed dumpling fold",
+                        "Same serving spoon",
+                        "Waiting bowl now receiving broth",
+                        "Intact wonton",
+                        "Remaining wontons at a gentle simmer"
+                      ],
+                      "world_state": "The lesson and meal resolve together rather than competing for attention.",
+                      "visual_consequence": "The preserved wonton reaches Leo intact at the intended serving moment.",
+                      "continuity_handoff": "The spoon exits toward Leo's place setting while the camera retains the cooktop and pot in the background for the tasting payoff."
+                    },
+                    {
+                      "beat_id": "B5",
+                      "hero_state": "Leo tastes the intact wonton and broth beside the still-gently-active portable cooktop; the cook stays present with an open, unhovering hand and Leo's finished fold rests near the bowl.",
+                      "visual_action": "Settle into a connected tabletop composition where pot, cooktop, spoon, finished fold, bowl, and faces share the same visual field.",
+                      "audience_takeaway": "Precise heat protected a delicate result long enough for attention to pass from pot, to hand, to person.",
+                      "supporting_elements": [
+                        "Portable induction cooktop",
+                        "Gently simmering pot",
+                        "Completed fold",
+                        "Serving spoon resting along its route",
+                        "Leo tasting",
+                        "Cook's relaxed open hand"
+                      ],
+                      "world_state": "The table is calm without becoming static; cooking remains visibly active while the human exchange is complete.",
+                      "visual_consequence": "The product stays causally present in the final warmth instead of disappearing behind a lifestyle ending.",
+                      "continuity_handoff": "The maintained tabletop relationship supports the closing line, with no cut to an unrelated product beauty shot."
+                    }
+                  ]
+                },
+                "repair_anchor_hash": "60203970bf8d3570ac88f855e040e3720937e227dc76d230bbc668794053bdd7",
+                "sticky_requirements": [
+                  "Re-stage the opening as imminent failure: violent bubbles buffet the wonton, flex a vulnerable seam, or catch a loose edge without showing an irreversible tear. After the adjustment, show the same seam remaining intact in the steady simmer.",
+                  "Without adding specifications or a settings demonstration, sharpen the before-and-after into a deliberately selected cooking state: the adjustment should preserve a visibly active, uniform simmer rather than merely reduce bubbling. Keep the hand-to-human transformation as the benefit proof.",
+                  "Compress the progression into three dominant visual movements: threatened wonton and interrupted lesson; measured adjustment and hand changing jobs; completed fold and intact serving. Treat tasting as the final punctuation within the serving composition rather than an additional narrative event.",
+                  "Specify a visually safe continuity solution within the concept, such as a vegetable filling, clean tasting utensil, or an unambiguous separation between folding hands and eating action, without distracting from the film.",
+                  "Revise the opening rehearsal state and B1 treatment so the wonton is visibly threatened but not ruptured\u2014for example, a seam straining or wrapper edge fluttering\u2014then let the steady simmer prevent further deterioration. Preserve the active simmer and intact serving payoff.",
+                  "Retain the overhead tabletop score as the governing visual system, but revise the camera idea and final beat treatment to allow a restrained human-facing transition or angle within the same connected table geography. Leo's recognition and the cook's released attention should register without severing the visible cooktop, pot, spoon, and bowl relationship.",
+                  "Use rhythm as perceptual organization rather than exact beat matching. Let unstable boiling interrupt actions, then let the steady simmer create uninterrupted space in which teaching and serving can flow naturally. Preserve the missed-beat-to-shared-tempo transformation without making human gestures appear controlled by individual bubbles.",
+                  "Keep these as downstream food-styling and cooktop-validation requirements. Do not add measurements or imply testing has already occurred; ensure the revised concept describes only the observable behavior production must validate.",
+                  "Within hero_kind, visual_thesis, transformation, rationale, concept_signature, rehearsal_states, and beat_treatments, restore the wonton and broth state as the hero. Keep the spoon as the continuity spine that makes the consequence easy to follow.",
+                  "Clarify the choreography as a coordinated two-hand argument: the right hand's spoon route pauses and later resumes, while the left hand changes from control monitoring to guiding Leo. Make that complementary action, rather than an overstated continuous spoon journey, the governing visual logic.",
+                  "Revise all rehearsal and beat language so the wrapper is visibly threatened but not yet torn: the seam strains, the wrapper is buffeted, or an edge begins to lift. After the adjustment, the movement settles and the still-intact wonton continues cooking.",
+                  "Build explicit visual holds into camera_idea and beat_treatments at the threatened state, the adjustment, and the stabilized active simmer. The movement should serve those proof moments rather than advertise itself as a stunt.",
+                  "Maintain clear hand roles throughout: the right hand retains the serving spoon while the left hand adjusts and then guides. Identify Leo's unfinished item consistently as the same kind of wonton being cooked and served, while avoiding any implication that a raw-food hand transfers directly to the serving utensil."
+                ],
+                "deferred_production_validations": [],
+                "requirements": [
+                  "Resolve every material Producer issue; do not merely paraphrase the rejected work.",
+                  "Preserve the listed strengths and every upstream decision slot not invalidated by this repair.",
+                  "Do not lower the quality gate or substitute a generic/simpler treatment just to obtain ACCEPT.",
+                  "Produce a materially improved creative answer that can be independently re-reviewed.",
+                  "When previous_output is present, repair that exact anchor rather than reopening candidate competition; preserve all anchor decisions not implicated by the listed issues.",
+                  "Treat sticky_requirements as binding non-regression constraints for this repair lineage.",
+                  "Do not fabricate empirical or physical test results; carry production-only validation requirements downstream instead of inventing evidence."
+                ]
+              }
+            },
+            {
+              "department": "ART_DIRECTION",
+              "reason": "No Producer-accepted Art Direction candidate",
+              "from_revision": 2,
+              "to_revision": 3,
+              "attempt_completed": 1,
+              "next_attempt": 2,
+              "invalidated_slots": [
+                "art_direction",
+                "storyboard",
+                "cinematography",
+                "storyboard_temporal",
+                "motion_performance",
+                "sound_direction",
+                "final_producer"
+              ],
+              "preserved_slots": [
+                "film_thesis",
+                "visual_concept"
+              ],
+              "downstream_budget_resets": {},
+              "context_hash": "7981bfb38e8e6afe76a7f6c7b53a06a0818d0dfe02a83db79bb3a1f1f4cf74d6",
+              "context": {
+                "schema": "NexMindAutonomousRevisionContextV1",
+                "department": "ART_DIRECTION",
+                "from_revision": 2,
+                "to_revision": 3,
+                "attempt_completed": 1,
+                "next_attempt": 2,
+                "max_attempts": 3,
+                "reason": "No Producer-accepted Art Direction candidate",
+                "preserve_decision_slots": [
+                  "film_thesis",
+                  "visual_concept"
+                ],
+                "issues": [
+                  {
+                    "code": "SUPPORT_OVERLOAD",
+                    "detail": "6"
+                  },
+                  {
+                    "code": "CHOREOGRAPHY_CONTRIVANCE",
+                    "severity": "HIGH",
+                    "detail": "Keeping the serving spoon continuously suspended in the cook's right hand through adjustment and teaching may feel posed, physically awkward, and less human than the intended behavior.",
+                    "repair": "Preserve the same spoon and right-hand serving route without requiring an uninterrupted grip. Give the spoon one natural, visible pause at the pot rim or a dedicated spoon rest, then have the same right hand resume the route. Rehearse the hand journey so the teaching contact remains clear and safely separated from steam."
+                  },
+                  {
+                    "code": "HERO_HIERARCHY_DRIFT",
+                    "severity": "MEDIUM",
+                    "detail": "The focal owner moves from the wonton to guiding hands, the traveling spoon, and finally Leo's reaction. Those shifts are narratively useful, but the art direction does not yet guarantee that the preserved wonton remains the dominant visual proof in the final states.",
+                    "repair": "Keep the intact wonton visually privileged during guidance and make it unmistakably dominant in the serving and tasting compositions. Leo's expression should confirm the result rather than replace it. Preserve visible pot and cooktop causality without giving every continuity object equal visual weight."
+                  },
+                  {
+                    "code": "FLATTENED_VALUE_RISK",
+                    "severity": "MEDIUM",
+                    "detail": "The instruction to lift table values evenly after stabilization could flatten the hierarchy precisely when the composition becomes more populated.",
+                    "repair": "Open the image emotionally while retaining selective contrast: keep the wonton, guiding contact, and receiving bowl crisply modeled; allow secondary props and background company to remain subdued. Use depth and overlap to clarify the causal route rather than illuminating the entire table uniformly."
+                  },
+                  {
+                    "code": "PRACTICAL_PROOF_LEGIBILITY",
+                    "severity": "HIGH",
+                    "detail": "The commercial argument depends on viewers recognizing one threatened but unbroken seam as the same preserved seam after the adjustment. Active broth movement, steam, wrapper translucency, and changing orientation could make that continuity unreadable or suggest an edit-based substitution.",
+                    "repair": "Require a practical food-and-camera test before art lock. Develop a naturally distinctive pleat profile and repeatable pot presentation that keep the hero seam visible without adding artificial markers. Validate the threatened flutter, sustained active simmer, wrapper integrity, and readable transition while avoiding any broader performance implication."
+                  },
+                  {
+                    "code": "TYPOGRAPHY_SYSTEM_UNRESOLVED",
+                    "severity": "LOW",
+                    "detail": "Typography is described as both potentially absent and as an opening or closing editorial accent, while no brand system or approved copy is supplied. This could lead to generic type being added late over an already dense composition.",
+                    "repair": "Commit to no opening typography and reserve one quiet closing area for approved brand copy or lockup only. Do not invent interface graphics, settings readouts, or a stylistically generic end line before brand assets and copy are available."
+                  },
+                  {
+                    "severity": "HIGH",
+                    "category": "Causal product proof",
+                    "issue": "The translucent pulse layers and physically realigning table planes risk becoming the perceived cause of the transformation. Viewers may understand the sequence as an elegant visual metaphor without believing that the portable cooktop produced and maintained the useful simmer.",
+                    "impact": "The commercial could feel authored yet fail its central product argument: precise heat protects the same delicate wonton while cooking remains visibly active.",
+                    "repair": "Anchor the intervention in practical, continuous before-and-after broth behavior around the same identifiable wonton seam. Treat translucent layers as restrained environmental framing, never as substitutes for bubbles, wrapper response, or the cook's observable adjustment."
+                  },
+                  {
+                    "severity": "HIGH",
+                    "category": "Representation continuity",
+                    "issue": "The proposed hybrid diorama materially departs from the visual concept's premium live-action tabletop proof. Sculptural food, modeled faces, and dimensional animation could reduce both culinary credibility and the natural human intimacy promised by the lesson between the cook and Leo.",
+                    "impact": "A stylized interpretation may make the food result feel illustrative rather than useful and the relationship feel designed rather than lived.",
+                    "repair": "Use practical food, real hands, and credible human faces for all consequential moments. Preserve the tactile paper, resin, and table-plane language as an authored set and compositional system around that live-action core rather than replacing the hero proof with sculptural simulation."
+                  },
+                  {
+                    "severity": "MEDIUM",
+                    "category": "Human readability",
+                    "issue": "The final requirement to retain the cooktop, active pot, spoon, bowl, completed fold, open hand, tasting action, and two emotional reactions in one field creates an unfavorable scale problem for faces, gaze, fingertip contact, and food recognition.",
+                    "impact": "Leo's recognition and the cook's released attention may become too small to carry the audience-state change, especially in a 16:9 commercial viewed on smaller screens.",
+                    "repair": "Build the final composition as one causal diagonal with selective depth: foreground the intact wonton and Leo's genuine tasting response, retain the cook's open hand and warm gaze in the adjacent plane, and keep the pot and portable unit clearly identifiable but subordinate. Do not demand equal sharpness or prominence from every continuity object."
+                  },
+                  {
+                    "severity": "MEDIUM",
+                    "category": "Typography discipline",
+                    "issue": "Optional explanatory language in B2, another printed phrase in B3, and a closing line create multiple copy opportunities despite a concept that is strongest when the physical transformation explains itself.",
+                    "impact": "The material-integrated type could still behave like an explainer layer, dilute the human observation, and push the film toward the feature-list territory the brief rejects.",
+                    "repair": "Eliminate mid-film typography. Reserve at most one concise closing brand thought integrated into a quiet table plane after the intact serving is legible; do not use type to explain simmer behavior or the hand transformation."
+                  },
+                  {
+                    "severity": "MEDIUM",
+                    "category": "Product specificity and production feasibility",
+                    "issue": "With no supplied brand or industrial-design context, a sculptural satin-black cooktop could become a generic black slab. The proposed plane reorganization, pulse animation, seam continuity, spoon custody, hand contact, serving action, and facial performance also create excessive continuity risk for thirty seconds.",
+                    "impact": "The product may lack ownable recognition while execution complexity consumes time needed for the essential proof holds.",
+                    "repair": "Do not invent product geometry or interface behavior. Build from the approved physical unit when supplied, preserve its true portable silhouette, and simplify the film to three dominant constructions: threatened seam, practical stabilized simmer with the hand crossing to Leo, and intact serving plus taste. Achieve the fractured-to-aligned idea primarily through composition, light, and restrained set layers rather than extensive physical transformation."
+                  }
+                ],
+                "strengths_to_preserve": [
+                  "The prevention thesis is specific, causal, and commercially stronger than a conventional settings demonstration.",
+                  "The threatened-but-unbroken wonton seam provides a distinctive food consequence instead of generic bubbling imagery.",
+                  "The left hand changing from monitoring to teaching is an emotionally legible human transformation.",
+                  "The art bible establishes coherent material relationships among translucent broth, wrapper, ceramic, wood, metal, and cooktop glass.",
+                  "Continuous communal-table geography keeps the human payoff connected to the portable product.",
+                  "The lived-in folding lesson, matching uncooked wonton, waiting bowl, and serving route are scene-specific rather than generic lifestyle symbols.",
+                  "The frames have meaningful settled states and can communicate interruption, release, completion, and recognition without depending entirely on motion.",
+                  "The form is commercially plausible as premium live action, provided the food behavior and hand choreography are practically validated.",
+                  "The strained-but-unbroken wonton seam is a specific, commercially useful hero that demonstrates prevention rather than impossible recovery.",
+                  "The fractured-to-aligned tabletop architecture is an authored visual idea tied directly to interrupted and restored attention.",
+                  "The left hand changing from a hovering arc to a guiding bridge and the right hand retaining spoon custody create clear causal choreography.",
+                  "The material palette, nested shape language, translucent depth, and restrained contour system define a coherent world rather than generic food styling.",
+                  "The lived-in folding board, matching uncooked wonton, filling dish, waiting bowl, and serving route make the lesson scene-specific and understandable without a feature list.",
+                  "Several settled states, especially the threatened seam, ordered simmer, and spoon-to-bowl handoff, have strong still-frame potential when stripped of excess support."
+                ],
+                "revision_briefs": [
+                  "Preserve the clear-broth wonton, prevention rather than recovery, communal portable-table setting, left-hand monitoring-to-guidance transformation, same serving route, active supervised simmer, and restrained premium naturalism. Rebuild the frame system around disciplined hierarchy: threatened seam first, freed guiding hand second, intact served wonton third. Reduce support density and remove decorative or background elements that do not prove lesson, cooking state, or serving destination. Replace the continuously hovering spoon performance with one natural visible pause and same-hand resumption. Keep depth intentional through selective focus, controlled overlap, and subdued background values rather than evenly brightening the whole table. Ensure the final taste remains a reaction to a prominently visible intact wonton while the pot and cooktop stay causally legible. Conduct a practical food, steam, utensil, and hand-choreography test before visual lock so the same distinctive seam can be followed through the transition without implying impossible recovery or an unverified general performance claim. Reserve only a quiet closing area for later approved brand typography.",
+                  "Preserve the delicate wonton, same-seam continuity, fractured-to-aligned composition, two distinct hand roles, spoon route, tactile palette, and shared-table lesson. Rebuild the treatment around practical live-action food and human performance so the audience first believes the continuous physical proof: irregular active boiling threatens the closed seam, one observable adjustment produces a sustained small active simmer, and the same seam remains intact. Use the diorama language as a restrained dimensional set system around that proof, not as an animated explanation of it. Reduce the film to three dominant visual constructions, remove non-causal props and all mid-film typography, and ensure each frame has one focal owner. In the final construction, prioritize Leo's taste, the intact served wonton, and the cook's released hand and gaze while retaining a clearly identifiable active pot and actual portable unit in the connected composition. Validate the real cooktop response, wrapper behavior, food safety, utensil separation, and exact timing before production lock; make no unsupported performance or interface claim."
+                ],
+                "rejected_candidates": [
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "AD-C1-CINEMATIC-TABLETOP",
+                      "art_thesis": "A quiet cinematic tabletop portrait in which natural materials, restrained light, and precise hand choreography make the changing broth rhythm feel like a shared human tempo. The clear-broth wonton is always the visual hero; the portable cooktop remains visibly causal, while the cook's hand transforms from anxious monitor to patient teacher within one continuous communal setting.",
+                      "risk_notes": [
+                        "Practical food styling must validate that the same wonton seam can look threatened without tearing and remain visibly intact through the active simmer; the art direction must not imply a verified cooking-performance claim beyond the filmed moment.",
+                        "Macro bubbling can become generic. Each broth view must show a consequence for the same wonton and the interrupted spoon or hand route.",
+                        "The portable cooktop must remain visible in the causal composition at the adjustment, guidance, serving, and closing states so the human payoff does not detach from the product.",
+                        "The hand transformation must be staged with clear left-hand and right-hand custody; ambiguous hand swaps would weaken the film's central proof.",
+                        "Avoid over-warming the scene into a generic family lifestyle image. Preserve the controlled value structure and specific folding lesson."
+                      ],
+                      "hero": {
+                        "semantic_ref": "Clear broth carrying one vegetable-filled wonton whose vulnerable seam visibly strains under an unstable boil, then remains intact through a small, even active simmer.",
+                        "prominence": "DOMINANT",
+                        "recognizable_required": true
+                      },
+                      "hash": "40c63d50b587ec1ab74fe7cb73a3b1bd1eaa22d8dbe8e34b9dde681db030de2c"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "AD-C2-TACTILE-CULINARY-DIORAMA",
+                      "art_thesis": "A premium tactile culinary diorama turns the communal table into a living diagram of attention: real food, hands, and tableware occupy a sculptural field of translucent planes, while the unstable broth visually fractures the path between control, lesson, and bowl. When the simmer becomes even, those planes align into one continuous route, making precise heat feel like a human enabling structure rather than a technical specification.",
+                      "risk_notes": [
+                        "The diorama language could become diagrammatic and reduce emotional warmth; retain believable hand contact, eye direction, food texture, and domestic table evidence in every human beat.",
+                        "Irregular and even pulse layers must remain visibly tied to the real broth and wonton, not become abstract heat icons.",
+                        "The stylized environment must still read as a shared meal in progress through specific used props and place settings; avoid an empty product stage.",
+                        "The product's portable form needs a strong, recognizable silhouette and visible relationship to the vessel at the intervention and final payoff.",
+                        "Do not let alignment of the planes imply that the cook can leave the food unattended. The cook remains physically present and engaged beside the active unit.",
+                        "Validate the visual continuity of the same seam, spoon, bowl, and matching fold across the dimensional treatment before production lock."
+                      ],
+                      "hero": {
+                        "semantic_ref": "A sculptural clear-broth vessel containing one vegetable-filled wonton with a readable strained seam; its changing pulse pattern reorganizes the entire tabletop path from control to teaching to tasting.",
+                        "prominence": "DOMINANT",
+                        "recognizable_required": true
+                      },
+                      "hash": "585b31dfd82e57023bc5a80b615e27869a1b5c5299d2b544516d6dbc583850bf"
+                    }
+                  }
+                ],
+                "previous_output": {
+                  "candidate_id": "AD-C1-CINEMATIC-TABLETOP",
+                  "art_thesis": "A quiet cinematic tabletop portrait in which natural materials, restrained light, and precise hand choreography make the changing broth rhythm feel like a shared human tempo. The clear-broth wonton is always the visual hero; the portable cooktop remains visibly causal, while the cook's hand transforms from anxious monitor to patient teacher within one continuous communal setting.",
+                  "art_bible": {
+                    "shape_language": "Soft culinary contours contrasted with the cooktop's disciplined rounded rectangle: folded wonton pleats, circular pot rim, curved spoon bowl, waiting bowl, and gently rounded hands create a visual vocabulary of care and containment.",
+                    "line_edge_language": "Mostly tactile photographic edges with crisp silhouettes at the cooktop, pot rim, spoon, and wonton seam. Steam and broth movement have feathered edges, while the vulnerable seam receives the sharpest readable contour.",
+                    "palette_relationship": "Warm ivory, pale jade, translucent amber, and vegetable greens for the food and tableware; charcoal graphite and deep blue-black for the cooktop; a restrained coral accent on Leo's napkin or bowl to carry the human connection without turning the image into a color-coded interface.",
+                    "material_texture_language": "Clear broth, supple translucent wrapper, glossy ceramic, satin-finished cooktop glass, brushed metal spoon, warm wood, woven linen, and lightly flour-dusted folding board. Every material should show believable contact, moisture, weight, and hand use.",
+                    "lighting_value_structure": "Begin with a concentrated pool of light on the threatened wonton and broth, leaving the control hand and Leo slightly darker. As the simmer stabilizes, lift the table values evenly so the cooktop, hands, bowl, and lesson share the same readable light; finish with warm facial and food highlights against a quiet mid-value background.",
+                    "depth_language": "Deep but intimate tabletop layering: near-edge spoon and linen in the foreground, pot, hands, and folding board in the midground, with Leo's face, shared table setting, and soft domestic background receding behind them. Depth supports the causal route rather than creating spectacle.",
+                    "environment_language": "A lived-in communal table rather than a kitchen set: folded napkins, a used flour board, small dipping dish, ceramic bowls, a tea glass, and a restrained glimpse of the surrounding dining space. The portable cooktop is integrated into the table and never isolated as a product pedestal.",
+                    "prop_language": "Props are functional witnesses to the lesson: the same serving spoon travels from pot to bowl, the waiting bowl receives the preserved wonton, the clean folding board carries the unfinished and completed gesture, and one small dish of filling establishes the meal's specificity.",
+                    "character_language": "Readable adult and child or young learner silhouettes with expressive eyes, relaxed shoulders, and clearly owned hands. The cook's left hand has a deliberate performance arc from hovering above the control to guiding Leo's fingers; the right hand retains spoon custody. Leo's gaze moves from the wonton to the cook and finally to the bowl.",
+                    "typography_relationship": "Typography behaves like a quiet editorial caption embedded in the negative space of the table, never competing with the food, face, or hands. It uses warm off-white or charcoal with modest weight and generous spacing, appearing only at the opening and closing thought.",
+                    "continuity_rules": [
+                      "The same clear-broth pot, portable cooktop, serving spoon, vulnerable wonton seam, waiting bowl, folding board, and matching half-folded wonton remain visually traceable across all beats.",
+                      "The cook's left hand owns the control-to-guidance transformation, while the right hand owns the spoon route from pot to bowl.",
+                      "The broth changes from uneven oversized bubbles to small even active pulses, but the pot never becomes inactive or unattended.",
+                      "The final serving, completed fold, intact wonton, cooktop, and human reaction remain in one connected tabletop geography."
+                    ]
+                  },
+                  "hero": {
+                    "semantic_ref": "Clear broth carrying one vegetable-filled wonton whose vulnerable seam visibly strains under an unstable boil, then remains intact through a small, even active simmer.",
+                    "art_budget": "HIGH",
+                    "prominence": "DOMINANT",
+                    "recognizable_required": true
+                  },
+                  "composition": {
+                    "archetype": "Cinematic communal-table tableau with macro food intimacy resolving into a connected two-person serving composition.",
+                    "hierarchy_order": [
+                      "Threatened wonton seam and broth rhythm",
+                      "Cook's left hand at the control",
+                      "Leo's unfinished matching fold and waiting bowl",
+                      "Right-hand serving spoon route",
+                      "Portable induction cooktop and surrounding table world",
+                      "Closing human taste and recognition"
+                    ],
+                    "negative_space_intent": "Reserve calm, uncluttered table and wall value around the hands and faces so the visual argument can breathe after the unstable opening; use the cleanest negative space for the closing line.",
+                    "density": "BALANCED",
+                    "asymmetry_intent": "Let the threatened pot and trapped control hand pull visual weight to one side while Leo's unfinished fold counterbalances it. After the adjustment, the diagonal between the freed left hand and the waiting bowl replaces the earlier visual tension.",
+                    "foreground_strategy": "Use a near-table linen edge, spoon handle, or bowl rim as tactile framing, never obscuring the seam, hands, or faces. Foreground elements should establish shared-table proximity and the spoon's route.",
+                    "midground_strategy": "Keep the cooktop, pot, seam, hands, folding board, and waiting bowl in a readable causal band. This is the primary action plane and must remain visually coherent through the hand transition.",
+                    "background_strategy": "Build a soft domestic dining context with restrained tableware, warm wall tone, and a partial seated presence. Background detail should imply company without competing with the food lesson.",
+                    "scale_contrast_intent": "Move from intimate macro scale on the seam to a medium tabletop scale that still makes the pot and human hands dominant; the final face and bowl are large enough to register recognition without demoting the product.",
+                    "overlap_intent": "Use purposeful overlaps among spoon, pot rim, hand, bowl, and folding board to show custody and route. Keep the wonton seam and the guiding contact hand unobstructed at their proof moments.",
+                    "execution_directives": {
+                      "spatial_mode": "GROUNDED_SCENE",
+                      "depth_mode": "DEEP",
+                      "hero_scale": "DOMINANT_CLOSE",
+                      "environment_density": "CONTEXTUAL",
+                      "overlap_mode": "PURPOSEFUL_FOREGROUND",
+                      "typography_mode": "SUPPORT"
+                    },
+                    "support_budget": 6,
+                    "decoration_budget": 1
+                  },
+                  "form_request": {
+                    "concept": "Premium live-action tabletop film built around prevention: an unstable broth threatens one delicate wonton, one measured heat response restores a useful simmer, and the released hand finishes a human lesson.",
+                    "representation": "Authored cinematic photography with practical food styling, controlled macro detail, continuous tabletop geography, expressive hands, and warm human-facing coverage that never becomes a generic lifestyle montage.",
+                    "semantic_parts": [
+                      "Portable induction cooktop integrated into a communal table",
+                      "Clear broth with an uneven oversized boil becoming a small even simmer",
+                      "Same vegetable-filled wonton with a visibly strained but unbroken seam",
+                      "Cook's left hand changing from heat monitoring to guidance",
+                      "Cook's right hand retaining the serving spoon",
+                      "Leo's matching half-folded wonton and completed fold",
+                      "Waiting bowl receiving intact wonton and broth",
+                      "Clean tasting utensil and restrained human reaction"
+                    ],
+                    "required_operations": [
+                      "Establish the threatened seam before intervention without showing irreversible damage",
+                      "Show one deliberate adjustment and hold through the transition to an active steady simmer",
+                      "Preserve the same pot, seam, spoon, hands, and tabletop geography across the hand transformation",
+                      "Make the left-hand contact with Leo specific and legible",
+                      "Complete the spoon route from pot to bowl while the cooktop remains visible",
+                      "Resolve with Leo tasting the intact result while the cook remains present",
+                      "Keep typography sparse and subordinate to the food and human action"
+                    ],
+                    "style": "Tactile premium food cinematography: warm wood and ceramic, translucent liquids, quiet domestic chiaroscuro, precise practical choreography, shallow atmospheric depth, and emotionally readable faces and hands."
+                  },
+                  "beat_art": [
+                    {
+                      "beat_id": "B1",
+                      "settled_visual_state": "A clear-broth pot on the portable cooktop rolls with uneven oversized bubbles. One vegetable-filled wonton sits close to the surface with its seam flexing and a loose edge fluttering but still closed. The cook's left hand hovers over the control, the right hand pauses with the serving spoon, and Leo holds a matching half-folded wonton beside his waiting bowl.",
+                      "focal_owner": "The threatened wonton seam and the irregular broth rhythm.",
+                      "supporting_roles": [
+                        "Cook's trapped left hand",
+                        "Paused right-hand spoon",
+                        "Leo's unfinished fold",
+                        "Waiting bowl and clean folding board",
+                        "Visible portable cooktop"
+                      ],
+                      "environment_state": "A warm communal table is already in use, with flour, filling, bowls, and linen showing that the lesson and meal are happening together.",
+                      "prop_specificity": "The spoon is held above the pot rather than placed elsewhere; the matching half-folded wonton, folding board, and waiting bowl establish the interrupted route from lesson to serving.",
+                      "character_performance_state": "The cook leans in with contained concern and divided attention. Leo watches the cook and his unfinished fold, waiting for the next instruction.",
+                      "typography_role": "Opening voiceover carries the line about delicate things needing a gentler rhythm; no on-screen type interrupts the threatened seam.",
+                      "depth_read": "Macro foreground seam and broth lead into the control hand and spoon in the midground, with Leo and the lived-in table receding behind them.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B2",
+                      "settled_visual_state": "The same wonton remains intact in the same pot while the broth shows small, even, visibly active pulses. The left hand has withdrawn from the control; the right hand still owns the serving spoon beside the pot.",
+                      "focal_owner": "The intact seam inside the newly ordered simmer.",
+                      "supporting_roles": [
+                        "Withdrawing left hand",
+                        "Right-hand spoon held in route",
+                        "Portable control surface",
+                        "Pot rim and clear broth"
+                      ],
+                      "environment_state": "The table has not changed, but the surrounding value structure opens up and the pot no longer feels like an emergency interrupting the lesson.",
+                      "prop_specificity": "The control surface is touched once, the spoon remains the same object and hand, and the broth level and wonton position match the prior frame.",
+                      "character_performance_state": "The cook's shoulders release slightly; the left hand is already traveling toward Leo while the face remains attentive to both pot and learner.",
+                      "typography_role": "A restrained verbal clarification distinguishes an active simmer from turning the heat off; no feature labels or setting graphics appear.",
+                      "depth_read": "The pot and seam stay dominant in the midground while the freed hand creates a readable bridge toward the background learner.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B3",
+                      "settled_visual_state": "The cook's left hand rests over Leo's fingers on the clean folding board, guiding the next pleat of the matching vegetable-filled wonton. The steady pot, visible cooktop, and right-hand spoon remain in the same connected tabletop field.",
+                      "focal_owner": "The physical contact between the cook's guiding hand and Leo's unfinished fold.",
+                      "supporting_roles": [
+                        "Leo's focused face and hands",
+                        "Evenly simmering pot",
+                        "Right-hand serving spoon",
+                        "Completed and raw folding materials",
+                        "Waiting bowl"
+                      ],
+                      "environment_state": "Cooking and teaching coexist at the same table; the environment feels calm, occupied, and supervised rather than abandoned.",
+                      "prop_specificity": "Leo's fold has a specific next pleat, the board remains clean enough to read the gesture, and the spoon is visibly ready at the pot without being repurposed.",
+                      "character_performance_state": "The cook is patient and close, guiding rather than correcting. Leo's gaze is on his fingers and the fold, with concentration replacing waiting anxiety.",
+                      "typography_role": "The spoken line about the watching hand becoming the showing hand may sit over the open table value, with no persistent caption.",
+                      "depth_read": "The guiding hands and fold form the central plane; pot and spoon sit beside them as active support, while faces and domestic tableware create depth behind.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B4",
+                      "settled_visual_state": "Leo's fold is complete beside his bowl. The cook's left hand has released him, and the right hand lifts the intact cooked wonton with clear broth from the steady pot using the same spoon, visibly traveling toward the waiting bowl.",
+                      "focal_owner": "The serving spoon carrying the preserved wonton from pot to bowl.",
+                      "supporting_roles": [
+                        "Leo's completed fold",
+                        "Waiting bowl",
+                        "Released left hand",
+                        "Still-active cooktop and pot",
+                        "Leo's anticipatory gaze"
+                      ],
+                      "environment_state": "The shared table is synchronized again: the lesson is finished, the pot is still cooking, and serving is happening without a break in human presence.",
+                      "prop_specificity": "The spoon contains both broth and one intact wonton; the receiving bowl and completed fold are close enough to read as the destination of the same interrupted route.",
+                      "character_performance_state": "Leo looks from his completed fold to the approaching spoon with quiet pride. The cook's left hand rests open rather than returning to the control.",
+                      "typography_role": "No typography; let the completed fold, spoon route, and intact result carry the proof.",
+                      "depth_read": "The spoon crosses the midground from pot to bowl, with Leo's face and the open left hand framing the destination while the cooktop stays legible behind.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B5",
+                      "settled_visual_state": "Leo tastes the intact wonton and broth with a clean utensil. The completed fold sits beside the bowl, the serving spoon rests along its route, and the gently active pot and portable cooktop remain visible beside the cook's open, unhovering hand.",
+                      "focal_owner": "Leo's first taste, held in direct relationship to the intact wonton, bowl, pot, and cooktop.",
+                      "supporting_roles": [
+                        "Cook's released expression",
+                        "Completed fold",
+                        "Same serving spoon",
+                        "Steady pot",
+                        "Open left hand",
+                        "Warm communal table"
+                      ],
+                      "environment_state": "The table is calm but still cooking. The cook remains engaged beside the unit, making the human payoff visibly supervised rather than unattended.",
+                      "prop_specificity": "The clean tasting utensil is distinct from the folding activity, the served wonton is visibly intact, and the same spoon and pot remain in frame as causal witnesses.",
+                      "character_performance_state": "Leo registers recognition and satisfaction; the cook watches with warm relief, no longer divided between correction and connection.",
+                      "typography_role": "Closing voiceover delivers the concise thesis about precise heat and staying in the moment, placed only in remaining quiet space.",
+                      "depth_read": "A connected human-facing composition holds bowl, tasting face, open hand, spoon, pot, and cooktop across foreground, midground, and background without a separate beauty shot.",
+                      "meaning_without_motion": true
+                    }
+                  ],
+                  "typography_intent": "Use typography as a sparse editorial accent, not an explainer overlay. The opening thought may be carried by voiceover alone; the closing phrase should appear only if needed in a quiet area after the causal action has landed. Use a warm off-white or charcoal humanist sans with generous spacing, no settings readouts, no feature bullets, and no typographic treatment that competes with the seam, hands, or tasting reaction.",
+                  "risk_notes": [
+                    "Practical food styling must validate that the same wonton seam can look threatened without tearing and remain visibly intact through the active simmer; the art direction must not imply a verified cooking-performance claim beyond the filmed moment.",
+                    "Macro bubbling can become generic. Each broth view must show a consequence for the same wonton and the interrupted spoon or hand route.",
+                    "The portable cooktop must remain visible in the causal composition at the adjustment, guidance, serving, and closing states so the human payoff does not detach from the product.",
+                    "The hand transformation must be staged with clear left-hand and right-hand custody; ambiguous hand swaps would weaken the film's central proof.",
+                    "Avoid over-warming the scene into a generic family lifestyle image. Preserve the controlled value structure and specific folding lesson."
+                  ],
+                  "visual_candidate_id": "C1-R2"
+                },
+                "repair_anchor_hash": "40c63d50b587ec1ab74fe7cb73a3b1bd1eaa22d8dbe8e34b9dde681db030de2c",
+                "sticky_requirements": [
+                  "6",
+                  "Preserve the same spoon and right-hand serving route without requiring an uninterrupted grip. Give the spoon one natural, visible pause at the pot rim or a dedicated spoon rest, then have the same right hand resume the route. Rehearse the hand journey so the teaching contact remains clear and safely separated from steam.",
+                  "Keep the intact wonton visually privileged during guidance and make it unmistakably dominant in the serving and tasting compositions. Leo's expression should confirm the result rather than replace it. Preserve visible pot and cooktop causality without giving every continuity object equal visual weight.",
+                  "Open the image emotionally while retaining selective contrast: keep the wonton, guiding contact, and receiving bowl crisply modeled; allow secondary props and background company to remain subdued. Use depth and overlap to clarify the causal route rather than illuminating the entire table uniformly.",
+                  "Require a practical food-and-camera test before art lock. Develop a naturally distinctive pleat profile and repeatable pot presentation that keep the hero seam visible without adding artificial markers. Validate the threatened flutter, sustained active simmer, wrapper integrity, and readable transition while avoiding any broader performance implication.",
+                  "Commit to no opening typography and reserve one quiet closing area for approved brand copy or lockup only. Do not invent interface graphics, settings readouts, or a stylistically generic end line before brand assets and copy are available.",
+                  "Anchor the intervention in practical, continuous before-and-after broth behavior around the same identifiable wonton seam. Treat translucent layers as restrained environmental framing, never as substitutes for bubbles, wrapper response, or the cook's observable adjustment.",
+                  "Use practical food, real hands, and credible human faces for all consequential moments. Preserve the tactile paper, resin, and table-plane language as an authored set and compositional system around that live-action core rather than replacing the hero proof with sculptural simulation.",
+                  "Build the final composition as one causal diagonal with selective depth: foreground the intact wonton and Leo's genuine tasting response, retain the cook's open hand and warm gaze in the adjacent plane, and keep the pot and portable unit clearly identifiable but subordinate. Do not demand equal sharpness or prominence from every continuity object.",
+                  "Eliminate mid-film typography. Reserve at most one concise closing brand thought integrated into a quiet table plane after the intact serving is legible; do not use type to explain simmer behavior or the hand transformation.",
+                  "Do not invent product geometry or interface behavior. Build from the approved physical unit when supplied, preserve its true portable silhouette, and simplify the film to three dominant constructions: threatened seam, practical stabilized simmer with the hand crossing to Leo, and intact serving plus taste. Achieve the fractured-to-aligned idea primarily through composition, light, and restrained set layers rather than extensive physical transformation."
+                ],
+                "deferred_production_validations": [],
+                "requirements": [
+                  "Resolve every material Producer issue; do not merely paraphrase the rejected work.",
+                  "Preserve the listed strengths and every upstream decision slot not invalidated by this repair.",
+                  "Do not lower the quality gate or substitute a generic/simpler treatment just to obtain ACCEPT.",
+                  "Produce a materially improved creative answer that can be independently re-reviewed.",
+                  "When previous_output is present, repair that exact anchor rather than reopening candidate competition; preserve all anchor decisions not implicated by the listed issues.",
+                  "Treat sticky_requirements as binding non-regression constraints for this repair lineage.",
+                  "Do not fabricate empirical or physical test results; carry production-only validation requirements downstream instead of inventing evidence."
+                ]
+              }
+            },
+            {
+              "department": "ART_DIRECTION",
+              "reason": "No Producer-accepted Art Direction candidate",
+              "from_revision": 3,
+              "to_revision": 4,
+              "attempt_completed": 2,
+              "next_attempt": 3,
+              "invalidated_slots": [
+                "art_direction",
+                "storyboard",
+                "cinematography",
+                "storyboard_temporal",
+                "motion_performance",
+                "sound_direction",
+                "final_producer"
+              ],
+              "preserved_slots": [
+                "film_thesis",
+                "visual_concept"
+              ],
+              "downstream_budget_resets": {},
+              "context_hash": "b616159ec889dfaf7cbe96d5185db02c0b12d2537583eba399a2b30989b4e30a",
+              "context": {
+                "schema": "NexMindAutonomousRevisionContextV1",
+                "department": "ART_DIRECTION",
+                "from_revision": 3,
+                "to_revision": 4,
+                "attempt_completed": 2,
+                "next_attempt": 3,
+                "max_attempts": 3,
+                "reason": "No Producer-accepted Art Direction candidate",
+                "preserve_decision_slots": [
+                  "film_thesis",
+                  "visual_concept"
+                ],
+                "issues": [
+                  {
+                    "code": "SUPPORT_OVERLOAD",
+                    "detail": "7"
+                  },
+                  {
+                    "severity": "MEDIUM",
+                    "category": "Construction discipline",
+                    "issue": "The form request promises three dominant constructions, but the art plan still presents five substantially populated settled states. B2 and B3 repeat stabilized-simmer evidence, while B4 and B5 separately accumulate serving and tasting information.",
+                    "impact": "Thirty seconds may be consumed by establishing and resolving multiple compositions instead of holding long enough for viewers to verify the same seam, understand the hand transformation, and register the intact result.",
+                    "repair": "Consolidate the five beat states into three governing art constructions without deleting the narrative actions: threatened seam; preserved active simmer with the left hand crossing into guidance and the spoon naturally paused; intact serving resolving directly into taste. Let intermediate actions occur inside those constructions rather than requiring additional fully resolved tableaux."
+                  },
+                  {
+                    "code": "TASTING_PROOF_AMBIGUITY",
+                    "severity": "MEDIUM",
+                    "issue": "B5 asks the intact wonton to remain clearly visible while Leo tastes the wonton and broth, but the proposed action does not specify whether he tastes broth, lifts the wonton, or bites it. A bite could destroy the intact proof, while tasting only broth could weaken the claimed confirmation of the preserved wonton.",
+                    "impact": "The final frame may become physically contradictory or allow Leo's reaction to substitute for the food proof.",
+                    "repair": "Stage a clear two-state final construction: first hold the distinctive intact seam fully readable in the receiving bowl or on the clean tasting utensil before any bite; then let Leo taste as a brief confirmation while the preserved seam remains visible whenever physically credible. Do not require post-bite intactness, and do not imply that his expression independently proves product performance."
+                  },
+                  {
+                    "code": "PROOF_VALIDATION_PENDING",
+                    "severity": "HIGH",
+                    "issue": "The concept still depends on practical continuity of one naturally distinctive seam through unstable broth, stabilization, spoon lift, bowl placement, steam, and changing orientation. The candidate correctly carries this as a test requirement, but commercial feasibility cannot be considered locked until that test informs the exact presentation.",
+                    "impact": "Failure of seam recognition would collapse the prevention argument and could make the result appear substituted across edits.",
+                    "repair": "Keep the practical food-and-camera test mandatory before art lock. Use its findings to establish repeatable seam orientation, pot presentation, broth behavior, steam level, spoon approach, bowl landing, lens depth, and proof-hold duration. If the same seam cannot remain naturally legible, revise staging rather than adding artificial markers or implying recovery."
+                  }
+                ],
+                "strengths_to_preserve": [
+                  "The prevention thesis remains specific, causal, and commercially stronger than a settings demonstration.",
+                  "Practical live-action food, real hands, and credible faces restore culinary belief and human intimacy.",
+                  "The naturally distinctive seam is treated as continuous proof, with required food-and-camera validation carried forward rather than fabricated.",
+                  "The spoon choreography now includes a natural visible pause and safe same-hand resumption.",
+                  "Selective contrast repairs the earlier flattened-value risk and gives the seam, guiding contact, and receiving bowl deliberate priority.",
+                  "The final causal diagonal correctly makes Leo's reaction confirmation of the intact wonton rather than a replacement for it.",
+                  "The tactile material system is coherent and scene-specific without relying on animated metaphor or decorative transformation.",
+                  "Typography discipline is resolved: no opening or mid-film type, no invented interface, and only a reserved closing area for approved brand material.",
+                  "The candidate avoids inventing product geometry or unsupported interface behavior and correctly depends on the supplied physical unit.",
+                  "The repair preserves the specific prevention thesis and keeps precise heat causal rather than reducing the film to settings or specifications.",
+                  "Practical live-action food, real hands, credible faces, and the true supplied product replace the rejected sculptural substitution risk.",
+                  "The naturally distinctive threatened-but-unbroken wonton seam remains a memorable and commercially useful hero.",
+                  "The left hand's monitoring-to-guidance transformation is emotionally legible and directly connected to the stabilized active simmer.",
+                  "The spoon now receives a natural visible pause and same-hand resumption, removing the posed uninterrupted-grip choreography.",
+                  "Static tactile table planes, restrained material accents, and selective lighting retain authored visual character without appearing to cause the cooking transformation.",
+                  "Selective contrast and the causal diagonal materially improve hierarchy over the evenly lifted tabletop approach.",
+                  "Opening and mid-film typography have been eliminated, with only a quiet closing area reserved for approved brand assets.",
+                  "The compact folding lesson, matching wonton, receiving bowl, and shared portable-table geography remain scene-specific rather than generic lifestyle decoration.",
+                  "The three dominant constructions are commercially plausible and contain strong motion-independent settled states."
+                ],
+                "revision_briefs": [
+                  "Preserve the proof-first art thesis, practical live-action representation, same naturally distinctive wonton seam, active supervised simmer, left-hand monitoring-to-guidance transformation, natural right-hand spoon pause and resumption, selective value structure, restrained communal-table world, true product silhouette, and closing-only typography policy. Perform one structural reduction rather than another stylistic rewrite: rebuild the art plan as exactly three dominant settled constructions and lower visible support density in each. Construction one is owned by the threatened seam, with unstable broth, the control hand, and portable heat source as its essential supports; Leo's unfinished lesson should register only as a subdued contextual cue. Construction two is owned by the preserved seam, with the guiding contact as its human consequence and the spoon visibly resting in a natural safe pause; do not give the bowl, faces, board, pot, and unit equal emphasis. Construction three is owned by the intact wonton moving into or resting in Leo's bowl, with Leo's tasting response and the cook's open hand and gaze adjacent; merge pot and cooktop into one subordinate causal plane and let the completed fold or spoon recede unless needed for the immediate handoff. Preserve continuity across the sequence instead of displaying every witness in every frame. Keep the practical seam, broth, steam, utensil, response-timing, and hand-safety tests as mandatory downstream validations without asserting results.",
+                  "Preserve the film thesis, practical live-action representation, same-seam prevention proof, static authored tabletop architecture, two distinct hand roles, natural spoon pause and resumption, selective lighting, and typography discipline. Perform one final hierarchy pass rather than reopening the concept: lower the support budget, strip each settled frame to the hero and a maximum of three actively modeled supports, and demote all other required continuity objects through softness, overlap, subdued value, or silhouette. Make B4 unequivocally belong to the intact wonton crossing into the receiving bowl and make B5 belong first to the intact served seam, with Leo's taste only confirming it. Specify a physically credible pre-bite proof hold so tasting does not contradict intactness. Carry the mandatory food, steam, spoon, seam-orientation, cooktop-response, and camera test through art lock; do not fabricate results, artificial markers, interface behavior, or broader performance claims."
+                ],
+                "rejected_candidates": [
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "AD-C1-R3-PRACTICAL-PROOF",
+                      "art_thesis": "A proof-first live-action tabletop portrait makes precise heat feel human by visibly preventing one delicate wonton from failing. The same naturally distinctive seam is threatened by an over-active clear-broth boil, preserved through one observable adjustment into a small active simmer, and finally served intact while the cook's freed left hand teaches Leo. The food consequence remains dominant in every construction; the human warmth is the result of that practical continuity.",
+                      "risk_notes": [
+                        "Run a practical food-and-camera validation before art lock for the same naturally distinctive seam, threatened flutter, sustained active simmer, wrapper integrity, steam separation, and repeatable pot presentation; do not fabricate test results.",
+                        "The seam must remain traceable through changing orientation, broth movement, steam, serving, and tasting without artificial markers or edit-based substitution.",
+                        "The right-hand spoon needs a rehearsed visible pause at the pot rim or a dedicated rest, followed by natural resumption after the left-hand teaching contact is safely clear; never stage an uninterrupted suspended grip.",
+                        "Keep the intact wonton dominant during guidance, serving, and tasting. Leo's face confirms the result, while pot and cooktop remain visibly causal but subordinate.",
+                        "Use the supplied physical cooktop when available and do not invent geometry, controls, interface behavior, or broader performance claims.",
+                        "Selective contrast must remain intact as the table populates; do not lift every prop and background value equally.",
+                        "The final construction must not demand equal sharpness from seam, bowl, faces, hands, spoon, pot, and unit; use focus and overlap to preserve the causal diagonal."
+                      ],
+                      "hero": {
+                        "semantic_ref": "One vegetable-filled wonton in clear broth with a naturally distinctive seam that visibly strains under an uneven boil, then remains intact through a small, even active simmer and reaches the serving bowl unchanged.",
+                        "prominence": "DOMINANT",
+                        "recognizable_required": true
+                      },
+                      "hash": "459dd2195c01b4442b5c2213e70230ccd39addbd55570aec82a5736193211eb3"
+                    }
+                  },
+                  {
+                    "verdict": "REVISE",
+                    "candidate": {
+                      "candidate_id": "AD-C1-R3-CAUSAL-DIAGONAL",
+                      "art_thesis": "A single connected tabletop diagonal turns interrupted attention into a visible route: the threatened wonton begins at the sharp end of the composition, the practical simmer stabilizes beside it, the cook's left hand crosses into Leo's folding lesson, and the same right-hand spoon returns to deliver the intact result. The authored set language comes from static table planes, natural material junctions, and selective light around real food and real people, never from animated diagrams or sculptural replacement.",
+                      "risk_notes": [
+                        "The practical food-and-camera test is mandatory before art lock: validate the same naturally distinctive seam, threatened flutter, active simmer, wrapper integrity, steam behavior, pot presentation, and transition readability without artificial markers.",
+                        "Static paper, resin, linen, or table-plane accents must remain environmental framing only. They must not pulse, realign, or appear to cause the cooking transformation.",
+                        "The spoon choreography requires one visible natural pause at the pot rim or dedicated rest, then same-hand resumption after safe separation from steam and teaching contact.",
+                        "The hero seam must remain the focal owner during guidance and must be unmistakably dominant in serving and tasting; Leo's face confirms the result rather than replacing it.",
+                        "Do not invent the cooktop's geometry, controls, interface, or performance claims. Use the approved physical unit when available and preserve its actual portable silhouette.",
+                        "The final composition should use selective focus and overlap, not equal sharpness or uniform lighting, to retain food, fingers, faces, bowl, pot, and unit legibility.",
+                        "The cook remains present beside the active unit throughout; the visual benefit is released attention, not unattended cooking.",
+                        "Remove all non-causal props and decorative density so the three dominant constructions have enough scale and proof-hold time for smaller-screen viewing."
+                      ],
+                      "hero": {
+                        "semantic_ref": "The same delicate vegetable-filled wonton, identified by a naturally distinctive closed seam, moving from threatened active boil to preserved active simmer and intact serving.",
+                        "prominence": "DOMINANT",
+                        "recognizable_required": true
+                      },
+                      "hash": "aa801dc15fd7f136d163c4945954b3a6503aa5aa9aec89308016ba4efc557e7c"
+                    }
+                  }
+                ],
+                "previous_output": {
+                  "candidate_id": "AD-C1-R3-PRACTICAL-PROOF",
+                  "art_thesis": "A proof-first live-action tabletop portrait makes precise heat feel human by visibly preventing one delicate wonton from failing. The same naturally distinctive seam is threatened by an over-active clear-broth boil, preserved through one observable adjustment into a small active simmer, and finally served intact while the cook's freed left hand teaches Leo. The food consequence remains dominant in every construction; the human warmth is the result of that practical continuity.",
+                  "art_bible": {
+                    "shape_language": "Soft folded culinary contours, circular pot and bowl rims, curved spoon geometry, and relaxed hand shapes are set against the portable cooktop's disciplined rounded silhouette. The vulnerable wonton seam is the most specific and visually assertive line in the system.",
+                    "line_edge_language": "Use real photographic edges with selective crispness: the seam, pot rim, broth surface, control hand, and receiving bowl are sharply legible at proof moments. Steam, liquid movement, and background company soften into atmospheric edges without becoming graphic effects.",
+                    "palette_relationship": "Clear broth, ivory wrapper, pale jade filling, warm ceramic, natural wood, and muted vegetable greens occupy the light family. The approved physical cooktop remains in its true finish and silhouette, held in deep graphite values. A restrained coral or rust note may live naturally in Leo's cloth or bowl, never as a coded interface accent.",
+                    "material_texture_language": "Practical food and surfaces carry the authorship: translucent wrapper, clear broth, glossy ceramic, brushed spoon metal, satin cooktop glass, lightly floured folding board, woven linen, and worn wood. Moisture, weight, steam, and hand contact must read as physically credible rather than simulated.",
+                    "lighting_value_structure": "Start with concentrated contrast on the threatened seam and broth, allowing the monitoring hand and learner to sit in controlled shadow. After stabilization, open only the causal planes: intact wonton, guiding contact, receiving bowl, and faces receive modeled lift while secondary tableware and background company remain subdued. The final image stays selective, not evenly illuminated.",
+                    "depth_language": "Use intimate practical depth from foreground table edge and bowl rim through the pot and hands to Leo and the softened dining room. Focus and value guide the eye along the causal route; depth never hides the seam, contact, spoon custody, or product relationship.",
+                    "environment_language": "A real communal table in active use, organized around the folding lesson and portable cooking rather than a styled kitchen. Keep only the flour-dusted folding board, filling vessel, matching uncooked wonton, waiting bowl, and minimal table evidence needed to establish the meal and destination.",
+                    "prop_language": "Every retained prop witnesses the causal story. The folding board supports Leo's unfinished and completed fold; the matching uncooked wonton identifies the lesson; the same serving spoon pauses visibly at the pot rim or on a nearby dedicated rest before resuming; the waiting bowl receives the preserved result. No decorative prop competes with these objects.",
+                    "character_language": "Real hands and credible human faces carry the performance. The cook's left hand moves from hovering control monitor to open guide, while the right hand owns the spoon route with a natural pause and resumption. Leo's gaze and shoulders move from waiting tension to focused participation to genuine tasting recognition. The cook remains physically present beside the active unit.",
+                    "typography_relationship": "No opening or mid-film typography. Reserve one quiet closing table plane for later-approved brand copy or lockup only. Type must remain subordinate to the intact wonton, faces, hands, bowl, pot, and cooktop; no invented settings, readouts, captions, or explanatory graphics.",
+                    "continuity_rules": [
+                      "Follow one naturally distinctive, repeatable wonton pleat and seam through threatened, stabilized, served, and tasted states without artificial markers.",
+                      "The same approved physical cooktop, clear-broth pot, spoon, bowl, folding board, and matching uncooked wonton remain traceable across the three dominant constructions.",
+                      "The cook's left hand owns the control-to-guidance transformation; the right hand owns the spoon, pauses naturally at the pot rim or spoon rest, and resumes only after the teaching contact is safely clear.",
+                      "The pot remains visibly active and supervised after adjustment; the final human payoff never implies unattended cooking or a broader unverified performance claim."
+                    ]
+                  },
+                  "hero": {
+                    "semantic_ref": "One vegetable-filled wonton in clear broth with a naturally distinctive seam that visibly strains under an uneven boil, then remains intact through a small, even active simmer and reaches the serving bowl unchanged.",
+                    "art_budget": "HIGH",
+                    "prominence": "DOMINANT",
+                    "recognizable_required": true
+                  },
+                  "composition": {
+                    "archetype": "Proof-first communal tabletop sequence that moves from intimate seam evidence to a selective causal diagonal of pot, hands, bowl, and human reaction.",
+                    "hierarchy_order": [
+                      "Same threatened and preserved wonton seam",
+                      "Observable broth behavior and pot",
+                      "Cook's left-hand transformation from control to guidance",
+                      "Intact served wonton in Leo's receiving bowl",
+                      "Leo's tasting reaction and cook's released gaze",
+                      "Approved portable cooktop silhouette and minimal table context"
+                    ],
+                    "negative_space_intent": "Keep a calm, unoccupied band beside the causal route so the seam and hand contact are not crowded. In the closing state, preserve a quiet table plane for optional approved brand copy only after the intact serving is unmistakable.",
+                    "density": "SPARSE",
+                    "asymmetry_intent": "Let the pot and threatened seam carry initial visual weight while the trapped left hand and Leo's unfinished fold form a secondary tension. After the adjustment, the diagonal from intact wonton to guiding hand to receiving bowl becomes the organizing imbalance, with faces confirming rather than competing.",
+                    "foreground_strategy": "Use a restrained bowl rim, table edge, or soft linen fold to establish physical proximity. Foreground framing must never cover the hero seam, the guiding contact, the receiving wonton, or Leo's tasting response.",
+                    "midground_strategy": "Keep the pot, true cooktop silhouette, hero wonton, hands, folding board, spoon pause, and receiving bowl in one readable causal band. This is the primary proof plane and receives the cleanest modeling.",
+                    "background_strategy": "Use a subdued domestic table and softly present companion atmosphere only where it supports communal context. Background faces, place settings, and wall values stay quiet and never become additional story beats.",
+                    "scale_contrast_intent": "Give the threatened seam and final intact wonton dominant close readability, then widen only enough for the hand journey and final reaction to remain legible. The cooktop and pot are clearly identifiable but subordinate; Leo's expression confirms the hero instead of replacing it.",
+                    "overlap_intent": "Use purposeful overlaps to show hand custody and route: spoon against pot rim, left hand crossing toward the board, and bowl aligned with the serving path. Preserve clean separation around the seam, guiding fingertips, and intact served wonton.",
+                    "execution_directives": {
+                      "spatial_mode": "GROUNDED_SCENE",
+                      "depth_mode": "LAYERED",
+                      "hero_scale": "DOMINANT_CLOSE",
+                      "environment_density": "MINIMAL",
+                      "overlap_mode": "HERO_SUPPORT",
+                      "typography_mode": "SUPPORT"
+                    },
+                    "support_budget": 7,
+                    "decoration_budget": 0
+                  },
+                  "form_request": {
+                    "concept": "Premium practical live-action commercial built in three constructions: threatened seam, stabilized active simmer with the monitoring hand crossing to teach, and intact serving plus taste.",
+                    "representation": "Continuous tabletop photography with validated practical food behavior, real hands and faces, selective macro proof, controlled focus, and a restrained final causal diagonal rather than a beauty montage or animated diagram.",
+                    "semantic_parts": [
+                      "Approved portable induction cooktop in its true physical silhouette",
+                      "Clear broth with visibly uneven large bubbles becoming a small even active simmer",
+                      "One naturally distinctive vegetable-filled wonton seam followed continuously",
+                      "Cook's left hand moving from control monitoring to safe teaching contact",
+                      "Cook's right hand pausing the serving spoon naturally and later resuming the same route",
+                      "Leo's matching half-folded wonton on a clean folding board",
+                      "Waiting bowl receiving the intact wonton and broth",
+                      "Cook's open released hand and Leo's genuine tasting response"
+                    ],
+                    "required_operations": [
+                      "Practical food-and-camera test the same distinctive seam, threatened flutter, wrapper integrity, broth activity, and repeatable pot presentation before art lock",
+                      "Show one deliberate adjustment continuously enough to connect the changed broth behavior to the preserved seam",
+                      "Give the right-hand spoon a visible natural pause at the pot rim or dedicated spoon rest, then resume only after the left-hand teaching contact is safely separated from steam",
+                      "Keep the intact wonton visually privileged during guidance, serving, and tasting while retaining causal pot and cooktop visibility",
+                      "Complete the matching fold and serving route within one connected tabletop geography",
+                      "End on Leo tasting the intact result with the cook still beside the active unit and visibly released from hovering",
+                      "Use no mid-film typography and reserve only a quiet closing area for approved brand copy or lockup"
+                    ],
+                    "style": "Premium naturalistic culinary cinematography with controlled chiaroscuro, practical steam and liquid response, tactile wood and ceramic, selective depth, readable hand contact, and no unsupported product geometry or interface behavior."
+                  },
+                  "beat_art": [
+                    {
+                      "beat_id": "B1",
+                      "settled_visual_state": "A clear-broth pot on the approved portable induction cooktop shows uneven oversized bubbles around one vegetable-filled wonton. The same distinctive seam flexes and a loose edge flutters while remaining closed. The cook's left hand hovers over the real control, the right hand holds the serving spoon at the pot rim, and Leo waits with a matching half-folded wonton beside the empty bowl.",
+                      "focal_owner": "The threatened but unbroken wonton seam in the active broth.",
+                      "supporting_roles": [
+                        "Uneven broth behavior",
+                        "Cook's trapped left hand",
+                        "Right-hand spoon at a natural pause",
+                        "Leo's unfinished fold",
+                        "Waiting bowl",
+                        "True portable cooktop silhouette"
+                      ],
+                      "environment_state": "A sparse communal table is already in use for cooking and folding, with only the board, filling, bowl, and necessary linen establishing the lived-in lesson.",
+                      "prop_specificity": "The seam profile, pot presentation, spoon, folding board, matching uncooked wonton, and bowl are selected for repeatability and later traceability; no prop is present only for decoration.",
+                      "character_performance_state": "The cook is attentive and contained rather than theatrical, divided between the control and Leo. Leo's gaze waits on the next folding instruction.",
+                      "typography_role": "No on-screen typography; voiceover may establish the delicate moment without covering the proof.",
+                      "depth_read": "The seam and broth occupy the sharpest near plane, with control hand and spoon immediately behind, while Leo and the folding board sit in a subdued but readable adjacent plane.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B2",
+                      "settled_visual_state": "The same wonton remains intact in the same pot as the broth changes to small, even, visibly active pulses. The left hand has completed one measured adjustment and is leaving the control; the right hand still owns the spoon at the pot rim, separated from the steam path.",
+                      "focal_owner": "The preserved seam inside the newly ordered active simmer.",
+                      "supporting_roles": [
+                        "Observable control contact",
+                        "Withdrawing left hand",
+                        "Paused right-hand spoon",
+                        "Pot rim and clear broth",
+                        "Subordinate but identifiable cooktop"
+                      ],
+                      "environment_state": "The table remains unchanged, but the causal plane opens emotionally through selective value lift while background materials stay quiet.",
+                      "prop_specificity": "The broth level, wonton orientation, seam profile, spoon, and unit relationship match B1; the adjustment is a single observable action, not a graphic setting demonstration.",
+                      "character_performance_state": "The cook's shoulders release slightly and attention begins to travel toward Leo while the face remains responsibly aware of the active pot.",
+                      "typography_role": "No on-screen typography; the practical contrast between active simmer and shutdown is carried by the settled visual state and voiceover only.",
+                      "depth_read": "The intact seam remains dominant in the sharp midground. The freed left hand creates a secondary bridge toward Leo without pulling focus from the food proof.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B3",
+                      "settled_visual_state": "The cook's left hand rests over Leo's fingers on the clean folding board, guiding one specific next pleat of the matching wonton. The original intact wonton remains visibly modeled in the adjacent steady pot, and the right-hand spoon is paused safely at the pot rim or dedicated rest until the teaching contact clears.",
+                      "focal_owner": "The same intact wonton seam, with the guiding hand as the readable human consequence beside it.",
+                      "supporting_roles": [
+                        "Cook's left-hand contact",
+                        "Leo's focused fingers and matching fold",
+                        "Active even simmer",
+                        "Right-hand spoon in safe pause",
+                        "Visible cooktop and pot"
+                      ],
+                      "environment_state": "Cooking and teaching coexist at the same compact table; there are no unrelated background actions or decorative layers competing with the lesson.",
+                      "prop_specificity": "Leo's next pleat, the distinctive cooked seam, the clean board, the same spoon, and the waiting bowl form a compact causal vocabulary. The spoon's pause is visibly natural rather than a continuous suspended pose.",
+                      "character_performance_state": "The cook guides with patience and light contact. Leo concentrates on his fingers, replacing anxious waiting with active participation.",
+                      "typography_role": "No on-screen typography; the hand transformation and preserved food state carry the explanation physically.",
+                      "depth_read": "The hero wonton and seam hold the crispest modeling, while the guiding contact occupies an adjacent sharp plane. The pot, spoon, and bowl overlap enough to connect the route but remain subordinate.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B4",
+                      "settled_visual_state": "Leo's matching fold is complete. The cook's left hand is released and open. After the natural pause, the same right hand resumes the spoon route, lifting the intact hero wonton with clear broth from the steady pot toward Leo's waiting bowl while the portable unit remains visible behind the causal band.",
+                      "focal_owner": "The intact wonton carried in the spoon toward its receiving bowl.",
+                      "supporting_roles": [
+                        "Completed matching fold",
+                        "Open released left hand",
+                        "Same spoon and hand route",
+                        "Waiting bowl",
+                        "Active pot",
+                        "Visible true cooktop silhouette",
+                        "Leo's anticipatory gaze"
+                      ],
+                      "environment_state": "The lesson and cooking remain synchronized at one table; the unit is active and supervised while the result reaches its destination.",
+                      "prop_specificity": "The spoon visibly carries one intact wonton and broth, the bowl is the established destination, and the completed fold remains a quiet witness rather than a competing hero.",
+                      "character_performance_state": "Leo looks between his completed fold and the approaching bowl with quiet pride. The cook's left hand stays open and away from the control.",
+                      "typography_role": "No on-screen typography; the handoff must be understood through the physical route.",
+                      "depth_read": "The carried wonton and bowl occupy the dominant diagonal. Leo's face and open hand support the destination, while the pot and cooktop remain legible in a quieter rear plane.",
+                      "meaning_without_motion": true
+                    },
+                    {
+                      "beat_id": "B5",
+                      "settled_visual_state": "The intact wonton is clearly visible in Leo's bowl as he tastes it with a clean utensil. The completed fold sits beside the bowl. The active pot and true portable cooktop remain visible in the connected composition, while the cook's open left hand and warm gaze sit adjacent, confirming the result rather than replacing it.",
+                      "focal_owner": "The intact served wonton in direct visual relationship to Leo's tasting response.",
+                      "supporting_roles": [
+                        "Leo's genuine recognition",
+                        "Cook's released gaze",
+                        "Completed fold",
+                        "Same serving spoon",
+                        "Small active simmer",
+                        "Portable cooktop",
+                        "Open left hand"
+                      ],
+                      "environment_state": "The table is calm but still cooking, with secondary surfaces and background company held in subdued values so the causal diagonal stays clear.",
+                      "prop_specificity": "The served wonton retains the distinctive seam profile, the tasting utensil is clean and separate from folding, and the same spoon, pot, and unit remain causal witnesses.",
+                      "character_performance_state": "Leo's recognition is brief and genuine; the cook watches with warm relief while remaining beside the operating unit, no longer hovering.",
+                      "typography_role": "Only one quiet closing area may receive later-approved brand copy or lockup after the intact serving is legible; no invented line or interface is supplied here.",
+                      "depth_read": "Foreground bowl and wonton lead to Leo's tasting face, then to the cook's open hand and gaze, with the pot and cooktop in a clearly readable subordinate plane.",
+                      "meaning_without_motion": true
+                    }
+                  ],
+                  "typography_intent": "Commit to no opening or mid-film type. Reserve at most one quiet closing table plane for approved brand copy or lockup after the intact wonton and tasting response have landed. Do not invent an end line, settings readout, interface graphic, explanatory caption, or feature list.",
+                  "risk_notes": [
+                    "Run a practical food-and-camera validation before art lock for the same naturally distinctive seam, threatened flutter, sustained active simmer, wrapper integrity, steam separation, and repeatable pot presentation; do not fabricate test results.",
+                    "The seam must remain traceable through changing orientation, broth movement, steam, serving, and tasting without artificial markers or edit-based substitution.",
+                    "The right-hand spoon needs a rehearsed visible pause at the pot rim or a dedicated rest, followed by natural resumption after the left-hand teaching contact is safely clear; never stage an uninterrupted suspended grip.",
+                    "Keep the intact wonton dominant during guidance, serving, and tasting. Leo's face confirms the result, while pot and cooktop remain visibly causal but subordinate.",
+                    "Use the supplied physical cooktop when available and do not invent geometry, controls, interface behavior, or broader performance claims.",
+                    "Selective contrast must remain intact as the table populates; do not lift every prop and background value equally.",
+                    "The final construction must not demand equal sharpness from seam, bowl, faces, hands, spoon, pot, and unit; use focus and overlap to preserve the causal diagonal."
+                  ],
+                  "visual_candidate_id": "C1-R2"
+                },
+                "repair_anchor_hash": "459dd2195c01b4442b5c2213e70230ccd39addbd55570aec82a5736193211eb3",
+                "sticky_requirements": [
+                  "6",
+                  "Preserve the same spoon and right-hand serving route without requiring an uninterrupted grip. Give the spoon one natural, visible pause at the pot rim or a dedicated spoon rest, then have the same right hand resume the route. Rehearse the hand journey so the teaching contact remains clear and safely separated from steam.",
+                  "Keep the intact wonton visually privileged during guidance and make it unmistakably dominant in the serving and tasting compositions. Leo's expression should confirm the result rather than replace it. Preserve visible pot and cooktop causality without giving every continuity object equal visual weight.",
+                  "Open the image emotionally while retaining selective contrast: keep the wonton, guiding contact, and receiving bowl crisply modeled; allow secondary props and background company to remain subdued. Use depth and overlap to clarify the causal route rather than illuminating the entire table uniformly.",
+                  "Require a practical food-and-camera test before art lock. Develop a naturally distinctive pleat profile and repeatable pot presentation that keep the hero seam visible without adding artificial markers. Validate the threatened flutter, sustained active simmer, wrapper integrity, and readable transition while avoiding any broader performance implication.",
+                  "Commit to no opening typography and reserve one quiet closing area for approved brand copy or lockup only. Do not invent interface graphics, settings readouts, or a stylistically generic end line before brand assets and copy are available.",
+                  "Anchor the intervention in practical, continuous before-and-after broth behavior around the same identifiable wonton seam. Treat translucent layers as restrained environmental framing, never as substitutes for bubbles, wrapper response, or the cook's observable adjustment.",
+                  "Use practical food, real hands, and credible human faces for all consequential moments. Preserve the tactile paper, resin, and table-plane language as an authored set and compositional system around that live-action core rather than replacing the hero proof with sculptural simulation.",
+                  "Build the final composition as one causal diagonal with selective depth: foreground the intact wonton and Leo's genuine tasting response, retain the cook's open hand and warm gaze in the adjacent plane, and keep the pot and portable unit clearly identifiable but subordinate. Do not demand equal sharpness or prominence from every continuity object.",
+                  "Eliminate mid-film typography. Reserve at most one concise closing brand thought integrated into a quiet table plane after the intact serving is legible; do not use type to explain simmer behavior or the hand transformation.",
+                  "Do not invent product geometry or interface behavior. Build from the approved physical unit when supplied, preserve its true portable silhouette, and simplify the film to three dominant constructions: threatened seam, practical stabilized simmer with the hand crossing to Leo, and intact serving plus taste. Achieve the fractured-to-aligned idea primarily through composition, light, and restrained set layers rather than extensive physical transformation.",
+                  "7",
+                  "Consolidate the five beat states into three governing art constructions without deleting the narrative actions: threatened seam; preserved active simmer with the left hand crossing into guidance and the spoon naturally paused; intact serving resolving directly into taste. Let intermediate actions occur inside those constructions rather than requiring additional fully resolved tableaux.",
+                  "Stage a clear two-state final construction: first hold the distinctive intact seam fully readable in the receiving bowl or on the clean tasting utensil before any bite; then let Leo taste as a brief confirmation while the preserved seam remains visible whenever physically credible. Do not require post-bite intactness, and do not imply that his expression independently proves product performance.",
+                  "Keep the practical food-and-camera test mandatory before art lock. Use its findings to establish repeatable seam orientation, pot presentation, broth behavior, steam level, spoon approach, bowl landing, lens depth, and proof-hold duration. If the same seam cannot remain naturally legible, revise staging rather than adding artificial markers or implying recovery."
+                ],
+                "deferred_production_validations": [],
+                "requirements": [
+                  "Resolve every material Producer issue; do not merely paraphrase the rejected work.",
+                  "Preserve the listed strengths and every upstream decision slot not invalidated by this repair.",
+                  "Do not lower the quality gate or substitute a generic/simpler treatment just to obtain ACCEPT.",
+                  "Produce a materially improved creative answer that can be independently re-reviewed.",
+                  "When previous_output is present, repair that exact anchor rather than reopening candidate competition; preserve all anchor decisions not implicated by the listed issues.",
+                  "Treat sticky_requirements as binding non-regression constraints for this repair lineage.",
+                  "Do not fabricate empirical or physical test results; carry production-only validation requirements downstream instead of inventing evidence."
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

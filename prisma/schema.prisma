@@ -1,0 +1,908 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum SessionStatus {
+  ACTIVE
+  REVOKED
+  EXPIRED
+}
+enum ProductionKind {
+  VIDEO
+}
+enum ProductionStatus {
+  DRAFT
+  DIRECTION_READY
+  AWAITING_PAYMENT
+  PAYMENT_PENDING
+  PAID
+  QUEUED
+  PRODUCING_SCENES
+  ADDING_AUDIO
+  RENDERING
+  VERSION_READY
+  REVISION_REQUESTED
+  APPROVED
+  FAILED
+  CANCELLED
+  REFUNDED
+}
+enum StudioProductionFamily {
+  EXPLAINER
+  WHITEBOARD
+  STICKMAN
+  EDITORIAL_MOTION
+}
+enum StudioProductionState {
+  DRAFT
+  AUTH_REQUIRED
+  PLANNING
+  PLAN_READY
+  PAYMENT_REQUIRED
+  PAYMENT_PENDING
+  PRODUCTION
+  FINAL_REVIEW
+  COMPLETE
+  INSUFFICIENT_BALANCE
+  PRODUCTION_FAILED
+  TECHNICAL_RETRY
+  REVISION_REQUESTED
+}
+
+enum StudioMemoryScope {
+  ACCOUNT
+  BRAND
+  CAST
+  SERIES
+  PRODUCTION
+}
+
+enum StudioMemoryEffectiveState {
+  ACTIVE
+  INACTIVE
+  DELETED
+}
+
+enum StudioMemoryWriteMode {
+  THIS_PRODUCTION_ONLY
+  REMEMBER_FOR_BRAND
+  REMEMBER_FOR_SERIES
+  UPDATE_CHARACTER_GOING_FORWARD
+  UPDATE_FROM_FUTURE_EPISODE
+}
+enum SourceKind {
+  WEBSITE
+  TEXT
+  FILE
+  PROJECT_SOURCE
+}
+enum SourceStatus {
+  PENDING
+  ANALYSING
+  READY
+  BLOCKED
+  FAILED
+}
+
+model User {
+  id                           String   @id @default(uuid()) @db.Uuid
+  email                        String?  @unique
+  displayName                  String?
+  avatarUrl                    String?
+  settings                     Json     @default("{}")
+  privacyStatus                String   @default("ACTIVE")
+  deletionRequestedAt          DateTime?
+  deletedAt                    DateTime?
+  createdAt                    DateTime @default(now())
+  updatedAt                    DateTime @updatedAt
+  sessions                     Session[]
+  authChallenges               AuthChallenge[]
+  authIdentities               AuthIdentity[]
+  drafts                       Draft[]
+  productions                  Production[]
+  sources                      Source[]
+  studioCreditAccount          StudioCreditAccount?
+  studioPurchaseQuotes         StudioPurchaseQuote[]
+  studioLedgerEntries          StudioLedgerEntry[]
+  studioPlanPreviewEntitlement StudioPlanPreviewEntitlement?
+  studioPlanPreviewRequests    StudioPlanPreviewRequest[]
+  studioProductionEntitlements StudioProductionEntitlement[]
+  studioWelcomeRedemptions     StudioWelcomeRedemption[]
+  studioFundingIntents         StudioFundingIntent[]
+  studioBrands                 StudioBrand[]
+  studioCastMembers            StudioCastMember[]
+  studioSeries                 StudioSeries[]
+  studioMemoryItems            StudioMemoryItem[]
+  auditEvents                  AuditEvent[]
+  studioNotifications          StudioNotification[]
+  accountDataRequests          AccountDataRequest[]
+  assetDeliveryTickets         AssetDeliveryTicket[]
+  @@map("users")
+}
+
+model Session {
+  id         String        @id @default(uuid()) @db.Uuid
+  userId     String        @db.Uuid
+  tokenHash  String        @unique
+  status     SessionStatus @default(ACTIVE)
+  userAgent  String?
+  ipHash     String?
+  expiresAt  DateTime
+  lastSeenAt DateTime      @default(now())
+  revokedAt  DateTime?
+  createdAt  DateTime      @default(now())
+  user       User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId, status, expiresAt])
+  @@map("sessions")
+}
+
+model AuthChallenge {
+  id         String   @id @default(uuid()) @db.Uuid
+  userId     String?  @db.Uuid
+  purpose    String
+  identifier String
+  secretHash String
+  payload    Json     @default("{}")
+  expiresAt  DateTime
+  usedAt     DateTime?
+  createdAt  DateTime @default(now())
+  user       User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([purpose, identifier, expiresAt])
+  @@map("auth_challenges")
+}
+
+
+model AuthIdentity {
+  id           String   @id @default(uuid()) @db.Uuid
+  userId       String   @db.Uuid
+  provider     String
+  subject      String
+  email        String?
+  emailVerified Boolean @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([provider, subject])
+  @@index([userId, provider])
+  @@map("auth_identities")
+}
+
+model Draft {
+  id                         String                 @id @default(uuid()) @db.Uuid
+  ownerUserId                String?                @db.Uuid
+  kind                       ProductionKind         @default(VIDEO)
+  title                      String                 @default("Untitled production")
+  payload                    Json                   @default("{}")
+  family                     StudioProductionFamily?
+  videoType                  String?
+  prompt                     String?
+  sources                    Json                   @default("[]")
+  duration                   Int?
+  aspectRatio                String?
+  voicePreference            String?
+  brandContext               Json?
+  studioState                StudioProductionState  @default(DRAFT)
+  resumeState                StudioProductionState?
+  anonymousSessionId         String?
+  anonymousSessionSecretHash String?
+  anonymousExpiresAt         DateTime?
+  claimedAt                  DateTime?
+  createdAt                  DateTime               @default(now())
+  updatedAt                  DateTime               @updatedAt
+  owner                      User?                  @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  @@index([ownerUserId, updatedAt])
+  @@index([ownerUserId, studioState, updatedAt])
+  @@index([anonymousSessionId, anonymousExpiresAt])
+  @@map("drafts")
+}
+
+model Production {
+  id                 String                 @id @db.Uuid
+  ownerUserId        String                 @db.Uuid
+  kind               ProductionKind         @default(VIDEO)
+  mode               String?
+  title              String
+  status             ProductionStatus       @default(DRAFT)
+  studioState        StudioProductionState  @default(DRAFT)
+  stateVersion       Int                    @default(0)
+  lastStateChangedAt DateTime               @default(now())
+  canonicalInputHash String?
+  brandId            String?                @db.Uuid
+  seriesId           String?                @db.Uuid
+  direction         Json             @default("{}")
+  brief             Json?
+  priceAtomic       BigInt?
+  payerWallet       String?
+  approverUserId    String?          @db.Uuid
+  currentVersionId  String?          @unique @db.Uuid
+  failureCode       String?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  owner             User             @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  brand             StudioBrand?      @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  series            StudioSeries?     @relation(fields: [seriesId], references: [id], onDelete: SetNull)
+  seriesEpisode     StudioSeriesEpisode?
+  currentVersion    ProductionVersion? @relation("CurrentProductionVersion", fields: [currentVersionId], references: [id])
+  versions          ProductionVersion[] @relation("ProductionVersions")
+  studioLedgerEntries StudioLedgerEntry[]
+  studioPurchaseQuotes StudioPurchaseQuote[]
+  studioProductionEntitlements StudioProductionEntitlement[]
+  studioFundingIntents StudioFundingIntent[]
+  studioArtifacts   StudioArtifact[]
+  studioWorkflowRuns StudioWorkflowRun[]
+  studioUsageEvents StudioUsageEvent[]
+  studioProductionInputs StudioProductionInput[]
+  studioLineageSnapshots StudioLineageSnapshot[]
+  studioMemorySnapshots StudioMemorySnapshot[]
+  studioCastLinks       StudioProductionCastMember[]
+  studioMemorySourceVersions StudioMemoryVersion[] @relation("StudioMemorySourceProduction")
+  studioStateTransitions StudioStateTransition[]
+  assetDeliveryTickets AssetDeliveryTicket[]
+  @@index([ownerUserId, status])
+  @@index([ownerUserId, studioState, updatedAt])
+  @@index([ownerUserId, brandId, updatedAt])
+  @@index([ownerUserId, seriesId, updatedAt])
+  @@index([status, updatedAt])
+  @@map("productions")
+}
+
+model ProductionVersion {
+  id                     String      @id @default(uuid()) @db.Uuid
+  productionId           String      @db.Uuid
+  versionNumber          Int
+  compositionObjectKey   String?
+  previewObjectKey       String?
+  outputObjectKey        String?
+  thumbnailObjectKey     String?
+  manifest               Json
+  sourceHash             String
+  workflowRunId          String?     @db.Uuid
+  entitlementId          String?     @db.Uuid
+  quoteId                String?     @db.Uuid
+  inputSnapshotId        String?     @db.Uuid
+  inputSnapshotHash      String?
+  memoryInputSnapshotId  String?     @db.Uuid
+  memoryInputSnapshotHash String?
+  creativeLockArtifactId String?     @db.Uuid
+  creativeLockHash       String?
+  outputSha256           String?
+  lineageHash            String?     @unique
+  approvedAt             DateTime?
+  createdAt            DateTime    @default(now())
+  production           Production  @relation("ProductionVersions", fields: [productionId], references: [id], onDelete: Cascade)
+  currentFor           Production? @relation("CurrentProductionVersion")
+  workflowRun          StudioWorkflowRun? @relation("ProductionVersionWorkflowRun", fields: [workflowRunId], references: [id], onDelete: SetNull)
+  entitlement          StudioProductionEntitlement? @relation("ProductionVersionEntitlement", fields: [entitlementId], references: [id], onDelete: SetNull)
+  quote                StudioPurchaseQuote? @relation("ProductionVersionQuote", fields: [quoteId], references: [id], onDelete: SetNull)
+  inputSnapshot        StudioLineageSnapshot? @relation("ProductionVersionInputSnapshot", fields: [inputSnapshotId], references: [id], onDelete: SetNull)
+  memoryInputSnapshot  StudioMemorySnapshot? @relation("ProductionVersionMemoryInputSnapshot", fields: [memoryInputSnapshotId], references: [id], onDelete: SetNull)
+  creativeLockArtifact StudioArtifact? @relation("ProductionVersionCreativeLock", fields: [creativeLockArtifactId], references: [id], onDelete: SetNull)
+  studioMemorySourceVersions StudioMemoryVersion[] @relation("StudioMemorySourceProductionVersion")
+  @@unique([productionId, versionNumber])
+  @@index([productionId, createdAt])
+  @@index([workflowRunId])
+  @@map("production_versions")
+}
+
+model Source {
+  id           String       @id @default(uuid()) @db.Uuid
+  ownerUserId  String       @db.Uuid
+  name         String?
+  kind         SourceKind
+  originalUrl  String?
+  objectKey    String?
+  mimeType     String?
+  sizeBytes    BigInt?
+  isReusable   Boolean      @default(false)
+  extracted    Json?
+  rights       Json         @default("{}")
+  contentHash  String
+  status       SourceStatus @default(PENDING)
+  securityStatus String      @default("PENDING")
+  detectedMimeType String?
+  quarantineObjectKey String?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  owner        User         @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  productionInputs StudioProductionInput[]
+  uploadScanJob UploadScanJob?
+  deliveryTickets AssetDeliveryTicket[]
+  @@index([ownerUserId, status])
+  @@map("sources")
+}
+
+model StudioCreditAccount {
+  userId       String   @id @db.Uuid
+  balanceMinor Int      @default(0)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@map("studio_credit_accounts")
+}
+
+model StudioPurchaseQuote {
+  id                                  String @id @default(uuid()) @db.Uuid
+  userId                              String @db.Uuid
+  productionId                       String? @db.Uuid
+  mode                                String
+  variant                             String?
+  amountMinor                         Int
+  displayAmount                       String
+  currency                            String @default("USD")
+  pricingVersion                      String
+  accountBalanceMinor                 Int
+  sufficientBalance                   Boolean
+  expiresAt                           DateTime
+  createdAt                           DateTime @default(now())
+  draftId                             String? @db.Uuid
+  quoteVersion                        Int?
+  family                              StudioProductionFamily?
+  planPreviewId                       String? @db.Uuid
+  approvedPlanVersion                 Int?
+  approvedDurationSeconds             Int?
+  baseRatePerFinishedMinuteMinor      Int?
+  baseAmountMinor                     Int?
+  firstProductionDiscountEligible     Boolean?
+  discountCode                        String?
+  discountPercent                     Int?
+  discountAmountMinor                 Int?
+  finalAmountMinor                    Int?
+  amountRequiredMinorAtQuote          Int?
+  standaloneStatus                    String?
+  standaloneLockKey                   String? @unique
+  consumedAt                          DateTime?
+  supersededAt                        DateTime?
+  user                                User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  production                          Production? @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  ledgerEntries                       StudioLedgerEntry[]
+  productionVersions                  ProductionVersion[] @relation("ProductionVersionQuote")
+  @@index([userId, expiresAt])
+  @@index([productionId, standaloneStatus, expiresAt])
+  @@map("studio_purchase_quotes")
+}
+
+model StudioLedgerEntry {
+  id                 String @id @default(uuid()) @db.Uuid
+  userId             String @db.Uuid
+  draftId            String? @db.Uuid
+  currency           String @default("USD")
+  externalReference  String?
+  productionId       String? @db.Uuid
+  quoteId            String? @db.Uuid
+  renderJobId        String? @db.Uuid
+  idempotencyKey     String @unique
+  type               String
+  amountMinor        Int
+  balanceBeforeMinor Int
+  balanceAfterMinor  Int
+  mode               String?
+  variant            String?
+  status             String
+  reversalOfId       String? @unique @db.Uuid
+  metadata           Json @default("{}")
+  createdAt          DateTime @default(now())
+  completedAt        DateTime?
+  user               User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  production         Production? @relation(fields: [productionId], references: [id], onDelete: SetNull)
+  quote              StudioPurchaseQuote? @relation(fields: [quoteId], references: [id], onDelete: SetNull)
+  reversalOf         StudioLedgerEntry? @relation("StudioLedgerReversal", fields: [reversalOfId], references: [id])
+  reversals          StudioLedgerEntry[] @relation("StudioLedgerReversal")
+  @@index([userId, createdAt])
+  @@index([productionId, type])
+  @@map("studio_ledger_entries")
+}
+
+model StudioPlanPreviewEntitlement {
+  userId             String @id @db.Uuid
+  maxSuccessfulPlans Int @default(1)
+  successfulPlans    Int @default(0)
+  updatedAt          DateTime @updatedAt
+  user               User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@map("studio_plan_preview_entitlements")
+}
+
+model StudioPlanPreviewRequest {
+  id                 String @id @default(uuid()) @db.Uuid
+  userId             String @db.Uuid
+  productionId       String @db.Uuid
+  idempotencyKeyHash String
+  bodyHash           String
+  requestFingerprint String
+  state              String
+  policyVersion      String
+  provider           String
+  model              String
+  reasoningEffort    String
+  attempts           Int @default(0)
+  responseJson       Json?
+  providerRequestId  String?
+  usageJson          Json?
+  failureClass       String?
+  activeSlot         String? @unique
+  createdAt          DateTime @default(now())
+  completedAt        DateTime?
+  failedAt           DateTime?
+  user               User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, idempotencyKeyHash])
+  @@index([productionId, createdAt])
+  @@map("studio_plan_preview_requests")
+}
+
+model StudioProductionEntitlement {
+  id                     String @id @default(uuid()) @db.Uuid
+  userId                 String @db.Uuid
+  productionId           String @db.Uuid
+  draftId                String @db.Uuid
+  approvedPlanVersion    Int
+  planPreviewId          String? @db.Uuid
+  source                 String
+  quoteId                String? @db.Uuid
+  debitTransactionId     String? @unique @db.Uuid
+  workflowRunId          String? @unique @db.Uuid
+  amountPaidMinor        Int
+  currency               String @default("USD")
+  welcomeDiscountApplied Boolean @default(false)
+  createdAt              DateTime @default(now())
+  user                   User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  production             Production @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  workflowRun            StudioWorkflowRun? @relation("EntitlementWorkflowRun", fields: [workflowRunId], references: [id], onDelete: SetNull)
+  productionVersions     ProductionVersion[] @relation("ProductionVersionEntitlement")
+  @@unique([productionId, approvedPlanVersion])
+  @@index([userId, createdAt])
+  @@map("studio_production_entitlements")
+}
+
+model StudioWelcomeRedemption {
+  id           String @id @default(uuid()) @db.Uuid
+  userId       String @db.Uuid
+  discountCode String
+  productionId String @db.Uuid
+  createdAt    DateTime @default(now())
+  user         User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, discountCode])
+  @@map("studio_welcome_redemptions")
+}
+
+model StudioFundingIntent {
+  id                String @id @default(uuid()) @db.Uuid
+  userId            String @db.Uuid
+  productionId      String? @db.Uuid
+  quoteId           String? @db.Uuid
+  currency          String @default("USD")
+  amountMinor       Int
+  purpose           String
+  status            String
+  idempotencyKey    String
+  provider          String
+  providerReference String?
+  providerCheckoutUrl String?
+  failureReason     String?
+  createdAt         DateTime @default(now())
+  settledAt         DateTime?
+  completedAt       DateTime?
+  user              User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  production        Production? @relation(fields: [productionId], references: [id], onDelete: SetNull)
+  @@unique([userId, idempotencyKey])
+  @@unique([provider, providerReference])
+  @@map("studio_funding_intents")
+}
+
+model StudioBrand {
+  id           String     @id @default(uuid()) @db.Uuid
+  ownerUserId  String     @db.Uuid
+  name         String
+  slug         String?
+  description  String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  owner        User       @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  productions  Production[]
+  castMembers  StudioCastMember[]
+  series       StudioSeries[]
+  @@unique([ownerUserId, slug])
+  @@index([ownerUserId, updatedAt])
+  @@map("studio_brands")
+}
+
+model StudioCastMember {
+  id             String     @id @default(uuid()) @db.Uuid
+  ownerUserId    String     @db.Uuid
+  brandId        String?    @db.Uuid
+  name           String
+  assetNamespace String     @default("CAST")
+  identityKey    String
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+  owner          User       @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  brand          StudioBrand? @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  productions    StudioProductionCastMember[]
+  @@unique([ownerUserId, identityKey])
+  @@index([ownerUserId, brandId, updatedAt])
+  @@map("studio_cast_members")
+}
+
+model StudioSeries {
+  id           String     @id @default(uuid()) @db.Uuid
+  ownerUserId  String     @db.Uuid
+  brandId      String?    @db.Uuid
+  name         String
+  description  String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  owner        User       @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  brand        StudioBrand? @relation(fields: [brandId], references: [id], onDelete: SetNull)
+  productions  Production[]
+  episodes     StudioSeriesEpisode[]
+  @@index([ownerUserId, brandId, updatedAt])
+  @@map("studio_series")
+}
+
+model StudioSeriesEpisode {
+  id             String      @id @default(uuid()) @db.Uuid
+  seriesId       String      @db.Uuid
+  productionId   String      @unique @db.Uuid
+  episodeOrdinal Int
+  title          String?
+  createdAt      DateTime    @default(now())
+  series         StudioSeries @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  production     Production   @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  @@unique([seriesId, episodeOrdinal])
+  @@index([seriesId, createdAt])
+  @@map("studio_series_episodes")
+}
+
+model StudioProductionCastMember {
+  id           String          @id @default(uuid()) @db.Uuid
+  productionId String          @db.Uuid
+  castMemberId String          @db.Uuid
+  ordinal      Int
+  roleLabel    String?
+  createdAt    DateTime        @default(now())
+  production   Production      @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  castMember   StudioCastMember @relation(fields: [castMemberId], references: [id], onDelete: Restrict)
+  @@unique([productionId, castMemberId])
+  @@unique([productionId, ordinal])
+  @@index([castMemberId, createdAt])
+  @@map("studio_production_cast_members")
+}
+
+model StudioMemoryItem {
+  id           String            @id @default(uuid()) @db.Uuid
+  ownerUserId  String            @db.Uuid
+  scope        StudioMemoryScope
+  scopeRefId   String            @db.Uuid
+  key          String
+  category     String
+  label        String?
+  currentVersion Int             @default(0)
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  owner        User              @relation(fields: [ownerUserId], references: [id], onDelete: Cascade)
+  versions     StudioMemoryVersion[]
+  @@unique([ownerUserId, scope, scopeRefId, key])
+  @@index([ownerUserId, scope, scopeRefId, updatedAt])
+  @@map("studio_memory_items")
+}
+
+model StudioMemoryVersion {
+  id                    String                     @id @default(uuid()) @db.Uuid
+  memoryItemId          String                     @db.Uuid
+  versionNumber         Int
+  effectiveState        StudioMemoryEffectiveState @default(ACTIVE)
+  effectiveFrom         DateTime                   @default(now())
+  effectiveUntil        DateTime?
+  effectiveFromEpisodeOrdinal Int?
+  effectiveUntilEpisodeOrdinal Int?
+  content               Json
+  contentHash           String
+  provenance            Json
+  sourceProductionId    String?                    @db.Uuid
+  sourceProductionVersionId String?                @db.Uuid
+  createdByType         String
+  createdById           String?
+  reason                String?
+  createdAt             DateTime                   @default(now())
+  memoryItem            StudioMemoryItem           @relation(fields: [memoryItemId], references: [id], onDelete: Cascade)
+  sourceProduction      Production?                @relation("StudioMemorySourceProduction", fields: [sourceProductionId], references: [id], onDelete: SetNull)
+  sourceProductionVersion ProductionVersion?       @relation("StudioMemorySourceProductionVersion", fields: [sourceProductionVersionId], references: [id], onDelete: SetNull)
+  @@unique([memoryItemId, versionNumber])
+  @@index([memoryItemId, effectiveState, effectiveFrom])
+  @@index([sourceProductionId, createdAt])
+  @@index([contentHash])
+  @@map("studio_memory_versions")
+}
+
+model StudioMemorySnapshot {
+  id             String      @id @default(uuid()) @db.Uuid
+  productionId   String      @db.Uuid
+  projectVersion Int
+  snapshotType   String
+  sequence       Int         @default(1)
+  content        Json
+  contentHash    String
+  frozenAt       DateTime    @default(now())
+  createdAt      DateTime    @default(now())
+  production     Production  @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  productionVersions ProductionVersion[] @relation("ProductionVersionMemoryInputSnapshot")
+  @@unique([productionId, projectVersion, snapshotType, sequence])
+  @@index([productionId, projectVersion, createdAt(sort: Desc)])
+  @@index([contentHash])
+  @@map("studio_memory_snapshots")
+}
+
+model StudioProductionInput {
+  id           String      @id @default(uuid()) @db.Uuid
+  productionId String      @db.Uuid
+  sourceId     String?     @db.Uuid
+  ordinal      Int
+  kind         String
+  label        String?
+  reference    String?
+  mimeType     String?
+  snapshot     Json
+  snapshotHash String
+  active       Boolean     @default(true)
+  attachedAt   DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  production   Production  @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  source       Source?     @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+  @@unique([productionId, ordinal])
+  @@index([productionId, active])
+  @@index([sourceId])
+  @@index([snapshotHash])
+  @@map("studio_production_inputs")
+}
+
+model StudioLineageSnapshot {
+  id             String     @id @default(uuid()) @db.Uuid
+  productionId   String     @db.Uuid
+  projectVersion Int
+  snapshotType   String
+  content        Json
+  contentHash    String
+  createdAt      DateTime   @default(now())
+  production     Production @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  productionVersions ProductionVersion[] @relation("ProductionVersionInputSnapshot")
+  @@unique([productionId, projectVersion, snapshotType])
+  @@index([productionId, createdAt])
+  @@index([contentHash])
+  @@map("studio_lineage_snapshots")
+}
+
+model StudioStateTransition {
+  id           String                 @id @default(uuid()) @db.Uuid
+  productionId String                 @db.Uuid
+  sequence     Int
+  fromState    StudioProductionState
+  toState      StudioProductionState
+  actorType    String
+  actorId      String?
+  reason       String
+  requestId    String?
+  metadata     Json                   @default("{}")
+  createdAt    DateTime               @default(now())
+  production   Production             @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  @@unique([productionId, sequence])
+  @@index([productionId, createdAt])
+  @@map("studio_state_transitions")
+}
+
+model StudioArtifact {
+  id             String @id @default(uuid()) @db.Uuid
+  productionId   String @db.Uuid
+  versionId      String? @db.Uuid
+  schemaVersion  String @default("1.0.0")
+  projectVersion Int @default(1)
+  artifactType   String
+  status         String
+  content        Json
+  contentHash    String
+  inputs         Json
+  createdBy      Json
+  createdAt      DateTime @default(now())
+  production     Production @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  productionVersionsAsCreativeLock ProductionVersion[] @relation("ProductionVersionCreativeLock")
+  @@unique([productionId, projectVersion, artifactType, contentHash])
+  @@index([productionId, projectVersion, artifactType])
+  @@index([artifactType, contentHash])
+  @@map("studio_artifacts")
+}
+
+model StudioWorkflowRun {
+  id             String @id @default(uuid()) @db.Uuid
+  productionId   String @db.Uuid
+  workflowId     String @unique
+  workflowType   String @default("STANDALONE_STUDIO_CREATE_VIDEO")
+  status         String
+  stage          String
+  projectVersion Int @default(1)
+  attempt        Int @default(1)
+  approvalMode   String @default("fully_managed")
+  policy         Json
+  context        Json
+  blockedReason  String?
+  startedAt      DateTime @default(now())
+  completedAt    DateTime?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  production     Production @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  events         StudioWorkflowEvent[]
+  activities     StudioWorkflowActivity[]
+  productionVersions ProductionVersion[] @relation("ProductionVersionWorkflowRun")
+  entitlement     StudioProductionEntitlement? @relation("EntitlementWorkflowRun")
+  @@index([productionId, createdAt])
+  @@index([status, stage, updatedAt])
+  @@map("studio_workflow_runs")
+}
+
+model StudioWorkflowEvent {
+  id            String @id @default(uuid()) @db.Uuid
+  workflowRunId String @db.Uuid
+  sequence      Int
+  idempotencyKey String? @unique
+  eventType     String
+  fromStage     String?
+  toStage       String?
+  payload       Json
+  createdAt     DateTime @default(now())
+  workflowRun   StudioWorkflowRun @relation(fields: [workflowRunId], references: [id], onDelete: Cascade)
+  @@unique([workflowRunId, sequence])
+  @@map("studio_workflow_events")
+}
+
+model StudioWorkflowActivity {
+  id             String @id @default(uuid()) @db.Uuid
+  workflowRunId  String @db.Uuid
+  activityType   String
+  workerClass    String
+  idempotencyKey String @unique
+  status         String
+  attempts       Int @default(0)
+  maxAttempts    Int @default(3)
+  input          Json
+  output         Json?
+  lastError      String?
+  availableAt    DateTime @default(now())
+  startedAt      DateTime?
+  heartbeatAt    DateTime?
+  claimedBy      String?
+  leaseExpiresAt DateTime?
+  recoveryCount  Int @default(0)
+  completedAt    DateTime?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  workflowRun    StudioWorkflowRun @relation(fields: [workflowRunId], references: [id], onDelete: Cascade)
+  @@index([workerClass, status, availableAt])
+  @@index([status, leaseExpiresAt])
+  @@map("studio_workflow_activities")
+}
+
+model StudioUsageEvent {
+  id                  String @id @default(uuid()) @db.Uuid
+  productionId        String @db.Uuid
+  workflowRunId       String? @db.Uuid
+  provider            String
+  operation           String
+  idempotencyKey      String @unique
+  modelCalls          Int @default(0)
+  mediaJobs           Int @default(0)
+  renderSeconds       Int @default(0)
+  storageBytes        BigInt @default(0)
+  estimatedCostMicros BigInt?
+  currency            String @default("USD")
+  status              String @default("RESERVED")
+  providerRequestId   String?
+  metadata            Json
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+  production          Production @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  @@index([productionId, createdAt])
+  @@map("studio_usage_events")
+}
+
+
+model UploadScanJob {
+  id          String   @id @default(uuid()) @db.Uuid
+  sourceId    String   @unique @db.Uuid
+  status      String   @default("QUEUED")
+  scanner     String   @default("CLAMAV")
+  attempts    Int      @default(0)
+  verdict     String?
+  detail      String?
+  claimedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  source      Source   @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  @@index([status, createdAt])
+  @@map("upload_scan_jobs")
+}
+
+model StudioNotification {
+  id        String   @id @default(uuid()) @db.Uuid
+  userId    String   @db.Uuid
+  type      String
+  title     String
+  body      String
+  href      String?
+  dedupeKey String
+  readAt    DateTime?
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, dedupeKey])
+  @@index([userId, createdAt])
+  @@map("studio_notifications")
+}
+
+model AssetDeliveryTicket {
+  id           String   @id @default(uuid()) @db.Uuid
+  userId       String   @db.Uuid
+  productionId String?  @db.Uuid
+  sourceId     String?  @db.Uuid
+  objectKey    String
+  purpose      String
+  tokenHash    String   @unique
+  maxUses      Int      @default(1)
+  useCount     Int      @default(0)
+  expiresAt    DateTime
+  lastUsedAt   DateTime?
+  createdAt    DateTime @default(now())
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  production   Production? @relation(fields: [productionId], references: [id], onDelete: Cascade)
+  source       Source?  @relation(fields: [sourceId], references: [id], onDelete: Cascade)
+  @@index([userId, expiresAt])
+  @@index([productionId, expiresAt])
+  @@map("asset_delivery_tickets")
+}
+
+model AccountDataRequest {
+  id            String   @id @default(uuid()) @db.Uuid
+  userId        String   @db.Uuid
+  type          String
+  idempotencyKey String
+  status        String   @default("QUEUED")
+  objectKey     String?
+  failureReason String?
+  requestedAt   DateTime @default(now())
+  completedAt   DateTime?
+  expiresAt     DateTime?
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, idempotencyKey])
+  @@index([userId, requestedAt])
+  @@index([status, requestedAt])
+  @@map("account_data_requests")
+}
+
+model RateLimitBucket {
+  id          String @id @default(uuid()) @db.Uuid
+  key         String
+  category    String
+  windowStart DateTime
+  count       Int @default(1)
+  expiresAt   DateTime
+  @@unique([key, category, windowStart])
+  @@index([expiresAt])
+  @@map("rate_limit_buckets")
+}
+
+model AuditEvent {
+  id          String @id @default(uuid()) @db.Uuid
+  actorUserId String? @db.Uuid
+  action      String
+  entityType  String
+  entityId    String
+  before      Json?
+  after       Json?
+  requestId   String
+  ipHash      String?
+  createdAt   DateTime @default(now())
+  actor       User? @relation(fields: [actorUserId], references: [id], onDelete: SetNull)
+  @@index([entityType, entityId])
+  @@index([actorUserId, createdAt])
+  @@map("audit_events")
+}

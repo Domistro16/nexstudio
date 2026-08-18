@@ -1,0 +1,298 @@
+{
+  "brief": {
+    "id": "B01",
+    "family": "EXPLAINER",
+    "domain": "consumer-product",
+    "brief": "A portable induction cooktop brand wants a 30-second film that makes precise heat control feel surprisingly human and useful, without turning into a feature list.",
+    "duration_seconds": 30
+  },
+  "elapsedSeconds": 1.376,
+  "events": [
+    {
+      "phase": "CAPABILITY_GRAPH_VALIDATED",
+      "payload": {
+        "familyExecutionAuthority": {
+          "authorityId": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+          "sourceLabel": "NexStudio_Explainer_Execution_Body_V2.zip",
+          "sourceArchiveSha256": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b",
+          "technicalStatus": "EXECUTION_BODY_V2_INTEGRATED_CREATIVE_9_5_PROOF_PENDING",
+          "executionBody": "NexMind P8 sole creative authority -> production-scoped authored-art execution body -> self-hosted renderer -> StudioFamilyExecutionFidelityV1 -> exact-media Final Producer + independent perceptual auditor",
+          "sourceRegistry": "src/studio-v1/public/certification/four-family-capability-registry.json",
+          "sourceRegistrySha256": "768ceb058d3b1d10cf25ad9d054b1f8c9a4bbb822385d008c00438089d7ba535",
+          "authorityMode": "DIRECT_PREFLIGHT_FALLBACK__EXPLICIT_WORKFLOW_AUTHORITY_OVERRIDES"
+        },
+        "capabilityGraphSchema": "StudioNexMindCapabilityGraphV2",
+        "creativeRepairPolicy": "ADAPTIVE_BOUNDED_ESCALATION"
+      }
+    },
+    {
+      "phase": "STORY",
+      "payload": {
+        "attempt": 1,
+        "maximum": 2,
+        "repair": false
+      }
+    }
+  ],
+  "result": {
+    "schema": "StudioNexMindP8ResultV1",
+    "status": "PROVIDER_UNAVAILABLE",
+    "code": "LIVE_PROVIDER_CALL_FAILED",
+    "productionId": "diagnostic-B01",
+    "revision": 0,
+    "stateHash": "087098bff9d1858e7ed4ccefeab8bf8eaa27759fb9e4f12a8f7f758d1c1551e6",
+    "decisionSlots": [],
+    "capabilityGraphHash": "062fef1e355d0af1503d447d4018415b83fb03b54530fe90c2aa2a2a791ab9b0",
+    "story": null,
+    "finalBoard": null,
+    "dossier": null,
+    "checkpoint": {
+      "schema": "NexMindSupremeShowrunnerCheckpointV1",
+      "state": {
+        "schema": "NexMindSupremeShowrunnerP0StateV1",
+        "kernel_version": "0.1.0-p0-authority-kernel",
+        "production_id": "diagnostic-B01",
+        "brief": {
+          "topic": "A portable induction cooktop brand wants a 30-second film that makes precise heat control feel surprisingly human and useful, without turning into a feature list.",
+          "goal": "A portable induction cooktop brand wants a 30-second film that makes precise heat control feel surprisingly human and useful, without turning into a feature list.",
+          "duration_s": 30,
+          "style": "explainer",
+          "family": "EXPLAINER",
+          "video_type": "blind-commercial-eval",
+          "aspect_ratio": "16:9",
+          "voice_preference": null,
+          "brand_context": null,
+          "approved_plan_preview": null,
+          "plan_preview_authority": "NON_AUTHORITATIVE_COMMERCIAL_PREVIEW",
+          "revision_context": null,
+          "customer_revision_instruction": "",
+          "customer_revision_timestamp_seconds": null,
+          "prior_locked_board": null,
+          "revision_preservation_law": null,
+          "reference_language_profile": null,
+          "reference_style_hint": null,
+          "_reference_style_hint_telemetry": null,
+          "_direct_reference_visuals": [],
+          "_direct_reference_visual_omissions": [],
+          "reference_law": "NONE",
+          "autonomous_repair_context": null,
+          "autonomous_revision_context": null,
+          "creative_memory_context": {
+            "schema": "NexMindCreativeMemoryContextV1",
+            "authority": "ADVISORY_CONTINUITY_AND_ANTI_REPETITION_ONLY",
+            "law": "CURRENT_CUSTOMER_BRIEF_SOURCE_TRUTH_BRAND_AND_REVISION_ALWAYS_OVERRIDE_MEMORY",
+            "selected": [],
+            "omitted": [],
+            "indexed_count": 0,
+            "selected_count": 0,
+            "character_budget": 18000
+          }
+        },
+        "revision": 0,
+        "creative_locked": false,
+        "evidence_ledger": [],
+        "creative_memory_refs": [],
+        "film_memory": {
+          "shown": [],
+          "learned_by_audience": [],
+          "open_promises": [],
+          "used_metaphors": [],
+          "camera_grammar_used": [],
+          "persistent_entities": [],
+          "established_relationships": [],
+          "used_visual_motifs": [],
+          "density_history": [],
+          "palette_material_progression": [],
+          "intensity_curve": [],
+          "current_scene_state": null
+        },
+        "capability_graph": {
+          "schema": "StudioNexMindCapabilityGraphV2",
+          "production_family": "EXPLAINER",
+          "video_type": "blind-commercial-eval",
+          "duration_seconds": 30,
+          "aspect_ratio": "16:9",
+          "current_authorities": {
+            "family_execution_body": {
+              "authorityId": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+              "sourceLabel": "NexStudio_Explainer_Execution_Body_V2.zip",
+              "sourceArchiveSha256": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b",
+              "technicalStatus": "EXECUTION_BODY_V2_INTEGRATED_CREATIVE_9_5_PROOF_PENDING",
+              "executionBody": "NexMind P8 sole creative authority -> production-scoped authored-art execution body -> self-hosted renderer -> StudioFamilyExecutionFidelityV1 -> exact-media Final Producer + independent perceptual auditor",
+              "sourceRegistry": "src/studio-v1/public/certification/four-family-capability-registry.json",
+              "sourceRegistrySha256": "768ceb058d3b1d10cf25ad9d054b1f8c9a4bbb822385d008c00438089d7ba535",
+              "authorityMode": "DIRECT_PREFLIGHT_FALLBACK__EXPLICIT_WORKFLOW_AUTHORITY_OVERRIDES"
+            }
+          },
+          "public_family_constraints": [],
+          "family_execution_capabilities": {},
+          "production_scoped_asset_generation": false
+        },
+        "creative_doctrine": {
+          "product": "Standalone Studio V1",
+          "family": "EXPLAINER",
+          "videoType": "blind-commercial-eval",
+          "publicInterfaceLaw": "customer directs; Studio produces",
+          "planPreviewAuthority": "NON_AUTHORITATIVE",
+          "revisionLaw": "NONE",
+          "autonomousRepairLaw": "Producer REVISE/REJECT triggers adaptive bounded department-owned repair; local exhaustion escalates causal creative scope and the production remains alive; quality gates never weaken; generic downgrade is forbidden."
+        },
+        "task_ledger": [],
+        "progress_ledger": [],
+        "quality_ledger": [],
+        "proposals": {},
+        "decisions": {},
+        "body_validations": [],
+        "legacy_events": [],
+        "history": [
+          {
+            "seq": 1,
+            "at": "2026-08-18T16:31:25.720391+00:00",
+            "kind": "PRODUCTION_STARTED",
+            "revision": 0,
+            "payload": {
+              "brief_hash": "6a0c112095850880e511dd583055ae65a9dca648c16bb8451830048edfbc662d"
+            },
+            "event_hash": "60d3204de70b0d641f1dcc5c1d6b80fca9e38ee73c6538f294985e32f0125e7b"
+          },
+          {
+            "seq": 2,
+            "at": "2026-08-18T16:31:25.720391+00:00",
+            "kind": "CREATIVE_MEMORY_BOUND",
+            "revision": 0,
+            "payload": {
+              "count": 0,
+              "hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            },
+            "event_hash": "601105a093a9d7adb8f2ee8cb4cf682d935f01d1303c0359cec0cef953aa0ad2"
+          },
+          {
+            "seq": 3,
+            "at": "2026-08-18T16:31:25.720391+00:00",
+            "kind": "CAPABILITY_GRAPH_UPDATED",
+            "revision": 0,
+            "payload": {
+              "hash": "062fef1e355d0af1503d447d4018415b83fb03b54530fe90c2aa2a2a791ab9b0"
+            },
+            "event_hash": "b21acea8f0dba57943f8c4563b3f6754b21e3fc0e726e9315f3079d72ebe2180"
+          }
+        ],
+        "p2_schema": "NexMindSupremeShowrunnerP2StateV1",
+        "producer_reviews": [],
+        "p2_intelligence_gate": {
+          "status": "OPEN"
+        },
+        "p3_schema": "NexMindSupremeShowrunnerP3StateV1",
+        "p3_reviews": [],
+        "p3_gate": {
+          "status": "OPEN"
+        },
+        "p45_schema": "NexMindSupremeShowrunnerP45StateV1",
+        "p45_reviews": [],
+        "p45_gate": {
+          "status": "OPEN"
+        },
+        "p6_schema": "NexMindSupremeShowrunnerP6StateV1",
+        "p6_reviews": [],
+        "p6_gate": {
+          "status": "OPEN"
+        },
+        "p7_schema": "NexMindSupremeShowrunnerP7StateV1",
+        "p7_reviews": [],
+        "p7_gate": {
+          "status": "OPEN"
+        },
+        "p8_schema": "NexMindSupremeShowrunnerP8StateV1",
+        "final_producer_reviews": [],
+        "human_creative_reviews": [],
+        "p8_gate": {
+          "status": "OPEN"
+        },
+        "autonomous_creative_repair": {
+          "schema": "NexMindAutonomousCreativeRepairV2",
+          "policy": "ADAPTIVE_BOUNDED_CAUSAL_REPAIR__NO_QUALITY_OVERRIDE",
+          "attempt_limits_by_department": {
+            "STORY": 2,
+            "VISUAL_CONCEPT": 3,
+            "ART_DIRECTION": 3,
+            "CINEMATOGRAPHY": 2,
+            "EDITORIAL_RHYTHM": 2,
+            "MOTION_PERFORMANCE": 3,
+            "SOUND_DIRECTION": 2
+          },
+          "attempts": {},
+          "lifetime_attempts": {},
+          "lineage_resets": [],
+          "broader_strategy_replans": [],
+          "contract_repairs": {},
+          "ledger": []
+        }
+      },
+      "state_hash": "087098bff9d1858e7ed4ccefeab8bf8eaa27759fb9e4f12a8f7f758d1c1551e6"
+    },
+    "providerAudits": [
+      {
+        "task": "story",
+        "role": "StoryDirector",
+        "requested_provider": "virtuals",
+        "resolved_provider": "virtuals",
+        "requested_model": "openai-gpt-56-luna",
+        "resolved_model": "openai-gpt-56-luna",
+        "reasoning": "high",
+        "request_hash": "a0f6b707f480fd7fe23299470a52a4dce967f551ba8bdf43b0930fe22c818c4a",
+        "response_hash": "",
+        "provider_request_id": "",
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "duration_ms": 1375,
+        "retries": 0,
+        "status": "FAIL",
+        "error": "HTTP 402: {\"error\":{\"message\":\"Insufficient credits.\\n\\nTo continue:\\n• Open the agent details page\\n• Top up Compute Credits in Compute tab\\n• Resend your message\",\"type\":\"insufficient_quota\",\"code\":402},\"message\":\"Failed to perform chat completion: Insufficient credits.\\n\\nTo continue:\\n• Open the agent details page\\n• Top up Compute Credits in Compute tab\\n• Resend your message\",\"statusCode\":402}",
+        "schema_repairs": 0
+      }
+    ],
+    "providerPerformance": {
+      "provider_call_count": 1,
+      "provider_total_latency_ms": 1375,
+      "provider_retry_count": 0,
+      "provider_failed_call_count": 1,
+      "provider_schema_repair_count": 0,
+      "by_task": {
+        "story": {
+          "calls": 1,
+          "latency_ms": 1375,
+          "retries": 0,
+          "failures": 1,
+          "schema_repairs": 0
+        }
+      }
+    },
+    "detail": "HTTP 402: {\"error\":{\"message\":\"Insufficient credits.\\n\\nTo continue:\\n• Open the agent details page\\n• Top up Compute Credits in Compute tab\\n• Resend your message\",\"type\":\"insufficient_quota\",\"code\":402},\"message\":\"Failed to perform chat completion: Insufficient credits.\\n\\nTo continue:\\n• Open the",
+    "autonomousRepair": {
+      "schema": "NexMindAutonomousCreativeRepairV2",
+      "policy": "ADAPTIVE_BOUNDED_CAUSAL_REPAIR__NO_QUALITY_OVERRIDE",
+      "attempt_limits_by_department": {
+        "STORY": 2,
+        "VISUAL_CONCEPT": 3,
+        "ART_DIRECTION": 3,
+        "CINEMATOGRAPHY": 2,
+        "EDITORIAL_RHYTHM": 2,
+        "MOTION_PERFORMANCE": 3,
+        "SOUND_DIRECTION": 2
+      },
+      "attempts": {},
+      "lifetime_attempts": {},
+      "lineage_resets": [],
+      "broader_strategy_replans": [],
+      "contract_repairs": {},
+      "ledger": []
+    },
+    "productionDisposition": "RETRY_PROVIDER_AND_CONTINUE",
+    "resumeSafe": true,
+    "resumeStage": "STORY",
+    "continuationRequestOverrides": {}
+  },
+  "exception": null
+}

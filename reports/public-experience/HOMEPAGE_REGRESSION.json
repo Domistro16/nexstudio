@@ -1,0 +1,25 @@
+{
+  "schema": "NexStudioHomepageRegression V1",
+  "date": "2026-08-15",
+  "baseline": "approved NexStudio hero integrated source 2026-08-14",
+  "changed_from_baseline": [
+    "app/studio-v1.css",
+    "qa/public_experience_source_qa.py",
+    "reports/public-experience/NO_PLACEHOLDER_QA.json",
+    "reports/public-experience/SOURCE_QA.json",
+    "src/studio-v1/react/StudioPublicExperience.tsx"
+  ],
+  "added_from_baseline": [
+    "docs/studio-v1/NEXSTUDIO_PUBLIC_HOMEPAGE_VISUAL_AUTHORITY_2026-08-15.md",
+    "qa/homepage_visual_authority_qa.py",
+    "reports/public-experience/HOMEPAGE_REGRESSION.json",
+    "reports/public-experience/HOMEPAGE_VISUAL_AUTHORITY_QA.json"
+  ],
+  "removed_from_baseline": [],
+  "protected_surface_changes": [],
+  "productionWorkspaceByteIdentical": true,
+  "studioDashboardExperienceByteIdentical": true,
+  "billingByteIdentical": true,
+  "authByteIdentical": true,
+  "result": "PASS"
+}

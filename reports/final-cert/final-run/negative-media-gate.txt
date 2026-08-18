@@ -1,0 +1,51 @@
+{
+  "schema": "NexMindP8FinalJudgmentNegativeMediaGateV1",
+  "status": "BLOCKED_NO_LIVE_MULTIMODAL_FINAL_JUDGE",
+  "pass": true,
+  "passed": 2,
+  "total": 2,
+  "checks": [
+    {
+      "name": "Locked negative-control definitions exist",
+      "ok": true,
+      "detail": "10"
+    },
+    {
+      "name": "Recorded/structural fixture cannot substitute for encoded negative-control media",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "requiredControlIds": [
+    "NC01",
+    "NC02",
+    "NC03",
+    "NC04",
+    "NC05",
+    "NC06",
+    "NC07",
+    "NC08",
+    "NC09",
+    "NC10"
+  ],
+  "encodedMediaReady": [
+    "NC01",
+    "NC02",
+    "NC03",
+    "NC04",
+    "NC05",
+    "NC06",
+    "NC07",
+    "NC08",
+    "NC09",
+    "NC10"
+  ],
+  "missingEncodedMedia": [],
+  "finalProducerRoute": {
+    "status": "UNAVAILABLE",
+    "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:multimodal_commercial_taste:final_producer"
+  },
+  "commercialScoreEmitted": false,
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Final taste certification requires real encoded video + audio for every negative-control class and a capability-routed live multimodal Final Producer. Policy fixtures alone cannot raise the Final Judgment score."
+}

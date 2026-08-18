@@ -1,0 +1,16 @@
+{
+  "schema": "NexMindNegativeSpaceQAV2",
+  "status": "PASS",
+  "checks": {
+    "plan_preview_capability_routed": true,
+    "plan_preview_no_named_default": true,
+    "model_registry_supported": true,
+    "no_default_provider_identity": true,
+    "missing_config_fails_as_capability_config": true,
+    "whiteboard_archive_execution_only": true,
+    "editorial_archive_execution_only": true,
+    "editorial_adapter_imports_execution_only_renderer": true,
+    "active_scan_clean": true
+  },
+  "violations": []
+}

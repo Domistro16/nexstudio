@@ -1,0 +1,8 @@
+{
+  "schema": "NexMindCapabilityModelRegistryV2",
+  "routes": [
+    {"provider":"<provider>","model":"<exact-model-id>","capabilities":["creative_reasoning"],"input_modalities":["images"],"priority":10,"base_url":"<base-url>","api_key_env":"NEXMIND_API_KEY","api_mode":"<responses|chat_completions|prompt_json>"},
+    {"provider":"<provider>","model":"<distinct-final-producer-model>","capabilities":["commercial_creative_judgment"],"input_modalities":["images","audio"],"audio_input_mode":"<responses_input_audio|chat_input_audio>","priority":20,"base_url":"<base-url>","api_key_env":"NEXMIND_API_KEY","api_mode":"<responses|chat_completions>"},
+    {"provider":"<provider>","model":"<distinct-independent-auditor-model>","capabilities":["independent_perceptual_audit"],"input_modalities":["images","audio"],"audio_input_mode":"<responses_input_audio|chat_input_audio>","priority":20,"base_url":"<base-url>","api_key_env":"NEXMIND_API_KEY","api_mode":"<responses|chat_completions>"}
+  ]
+}

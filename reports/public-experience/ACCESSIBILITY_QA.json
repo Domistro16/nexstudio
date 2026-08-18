@@ -1,0 +1,122 @@
+{
+  "schema": "StudioPublicExperienceAccessibilityQA V1",
+  "pass": true,
+  "passed": 9,
+  "total": 9,
+  "checks": [
+    {
+      "name": "Text/focus contrast",
+      "ok": true,
+      "detail": [
+        {
+          "pair": "calm primary",
+          "foreground": "#191a18",
+          "background": "#f2eee4",
+          "ratio": 15.08,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "calm secondary",
+          "foreground": "#585a55",
+          "background": "#f2eee4",
+          "ratio": 6.02,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "calm quiet",
+          "foreground": "#686b64",
+          "background": "#f2eee4",
+          "ratio": 4.68,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "production primary",
+          "foreground": "#f2efe7",
+          "background": "#101210",
+          "ratio": 16.38,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "production secondary",
+          "foreground": "#b6b8b0",
+          "background": "#101210",
+          "ratio": 9.38,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "production quiet",
+          "foreground": "#7f847b",
+          "background": "#101210",
+          "ratio": 4.92,
+          "required": 4.5,
+          "pass": true
+        },
+        {
+          "pair": "calm focus",
+          "foreground": "#315e54",
+          "background": "#f2eee4",
+          "ratio": 6.34,
+          "required": 3.0,
+          "pass": true
+        },
+        {
+          "pair": "production focus",
+          "foreground": "#8eb6aa",
+          "background": "#101210",
+          "ratio": 8.44,
+          "required": 3.0,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "Browser accessibility tree has no unnamed interactive nodes",
+      "ok": true,
+      "detail": {
+        "unnamedInteractiveNodes": [],
+        "pass": true
+      }
+    },
+    {
+      "name": "33 responsive surfaces have no undersized tested controls",
+      "ok": true,
+      "detail": "44px header/primary target gate + >=40px browser target audit"
+    },
+    {
+      "name": "Sign-in modal supports Escape and trapped Tab navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production auth continuation supports Escape and trapped Tab navigation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced-motion path removes nonessential transition duration",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Focus-visible styling covers buttons, fields, selects and links",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Screening version selector is labeled",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Revision fields are explicitly labeled",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "standard": "WCAG 2.2-oriented implementation audit; not a third-party conformance certification"
+}

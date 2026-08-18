@@ -1,0 +1,33 @@
+{
+  "name": "NEXSTUDIO_PUBLIC_HOMEPAGE_VISUAL_AUTHORITY_PATCH_2026-08-15",
+  "base": "NEXSTUDIO_PUBLIC_EXPERIENCE_HERO_REBUILD_INTEGRATED_SOURCE_2026-08-14",
+  "scope": "public homepage only",
+  "qa": {
+    "typescript": "132/132 PASS",
+    "publicExperience": "28/28 PASS",
+    "homepageAuthority": "31/31 PASS",
+    "accessibility": "9/9 PASS",
+    "noPlaceholder": "PASS",
+    "cssBalance": "593/593 PASS",
+    "protectedRegression": "PASS"
+  },
+  "truth": {
+    "certifiedPublicMediaCount": 0,
+    "fakeMediaAdded": false,
+    "productionReadyClaim": false
+  },
+  "changed": [
+    "app/studio-v1.css",
+    "qa/public_experience_source_qa.py",
+    "reports/public-experience/NO_PLACEHOLDER_QA.json",
+    "reports/public-experience/SOURCE_QA.json",
+    "src/studio-v1/react/StudioPublicExperience.tsx"
+  ],
+  "added": [
+    "NEXSTUDIO_PUBLIC_HOMEPAGE_REBUILD_HANDOFF_2026-08-15.md",
+    "docs/studio-v1/NEXSTUDIO_PUBLIC_HOMEPAGE_VISUAL_AUTHORITY_2026-08-15.md",
+    "qa/homepage_visual_authority_qa.py",
+    "reports/public-experience/HOMEPAGE_REGRESSION.json",
+    "reports/public-experience/HOMEPAGE_VISUAL_AUTHORITY_QA.json"
+  ]
+}

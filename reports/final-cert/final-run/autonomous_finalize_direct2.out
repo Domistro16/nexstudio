@@ -1,0 +1,21 @@
+test_before_calibration_human_bridge_stays_required_and_can_unlock (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_before_calibration_human_bridge_stays_required_and_can_unlock) ... ok
+test_calibrated_multimodal_can_lock_without_per_job_human (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_calibrated_multimodal_can_lock_without_per_job_human) ... FAIL
+test_persistent_quality_failure_escalates_strategy_without_customer_failure (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_persistent_quality_failure_escalates_strategy_without_customer_failure) ... ok
+test_weak_finished_work_routes_repair_even_with_good_calibration (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_weak_finished_work_routes_repair_even_with_good_calibration) ... ok
+
+======================================================================
+FAIL: test_calibrated_multimodal_can_lock_without_per_job_human (services.studio-nexmind-p8.tests.test_autonomous_finalize.AutonomousFinalizeIntegration.test_calibrated_multimodal_can_lock_without_per_job_human)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-nexmind-p8/tests/test_autonomous_finalize.py", line 126, in test_calibrated_multimodal_can_lock_without_per_job_human
+    self.assertEqual(r["status"],"CREATIVE_LOCKED")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'REVISE' != 'CREATIVE_LOCKED'
+- REVISE
++ CREATIVE_LOCKED
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.054s
+
+FAILED (failures=1)

@@ -1,0 +1,262 @@
+[
+  {
+    "id": "audio.authorized.paper_handle_light_01",
+    "semanticName": "paper_handle_light_01",
+    "category": "paper",
+    "intensity": "soft",
+    "tags": [
+      "paper.soft",
+      "paper.handle",
+      "motion.reveal"
+    ],
+    "originalFilename": "floraphonic-handle-paper-foley-1-172688.mp3",
+    "masterFile": "assets/audio-authorized/masters/paper_handle_light_01.mp3",
+    "productionFile": "assets/audio-authorized/production/paper_handle_light_01.wav",
+    "durationSeconds": 1.416,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -22.1,
+    "truePeakDbfs": -1.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "4339dda3724b8ef58c3f403d3454eda2ebb44ae811f5485c554a6ad5f0e2e2b4"
+  },
+  {
+    "id": "audio.authorized.paper_handle_quick_01",
+    "semanticName": "paper_handle_quick_01",
+    "category": "paper",
+    "intensity": "medium",
+    "tags": [
+      "paper.medium",
+      "paper.handle",
+      "transition.paper"
+    ],
+    "originalFilename": "floraphonic-handle-paper-foley-2-172689.mp3",
+    "masterFile": "assets/audio-authorized/masters/paper_handle_quick_01.mp3",
+    "productionFile": "assets/audio-authorized/production/paper_handle_quick_01.wav",
+    "durationSeconds": 1.032,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -18.0,
+    "truePeakDbfs": -3.7,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "d31a70e44140781aca7922a6115d570b5bb894615c041c396c503aba65680e99"
+  },
+  {
+    "id": "audio.authorized.ui_open_soft_01",
+    "semanticName": "ui_open_soft_01",
+    "category": "interface",
+    "intensity": "soft",
+    "tags": [
+      "ui.open",
+      "ui.select",
+      "motion.soft"
+    ],
+    "originalFilename": "litupsubway-ui-open-sfx-513358.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_open_soft_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_open_soft_01.wav",
+    "durationSeconds": 0.7837,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -21.8,
+    "truePeakDbfs": -1.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "0a7cd668fd93e3bacd314c43be125da55cdf725c33afbdae8586785e867bf913"
+  },
+  {
+    "id": "audio.authorized.ui_click_precise_01",
+    "semanticName": "ui_click_precise_01",
+    "category": "interface",
+    "intensity": "soft",
+    "tags": [
+      "ui.click",
+      "ui.select",
+      "ui.precise"
+    ],
+    "originalFilename": "denielcz-immersivecontrol-button-click-sound-463065.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_click_precise_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_click_precise_01.wav",
+    "durationSeconds": 0.048,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -70.0,
+    "truePeakDbfs": -4.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "8d81cbfe9a05b30da6730f03c1976e59143cb425f8fa4d9e4129df6f65643b7a"
+  },
+  {
+    "id": "audio.authorized.ui_pop_soft_01",
+    "semanticName": "ui_pop_soft_01",
+    "category": "interface",
+    "intensity": "soft",
+    "tags": [
+      "ui.pop",
+      "motion.pop",
+      "ui.select"
+    ],
+    "originalFilename": "floraphonic-minimal-pop-click-ui-1-198301.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_pop_soft_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_pop_soft_01.wav",
+    "durationSeconds": 1.032,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -18.8,
+    "truePeakDbfs": -1.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "fb2cd4956612655bbd6cb56afaae27ebb344ada37c4171ffa2c6fbbaebec4dd8"
+  },
+  {
+    "id": "audio.authorized.ui_swipe_navigation_soft_01",
+    "semanticName": "ui_swipe_navigation_soft_01",
+    "category": "motion",
+    "intensity": "soft",
+    "tags": [
+      "ui.navigation",
+      "motion.swipe",
+      "motion.soft"
+    ],
+    "originalFilename": "soundshelfstudio-ui-swipe-navigation-soft-523625.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_swipe_navigation_soft_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_swipe_navigation_soft_01.wav",
+    "durationSeconds": 1.3845,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -18.0,
+    "truePeakDbfs": -9.3,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "ef9386a71a7d467ecc7e0056e424f50f8c6684d81ed764b4efc83dfbdfc79d2e"
+  },
+  {
+    "id": "audio.authorized.ui_confirm_success_01",
+    "semanticName": "ui_confirm_success_01",
+    "category": "interface",
+    "intensity": "medium",
+    "tags": [
+      "ui.confirm",
+      "ui.success",
+      "motion.complete"
+    ],
+    "originalFilename": "miraclei-sample_confirm_success02_kofi_by_miraclei-360154.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_confirm_success_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_confirm_success_01.wav",
+    "durationSeconds": 1.5935,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -18.0,
+    "truePeakDbfs": -4.2,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "60f410ef81322f7649c4752b0ef7216b4360adf551f07edfdab63baaf3a63b98"
+  },
+  {
+    "id": "audio.authorized.ui_level_up_bright_01",
+    "semanticName": "ui_level_up_bright_01",
+    "category": "interface",
+    "intensity": "high",
+    "tags": [
+      "ui.success",
+      "motion.rise",
+      "logo.bright"
+    ],
+    "originalFilename": "universfield-level-up-03-199576.mp3",
+    "masterFile": "assets/audio-authorized/masters/ui_level_up_bright_01.mp3",
+    "productionFile": "assets/audio-authorized/production/ui_level_up_bright_01.wav",
+    "durationSeconds": 2.142,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -18.0,
+    "truePeakDbfs": -4.7,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "63d3ed13b0de5f1506aa4f8d8cfe47999fcd54882831440fbc12ae7212c75439"
+  },
+  {
+    "id": "audio.authorized.object_place_soft_01",
+    "semanticName": "object_place_soft_01",
+    "category": "foley",
+    "intensity": "medium",
+    "tags": [
+      "object.place",
+      "paper.attach",
+      "motion.impact"
+    ],
+    "originalFilename": "freesound_community-place-something-42719.mp3",
+    "masterFile": "assets/audio-authorized/masters/object_place_soft_01.mp3",
+    "productionFile": "assets/audio-authorized/production/object_place_soft_01.wav",
+    "durationSeconds": 1.176,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -19.1,
+    "truePeakDbfs": -1.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "9158249e7f57db7a3b4cee980b902ccc6b7be04bf368f106781440a5220c1668"
+  },
+  {
+    "id": "audio.authorized.book_close_soft_01",
+    "semanticName": "book_close_soft_01",
+    "category": "paper",
+    "intensity": "medium",
+    "tags": [
+      "paper.close",
+      "transition.page",
+      "motion.complete"
+    ],
+    "originalFilename": "oxidvideos-book-closing-466850.mp3",
+    "masterFile": "assets/audio-authorized/masters/book_close_soft_01.mp3",
+    "productionFile": "assets/audio-authorized/production/book_close_soft_01.wav",
+    "durationSeconds": 0.696,
+    "sampleRate": 48000,
+    "channels": 2,
+    "bitDepth": 24,
+    "integratedLufs": -23.2,
+    "truePeakDbfs": -1.5,
+    "provenance": {
+      "sourceArchive": "NexStudio Sound ffects.zip",
+      "userAuthorized": true,
+      "generatedByAssistant": false
+    },
+    "sha256": "b40f7ec40b9e8dd1f4317fabc0d6a997ce06373bff9238bab36219c6f4374886"
+  }
+]

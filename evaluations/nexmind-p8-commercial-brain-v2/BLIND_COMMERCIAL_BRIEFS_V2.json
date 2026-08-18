@@ -1,0 +1,193 @@
+{
+  "schema": "NexMindP8CommercialBrainBlindBriefPackV2",
+  "classification": "SEALED_LIVE_EVALUATION_ONLY",
+  "creative_benchmark_eligible": true,
+  "recorded_answers_present": false,
+  "expected_candidate_present": false,
+  "preferred_strategy_present": false,
+  "candidate_labels_present": false,
+  "note": "Briefs contain only client-like intent. No expected Story/Visual/Art/Cinema/Editorial/Motion/Sound answers are stored. Production runtime must not import this file.",
+  "brief_count": 30,
+  "briefs": [
+    {
+      "id": "B01",
+      "brief": "A portable induction cooktop brand wants a 30-second film that makes precise heat control feel surprisingly human and useful, without turning into a feature list.",
+      "domain": "consumer-product",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B02",
+      "brief": "Explain why a B2B SaaS team keeps losing handoffs between sales and implementation, then show the value of one shared launch brief. Do not use dashboard-card storytelling as the default.",
+      "domain": "b2b-software",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B03",
+      "brief": "A bank needs a short customer explainer for why a card charge can appear pending before it finally posts or disappears. The tone should reduce anxiety without sounding patronizing.",
+      "domain": "fintech",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B04",
+      "brief": "Create a film for a clinic showing why missed appointments create a chain reaction for patients and staff, then end on a constructive scheduling behavior.",
+      "domain": "healthcare-operations",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B05",
+      "brief": "Explain how street trees and shade structures change the experience of an extremely hot city block. Make the mechanism understandable without becoming a climate infographic.",
+      "domain": "climate-urbanism",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B06",
+      "brief": "A cold-chain logistics company wants to show how one unnoticed temperature excursion can travel through a shipment and become a quality problem later.",
+      "domain": "logistics",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B07",
+      "brief": "A blood-donation nonprofit wants a 30-second film about the gap between intending to donate and actually making an appointment. Avoid guilt-driven messaging.",
+      "domain": "nonprofit",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B08",
+      "brief": "Explain pay transparency to employees: what it can clarify, what it cannot automatically fix, and why salary ranges still require context.",
+      "domain": "workplace",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B09",
+      "brief": "Show how an AI code-review assistant can catch a risky change while still leaving judgment and responsibility with the engineer.",
+      "domain": "ai-software",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B10",
+      "brief": "A warehouse robotics company needs a film explaining why safety zones change when people and autonomous machines share the same aisle.",
+      "domain": "robotics",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B11",
+      "brief": "Explain what a stablecoin reserve attestation can and cannot tell a holder. Avoid coins-flying-through-neon-network clichés.",
+      "domain": "crypto-finance",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B12",
+      "brief": "Explain parametric rainfall insurance to a farmer: payment is triggered by a measured condition rather than a traditional damage inspection.",
+      "domain": "insurance",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B13",
+      "brief": "Explain why a password manager is safer than reusing one memorable password everywhere, without using a generic lock-and-shield slideshow.",
+      "domain": "cybersecurity",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B14",
+      "brief": "A museum wants to explain why conservators sometimes leave visible signs of age on an object instead of making it look brand new.",
+      "domain": "culture-conservation",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B15",
+      "brief": "Explain how a heat-recovery ventilation system can exchange stale indoor air while retaining much of the heat.",
+      "domain": "building-science",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B16",
+      "brief": "A factory wants a short training film showing how a tiny measurement drift can become a large quality problem across repeated production.",
+      "domain": "manufacturing",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B17",
+      "brief": "An online retailer wants to explain why some returns are refunded instantly while others require inspection first.",
+      "domain": "commerce",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B18",
+      "brief": "Show the emotional and practical difference between a phishing message that creates urgency and a legitimate message that gives the user room to verify.",
+      "domain": "cybersecurity-human",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B19",
+      "brief": "Explain demand response: why a grid may pay customers to reduce or shift electricity use during a constrained period.",
+      "domain": "energy",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B20",
+      "brief": "A water utility wants to show how a small hidden leak can be inferred from meter patterns before anyone sees water damage.",
+      "domain": "utilities",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B21",
+      "brief": "Explain spaced repetition to a student without showing a generic calendar or staircase as the central concept.",
+      "domain": "education",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B22",
+      "brief": "A regional rail operator wants to explain when a flexible travel pass is better than buying individual tickets, without making the film feel like a pricing table.",
+      "domain": "travel",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B23",
+      "brief": "A creator platform wants to explain the difference between owning a file, owning copyright, and having permission to use someone else’s work.",
+      "domain": "creator-economy",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B24",
+      "brief": "Explain why deleting an app does not necessarily delete the account or all server-held data.",
+      "domain": "privacy",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B25",
+      "brief": "A city wants a neutral explainer of congestion pricing: what behavior it is trying to change and why the same road can feel different at different times.",
+      "domain": "public-policy",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B26",
+      "brief": "Explain drip irrigation as a distribution problem: getting limited water near roots with less loss than broad surface watering.",
+      "domain": "agriculture",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B27",
+      "brief": "A small retailer wants to understand why inventory can be “in stock” in the system but unavailable on the shelf.",
+      "domain": "retail-operations",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B28",
+      "brief": "Explain compound interest to a young adult in a way that makes time—not money flying upward—the central idea.",
+      "domain": "personal-finance",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B29",
+      "brief": "Explain why a queue can keep growing even when staff are continuously serving customers, if arrivals temporarily exceed service capacity.",
+      "domain": "operations",
+      "duration_seconds": 30
+    },
+    {
+      "id": "B30",
+      "brief": "A family-care app wants a short film about siblings coordinating care for an ageing parent: the product should feel like support for the relationship, not the hero replacing it.",
+      "domain": "human-product-story",
+      "duration_seconds": 30
+    }
+  ]
+}

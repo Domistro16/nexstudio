@@ -1,0 +1,2674 @@
+{
+  "schema": "NexMindP2RecordedProviderFixtureV1",
+  "cases": [
+    {
+      "id": "KIDNEY-FILTER",
+      "brief": {
+        "topic": "How kidneys filter blood",
+        "goal": "Explain selective filtration to a general audience",
+        "duration_s": 35,
+        "style": "faceless explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "K1",
+          "claim": "Blood enters filtering units where water and small solutes cross a filtration barrier while cells and most large proteins remain in circulation.",
+          "source": "fixture-medical-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "K2",
+          "claim": "Useful substances and water can be reabsorbed while wastes are concentrated into urine.",
+          "source": "fixture-medical-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "CORAL-BLEACH",
+      "brief": {
+        "topic": "Why coral bleaching happens",
+        "goal": "Explain the biological relationship and stress response",
+        "duration_s": 40,
+        "style": "whiteboard explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "C1",
+          "claim": "Many reef-building corals live in symbiosis with photosynthetic algae that provide much of their energy.",
+          "source": "fixture-ocean-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "C2",
+          "claim": "Heat stress can disrupt this relationship and cause corals to expel algae, revealing pale tissue and reducing energy supply.",
+          "source": "fixture-ocean-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "COMPILER-PIPE",
+      "brief": {
+        "topic": "What a compiler actually does",
+        "goal": "Explain compilation without reducing it to one magic translate step",
+        "duration_s": 38,
+        "style": "modern explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "P1",
+          "claim": "A compiler analyzes source text, builds structured representations, checks constraints, transforms or optimizes them, and emits target code or another executable form.",
+          "source": "fixture-cs-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "P2",
+          "claim": "Different compiler stages preserve program meaning while changing representation.",
+          "source": "fixture-cs-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "CERAMIC-KILN",
+      "brief": {
+        "topic": "Why clay becomes ceramic in a kiln",
+        "goal": "Explain irreversible material transformation",
+        "duration_s": 34,
+        "style": "paperbook explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "M1",
+          "claim": "Heating drives off free and chemically bound water and causes mineral and glass-forming changes that make fired clay irreversibly different from wet clay.",
+          "source": "fixture-materials-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "M2",
+          "claim": "At sufficiently high temperature particles bond and glassy phases can form, increasing strength and reducing the ability to return to plastic clay with water.",
+          "source": "fixture-materials-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "INFLATION-WAGE",
+      "brief": {
+        "topic": "Why a pay rise can still feel like losing money",
+        "goal": "Explain nominal versus real purchasing power",
+        "duration_s": 32,
+        "style": "editorial explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "I1",
+          "claim": "Nominal income is measured in currency units, while real purchasing power depends on prices of goods and services.",
+          "source": "fixture-econ-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "I2",
+          "claim": "If prices rise faster than income, purchasing power can fall even when the paycheck amount increases.",
+          "source": "fixture-econ-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "POLLINATION",
+      "brief": {
+        "topic": "How pollination becomes fertilization",
+        "goal": "Clarify that pollen transfer and fertilization are different events",
+        "duration_s": 36,
+        "style": "whiteboard"
+      },
+      "evidence": [
+        {
+          "claim_id": "F1",
+          "claim": "Pollination is transfer of pollen to a compatible receptive flower structure; it is not itself fertilization.",
+          "source": "fixture-botany-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "F2",
+          "claim": "After compatible pollen germinates, a pollen tube can grow toward the ovule, enabling sperm cells to reach the female gametophyte for fertilization.",
+          "source": "fixture-botany-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "BATTERY-RECYCLE",
+      "brief": {
+        "topic": "What battery recycling is trying to recover",
+        "goal": "Explain why recycling is separation and material recovery, not simply melting batteries",
+        "duration_s": 42,
+        "style": "faceless explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "R1",
+          "claim": "Battery recycling processes can include discharge/safety handling, mechanical size reduction, physical separation and hydrometallurgical or pyrometallurgical recovery steps depending on chemistry and process.",
+          "source": "fixture-recycling-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "R2",
+          "claim": "The objective is to recover useful material fractions such as metals or compounds while handling hazardous/reactive components safely.",
+          "source": "fixture-recycling-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "INSURANCE-CLAIM",
+      "brief": {
+        "topic": "Why an insurance claim can take time",
+        "goal": "Explain evidence, coverage and loss assessment without making delay look arbitrary",
+        "duration_s": 33,
+        "style": "editorial explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "A1",
+          "claim": "Claim handling commonly involves confirming policy/coverage, documenting the event and loss, evaluating evidence, and determining payment according to policy terms.",
+          "source": "fixture-insurance-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "A2",
+          "claim": "Missing or conflicting information can require additional investigation before a claim decision is made.",
+          "source": "fixture-insurance-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "id": "ROBOT-TELEOP",
+      "brief": {
+        "topic": "How teleoperation data can teach robots",
+        "goal": "Explain demonstration data without implying robots simply copy a video",
+        "duration_s": 40,
+        "style": "modern explainer"
+      },
+      "evidence": [
+        {
+          "claim_id": "T1",
+          "claim": "Teleoperation can record human-controlled robot observations and actions as demonstrations for learning or evaluation.",
+          "source": "fixture-robotics-reference",
+          "status": "VERIFIED"
+        },
+        {
+          "claim_id": "T2",
+          "claim": "Useful training data couples state/observation context with the actions taken, and learned policies must generalize beyond exact demonstrations.",
+          "source": "fixture-robotics-reference",
+          "status": "VERIFIED"
+        }
+      ]
+    }
+  ],
+  "responses": {
+    "KIDNEY-FILTER::story::0": {
+      "film_thesis": {
+        "central_argument": "Kidneys are not simple strainers; they continuously separate, recover, and concentrate with selective control.",
+        "film_kind": "mechanism reveal",
+        "audience_before": "kidneys are passive filters",
+        "audience_after": "kidneys are selective recovery systems",
+        "emotional_trajectory": [
+          "familiar organ",
+          "unexpected selectivity",
+          "elegant recovery",
+          "whole-system clarity"
+        ],
+        "visual_trajectory": [
+          "whole kidney",
+          "enter one nephron",
+          "selective crossing",
+          "recovery loop",
+          "return to whole"
+        ],
+        "opening_contract": "Start with blood arriving as a mixed stream, not with labels.",
+        "final_payoff": "Return to the kidney with the audience now reading it as a precise separation-and-recovery machine.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "reframe",
+          "question": "What is the kidney actually doing?",
+          "audience_before": "passive filter",
+          "audience_after": "active selective system",
+          "reveal": "Blood arrives carrying cells, water, useful molecules and wastes.",
+          "required_claim_ids": [
+            "K1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "mechanism",
+          "question": "What crosses and what stays?",
+          "audience_before": "everything is strained together",
+          "audience_after": "size and barrier properties matter",
+          "reveal": "At the filtration barrier, small fluid components cross while cells remain in blood.",
+          "required_claim_ids": [
+            "K1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "recovery",
+          "question": "Why not lose useful material?",
+          "audience_before": "filtered means discarded",
+          "audience_after": "filtered material can be reclaimed",
+          "reveal": "The tubule recovers useful water and solutes from the filtrate.",
+          "required_claim_ids": [
+            "K2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "synthesis",
+          "question": "So what is urine?",
+          "audience_before": "urine is simply filtered blood",
+          "audience_after": "urine is the concentrated remainder after selective recovery",
+          "reveal": "The remaining fluid becomes concentrated waste while blood continues onward.",
+          "required_claim_ids": [
+            "K2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "KIDNEY-FILTER::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "KIDNEY-FILTER::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A dashboard of tiles shows kidney steps in a grid of cards.",
+          "hero_kind": "dashboard",
+          "transformation": "reveal",
+          "camera_idea": "static wide",
+          "rationale": "Easy to label but generic.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "active selective system",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "size and barrier properties matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "filtered material can be reclaimed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "urine is the concentrated remainder after selective recovery",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "AUTHORED_ILLUSTRATION",
+          "visual_thesis": "One kidney opens into a single oversized nephron; the same blood stream visibly separates, useful material returns, and waste continues.",
+          "hero_kind": "kidney-nephron continuous hero",
+          "transformation": "mixed blood becomes two meaningfully different streams with reabsorption returning to circulation",
+          "camera_idea": "whole-to-macro dive then return",
+          "rationale": "Preserves one hero and makes selectivity physical.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "Blood arrives carrying cells, water, useful molecules and wastes. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "active selective system",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through mechanism",
+              "visual_action": "At the filtration barrier, small fluid components cross while cells remain in blood. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "size and barrier properties matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through recovery",
+              "visual_action": "The tubule recovers useful water and solutes from the filtrate. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "filtered material can be reclaimed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "The remaining fluid becomes concentrated waste while blood continues onward. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "urine is the concentrated remainder after selective recovery",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A selectively permeable membrane behaves like a guarded border where some travelers cross and others remain, then recovered travelers rejoin the main route.",
+          "hero_kind": "selective membrane border",
+          "transformation": "mixed travelers separate by permission then useful travelers rejoin",
+          "camera_idea": "profile tracking",
+          "rationale": "Fast intuition, less anatomically literal.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "Blood arrives carrying cells, water, useful molecules and wastes. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "active selective system",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through mechanism",
+              "visual_action": "At the filtration barrier, small fluid components cross while cells remain in blood. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "size and barrier properties matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through recovery",
+              "visual_action": "The tubule recovers useful water and solutes from the filtrate. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "filtered material can be reclaimed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "The remaining fluid becomes concentrated waste while blood continues onward. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "urine is the concentrated remainder after selective recovery",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "KIDNEY-FILTER::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "KIDNEY-FILTER::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "KIDNEY-FILTER::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "CORAL-BLEACH::story::0": {
+      "film_thesis": {
+        "central_argument": "Bleaching is the visible consequence of a partnership breaking under stress, not coral simply being scorched white.",
+        "film_kind": "relationship breakdown",
+        "audience_before": "bleaching is sunburned coral",
+        "audience_after": "bleaching is a stressed symbiosis losing its energy partner",
+        "emotional_trajectory": [
+          "living partnership",
+          "rising stress",
+          "rupture",
+          "fragile aftermath"
+        ],
+        "visual_trajectory": [
+          "coral polyp partnership",
+          "heat pressure",
+          "algae departure",
+          "pale coral energy loss"
+        ],
+        "opening_contract": "Begin inside a healthy coral polyp with algae visibly contributing energy.",
+        "final_payoff": "Pull back to the pale colony while preserving the missing-partner absence as the reason it changed.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "relationship",
+          "question": "What makes healthy coral productive?",
+          "audience_before": "coral works alone",
+          "audience_after": "coral depends on a partnership",
+          "reveal": "Algae live with coral and contribute energy.",
+          "required_claim_ids": [
+            "C1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "stress",
+          "question": "What does heat change?",
+          "audience_before": "heat only changes color",
+          "audience_after": "heat destabilizes the partnership",
+          "reveal": "Thermal stress builds inside the same living system.",
+          "required_claim_ids": [
+            "C2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "rupture",
+          "question": "Why does it become pale?",
+          "audience_before": "color burns away",
+          "audience_after": "the colored algae leave or are expelled",
+          "reveal": "The algae depart and the tissue loses their color and energy contribution.",
+          "required_claim_ids": [
+            "C2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "consequence",
+          "question": "Why is bleaching dangerous?",
+          "audience_before": "white is only cosmetic",
+          "audience_after": "the coral has lost a major energy source",
+          "reveal": "The pale coral remains alive but energetically stressed.",
+          "required_claim_ids": [
+            "C1",
+            "C2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "CORAL-BLEACH::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "CORAL-BLEACH::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "Boxes connected in a node network list heat, algae and coral.",
+          "hero_kind": "node",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Technically clear but diagram-first.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "coral depends on a partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "heat destabilizes the partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the colored algae leave or are expelled",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the coral has lost a major energy source",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "AUTHORED_ILLUSTRATION",
+          "visual_thesis": "A single coral polyp remains hero as luminous algae live inside it, heat distortion accumulates, algae physically leave, and the same polyp becomes pale.",
+          "hero_kind": "coral-polyp partnership",
+          "transformation": "inhabited colorful tissue becomes visibly depleted while identity persists",
+          "camera_idea": "macro hold with restrained pullback",
+          "rationale": "Makes bleaching a relationship loss in one persistent body.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through relationship",
+              "visual_action": "Algae live with coral and contribute energy. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "coral depends on a partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through stress",
+              "visual_action": "Thermal stress builds inside the same living system. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "heat destabilizes the partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through rupture",
+              "visual_action": "The algae depart and the tissue loses their color and energy contribution. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the colored algae leave or are expelled",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through consequence",
+              "visual_action": "The pale coral remains alive but energetically stressed. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the coral has lost a major energy source",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A shared house powered by tiny solar tenants loses them during a heat emergency; lights dim while the house remains standing.",
+          "hero_kind": "shared living house",
+          "transformation": "productive occupancy becomes abandonment and energy scarcity",
+          "camera_idea": "interior-to-exterior pullback",
+          "rationale": "Memorable relationship metaphor with clear cause and consequence.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through relationship",
+              "visual_action": "Algae live with coral and contribute energy. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "coral depends on a partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through stress",
+              "visual_action": "Thermal stress builds inside the same living system. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "heat destabilizes the partnership",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through rupture",
+              "visual_action": "The algae depart and the tissue loses their color and energy contribution. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the colored algae leave or are expelled",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through consequence",
+              "visual_action": "The pale coral remains alive but energetically stressed. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the coral has lost a major energy source",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "CORAL-BLEACH::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "CORAL-BLEACH::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "CORAL-BLEACH::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "COMPILER-PIPE::story::0": {
+      "film_thesis": {
+        "central_argument": "Compilation is a sequence of meaning-preserving representation changes, not a one-click word-for-word translation.",
+        "film_kind": "representation transformation",
+        "audience_before": "compiler swaps source words for machine words",
+        "audience_after": "compiler progressively restructures one program while preserving its intended behavior",
+        "emotional_trajectory": [
+          "familiar code",
+          "structure appears",
+          "constraints tighten",
+          "machine-ready clarity"
+        ],
+        "visual_trajectory": [
+          "source program",
+          "syntax structure",
+          "intermediate form",
+          "optimized form",
+          "target instructions"
+        ],
+        "opening_contract": "Use one tiny program as a persistent object whose form changes rather than five disconnected panels.",
+        "final_payoff": "End with source and machine form linked by the same persistent semantic identity.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "reframe",
+          "question": "Does compilation translate line by line?",
+          "audience_before": "yes",
+          "audience_after": "the source is first understood structurally",
+          "reveal": "Source text is parsed into a structured representation.",
+          "required_claim_ids": [
+            "P1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "constraint",
+          "question": "How are invalid programs caught?",
+          "audience_before": "the machine discovers errors later",
+          "audience_after": "the compiler checks rules before target execution",
+          "reveal": "The structured program is checked against language constraints.",
+          "required_claim_ids": [
+            "P1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "transform",
+          "question": "Why are there intermediate forms?",
+          "audience_before": "they are unnecessary internals",
+          "audience_after": "they allow systematic meaning-preserving transformation",
+          "reveal": "The same program is represented in forms suited to analysis and optimization.",
+          "required_claim_ids": [
+            "P1",
+            "P2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "synthesis",
+          "question": "What finally comes out?",
+          "audience_before": "a translated copy of text",
+          "audience_after": "a target representation derived from preserved meaning",
+          "reveal": "Target instructions emerge from the transformed representation.",
+          "required_claim_ids": [
+            "P1",
+            "P2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "COMPILER-PIPE::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "COMPILER-PIPE::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A generic pipeline of boxes connected left to right labels parse, check, optimize, emit.",
+          "hero_kind": "box",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Accurate but familiar mechanism catalogue.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the source is first understood structurally",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the compiler checks rules before target execution",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "they allow systematic meaning-preserving transformation",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "a target representation derived from preserved meaning",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "ASSEMBLED_ILLUSTRATION",
+          "visual_thesis": "One program token-stream folds into a syntax tree, compresses into an intermediate graph, then resolves into target instructions while a semantic thread remains continuous.",
+          "hero_kind": "persistent program identity",
+          "transformation": "text becomes structure becomes optimized representation becomes instructions",
+          "camera_idea": "follow the same semantic object through changing form",
+          "rationale": "Explains representation change instead of merely naming stages.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "Source text is parsed into a structured representation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the source is first understood structurally",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through constraint",
+              "visual_action": "The structured program is checked against language constraints. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the compiler checks rules before target execution",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through transform",
+              "visual_action": "The same program is represented in forms suited to analysis and optimization. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "they allow systematic meaning-preserving transformation",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "Target instructions emerge from the transformed representation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "a target representation derived from preserved meaning",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A manuscript is successively typeset, proof-checked, reorganized and cast into printing plates while its message remains the same.",
+          "hero_kind": "one manuscript",
+          "transformation": "raw writing becomes production-ready physical form without changing message",
+          "camera_idea": "tabletop progression with final match cut",
+          "rationale": "Makes preservation-through-transformation intuitive.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "Source text is parsed into a structured representation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the source is first understood structurally",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through constraint",
+              "visual_action": "The structured program is checked against language constraints. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the compiler checks rules before target execution",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through transform",
+              "visual_action": "The same program is represented in forms suited to analysis and optimization. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "they allow systematic meaning-preserving transformation",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "Target instructions emerge from the transformed representation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "a target representation derived from preserved meaning",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "COMPILER-PIPE::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "COMPILER-PIPE::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "COMPILER-PIPE::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "CERAMIC-KILN::story::0": {
+      "film_thesis": {
+        "central_argument": "A kiln does not merely dry clay; heat progressively changes its internal material state until the transformation cannot be undone with water.",
+        "film_kind": "material transformation",
+        "audience_before": "kiln heat just dries and hardens clay",
+        "audience_after": "firing is an irreversible internal material transformation",
+        "emotional_trajectory": [
+          "soft familiar clay",
+          "hidden change",
+          "heat intensifies",
+          "irreversible new material"
+        ],
+        "visual_trajectory": [
+          "wet clay object",
+          "water departure",
+          "particle bonding",
+          "glassy phase",
+          "finished ceramic"
+        ],
+        "opening_contract": "Begin with one wet clay cup deforming under touch.",
+        "final_payoff": "End by wetting the fired cup and showing it remains ceramic rather than returning to clay.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "baseline",
+          "question": "What makes wet clay plastic?",
+          "audience_before": "hardness is the only difference",
+          "audience_after": "water and particle arrangement matter",
+          "reveal": "Start with wet clay as a deformable material.",
+          "required_claim_ids": [
+            "M1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "heat",
+          "question": "What leaves first?",
+          "audience_before": "heat simply bakes the outside",
+          "audience_after": "water is progressively removed",
+          "reveal": "Free and bound water leave as temperature rises.",
+          "required_claim_ids": [
+            "M1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "bonding",
+          "question": "What makes firing irreversible?",
+          "audience_before": "all hardness comes from dryness",
+          "audience_after": "the mineral/particle system changes",
+          "reveal": "Particles bond and glass-forming changes develop.",
+          "required_claim_ids": [
+            "M1",
+            "M2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "proof",
+          "question": "How do we know it is a new material state?",
+          "audience_before": "water should soften it back",
+          "audience_after": "water no longer restores plastic clay",
+          "reveal": "The fired object stays ceramic even when rewetted.",
+          "required_claim_ids": [
+            "M2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "CERAMIC-KILN::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "CERAMIC-KILN::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A row of icons labels wet, warm, hot and fired.",
+          "hero_kind": "icon",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Simple but shallow.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "water and particle arrangement matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "water is progressively removed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the mineral/particle system changes",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "water no longer restores plastic clay",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "AUTHORED_ILLUSTRATION",
+          "visual_thesis": "One clay cup persists through the kiln while a selective cutaway reveals water leaving and particles knitting into a glass-bonded body; the same cup is rewetted at the end without softening.",
+          "hero_kind": "single clay cup with material cutaway",
+          "transformation": "deformable wet body becomes internally bonded ceramic and resists reversal",
+          "camera_idea": "hold on cup; enter cutaway only when needed",
+          "rationale": "Uses one physical object to prove irreversibility.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through baseline",
+              "visual_action": "Start with wet clay as a deformable material. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water and particle arrangement matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through heat",
+              "visual_action": "Free and bound water leave as temperature rises. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water is progressively removed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through bonding",
+              "visual_action": "Particles bond and glass-forming changes develop. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the mineral/particle system changes",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through proof",
+              "visual_action": "The fired object stays ceramic even when rewetted. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water no longer restores plastic clay",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "Loose beads in a water-rich gel progressively lose fluid and fuse into a locked mosaic that cannot become loose gel again.",
+          "hero_kind": "bead-to-mosaic material",
+          "transformation": "mobile particles become bonded network",
+          "camera_idea": "macro material study",
+          "rationale": "Makes internal state change legible without overclaiming chemistry.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through baseline",
+              "visual_action": "Start with wet clay as a deformable material. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water and particle arrangement matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through heat",
+              "visual_action": "Free and bound water leave as temperature rises. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water is progressively removed",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through bonding",
+              "visual_action": "Particles bond and glass-forming changes develop. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the mineral/particle system changes",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through proof",
+              "visual_action": "The fired object stays ceramic even when rewetted. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "water no longer restores plastic clay",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "CERAMIC-KILN::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "CERAMIC-KILN::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "CERAMIC-KILN::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "INFLATION-WAGE::story::0": {
+      "film_thesis": {
+        "central_argument": "A bigger number on a paycheck is not automatically a gain; what matters is how much of the real world that paycheck can still command.",
+        "film_kind": "comparison reveal",
+        "audience_before": "higher salary number always means richer",
+        "audience_after": "real gain depends on salary growth relative to prices",
+        "emotional_trajectory": [
+          "celebration",
+          "subtle mismatch",
+          "visible squeeze",
+          "clear comparison"
+        ],
+        "visual_trajectory": [
+          "paycheck grows",
+          "same shopping basket reprices",
+          "basket shrinks relative to paycheck",
+          "real purchasing power comparison"
+        ],
+        "opening_contract": "Open on the celebratory larger paycheck before revealing the unchanged shopping goal.",
+        "final_payoff": "End with two rulers: money amount up, purchasable basket down.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "setup",
+          "question": "Why does the raise feel good?",
+          "audience_before": "bigger number means guaranteed gain",
+          "audience_after": "the nominal number did rise",
+          "reveal": "The paycheck amount increases.",
+          "required_claim_ids": [
+            "I1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "counterforce",
+          "question": "What happened to the world around it?",
+          "audience_before": "prices are background noise",
+          "audience_after": "prices determine what the income buys",
+          "reveal": "The same basket is repriced upward.",
+          "required_claim_ids": [
+            "I1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "comparison",
+          "question": "Which one grew faster?",
+          "audience_before": "only salary growth matters",
+          "audience_after": "relative growth determines real purchasing power",
+          "reveal": "Prices outrun the raise, so fewer baskets fit inside the paycheck.",
+          "required_claim_ids": [
+            "I2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "synthesis",
+          "question": "What is the real measure?",
+          "audience_before": "currency units alone",
+          "audience_after": "purchasing power",
+          "reveal": "Separate nominal increase from real outcome.",
+          "required_claim_ids": [
+            "I1",
+            "I2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "INFLATION-WAGE::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "INFLATION-WAGE::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A dashboard of tiles compares salary and inflation percentages.",
+          "hero_kind": "dashboard",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Data-first but weak experiential payoff.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the nominal number did rise",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "prices determine what the income buys",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "relative growth determines real purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "One paycheck physically stretches longer, but the familiar shopping basket expands even faster until fewer baskets fit on the paycheck strip.",
+          "hero_kind": "paycheck versus shopping basket",
+          "transformation": "both grow at different rates and the basket overtakes the paycheck",
+          "camera_idea": "side-on scale comparison with final hold",
+          "rationale": "Makes real purchasing power immediately visible.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through setup",
+              "visual_action": "The paycheck amount increases. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the nominal number did rise",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through counterforce",
+              "visual_action": "The same basket is repriced upward. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "prices determine what the income buys",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through comparison",
+              "visual_action": "Prices outrun the raise, so fewer baskets fit inside the paycheck. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "relative growth determines real purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "Separate nominal increase from real outcome. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "TYPOGRAPHY_DATA",
+          "visual_thesis": "The salary number grows boldly while item prices quietly inflate around it; the type then collapses into a real-purchasing-power ratio.",
+          "hero_kind": "salary number versus price field",
+          "transformation": "nominal celebration is visually overtaken by price expansion",
+          "camera_idea": "locked editorial frame with one decisive reframe",
+          "rationale": "Suitable for a compact editorial treatment.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through setup",
+              "visual_action": "The paycheck amount increases. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the nominal number did rise",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through counterforce",
+              "visual_action": "The same basket is repriced upward. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "prices determine what the income buys",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through comparison",
+              "visual_action": "Prices outrun the raise, so fewer baskets fit inside the paycheck. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "relative growth determines real purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "Separate nominal increase from real outcome. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "purchasing power",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "INFLATION-WAGE::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "INFLATION-WAGE::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "INFLATION-WAGE::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "POLLINATION::story::0": {
+      "film_thesis": {
+        "central_argument": "Pollination is delivery; fertilization happens later, after the pollen grain grows a living route into the flower.",
+        "film_kind": "hidden journey",
+        "audience_before": "bee touches flower and fertilization instantly happens",
+        "audience_after": "pollination starts a multi-step biological journey toward fertilization",
+        "emotional_trajectory": [
+          "familiar bee visit",
+          "unexpected pause",
+          "hidden growth",
+          "arrival"
+        ],
+        "visual_trajectory": [
+          "pollen transfer",
+          "pollen lands",
+          "tube grows inward",
+          "gametes meet"
+        ],
+        "opening_contract": "Use the familiar bee visit only as the first handoff, then keep the pollen grain as hero.",
+        "final_payoff": "End by pulling back from the successful internal journey to show why the external bee visit was only the beginning.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "distinction",
+          "question": "What does the bee actually accomplish?",
+          "audience_before": "instant fertilization",
+          "audience_after": "pollen transfer",
+          "reveal": "Pollen is transferred to a receptive flower surface.",
+          "required_claim_ids": [
+            "F1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "activation",
+          "question": "What happens after landing?",
+          "audience_before": "nothing until another animal arrives",
+          "audience_after": "compatible pollen can germinate",
+          "reveal": "The pollen grain activates on the flower.",
+          "required_claim_ids": [
+            "F2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "journey",
+          "question": "How does male material reach the ovule?",
+          "audience_before": "it jumps directly",
+          "audience_after": "a pollen tube grows through tissue",
+          "reveal": "A living tube extends toward the ovule.",
+          "required_claim_ids": [
+            "F2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "arrival",
+          "question": "When does fertilization actually occur?",
+          "audience_before": "at pollen landing",
+          "audience_after": "after gametes are brought together",
+          "reveal": "The internal journey enables fertilization.",
+          "required_claim_ids": [
+            "F1",
+            "F2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "POLLINATION::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "POLLINATION::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A series of boxes connected by arrows labels bee, pollen, tube and ovule.",
+          "hero_kind": "box",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Correct sequence but weak biology.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "pollen transfer",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "compatible pollen can germinate",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "a pollen tube grows through tissue",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "after gametes are brought together",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "AUTHORED_ILLUSTRATION",
+          "visual_thesis": "A recognizable flower remains persistent; after the bee exits, one pollen grain becomes hero and grows a tube through the same flower into the ovule.",
+          "hero_kind": "flower plus persistent pollen grain",
+          "transformation": "external handoff becomes an internal living growth journey",
+          "camera_idea": "whole flower to macro dive following the grain",
+          "rationale": "Clarifies the hidden time and distance between pollination and fertilization.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through distinction",
+              "visual_action": "Pollen is transferred to a receptive flower surface. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "pollen transfer",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through activation",
+              "visual_action": "The pollen grain activates on the flower. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "compatible pollen can germinate",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through journey",
+              "visual_action": "A living tube extends toward the ovule. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "a pollen tube grows through tissue",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through arrival",
+              "visual_action": "The internal journey enables fertilization. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "after gametes are brought together",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A delivered seed-like courier lands at a gate, builds its own tunnel inward, and only at the destination completes the handoff.",
+          "hero_kind": "courier grain",
+          "transformation": "delivery becomes self-built route then final handoff",
+          "camera_idea": "follow-cam tunnel journey",
+          "rationale": "Memorable, but should be bounded to avoid implying literal engineering.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through distinction",
+              "visual_action": "Pollen is transferred to a receptive flower surface. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "pollen transfer",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through activation",
+              "visual_action": "The pollen grain activates on the flower. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "compatible pollen can germinate",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through journey",
+              "visual_action": "A living tube extends toward the ovule. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "a pollen tube grows through tissue",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through arrival",
+              "visual_action": "The internal journey enables fertilization. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "after gametes are brought together",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "POLLINATION::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "POLLINATION::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "POLLINATION::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "BATTERY-RECYCLE::story::0": {
+      "film_thesis": {
+        "central_argument": "Battery recycling is a controlled unmixing problem: a compact engineered object must be safely opened into recoverable material streams.",
+        "film_kind": "unmixing system",
+        "audience_before": "old batteries are thrown into a furnace and become new batteries",
+        "audience_after": "recycling is staged separation and recovery tailored to material chemistry",
+        "emotional_trajectory": [
+          "sealed object",
+          "controlled opening",
+          "sorting complexity",
+          "valuable streams"
+        ],
+        "visual_trajectory": [
+          "battery pack",
+          "safe opening",
+          "material fractions",
+          "recovery streams",
+          "new feedstock"
+        ],
+        "opening_contract": "Begin with one sealed battery as a deceptively simple black box.",
+        "final_payoff": "End with the original compact object spatially exploded into a few clean recovered material streams.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "reframe",
+          "question": "What is inside the simple battery object?",
+          "audience_before": "one uniform material",
+          "audience_after": "multiple engineered material layers",
+          "reveal": "The sealed object contains different materials that need different handling.",
+          "required_claim_ids": [
+            "R1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "safety",
+          "question": "Why not just crush or melt it immediately?",
+          "audience_before": "all processing is equivalent",
+          "audience_after": "reactive material needs controlled handling",
+          "reveal": "Safety/discharge and controlled size reduction precede later recovery in many routes.",
+          "required_claim_ids": [
+            "R1",
+            "R2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "separation",
+          "question": "What is recycling actually doing?",
+          "audience_before": "turning everything into one recycled mass",
+          "audience_after": "creating distinct material fractions",
+          "reveal": "Physical and chemical steps separate useful fractions.",
+          "required_claim_ids": [
+            "R1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "payoff",
+          "question": "What is the valuable output?",
+          "audience_before": "another intact battery pops out",
+          "audience_after": "recoverable feedstock streams",
+          "reveal": "Recovered materials can re-enter manufacturing chains.",
+          "required_claim_ids": [
+            "R2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "BATTERY-RECYCLE::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "BATTERY-RECYCLE::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A node network connects many battery-recycling steps around a central icon.",
+          "hero_kind": "icon",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Comprehensive but visually noisy.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "multiple engineered material layers",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "reactive material needs controlled handling",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "creating distinct material fractions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "recoverable feedstock streams",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "ASSEMBLED_ILLUSTRATION",
+          "visual_thesis": "One battery pack opens layer by layer and physically fans into a small number of material streams that remain traceable through separation and recovery.",
+          "hero_kind": "battery pack becoming material families",
+          "transformation": "sealed engineered object becomes ordered recoverable fractions",
+          "camera_idea": "controlled exploded-view then follow selected streams",
+          "rationale": "Makes recycling an unmixing problem rather than a flowchart.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "The sealed object contains different materials that need different handling. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "multiple engineered material layers",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through safety",
+              "visual_action": "Safety/discharge and controlled size reduction precede later recovery in many routes. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "reactive material needs controlled handling",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through separation",
+              "visual_action": "Physical and chemical steps separate useful fractions. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "creating distinct material fractions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through payoff",
+              "visual_action": "Recovered materials can re-enter manufacturing chains. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "recoverable feedstock streams",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A tightly woven multicolor rope is safely untwisted into material strands, each routed to a different recovery treatment.",
+          "hero_kind": "woven composite rope",
+          "transformation": "one compact composite becomes separated valuable strands",
+          "camera_idea": "close tactile unweaving",
+          "rationale": "Strong intuition but less product-specific.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through reframe",
+              "visual_action": "The sealed object contains different materials that need different handling. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "multiple engineered material layers",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through safety",
+              "visual_action": "Safety/discharge and controlled size reduction precede later recovery in many routes. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "reactive material needs controlled handling",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through separation",
+              "visual_action": "Physical and chemical steps separate useful fractions. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "creating distinct material fractions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through payoff",
+              "visual_action": "Recovered materials can re-enter manufacturing chains. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "recoverable feedstock streams",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "BATTERY-RECYCLE::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "BATTERY-RECYCLE::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "BATTERY-RECYCLE::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "INSURANCE-CLAIM::story::0": {
+      "film_thesis": {
+        "central_argument": "A claim decision is a reconstruction problem: the insurer must align what happened, what was lost and what the policy actually covers.",
+        "film_kind": "evidence convergence",
+        "audience_before": "claim delay is only bureaucracy",
+        "audience_after": "claim handling reconciles event evidence, loss evidence and contract coverage before a decision",
+        "emotional_trajectory": [
+          "frustrating wait",
+          "three missing pieces",
+          "evidence alignment",
+          "decision clarity"
+        ],
+        "visual_trajectory": [
+          "claim event",
+          "policy lens",
+          "loss evidence",
+          "conflict resolution",
+          "decision"
+        ],
+        "opening_contract": "Open with a single damaged object and an unanswered claim status, not paperwork piles.",
+        "final_payoff": "End when event, loss and policy layers physically align into one decision window.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "question",
+          "question": "Why isn't the event alone enough?",
+          "audience_before": "damage automatically equals payment",
+          "audience_after": "coverage terms also matter",
+          "reveal": "The event must be connected to policy coverage.",
+          "required_claim_ids": [
+            "A1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "evidence",
+          "question": "What has to be established?",
+          "audience_before": "one form is enough",
+          "audience_after": "the event and amount of loss need evidence",
+          "reveal": "Evidence reconstructs what happened and what was lost.",
+          "required_claim_ids": [
+            "A1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "conflict",
+          "question": "What causes extra investigation?",
+          "audience_before": "all delay is arbitrary",
+          "audience_after": "missing or conflicting facts can block a decision",
+          "reveal": "Conflicts keep the evidence layers from aligning.",
+          "required_claim_ids": [
+            "A2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "synthesis",
+          "question": "What makes a decision possible?",
+          "audience_before": "time passing",
+          "audience_after": "evidence and coverage align sufficiently",
+          "reveal": "The aligned record supports a coverage/payment decision.",
+          "required_claim_ids": [
+            "A1",
+            "A2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "INSURANCE-CLAIM::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "INSURANCE-CLAIM::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "A dashboard of tiles shows policy, evidence, assessor and payment status.",
+          "hero_kind": "dashboard",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Familiar claims UI but generic.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "coverage terms also matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "the event and amount of loss need evidence",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "missing or conflicting facts can block a decision",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "evidence and coverage align sufficiently",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "Three translucent evidence layers—event, loss and policy—slide over one damaged-object hero; contradictions visibly misalign them until the final view locks into registration.",
+          "hero_kind": "damaged object under evidence layers",
+          "transformation": "misaligned evidence becomes registered decision picture",
+          "camera_idea": "top-down registration with selective closeups",
+          "rationale": "Turns waiting into a visible reconciliation problem.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through question",
+              "visual_action": "The event must be connected to policy coverage. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "coverage terms also matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through evidence",
+              "visual_action": "Evidence reconstructs what happened and what was lost. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the event and amount of loss need evidence",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through conflict",
+              "visual_action": "Conflicts keep the evidence layers from aligning. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "missing or conflicting facts can block a decision",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "The aligned record supports a coverage/payment decision. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "evidence and coverage align sufficiently",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "ASSEMBLED_ILLUSTRATION",
+          "visual_thesis": "One claim folder stays open while real-world evidence objects enter, policy clauses act as a stencil, and only supported portions pass through to the decision page.",
+          "hero_kind": "claim folder plus real-world evidence",
+          "transformation": "raw incident record becomes coverage-qualified decision",
+          "camera_idea": "tabletop editorial camera",
+          "rationale": "Balances documentary evidence with policy logic.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through question",
+              "visual_action": "The event must be connected to policy coverage. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "coverage terms also matter",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through evidence",
+              "visual_action": "Evidence reconstructs what happened and what was lost. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "the event and amount of loss need evidence",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through conflict",
+              "visual_action": "Conflicts keep the evidence layers from aligning. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "missing or conflicting facts can block a decision",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through synthesis",
+              "visual_action": "The aligned record supports a coverage/payment decision. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "evidence and coverage align sufficiently",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "INSURANCE-CLAIM::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "INSURANCE-CLAIM::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "INSURANCE-CLAIM::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "ROBOT-TELEOP::story::0": {
+      "film_thesis": {
+        "central_argument": "Teleoperation is valuable because it captures situated decisions—what the robot sensed and what action followed—not because the robot memorizes a human video.",
+        "film_kind": "demonstration learning",
+        "audience_before": "robot watches humans and copies them",
+        "audience_after": "teleoperation creates paired observation-action demonstrations that can train broader policies",
+        "emotional_trajectory": [
+          "human control",
+          "paired trace",
+          "many demonstrations",
+          "autonomous generalization"
+        ],
+        "visual_trajectory": [
+          "operator and robot",
+          "observation/action pairing",
+          "dataset accumulation",
+          "new autonomous situation"
+        ],
+        "opening_contract": "Begin with one robot arm whose movement is visibly caused by a remote human command.",
+        "final_payoff": "End with the operator absent while the same robot handles a new but related state, making generalization the payoff.",
+        "anti_goals": [
+          "sentence-by-sentence literalism",
+          "generic card grids",
+          "mechanism catalogue",
+          "decorative motion"
+        ],
+        "tone": "clear, confident, visually led"
+      },
+      "beats": [
+        {
+          "beat_id": "B1",
+          "purpose": "causality",
+          "question": "What is teleoperation capturing?",
+          "audience_before": "a video of a person",
+          "audience_after": "robot state plus human-directed action",
+          "reveal": "Human control produces situated robot actions.",
+          "required_claim_ids": [
+            "T1"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B2",
+          "purpose": "data",
+          "question": "What gets saved?",
+          "audience_before": "only the final motion",
+          "audience_after": "observations and actions are paired",
+          "reveal": "The system records context alongside action.",
+          "required_claim_ids": [
+            "T1",
+            "T2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B3",
+          "purpose": "scale",
+          "question": "Why collect many demonstrations?",
+          "audience_before": "one perfect example is enough",
+          "audience_after": "varied examples expose more states and decisions",
+          "reveal": "Many traces expand the training experience.",
+          "required_claim_ids": [
+            "T2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        },
+        {
+          "beat_id": "B4",
+          "purpose": "payoff",
+          "question": "What should learning achieve?",
+          "audience_before": "exact replay",
+          "audience_after": "useful behavior in related unseen situations",
+          "reveal": "The robot acts without the operator in a new but related situation.",
+          "required_claim_ids": [
+            "T2"
+          ],
+          "narration_job": "support the visual reveal without transcribing it"
+        }
+      ],
+      "story_notes": [
+        "Preserve causal continuity across beats."
+      ]
+    },
+    "ROBOT-TELEOP::producer::0": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Clear audience belief change",
+        "Final payoff resolves the opening misconception"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "ROBOT-TELEOP::visual::0": {
+      "candidates": [
+        {
+          "candidate_id": "V1",
+          "representation": "DIAGRAM",
+          "visual_thesis": "Boxes connected in a generic pipeline show human, data, model and robot.",
+          "hero_kind": "box",
+          "transformation": "reveal",
+          "camera_idea": "wide",
+          "rationale": "Correct nouns, weak causality.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "robot state plus human-directed action",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "observations and actions are paired",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "varied examples expose more states and decisions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "small labelled module",
+              "visual_action": "Reveal another box in the same generic layout",
+              "audience_takeaway": "useful behavior in related unseen situations",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V2",
+          "representation": "CHARACTER",
+          "visual_thesis": "One operator and one robot stay causally linked; each robot observation becomes a paired decision trace, traces accumulate, then the link disappears and the robot succeeds in a changed scene.",
+          "hero_kind": "operator-robot causal pair",
+          "transformation": "remote action traces become a learning corpus then autonomous behavior",
+          "camera_idea": "paired split-view collapsing into robot-only final shot",
+          "rationale": "Preserves causality and makes generalization visible.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through causality",
+              "visual_action": "Human control produces situated robot actions. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "robot state plus human-directed action",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through data",
+              "visual_action": "The system records context alongside action. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "observations and actions are paired",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through scale",
+              "visual_action": "Many traces expand the training experience. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "varied examples expose more states and decisions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through payoff",
+              "visual_action": "The robot acts without the operator in a new but related situation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "useful behavior in related unseen situations",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        },
+        {
+          "candidate_id": "V3",
+          "representation": "PHYSICAL_METAPHOR",
+          "visual_thesis": "A learner is guided through many obstacle arrangements while a transparent ribbon records what was seen and the chosen movement; later the guide lets go.",
+          "hero_kind": "guided learner with decision ribbon",
+          "transformation": "guided examples become internalized choices",
+          "camera_idea": "tracking path with final release",
+          "rationale": "Readable but more metaphorical than product-specific.",
+          "beat_treatments": [
+            {
+              "beat_id": "B1",
+              "hero_state": "hero state advances through causality",
+              "visual_action": "Human control produces situated robot actions. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "robot state plus human-directed action",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B2",
+              "hero_state": "hero state advances through data",
+              "visual_action": "The system records context alongside action. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "observations and actions are paired",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B3",
+              "hero_state": "hero state advances through scale",
+              "visual_action": "Many traces expand the training experience. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "varied examples expose more states and decisions",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            },
+            {
+              "beat_id": "B4",
+              "hero_state": "hero state advances through payoff",
+              "visual_action": "The robot acts without the operator in a new but related situation. The persistent hero changes state rather than resetting.",
+              "audience_takeaway": "useful behavior in related unseen situations",
+              "continuity_handoff": "carry the same semantic hero into the next beat"
+            }
+          ],
+          "style_intent": "commercial, restrained, hero-first"
+        }
+      ],
+      "director_notes": [
+        "Candidate 1 is intentionally weak for Producer rejection testing."
+      ]
+    },
+    "ROBOT-TELEOP::producer::1": {
+      "verdict": "REVISE",
+      "issues": [
+        {
+          "code": "FIRST_LEGAL_IDEA",
+          "detail": "The concept names parts but does not create a strong visual argument."
+        }
+      ],
+      "strengths": [
+        "Basic semantic coverage"
+      ],
+      "revision_brief": "Replace the modular diagram with one dominant hero undergoing a causal transformation.",
+      "commercial_confidence": "LOW"
+    },
+    "ROBOT-TELEOP::producer::2": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Persistent hero",
+        "Causal transformation",
+        "Strong final payoff"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "HIGH"
+    },
+    "ROBOT-TELEOP::producer::3": {
+      "verdict": "ACCEPT",
+      "issues": [],
+      "strengths": [
+        "Distinct alternative concept",
+        "Communicates the core mechanism quickly"
+      ],
+      "revision_brief": "",
+      "commercial_confidence": "MEDIUM"
+    },
+    "KIDNEY-FILTER::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "CORAL-BLEACH::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "COMPILER-PIPE::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "CERAMIC-KILN::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "INFLATION-WAGE::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "POLLINATION::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "BATTERY-RECYCLE::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "INSURANCE-CLAIM::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    },
+    "ROBOT-TELEOP::showrunner_select::0": {
+      "selected_candidate_id": "V2",
+      "why": "This option best preserves one dominant semantic hero, makes the causal transformation visible, and resolves the film thesis without defaulting to a mechanism catalogue.",
+      "tradeoffs": [
+        "It requires higher hero-art fidelity than the more abstract alternative."
+      ],
+      "rejected_alternatives": [
+        {
+          "candidate_id": "V1",
+          "reason": "Producer-rejected generic visual grammar."
+        },
+        {
+          "candidate_id": "V3",
+          "reason": "Useful alternative, but more metaphorical and less direct for this brief."
+        }
+      ]
+    }
+  },
+  "_evaluation_policy": {
+    "classification": "CONTRACT_REGRESSION_ONLY",
+    "creative_benchmark_eligible": false,
+    "human_calibration_eligible": false,
+    "live_generalization_evidence": false,
+    "reason": "Recorded provider cases were deliberately shaped generic-V1 / strong-literal-V2 / metaphor-V3 and must never be used as commercial taste or creative-generalization evidence."
+  }
+}

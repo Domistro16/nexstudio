@@ -1,0 +1,10 @@
+{
+  "pass": "LIFECYCLE_EXACT_MEDIA",
+  "files": [
+    "services/studio-nexmind-p8/orchestrator.py",
+    "src/studio-v1/nexmind-p8/multimodal-evidence.ts",
+    "src/studio-v1/nexmind-p8/workflow.ts",
+    "src/studio-v1/production-engines/bridge.ts",
+    "vendor/nexmind-god-mode-p8/src/nexmind_god_mode/multimodal_evidence.py"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "EditorialExecutionBodyV2QA",
+  "status": "PASS",
+  "passed": 9,
+  "total": 9,
+  "checks": {
+    "p8_hero_bound_as_real_asset": true,
+    "all_p8_supports_survive": true,
+    "generic_icon_not_hero": true,
+    "camera_atom_preserved": true,
+    "adapter_creative_choice_false": true,
+    "rich_treatment_not_forced_typography_only": true,
+    "execution_only_renderer_import": true,
+    "p8_art_directives_preserved": true,
+    "renderer_executes_bounded_art_vocabulary": true
+  }
+}

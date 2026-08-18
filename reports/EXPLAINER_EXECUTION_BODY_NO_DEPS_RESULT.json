@@ -1,0 +1,17 @@
+{
+  "schema": "StudioFamilyEngineResultV1",
+  "status": "TECHNICAL_RETRY_REQUIRED",
+  "code": "EXPLAINER_EXECUTION_BODY_DEPENDENCIES_NOT_INSTALLED",
+  "detail": "tsx not found. Install Standalone Studio production dependencies before rendering.",
+  "executionPlanSchema": "StudioCanonicalExecutionPlanV1",
+  "executionPlanHash": "0bcd100e5252af0e33b4e1f55bc4e31dee9d7491525d718aaf6fae7954a25055",
+  "executionPlanAuthority": {
+    "creativeAuthority": "NEXMIND_P8",
+    "compilerRole": "DETERMINISTIC_EXECUTION_NORMALIZER",
+    "creativeChoiceIntroduced": false,
+    "sourceFinalBoardSchema": "NexMindCanonicalSoundStoryboardV4",
+    "sourceFinalBoardHash": "26cd57ba7da16b9c68b5297ff3c7dfe0a14df0e7a702365fd438a5021b8f6b78",
+    "creativeStateArtifactId": "proof",
+    "creativeStateArtifactHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  }
+}

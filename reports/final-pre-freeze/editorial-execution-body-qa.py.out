@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/scripts/editorial-execution-body-qa.py", line 14, in <module>
+    plan=m._render_plan(req);scene=plan['renderProgram']['scenes'][0];bindings=scene['assetBindings']
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/editorial_adapter.py", line 246, in _render_plan
+    return {'version':'6.0.0','stage':'STUDIO_P8_EDITORIAL_EXECUTION_BODY_V2_ADAPTER','ok':True,'blocked':False,'publicReleaseAllowed':False,'renderingAllowed':True,'renderProgram':{'version':'6.0.0','ratio':ratio,'duration':round(cursor,4),'fps':30,'scenes':scenes,'assets':assets,'identityLedger':ledger,'policy':{'wholeSceneDissolve':False,'idleBobbing':False,'anonymousVisibleMotion':False,'genericIconHero':False,'connectorWeb':False,'deterministicSeek':True,'oneVisibleNodePerContinuityIdPerFrame':True},'brand':_brand_palette(request)},'adapterTrace':{'creativeChoiceIntroduced':False,'authority':'P8_TO_EDITORIAL_EXECUTION_BODY_V2_ONLY'}}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ~~~~~~~~~~~~~~^^^^^^^^^
+  File "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/services/studio-family-engines/editorial_adapter.py", line 138, in _brand_palette
+    raise AdapterBlocked('EDITORIAL_BRAND_EXECUTION_REQUIRED')
+contracts.AdapterBlocked: EDITORIAL_BRAND_EXECUTION_REQUIRED

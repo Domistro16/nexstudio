@@ -1,0 +1,56 @@
+{
+  "schema": "StudioTrustCommerceAccountEvidence V1",
+  "date": "2026-08-14",
+  "implementationVerdict": "PASS",
+  "paymentReadiness": "OPEN",
+  "productionDeploymentCertification": "OPEN",
+  "tests": {
+    "trustSecurityStatic": {
+      "pass": true,
+      "passed": 43,
+      "total": 43
+    },
+    "runtimeSecurity": {
+      "pass": true,
+      "passed": 7,
+      "total": 7
+    },
+    "adversarialBillingModel": {
+      "pass": true,
+      "passed": 14,
+      "total": 14,
+      "countsAsPaymentReadiness": false
+    },
+    "architectureCore": {
+      "pass": true,
+      "passed": 32,
+      "total": 32
+    },
+    "standaloneRegression": {
+      "pass": true,
+      "passed": 10,
+      "total": 10
+    },
+    "typescriptTranspileSyntax": {
+      "pass": true,
+      "passed": 127,
+      "total": 127
+    },
+    "realPostgresAdversarial": {
+      "status": "NOT_RUN",
+      "deliveredCases": 12,
+      "reason": "Requires dedicated migrated PostgreSQL staging DB + Node >=24/Prisma 7 dependency environment."
+    },
+    "livePaymentProvider": {
+      "status": "NOT_RUN",
+      "reason": "No live provider credentials/deployed endpoint evidence available; fail-closed by design."
+    },
+    "productionClamAV": {
+      "status": "NOT_RUN",
+      "reason": "No deployed scanner evidence available; uploads fail closed without it."
+    }
+  },
+  "baseSourceSha256": "d7e2fb6c0e0b3e760a2f791a2970cfd7165f5356b090a2b90ca8137ede162b0a",
+  "creativeLogicChanged": false,
+  "mainStudioUiRedesigned": false
+}

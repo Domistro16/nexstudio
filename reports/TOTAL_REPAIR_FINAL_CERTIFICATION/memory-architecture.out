@@ -1,0 +1,210 @@
+{
+  "schema": "StudioCreativeMemoryBrandCastSeriesQA V1",
+  "implementationPass": true,
+  "passed": 40,
+  "total": 40,
+  "checks": [
+    {
+      "name": "Exactly four production families remain canonical",
+      "ok": true,
+      "detail": "['EDITORIAL_MOTION', 'EXPLAINER', 'STICKMAN', 'WHITEBOARD']"
+    },
+    {
+      "name": "Series is not a fifth production family",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Five explicit memory scopes exist",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Every memory item has owner, scope, scopeRef, key and current version",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Memory versions are append-only numbered records",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Effective state is explicit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Temporal effectiveness is explicit",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Provenance is mandatory persisted JSON",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Customer edits append a version rather than overwrite content",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Customer deletion is a tombstone, not history deletion",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Brand is a stable production authority resource",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Cast is stored under Assets namespace",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Cast identity key is stable",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Cast performance trajectories are stripped from identity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "V5.1 is exact performance authority",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Series has explicit ordered episode continuity",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Series history only consumes completed prior episodes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Anti-repetition uses explicit plan signature dimensions",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Continuity can justify intentional repetition",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production can bind Brand and Series without taxonomy change",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production can bind stable reusable Cast members",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "This-production-only write mode is implemented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Remember-for-Brand write mode is implemented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Remember-for-Series write mode is implemented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Update-character-going-forward is implemented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Future-episode effective update is implemented",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Memory inspection API exposes history",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production start freezes immutable MEMORY_INPUT snapshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "P8 receives persistent memory through existing request contract",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final output requires exact frozen memory snapshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "ProductionVersion directly binds memory snapshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final lineage hash includes memory input snapshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Source hash includes memory input hash",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Final production emits structured FILM_MEMORY",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Film Memory has required canonical state categories",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Completed production history cannot follow mutable memory",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Migration creates all persistent memory tables",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Migration adds relational integrity for Brand/Series/Cast/memory snapshot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Generic scope ownership is enforced before memory write",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No browser-authored memory may target another owner",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "deploymentCertificationPass": false,
+  "deploymentCertificationNote": "Implementation/static/domain tests pass here. Deployment still requires the Architecture Core Node >=24 + Prisma 7 dependency-complete schema validation and migration execution against PostgreSQL staging."
+}

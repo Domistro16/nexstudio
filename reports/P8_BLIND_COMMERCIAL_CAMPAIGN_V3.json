@@ -1,0 +1,91 @@
+{
+  "schema": "NexMindP8BlindCommercialCampaignV3",
+  "status": "BLOCKED_PRE_INFERENCE_NO_COMPATIBLE_MODEL",
+  "pass": true,
+  "passed": 7,
+  "total": 7,
+  "checks": [
+    {
+      "name": "30 sealed unfamiliar briefs present",
+      "ok": true,
+      "detail": "30"
+    },
+    {
+      "name": "Pack stores no recorded answers",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack stores no expected candidate",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack stores no preferred strategy",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Pack stores no candidate position labels",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Brief domains are diverse",
+      "ok": true,
+      "detail": "30"
+    },
+    {
+      "name": "Campaign requires capability-routed live models, never named benchmark fixtures",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "briefCount": 30,
+  "inScopeFamilies": [
+    "EXPLAINER",
+    "WHITEBOARD",
+    "EDITORIAL_MOTION"
+  ],
+  "characterFamilyIncluded": false,
+  "requiredLiveTasks": [
+    "visual",
+    "art",
+    "producer",
+    "showrunner_select",
+    "final_producer"
+  ],
+  "routeStatus": {
+    "visual": {
+      "status": "UNAVAILABLE",
+      "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:creative_reasoning:visual"
+    },
+    "art": {
+      "status": "UNAVAILABLE",
+      "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:creative_reasoning:art"
+    },
+    "producer": {
+      "status": "UNAVAILABLE",
+      "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:commercial_creative_review:producer"
+    },
+    "showrunner_select": {
+      "status": "UNAVAILABLE",
+      "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:commercial_creative_selection:showrunner_select"
+    },
+    "final_producer": {
+      "status": "UNAVAILABLE",
+      "reason": "LIVE_PROVIDER_BLOCKED_NO_COMPATIBLE_MODEL_CONFIG:multimodal_commercial_taste:final_producer"
+    }
+  },
+  "missingLiveTasks": [
+    "visual",
+    "art",
+    "producer",
+    "showrunner_select",
+    "final_producer"
+  ],
+  "filmsCompleted": 0,
+  "commercialScoreEmitted": false,
+  "commercialScoreEvidence": false,
+  "truthBoundary": "This harness certifies blindness, anti-curation and live capability prerequisites only. No Visual Concept, Art or Final Judgment score may rise until the sealed briefs run through real live inference, encoded film+audio and blind review."
+}

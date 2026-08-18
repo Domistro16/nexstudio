@@ -1,0 +1,68 @@
+{
+  "schema": "StudioPublicExperienceChangedTypeScriptSyntaxQA V1",
+  "pass": true,
+  "passed": 12,
+  "total": 12,
+  "rows": [
+    {
+      "file": "src/studio-v1/react/StudioPublicExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioWorkExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/StudioPricingExperience.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/ProductionWorkspace.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "src/studio-v1/react/NewProductionBrief.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/work/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/pricing/page.tsx",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/recommendation/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/productions/[productionId]/versions/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/productions/[id]/output/route.ts",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "file": "app/api/v1/studio/production-drafts/route.ts",
+      "pass": true,
+      "errors": []
+    }
+  ]
+}

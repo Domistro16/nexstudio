@@ -1,0 +1,328 @@
+{
+  "schema": "StudioFourFamilyCommercialCertificationValidatorV1",
+  "status": "PASS",
+  "passed": 64,
+  "total": 64,
+  "checks": [
+    {
+      "name": "explainer authority id exact",
+      "pass": true,
+      "detail": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED"
+    },
+    {
+      "name": "explainer authority hash exact",
+      "pass": true,
+      "detail": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b"
+    },
+    {
+      "name": "whiteboard authority id exact",
+      "pass": true,
+      "detail": "WHITEBOARD_EXECUTION_BODY_V2_P8_UNIFIED"
+    },
+    {
+      "name": "whiteboard authority hash exact",
+      "pass": true,
+      "detail": "25f87cb57d4a8ca99d004b443c0bd8df85a13d667596ddb0780d2c8f3884002c"
+    },
+    {
+      "name": "stickman authority id exact",
+      "pass": true,
+      "detail": "NEXSTICK_MASTER_V2_PERFORMANCE_V5_1"
+    },
+    {
+      "name": "stickman authority hash exact",
+      "pass": true,
+      "detail": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+    },
+    {
+      "name": "editorial-motion authority id exact",
+      "pass": true,
+      "detail": "EDITORIAL_EXECUTION_BODY_V2_P8_UNIFIED"
+    },
+    {
+      "name": "editorial-motion authority hash exact",
+      "pass": true,
+      "detail": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660"
+    },
+    {
+      "name": "exactly 24 public subtype contracts",
+      "pass": true,
+      "detail": "24"
+    },
+    {
+      "name": "exactly 48 certification cases",
+      "pass": true,
+      "detail": "48"
+    },
+    {
+      "name": "product-explainer has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "product-explainer fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "how-it-works has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "how-it-works fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technical-explainer has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "technical-explainer fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "educational-explainer has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "educational-explainer fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-insight-explainer has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-insight-explainer fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "concept-explainer has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "concept-explainer fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "concept-breakdown has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "concept-breakdown fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "process-explanation has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "process-explanation fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "lesson-teaching has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "lesson-teaching fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "problem-solution has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "problem-solution fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "story-led-whiteboard has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "story-led-whiteboard fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "short-story has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "short-story fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "conversation has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "conversation fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workplace-scenario has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "workplace-scenario fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "everyday-life has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "everyday-life fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "teach-present has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "teach-present fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "funny-scenario has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "funny-scenario fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "kinetic-text-story has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "kinetic-text-story fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "announcement has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "announcement fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "idea-manifesto has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "idea-manifesto fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-story has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "data-story fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "quote-narrative has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "quote-narrative fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mixed-editorial has normal+stress corpus",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mixed-editorial fail-closed public recommendation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Series is continuity scope, never a fifth production family",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "commercial threshold cannot self-certify taste",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "commercial release contract is 9.5-class",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no family enabled without subtype evidence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gallery registry consumes certification gate",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "gallery registry does not own subtype publish boolean",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

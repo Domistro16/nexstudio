@@ -1,0 +1,40 @@
+{
+  "schema": "NexStudioWhiteboardAuthoredArtExecutionQAV1",
+  "pass": true,
+  "passed": 6,
+  "total": 6,
+  "checks": [
+    {
+      "name": "Missing authored-art capability causes replan",
+      "ok": true,
+      "detail": "WHITEBOARD_AUTHORED_ART_CAPABILITY_REQUIRED"
+    },
+    {
+      "name": "Missing capability replan forbids generic downgrade",
+      "ok": true,
+      "detail": "{'escalation_scope': 'ART_AND_VISUAL_STRATEGY', 'invalidate_slots': ['art_direction', 'storyboard', 'cinematography', 'editorial_rhythm', 'motion_performance', 'sound_direction'], 'issues': ['The selected authored Whiteboard illustration requires a production-scoped illustration executor that is not currently available.'], 'revision_plan': ['Preserve the Film Thesis and visual concept if possible; choose another premium executable art realization, or route through an available authored-art capab"
+    },
+    {
+      "name": "Invalid authored-art output causes replan",
+      "ok": true,
+      "detail": "WHITEBOARD_AUTHORED_ART_EXECUTION_REPLAN_REQUIRED"
+    },
+    {
+      "name": "Invalid plate preserves required semantics in repair policy",
+      "ok": true,
+      "detail": "{'escalation_scope': 'ART_AND_VISUAL_STRATEGY', 'invalidate_slots': ['art_direction', 'storyboard', 'cinematography', 'editorial_rhythm', 'motion_performance', 'sound_direction'], 'issues': ['The authored-art execution body could not faithfully realize the committed Whiteboard scene: qa semantic mismatch'], 'revision_plan': ['Repair the Art realization or select a different premium executable treatment while preserving the Film Thesis and factual/brand intent.'], 'quality_reasons': ['WHITEBOARD_"
+    },
+    {
+      "name": "Whiteboard generation is driven only by committed P8 form resolution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Whiteboard adapter never names a model/provider",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Recovery and semantic-lock proof only. No authored-art provider is configured here, so live premium Whiteboard illustration quality remains unclaimed."
+}

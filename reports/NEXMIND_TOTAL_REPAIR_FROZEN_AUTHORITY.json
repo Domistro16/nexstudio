@@ -1,0 +1,28 @@
+{
+  "schema": "NexStudioP8TotalRepairFrozenAuthorityV1",
+  "status": "FROZEN_LOCAL_ENGINEERING_AUTHORITY",
+  "engineArchives": {
+    "WHITEBOARD_ENGINE_SOURCE.zip": {
+      "bytes": 11809783,
+      "sha256": "25f87cb57d4a8ca99d004b443c0bd8df85a13d667596ddb0780d2c8f3884002c"
+    },
+    "EXPLAINER_ENGINE_SOURCE.zip": {
+      "bytes": 26472335,
+      "sha256": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b"
+    },
+    "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+      "bytes": 1782758,
+      "sha256": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660"
+    },
+    "STICKMAN_V5_1_ENGINE_SOURCE.zip": {
+      "bytes": 6024242,
+      "sha256": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+    },
+    "SOUND_LIBRARY_V2_SOURCE.zip": {
+      "bytes": 12480601,
+      "sha256": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+    }
+  },
+  "nexStickUnmodified": true,
+  "truthBoundary": "Local engineering/source authority only. Live multimodal commercial judgment and human calibration remain separate evidence gates."
+}

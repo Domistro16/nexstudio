@@ -1,0 +1,124 @@
+{
+  "schema": "StudioStandaloneCompleteSourceManifestV1",
+  "product": "Studio V1",
+  "packageIdentity": "studio-v1-standalone",
+  "rootApplication": true,
+  "publicRoutes": [
+    "/",
+    "/production/new",
+    "/production/[id]",
+    "/dashboard"
+  ],
+  "publicFamilies": [
+    "Explainer",
+    "Whiteboard",
+    "Stickman",
+    "Editorial Motion"
+  ],
+  "sessionCookie": "studio_session",
+  "included": {
+    "publicExperience": true,
+    "persistentDraftAuthHandoff": true,
+    "complimentaryPlanPreview": true,
+    "serverAuthoritativeBilling": true,
+    "dashboard": true,
+    "nexmindP8AuthoritySnapshot": true,
+    "familyEngineAdapters": true,
+    "familyEngineSourceArchives": true,
+    "directedSoundLibrary": true,
+    "productionWorkflow": true,
+    "reviewRevision": true,
+    "explainerP14_3P8UnifiedExecution": true
+  },
+  "engines": [
+    {
+      "file": "engine_sources/WHITEBOARD_ENGINE_SOURCE.zip",
+      "description": "Whiteboard V1 P8-only renderer/execution source; legacy DirectorV3 deleted",
+      "authorityId": "WHITEBOARD_V1_PUBLIC_HARDENING_CHAIN",
+      "bytes": 11809783,
+      "sha256": "25f87cb57d4a8ca99d004b443c0bd8df85a13d667596ddb0780d2c8f3884002c"
+    },
+    {
+      "file": "engine_sources/EXPLAINER_ENGINE_SOURCE.zip",
+      "description": "Explainer P8-unified execution-only authored-art source with StudioFamilyExecutionFidelityV1",
+      "authorityId": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+      "bytes": 26472335,
+      "sha256": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b"
+    },
+    {
+      "file": "engine_sources/EDITORIAL_MOTION_ENGINE_SOURCE.zip",
+      "description": "Editorial Motion P8-only execution body with bounded Art directives; retired Faceless creative levels excluded",
+      "authorityId": "EDITORIAL_EXECUTION_BODY_V2_P8_UNIFIED",
+      "bytes": 1782758,
+      "sha256": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660"
+    },
+    {
+      "file": "engine_sources/STICKMAN_V5_1_ENGINE_SOURCE.zip",
+      "description": "NexStick Master V2 unified performance V5.1",
+      "authorityId": "NEXSTICK_MASTER_V2_PERFORMANCE_V5_1",
+      "bytes": 6024242,
+      "sha256": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+    },
+    {
+      "file": "engine_sources/SOUND_LIBRARY_V2_SOURCE.zip",
+      "description": "Studio Sound Library V2 production source",
+      "authorityId": "P8_DIRECTED_SOUND",
+      "bytes": 12480601,
+      "sha256": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+    }
+  ],
+  "verification": {
+    "sourceAudit": "reports/STANDALONE_SOURCE_QA.json",
+    "familyEngineSmoke": "reports/STANDALONE_FAMILY_ENGINE_SMOKE.json",
+    "p8Regression": "reports/P8_REGRESSION.json",
+    "phase0Contract": "docs/STUDIO_V1_PHASE_0_PRODUCT_CONTRACT.md"
+  },
+  "releaseGates": [
+    {
+      "gate": "INDEPENDENT_CREATIVE_CERTIFICATION",
+      "status": "OPEN"
+    },
+    {
+      "gate": "PUBLIC_SHOWCASE_MEDIA",
+      "status": "OPEN"
+    },
+    {
+      "gate": "REAL_PRODUCTION_ENVIRONMENT_EVIDENCE",
+      "status": "OPEN"
+    },
+    {
+      "gate": "NODE24_DEPENDENCY_COMPLETE_PRODUCTION_BUILD",
+      "status": "NOT_RUN_IN_CURRENT_ENVIRONMENT",
+      "reason": "Current container is Node 22.16.0; package requires Node >=24."
+    }
+  ],
+  "sourcePackaging": {
+    "enginesAreBundledAsAuthoritativeSourceArchives": true,
+    "installCommand": "python scripts/install-engines.py",
+    "engineInstallDoesNotInvokeLegacyDirectors": true,
+    "frozenEngineHashManifest": "reports/FROZEN_ENGINE_HASHES_POST_INSTALL_FINAL.txt",
+    "finalEngineArchiveMetadata": "reports/FINAL_REBUILT_ENGINE_HASHES.json"
+  },
+  "integrationTruth": {
+    "topLevelCreativeAuthority": "NEXMIND_P8",
+    "explainerExecutionBody": "P14_2_PRODUCTION_ART",
+    "legacyDirectorV3Fallback": false,
+    "duplicateP14_2TopLevelDirectors": false,
+    "referenceLanguageAnalyzedBeforeP8": true,
+    "referenceMediaRematerializedForExecution": true,
+    "renderEvidenceReturnsToP8FinalProducer": true,
+    "strictRenderedFrameCriticBeforeReviewEvidence": true
+  },
+  "creativeAuthority": "NEXMIND_P8_ONLY",
+  "explainerExecutionAuthority": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+  "legacyDirectorV3Present": false,
+  "recordedNineTopicBenchmarkPolicy": "CONTRACT_REGRESSION_ONLY__EXCLUDED_FROM_CREATIVE_SCORING",
+  "liveCandidateOrderPolicy": "RANDOMIZED_OPAQUE_LIVE_SELECTION_V2",
+  "creativeAuthorityPolicy": {
+    "topLevelAuthority": "NEXMIND_P8_ONLY",
+    "legacyDirectorV3ExecutablePresent": false,
+    "familyEnginesMayCreateCreativePlans": false,
+    "recordedNineTopicPack": "CONTRACT_REGRESSION_ONLY__FORBIDDEN_FOR_CREATIVE_BENCHMARK_OR_CALIBRATION",
+    "liveShowrunnerCandidatePresentation": "RANDOMIZED_OPAQUE_IDS_WITH_INTERNAL_MAPPING_AUDIT"
+  }
+}

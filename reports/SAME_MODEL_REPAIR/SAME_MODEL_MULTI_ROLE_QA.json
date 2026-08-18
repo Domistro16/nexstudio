@@ -1,0 +1,44 @@
+{
+  "schema": "NexMindSameModelMultiRoleQAV1",
+  "status": "PASS",
+  "passed": 7,
+  "total": 7,
+  "checks": [
+    {
+      "name": "one model resolves every NexMind role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one provider resolves every NexMind role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one API key env resolves every NexMind role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "same-model final roles produce process-bound ensemble hash",
+      "pass": true,
+      "detail": "f5bc18183548cf4e2d0ff56672746c842bdb65760a84e80764c07bf421308af0"
+    },
+    {
+      "name": "no active model-identity blocker remains",
+      "pass": true,
+      "detail": "[]"
+    },
+    {
+      "name": "runtime readiness requires role/process independence",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "operator docs explicitly allow same model",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "law": "ONE_CAPABLE_MODEL_AND_ONE_API_KEY_MAY_SERVE_ALL_ROLES__INDEPENDENCE_IS_PROCESS_NOT_MODEL_IDENTITY"
+}

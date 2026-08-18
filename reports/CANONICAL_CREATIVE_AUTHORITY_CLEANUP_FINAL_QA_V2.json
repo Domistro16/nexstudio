@@ -1,0 +1,241 @@
+{
+  "schema": "StudioV1CanonicalCreativeAuthorityCleanupQAV2",
+  "date": "2026-08-14",
+  "status": "PASS",
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "No physical DirectorV3 directories in canonical source",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "No physical DirectorV3 executable/files in canonical source",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "All five engine source archives contain zero DirectorV3 entries",
+      "pass": true,
+      "detail": {
+        "EDITORIAL_MOTION_ENGINE_SOURCE.zip": 0,
+        "EXPLAINER_ENGINE_SOURCE.zip": 0,
+        "SOUND_LIBRARY_V2_SOURCE.zip": 0,
+        "STICKMAN_V5_1_ENGINE_SOURCE.zip": 0,
+        "WHITEBOARD_ENGINE_SOURCE.zip": 0
+      }
+    },
+    {
+      "name": "All active family adapters are free of DirectorV3 imports",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Dead generic P14 explainer mapper removed from canonical adapter module",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Old general recorded-provider fixture path deleted",
+      "pass": true,
+      "detail": "vendor/nexmind-god-mode-p8/fixtures/recorded_provider_cases.json"
+    },
+    {
+      "name": "Nine-topic recorded pack is quarantined as contract-regression-only",
+      "pass": true,
+      "detail": {
+        "classification": "CONTRACT_REGRESSION_ONLY",
+        "creative_benchmark_eligible": false,
+        "human_calibration_eligible": false,
+        "live_generalization_evidence": false,
+        "reason": "Recorded provider cases were deliberately shaped generic-V1 / strong-literal-V2 / metaphor-V3 and must never be used as commercial taste or creative-generalization evidence."
+      }
+    },
+    {
+      "name": "Commercial benchmark hard-rejects RecordedModelProvider",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Live Showrunner candidates are shuffled and relabeled opaquely",
+      "pass": true,
+      "detail": {
+        "SystemRandom": true,
+        "opaquePrefix": true,
+        "audit": true
+      }
+    },
+    {
+      "name": "Replacement live benchmark contains 30 sealed briefs",
+      "pass": true,
+      "detail": {
+        "briefCount": 30
+      }
+    },
+    {
+      "name": "Benchmark protocol includes deceptive negative controls",
+      "pass": true,
+      "detail": [
+        "polished-but-boring",
+        "beautiful-but-wrong",
+        "technically-clean-but-generic",
+        "emotionally-mismatched",
+        "strong-opening-weak-payoff",
+        "good-story-poor-art",
+        "good-art-poor-story",
+        "recent real failed production"
+      ]
+    },
+    {
+      "name": "Blind human review harness is packaged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Canonical authority validator passes 10/10",
+      "pass": true,
+      "detail": {
+        "schema": "StudioCanonicalCreativeAuthorityQA V2",
+        "status": "PASS",
+        "passed": 10,
+        "total": 10,
+        "checks": [
+          {
+            "name": "No physical DirectorV3 implementation remains in canonical source",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "Explainer adapter has no legacy DirectorV3/P14.1 mapper",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "name": "Curated nine-topic fixture is regression-only",
+            "pass": true,
+            "detail": {
+              "classification": "CONTRACT_REGRESSION_ONLY",
+              "creative_benchmark_eligible": false,
+              "human_calibration_eligible": false,
+              "live_generalization_evidence": false,
+              "reason": "Recorded provider cases were deliberately shaped generic-V1 / strong-literal-V2 / metaphor-V3 and must never be used as commercial taste or creative-generalization evidence."
+            }
+          },
+          {
+            "name": "Old general fixtures location is absent",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "name": "Live Showrunner candidate order is randomized and opaque",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "name": "Commercial benchmark policy rejects RecordedModelProvider",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "name": "Replacement benchmark has 30 client-like briefs",
+            "pass": true,
+            "detail": 30
+          },
+          {
+            "name": "Replacement brief pack stores no expected creative answers",
+            "pass": true,
+            "detail": []
+          },
+          {
+            "name": "Canonical authority explicitly deletes DirectorV3",
+            "pass": true,
+            "detail": null
+          },
+          {
+            "name": "Blind benchmark policy tests pass",
+            "pass": true,
+            "detail": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Standalone source QA passes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "All family engine smoke paths pass",
+      "pass": true,
+      "detail": {
+        "WHITEBOARD": true,
+        "EXPLAINER": true,
+        "EDITORIAL_MOTION": true,
+        "STICKMAN": true
+      }
+    },
+    {
+      "name": "P14.3 unified integration passes 23/23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "P8 inherited + cleanup regression passes 141/141",
+      "pass": true,
+      "detail": {
+        "tests": 141,
+        "result": "OK"
+      }
+    },
+    {
+      "name": "All engine archives are present and hashed",
+      "pass": true,
+      "detail": {
+        "WHITEBOARD_ENGINE_SOURCE.zip": {
+          "bytes": 22499799,
+          "sha256": "6f87a4ea054a766a4950f232a9ee1bc6c5b2901766671aabe174c3ad3ef0f570"
+        },
+        "EXPLAINER_ENGINE_SOURCE.zip": {
+          "bytes": 40318568,
+          "sha256": "2dceb9aac11940aaaabf2e02b4aa4d24a0cf606c894bc1b94cf4d9a49f0e9a24"
+        },
+        "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+          "bytes": 12301675,
+          "sha256": "dcea330da2181656138b58692893ceb93b5aea794ae0dcf589e5047b82196671"
+        },
+        "STICKMAN_V5_1_ENGINE_SOURCE.zip": {
+          "bytes": 6024242,
+          "sha256": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+        },
+        "SOUND_LIBRARY_V2_SOURCE.zip": {
+          "bytes": 12480601,
+          "sha256": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+        }
+      }
+    }
+  ],
+  "engineArchives": {
+    "WHITEBOARD_ENGINE_SOURCE.zip": {
+      "bytes": 22499799,
+      "sha256": "6f87a4ea054a766a4950f232a9ee1bc6c5b2901766671aabe174c3ad3ef0f570"
+    },
+    "EXPLAINER_ENGINE_SOURCE.zip": {
+      "bytes": 40318568,
+      "sha256": "2dceb9aac11940aaaabf2e02b4aa4d24a0cf606c894bc1b94cf4d9a49f0e9a24"
+    },
+    "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+      "bytes": 12301675,
+      "sha256": "dcea330da2181656138b58692893ceb93b5aea794ae0dcf589e5047b82196671"
+    },
+    "STICKMAN_V5_1_ENGINE_SOURCE.zip": {
+      "bytes": 6024242,
+      "sha256": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+    },
+    "SOUND_LIBRARY_V2_SOURCE.zip": {
+      "bytes": 12480601,
+      "sha256": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+    }
+  },
+  "truthBoundary": "This certifies canonical source cleanup, DirectorV3 removal, recorded-benchmark quarantine, candidate-order blinding, and structural/runtime regression. It does not claim the 30-brief live commercial brain campaign has been executed or passed."
+}

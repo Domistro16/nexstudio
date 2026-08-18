@@ -1,0 +1,142 @@
+{
+  "schema": "StudioAuthenticatedProductionDeskQA V1",
+  "pass": true,
+  "passed": 26,
+  "total": 26,
+  "checks": [
+    {
+      "name": "Top-level signed-in actions are Dashboard and Create",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production desk sections are present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Needs you / In production / Recent work implemented from real work data",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No fake project fixture or template marketplace",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No unfinished API/Agents surface remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No legacy singular Brand settings authority route remains",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Real production poster lineage wired",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Real production preview lineage wired",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Decorative family fake-cover gradients removed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Files use owned persisted content for media previews",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Character creation and profiles are contract-backed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Brand creation and Brand memory are contract-backed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Series creation and Series Bible are contract-backed",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Next episode creation is real and fail-closed to certified public types",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contextual memory mode THIS_PRODUCTION_ONLY",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contextual memory mode REMEMBER_FOR_BRAND",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contextual memory mode REMEMBER_FOR_SERIES",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contextual memory mode UPDATE_CHARACTER_GOING_FORWARD",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Contextual memory mode UPDATE_FROM_FUTURE_EPISODE",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production context uses canonical configure action",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Production memory inputs lock before paid execution",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Memory inspect/edit/delete UI uses append-only/tombstone endpoints",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Desktop/tablet/mobile responsive gates present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Keyboard focus and reduced-motion handling present",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "No analytics chart vocabulary in desk components",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Billing remains balance/history, not analytics",
+      "ok": true,
+      "detail": ""
+    }
+  ],
+  "environment": {
+    "python": "3.13.5",
+    "node": "v22.16.0"
+  }
+}

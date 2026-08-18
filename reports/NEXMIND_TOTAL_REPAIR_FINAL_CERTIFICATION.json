@@ -1,0 +1,179 @@
+{
+  "schema": "NexMindTotalRepairFinalCertificationV2",
+  "date": "2026-08-16",
+  "status": "LOCAL_ENGINEERING_REPAIR_COMPLETE__EXTERNAL_COMMERCIAL_EVIDENCE_OPEN",
+  "localEngineeringRepairComplete": true,
+  "p8Regression": {
+    "passed": 197,
+    "total": 197,
+    "status": "PASS"
+  },
+  "hipClosure": {
+    "original": 102,
+    "closedInSource": 92,
+    "closedByFailClosedGate": 7,
+    "externalEvidenceRequired": 3,
+    "openLocal": 0
+  },
+  "gates": {
+    "p8Regression": {
+      "status": "PASS",
+      "passed": 197,
+      "total": 197
+    },
+    "environmentObject": {
+      "status": "PASS",
+      "passed": 8,
+      "total": 8
+    },
+    "explainerAuthoredArt": {
+      "status": "PASS",
+      "passed": 11,
+      "total": 11
+    },
+    "whiteboardAuthoredArt": {
+      "status": "PASS",
+      "passed": 6,
+      "total": 6
+    },
+    "editorialExecution": {
+      "status": "PASS",
+      "passed": 9,
+      "total": 9
+    },
+    "sourceIntelligence": {
+      "status": "PASS",
+      "passed": 25,
+      "total": 25
+    },
+    "sourceContradiction": {
+      "status": "PASS",
+      "passed": 5,
+      "total": 5
+    },
+    "sourceRealSamples": {
+      "status": "PASS",
+      "passed": 18,
+      "total": 18
+    },
+    "sharedExecutionPlan": {
+      "status": "PASS",
+      "passed": 27,
+      "total": 27
+    },
+    "fourFamilyContract": {
+      "status": "PASS",
+      "passed": 64,
+      "total": 64
+    },
+    "architectureCore": {
+      "status": "PASS",
+      "passed": 32,
+      "total": 32
+    },
+    "memoryArchitecture": {
+      "status": "PASS",
+      "passed": 40,
+      "total": 40
+    },
+    "autonomousAuthority": {
+      "status": "PASS",
+      "passed": 35,
+      "total": 35
+    },
+    "negativeSpace": {
+      "status": "PASS",
+      "passed": null,
+      "total": null
+    },
+    "standaloneSource": {
+      "status": "PASS",
+      "passed": null,
+      "total": null
+    },
+    "explainerIntegration": {
+      "status": "PASS",
+      "passed": 23,
+      "total": 23
+    },
+    "canonicalAuthority": {
+      "status": "PASS",
+      "passed": 10,
+      "total": 10
+    },
+    "productionSurvival": {
+      "status": "PASS",
+      "passed": null,
+      "total": null
+    },
+    "engineReinstallIdentity": {
+      "status": "PASS",
+      "passed": null,
+      "total": null
+    },
+    "negativeControlEncodedMedia": {
+      "status": "PASS",
+      "passed": null,
+      "total": null
+    },
+    "familySmoke": {
+      "status": "PASS",
+      "detail": "Explainer source/spine-ready; Whiteboard/Editorial/Stickman encoded evidence where locally executable."
+    },
+    "typescriptSyntax": {
+      "status": "PASS",
+      "detail": "Targeted transpile/syntax gates are green; dependency-complete Node >=24 build remains external."
+    }
+  },
+  "engineArchives": {
+    "WHITEBOARD_ENGINE_SOURCE.zip": {
+      "bytes": 11809783,
+      "sha256": "25f87cb57d4a8ca99d004b443c0bd8df85a13d667596ddb0780d2c8f3884002c"
+    },
+    "EXPLAINER_ENGINE_SOURCE.zip": {
+      "bytes": 26472335,
+      "sha256": "b2782b1557515d43db78a2c1507aeebb1cae99458104c450ed63ef752a675f1b"
+    },
+    "EDITORIAL_MOTION_ENGINE_SOURCE.zip": {
+      "bytes": 1782758,
+      "sha256": "b123325962778da3e1eed66cdc48cba3c396a092b3455baf8d032ed0115e3660"
+    },
+    "STICKMAN_V5_1_ENGINE_SOURCE.zip": {
+      "bytes": 6024242,
+      "sha256": "67b49cc7275cd741a70f5851bf1f98d0a8cc7dbd3b1a884f458ddac789a21178"
+    },
+    "SOUND_LIBRARY_V2_SOURCE.zip": {
+      "bytes": 12480601,
+      "sha256": "ad60805d725b74e3e208b621b1334b8f55dee5bfbe7e517ecd05279821953428"
+    }
+  },
+  "nexStickUnmodified": true,
+  "runtimeCurrentEnvironment": {
+    "status": "BLOCKED",
+    "reason": "No compatible live Story/Visual/Art/Final Producer/Perceptual Auditor model routes are configured in this container; ffmpeg/ffprobe pass."
+  },
+  "negativeControlFinalJudgment": {
+    "status": "BLOCKED_NO_ENCODED_NEGATIVE_CONTROL_MEDIA",
+    "encodedMediaReady": 0,
+    "missingEncodedMedia": [
+      "NC01",
+      "NC02",
+      "NC03",
+      "NC04",
+      "NC05",
+      "NC06",
+      "NC07",
+      "NC08",
+      "NC09",
+      "NC10"
+    ]
+  },
+  "externalEvidenceRequired": [
+    "Dependency-complete Node >=24 + Prisma 7 validation/migrations against PostgreSQL staging.",
+    "Compatible live creative routes for Story/Visual/Art and independent image+native-audio Final Producer + perceptual auditor routes.",
+    "Production-scoped authored-art/TTS/music capabilities where the approved production requires them.",
+    "Blind live paid end-to-end rendered evidence, including the sealed 30-film commercial campaign.",
+    "Independent human calibration bound to exact family, P8 build and judge ensemble before any 9.5 commercial claim/public-production gate is opened."
+  ],
+  "truthBoundary": "This certifies the identified local non-Character source/engineering repair and frozen archive consistency. It does not certify 9.5 commercial creative quality without the external live/human evidence listed above."
+}

@@ -1,0 +1,138 @@
+{
+  "schema": "StudioNexMindAutonomyFailureTaxonomyV2",
+  "qualityGateLaw": "NO_HUMAN_OR_AUTOMATED_PATH_MAY_LOWER_A_QUALITY_GATE_TO_GAIN_AUTONOMY",
+  "classes": [
+    {
+      "code": "AUTHORITY_BOUNDARY_VIOLATION",
+      "owner": "P8 authority kernel",
+      "response": "FAIL_CLOSED",
+      "human": "NO"
+    },
+    {
+      "code": "CANDIDATE_DIVERSITY_FAILURE",
+      "owner": "responsible Director/Showrunner",
+      "response": "REGENERATE_WITHIN_BOUNDED_CREATIVE_RETRY",
+      "human": "NO"
+    },
+    {
+      "code": "PRODUCER_REJECT_OR_REVISE",
+      "owner": "responsible creative department",
+      "response": "AUTONOMOUS_REPAIR",
+      "human": "NO"
+    },
+    {
+      "code": "CAPABILITY_GAP",
+      "owner": "Showrunner + capability graph",
+      "response": "REPLAN_IF_CREATIVE_INTENT_CAN_BE_PRESERVED_OTHERWISE_FAIL_CLOSED",
+      "human": "ONLY_IF_USER_INTENT_IS_REQUIRED"
+    },
+    {
+      "code": "MEMORY_INPUT_MISSING_OR_TAMPERED",
+      "owner": "Studio memory lineage",
+      "response": "FAIL_CLOSED_BEFORE_OR_AT_FINAL_OUTPUT",
+      "human": "NO"
+    },
+    {
+      "code": "SERIES_PLAN_SIGNATURE_REQUIRED",
+      "owner": "P8 + Series continuity gate",
+      "response": "AUTONOMOUS_CREATIVE_REPAIR",
+      "human": "NO"
+    },
+    {
+      "code": "SERIES_ANTI_REPETITION_FAILURE",
+      "owner": "P8 + Series continuity gate",
+      "response": "AUTONOMOUS_CREATIVE_REPAIR_UNLESS_EXPLICIT_CONTINUITY_REASON",
+      "human": "NO"
+    },
+    {
+      "code": "CAST_PERFORMANCE_LEAK_INTO_IDENTITY",
+      "owner": "Cast Memory adapter",
+      "response": "STRIP_PERFORMANCE_STATE_AND_RESOLVE_FRESH",
+      "human": "NO"
+    },
+    {
+      "code": "MULTIMODAL_EVIDENCE_INCOMPLETE",
+      "owner": "evidence/production body",
+      "response": "FAIL_CLOSED_NO_CREATIVE_LOCK",
+      "human": "NO"
+    },
+    {
+      "code": "HARD_GATE_FAILURE",
+      "owner": "responsible department",
+      "response": "AUTONOMOUS_REPAIR",
+      "human": "NO_OVERRIDE"
+    },
+    {
+      "code": "CRAFT_OR_TASTE_FLOOR_FAILURE",
+      "owner": "responsible department",
+      "response": "AUTONOMOUS_REPAIR",
+      "human": "NO_OVERRIDE"
+    },
+    {
+      "code": "NOVELTY_OR_TEMPLATE_FAILURE",
+      "owner": "Visual/Art/Story as implicated",
+      "response": "AUTONOMOUS_REPAIR",
+      "human": "NO_OVERRIDE"
+    },
+    {
+      "code": "LOW_CONFIDENCE_DIMENSION",
+      "owner": "Final Producer / responsible department",
+      "response": "AUTONOMOUS_REPAIR_UNLESS_PURE_EXCEPTIONAL_JUDGMENT",
+      "human": "EXCEPTIONAL_ONLY"
+    },
+    {
+      "code": "CALIBRATION_INSUFFICIENT",
+      "owner": "Studio calibration registry",
+      "response": "HUMAN_CALIBRATION_BRIDGE",
+      "human": "YES_TEMPORARILY"
+    },
+    {
+      "code": "CALIBRATION_WEAK",
+      "owner": "Studio calibration registry",
+      "response": "KEEP_HUMAN_CALIBRATION_BRIDGE",
+      "human": "YES_TEMPORARILY"
+    },
+    {
+      "code": "MACHINE_FALSE_ACCEPT_PRESENT",
+      "owner": "Studio calibration registry",
+      "response": "AUTONOMOUS_LOCK_DISABLED",
+      "human": "YES_FOR_CALIBRATION_ONLY"
+    },
+    {
+      "code": "EXCEPTIONAL_HUMAN_JUDGMENT",
+      "owner": "Final Producer",
+      "response": "BLIND_INDEPENDENT_HUMAN_REVIEW",
+      "human": "YES_EXCEPTIONAL"
+    },
+    {
+      "code": "PROVIDER_UNAVAILABLE",
+      "owner": "technical supervisor",
+      "response": "TECHNICAL_RETRY",
+      "human": "NO"
+    },
+    {
+      "code": "REPAIR_BUDGET_EXHAUSTED",
+      "owner": "P8/Studio workflow",
+      "response": "PRODUCTION_FAILED_FAIL_CLOSED",
+      "human": "NO_QUALITY_OVERRIDE"
+    },
+    {
+      "code": "STALE_OR_TAMPERED_REVIEW",
+      "owner": "P8 lineage binding",
+      "response": "FAIL_CLOSED",
+      "human": "NO"
+    },
+    {
+      "code": "UNPROMOTED_CREATIVE_MEMORY",
+      "owner": "offline learning observer",
+      "response": "IGNORE_FOR_LIVE_AUTHORITY",
+      "human": "OFFLINE_PROMOTION_ONLY"
+    },
+    {
+      "code": "PUBLIC_ENGINE_NOT_CERTIFIED",
+      "owner": "family release authority",
+      "response": "BLOCK_DELIVERY",
+      "human": "RELEASE_EVIDENCE_REQUIRED_NOT_PER_JOB_RESCUE"
+    }
+  ]
+}

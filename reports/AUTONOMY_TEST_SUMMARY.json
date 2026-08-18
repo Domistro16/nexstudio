@@ -1,0 +1,25 @@
+{
+  "schema": "StudioNexMindAutonomyTestSummaryV1",
+  "date": "2026-08-14",
+  "results": {
+    "p8_vendor_suite": {"passed": 156, "failed": 0, "subtests_passed": 9},
+    "autonomy_specific_authority_adversarial": {"passed": 11, "failed": 0},
+    "studio_finalization_integration": {"passed": 4, "failed": 0},
+    "autonomous_authority_source_validator": {"passed": 24, "failed": 0},
+    "canonical_creative_authority_validator": {"passed": 10, "failed": 0},
+    "p14_3_unified_integration": {"passed": 23, "failed": 0},
+    "architecture_core_implementation": {"passed": 32, "failed": 0, "deployment_certification": false},
+    "standalone_source_qa": {"pass": true},
+    "typescript_changed_source_syntax_errors": 0,
+    "blind_preflight": {"briefs": 30, "story_phase_entered": 30, "provider_unavailable": 30, "films_completed": 0, "commercial_score_emitted": false}
+  },
+  "environment_limits": {
+    "live_openai_key_present": false,
+    "live_agentrouter_key_present": false,
+    "node_version": "v22.16.0",
+    "required_node_for_deployment_certification": ">=24",
+    "dependency_complete_prisma7_postgresql_staging_validation": false
+  },
+  "commercial_certification": false,
+  "ten_out_of_ten_claim": false
+}

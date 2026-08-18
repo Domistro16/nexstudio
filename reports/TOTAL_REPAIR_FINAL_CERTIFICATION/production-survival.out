@@ -1,0 +1,17 @@
+{
+  "schema": "StudioProductionSurvivalQAV2",
+  "status": "PASS",
+  "checks": {
+    "worker_does_not_terminal_fail_on_retry_exhaustion": true,
+    "worker_enters_technical_recovery": true,
+    "lease_exhaustion_requeues": true,
+    "lease_recovery_preserves_workflow": true,
+    "family_creative_replan_routes_to_p8": true,
+    "replan_never_weakens_quality": true,
+    "family_contract_preserves_paid_production": true,
+    "family_adapter_block_is_recoverable_status": true,
+    "family_result_contract_has_no_terminal_blocked": true,
+    "internal_evidence_technical_fault_requeues": true,
+    "reviewed_final_promotion_is_byte_identity_path": true
+  }
+}

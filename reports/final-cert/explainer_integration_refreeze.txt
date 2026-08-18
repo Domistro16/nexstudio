@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "passed": 23,
+  "total": 23,
+  "out": "/mnt/data/nexmind_repair/NEXMIND_TOTAL_REPAIR_WORK_FINAL/NEXSTUDIO_P8_SCOPE_2_8_REPAIRED/reports/EXPLAINER_EXECUTION_BODY_INTEGRATION_QA.json"
+}

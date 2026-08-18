@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-08-17T14:38:29.513Z",
+  "baseUrl": "https://compute.virtuals.io/v1",
+  "results": [
+    {
+      "model": "google-gemini-3-1-pro-preview",
+      "test": "AUDIO_ONLY",
+      "status": 201,
+      "pass": true,
+      "elapsedMs": 4135,
+      "body": "{\"id\":\"gen-1786977483-qbFJx14pmieDADXV3jNY\",\"object\":\"chat.completion\",\"created\":1786977483,\"model\":\"gemini-3-1-pro-preview\",\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"length\",\"native_finish_reason\":\"MAX_TOKENS\",\"message\":{\"role\":\"assistant\",\"content\":\"\",\"refusal\":null,\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"**Refining Analysis:**\\n\\nMy focus has shifted to precisely dissecting the core request. I'm zeroing in on the constraints—particularly the word count for the summary and the unique formatting requirements for the header and the main body. I'm also actively considering how to best present these updates concisely and clearly for an expert audience.\\n\\n\",\"format\":\"google-gemini-v1\",\"index\":0,\"signature\":\"AY89a18xrwe/Y9noP/UN33Fci/ykLhhxlPgE7355sr4JzYMpoliPe84LREA2lMhh2puqd5QWZHIYiJG4rV7zCPQBBs6F317M+pVyKCQnGy8HkeqEyXq9ADfv5FrTeqe9UdzFevLg3abg9RVn0zam678MMgxG7QtkDe5mxsN+mofNvNJxeyn0GTmPgYUuyPV7Ho0=\"}],\"reasoning_content\":\"**Refining Analysis:**\\n\\nMy focus has shifted to precisely dissecting the core request. I'm zeroing in on the constraints—particularly the word count for the summary and the unique formatting requirements for the header and the main body. I'm also actively considering how to best present these updates concisely and clearly for an expert audience.\\n\\n\"}}],\"usage\":{\"prompt_tokens\":1619,\"completion_tokens\":12,\"total_tokens\":1631,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":12,\"image_tokens\":0,\"audio_tokens\":0},\"cost\":0.0042274999999999995},\"cost\":{\"usd\":0.0042274999999999995,\"diem\":0},\"venice_parameters\":{\"strip_thinking_response\":false,\"disable_thinking\":false,\"enable_e2ee\":true,\"enable_web_search\":\"off\",\"enable_web_scraping\":false,\"enable_web_citations\":false,\"include_search_results_in_stream\":false,\"include_venice_system_prompt\":true,\"enable_x_search\":false,\"web_search_citations\":[],\"return_search_results_as_documents\":false}}"
+    },
+    {
+      "model": "google-gemini-3-1-pro-preview",
+      "test": "IMAGE_PLUS_AUDIO",
+      "status": 201,
+      "pass": true,
+      "elapsedMs": 4012,
+      "body": "{\"id\":\"gen-1786977486-X1MDMDkw2EOOtMWbzBa1\",\"object\":\"chat.completion\",\"created\":1786977486,\"model\":\"gemini-3-1-pro-preview\",\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"length\",\"native_finish_reason\":\"MAX_TOKENS\",\"message\":{\"role\":\"assistant\",\"content\":\"\",\"refusal\":null,\"reasoning_details\":[{\"type\":\"reasoning.text\",\"text\":\"**Exploring New Connections**\\n\\nI've been focused on identifying novel intersections between the provided data points, seeking emergent patterns and unexpected correlations. The recent exploration has centered on weaving together seemingly disparate elements into a more cohesive understanding.\\n\\n\",\"format\":\"google-gemini-v1\",\"index\":0,\"signature\":\"AY89a1+4etkVfe5mYD6LqqHKclRucjZrVbhL/n0xlF78cRvgUTgInIbbtW43Xj7CzOpwZU2hzeqLKPIPOT4jyiBTn2KD7ZKIBG4wM48sct4vx8/6Zlc+2sRJ63qiP09uIeKVBlqwRPZBkmhT3HUbqyi9aayH4LRLAHCxfnFtAqGQpGyJa8uKgZUHPQXSs52Dltg=\"}],\"reasoning_content\":\"**Exploring New Connections**\\n\\nI've been focused on identifying novel intersections between the provided data points, seeking emergent patterns and unexpected correlations. The recent exploration has centered on weaving together seemingly disparate elements into a more cohesive understanding.\\n\\n\"}}],\"usage\":{\"prompt_tokens\":2704,\"completion_tokens\":12,\"total_tokens\":2716,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":12,\"image_tokens\":0,\"audio_tokens\":0},\"cost\":0.00694},\"cost\":{\"usd\":0.00694,\"diem\":0},\"venice_parameters\":{\"strip_thinking_response\":false,\"disable_thinking\":false,\"enable_e2ee\":true,\"enable_web_search\":\"off\",\"enable_web_scraping\":false,\"enable_web_citations\":false,\"include_search_results_in_stream\":false,\"include_venice_system_prompt\":true,\"enable_x_search\":false,\"web_search_citations\":[],\"return_search_results_as_documents\":false}}"
+    },
+    {
+      "model": "google-gemini-3-5-flash",
+      "test": "AUDIO_ONLY",
+      "status": 201,
+      "pass": true,
+      "elapsedMs": 2200,
+      "body": "{\"id\":\"gen-1786977490-1NDjMCCXKGvbibEj8km0\",\"object\":\"chat.completion\",\"created\":1786977490,\"model\":\"gemini-3-5-flash\",\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"length\",\"native_finish_reason\":\"MAX_TOKENS\",\"message\":{\"role\":\"assistant\",\"content\":\"AUDIO\",\"refusal\":null,\"reasoning_details\":[{\"type\":\"reasoning.text\",\"signature\":\"AY89a1/4qdpUm44gOpZ6JU5diswfXWGuBTHYBkaXfrYuZQ0juBoIgY/q78ErlfaQPK97hm+3SzS2fjjU5QumxNT8PBgq//OGPiVqYMuMU4d7TqrZ4a7o7MCQvtW01jqP/pTg9WnUrAWwyHxsdBr4db01amdmYjKQlA60yzHaIOk0K7g1ETaJHw==\",\"format\":\"google-gemini-v1\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":1615,\"completion_tokens\":12,\"total_tokens\":1627,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":11,\"image_tokens\":0,\"audio_tokens\":0},\"cost\":0.00261665},\"cost\":{\"usd\":0.00261665,\"diem\":0},\"venice_parameters\":{\"strip_thinking_response\":false,\"disable_thinking\":false,\"enable_e2ee\":true,\"enable_web_search\":\"off\",\"enable_web_scraping\":false,\"enable_web_citations\":false,\"include_search_results_in_stream\":false,\"include_venice_system_prompt\":true,\"enable_x_search\":false,\"web_search_citations\":[],\"return_search_results_as_documents\":false}}"
+    },
+    {
+      "model": "google-gemini-3-5-flash",
+      "test": "IMAGE_PLUS_AUDIO",
+      "status": 201,
+      "pass": true,
+      "elapsedMs": 2893,
+      "body": "{\"id\":\"gen-1786977492-iwrF005TQpyhvMOsyP0R\",\"object\":\"chat.completion\",\"created\":1786977492,\"model\":\"gemini-3-5-flash\",\"service_tier\":\"provisioned\",\"choices\":[{\"index\":0,\"logprobs\":null,\"finish_reason\":\"length\",\"native_finish_reason\":\"MAX_TOKENS\",\"message\":{\"role\":\"assistant\",\"content\":\"I\",\"refusal\":null,\"reasoning_details\":[{\"type\":\"reasoning.text\",\"signature\":\"AY89a18ZFGlPZ/pmDWTyRJgoixklbofrsyFc77DZqj9masX1y56BcaXBosYTDtq9f1mypRDdfNWwNLa/TyCB2/szuDJy4QOaWuohKxh+7WOfoncl8QnI8zAMM7iEvBJSKMwvqV63O9v6r2C7MJ86gJSCm3zwH/bJa55Ts2Y0EgAWxcAr6dx3PjD0vfPs\",\"format\":\"google-gemini-v1\",\"index\":0}]}}],\"usage\":{\"prompt_tokens\":2700,\"completion_tokens\":12,\"total_tokens\":2712,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":11,\"image_tokens\":0,\"audio_tokens\":0},\"cost\":0.0042984},\"cost\":{\"usd\":0.0042984,\"diem\":0},\"venice_parameters\":{\"strip_thinking_response\":false,\"disable_thinking\":false,\"enable_e2ee\":true,\"enable_web_search\":\"off\",\"enable_web_scraping\":false,\"enable_web_citations\":false,\"include_search_results_in_stream\":false,\"include_venice_system_prompt\":true,\"enable_x_search\":false,\"web_search_citations\":[],\"return_search_results_as_documents\":false}}"
+    },
+    {
+      "model": "google-gemini-3-7-flash",
+      "test": "AUDIO_ONLY",
+      "status": 201,
+      "pass": true,
+      "elapsedMs": 9872,
+      "body": "{\"id\":\"gcp-1786977504593\",\"object\":\"chat.completion\",\"created\":1786977504,\"model\":\"gemini-3-7-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":null,\"reasoning_content\":\"**My Internal Monologue on the Request**\\n\\nOkay, so the core of this request is to process an audio input and then generate a summary of it. The crucial constraints are:\\n\\n1.  **First-Person Perspective**: I need to embody the *thoughts* associated with this process. It's not just about stating what I'm doing, but how I'm *thinking* about doing it. This means using \\\"I,\\\" \\\"my,\\\" and framing the actions as internal cognitive steps.\\n2.  **Fulsome Summary of Thought Process**: This implies going beyond a superficial description. I need to articulate the sequence of internal operations, the considerations, and the rationale behind each step. It should feel like a detailed breakdown of my internal workings.\\n3.  **Expert User**: I'm told the user is an expert in their field. This is important. It means I don't need to over-explain basic concepts. I can assume a certain level of technical understanding. My internal monologue can reflect this by focusing on the *nuances* of the task and the *methodology* rather than fundamental definitions. I should speak their language, in a sense, by being precise and focusing on the *why* and *how* of the process.\\n4.  **Bolded Header**: The output must begin with a bolded header, which I'll craft to reflect the essence of this internal reflection.\\n5.  **Specific Input**: The input is explicitly stated as \\\"Listen to this short audio and reply exactly\\\". This is the target command I need to fulfill.\\n\\n**My Thoughtful Breakdown of the Task:**\\n\\nRight, my primary directive is clear: process an audio file. The \\\"listen to this short audio\\\" part tells me I'll be receiving an auditory signal that needs to be transcribed and understood. Given that the user is an expert, they're likely interested in the *quality* and *accuracy* of my processing, rather than just a basic transcription.\\n\\nThen comes the critical instruction: \\\"reply exactly.\\\" This is where the nuance comes in. \\\"Reply exactly\\\" can be interpreted in several ways, but in the context of summarization, it strongly suggests that the *output format* and *content* of my response must precisely match the user's implicit or explicit requirements for the summary. Since the *user's request itself* is the input here, and the desired output is \\\"Your Summary:\\\", it's a meta-instruction"
+    },
+    {
+      "model": "google-gemini-3-7-flash",
+      "test": "IMAGE_PLUS_AUDIO",
+      "status": 400,
+      "pass": false,
+      "elapsedMs": 1766,
+      "body": "{\"error\":{\"message\":\"Bad Request\",\"type\":\"invalid_request_error\",\"code\":400},\"message\":\"Failed to perform chat completion: Bad Request\",\"statusCode\":400}"
+    }
+  ],
+  "audioCapable": [
+    "google-gemini-3-1-pro-preview",
+    "google-gemini-3-5-flash",
+    "google-gemini-3-7-flash"
+  ],
+  "imageAudioCapable": [
+    "google-gemini-3-1-pro-preview",
+    "google-gemini-3-5-flash"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "P14_3ReferenceLanguageBenchmarkEvidenceV1",
+  "cases": [
+    {
+      "name": "01 white movements(1).mp4",
+      "result": {
+        "schema": "StudioReferenceLanguageEvidenceV1",
+        "profile": {
+          "version": "reference-language.v1",
+          "sourceIds": [
+            "01 white movements(1).mp4"
+          ],
+          "sourceKinds": [
+            "video/mp4"
+          ],
+          "frameCount": 7,
+          "meanNonWhiteOccupancy": 0.2088,
+          "meanEdgeDensity": 0.1171,
+          "meanLumaStd": 52.09,
+          "meanFrameDelta": 0.0897,
+          "whiteField": true,
+          "authoredSceneBias": 0.845,
+          "densityTarget": "rich",
+          "textDominanceMax": 0.18,
+          "minimumForegroundOccupancy": 0.15,
+          "maximumDeadWhiteRatio": 0.7,
+          "notes": [
+            "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+            "Treat white/near-white as an actively composed field, not unused canvas.",
+            "Prefer authored scene density and environmental storytelling over presentation layouts."
+          ],
+          "durationSec": 4.341995
+        },
+        "styleHint": "authored-illustrated-motion",
+        "sourceName": "01 white movements(1).mp4"
+      }
+    },
+    {
+      "name": "01 hand draw(1).mp4",
+      "result": {
+        "schema": "StudioReferenceLanguageEvidenceV1",
+        "profile": {
+          "version": "reference-language.v1",
+          "sourceIds": [
+            "01 hand draw(1).mp4"
+          ],
+          "sourceKinds": [
+            "video/mp4"
+          ],
+          "frameCount": 4,
+          "meanNonWhiteOccupancy": 0.1677,
+          "meanEdgeDensity": 0.0925,
+          "meanLumaStd": 56.42,
+          "meanFrameDelta": 0.0394,
+          "whiteField": true,
+          "authoredSceneBias": 0.646,
+          "densityTarget": "rich",
+          "textDominanceMax": 0.18,
+          "minimumForegroundOccupancy": 0.121,
+          "maximumDeadWhiteRatio": 0.7,
+          "notes": [
+            "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+            "Treat white/near-white as an actively composed field, not unused canvas.",
+            "Prefer authored scene density and environmental storytelling over presentation layouts."
+          ],
+          "durationSec": 0.602993
+        },
+        "styleHint": "hand-drawn-whiteboard",
+        "sourceName": "01 hand draw(1).mp4"
+      }
+    },
+    {
+      "name": "01 white motion(1).mp4",
+      "result": {
+        "schema": "StudioReferenceLanguageEvidenceV1",
+        "profile": {
+          "version": "reference-language.v1",
+          "sourceIds": [
+            "01 white motion(1).mp4"
+          ],
+          "sourceKinds": [
+            "video/mp4"
+          ],
+          "frameCount": 6,
+          "meanNonWhiteOccupancy": 0.3009,
+          "meanEdgeDensity": 0.1532,
+          "meanLumaStd": 57.81,
+          "meanFrameDelta": 0.0936,
+          "whiteField": true,
+          "authoredSceneBias": 1,
+          "densityTarget": "rich",
+          "textDominanceMax": 0.18,
+          "minimumForegroundOccupancy": 0.217,
+          "maximumDeadWhiteRatio": 0.7,
+          "notes": [
+            "Reference constraints describe visual language only; shots, story content and compositions must remain original.",
+            "Treat white/near-white as an actively composed field, not unused canvas.",
+            "Prefer authored scene density and environmental storytelling over presentation layouts."
+          ],
+          "durationSec": 3.785011
+        },
+        "styleHint": "authored-illustrated-motion",
+        "sourceName": "01 white motion(1).mp4"
+      }
+    }
+  ]
+}

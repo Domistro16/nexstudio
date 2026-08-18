@@ -1,0 +1,40 @@
+{
+  "schema": "StudioStandaloneFamilyEngineSmokeV1",
+  "pass": false,
+  "sourceRoot": ".",
+  "families": {
+    "WHITEBOARD": {
+      "ok": false,
+      "status": "TECHNICAL_RETRY_REQUIRED",
+      "authorityId": null,
+      "technicalQa": null,
+      "finalVideoAudioSampleRate": null,
+      "artifacts": []
+    },
+    "EXPLAINER": {
+      "ok": true,
+      "status": "SOURCE_AND_SPINE_READY__LIVE_EXECUTION_ENV_REQUIRED",
+      "authorityId": "EXPLAINER_EXECUTION_BODY_V2_P8_UNIFIED",
+      "technicalQa": "EXECUTION_BODY_V2_QA",
+      "finalVideoAudioSampleRate": null,
+      "artifacts": [],
+      "truthBoundary": "No fake P8 board is used for Explainer smoke. Live P8 + installed Node dependencies are required for encoded evidence."
+    },
+    "EDITORIAL_MOTION": {
+      "ok": false,
+      "status": "TECHNICAL_RETRY_REQUIRED",
+      "authorityId": null,
+      "technicalQa": null,
+      "finalVideoAudioSampleRate": null,
+      "artifacts": []
+    },
+    "STICKMAN": {
+      "ok": false,
+      "status": "TECHNICAL_RETRY_REQUIRED",
+      "authorityId": null,
+      "technicalQa": null,
+      "finalVideoAudioSampleRate": null,
+      "artifacts": []
+    }
+  }
+}

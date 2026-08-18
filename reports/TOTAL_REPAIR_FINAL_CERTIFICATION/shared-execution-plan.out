@@ -1,0 +1,155 @@
+{
+  "schema": "StudioSharedExecutionPlanQAV1",
+  "pass": true,
+  "passed": 27,
+  "total": 27,
+  "families": [
+    "WHITEBOARD",
+    "EXPLAINER",
+    "EDITORIAL_MOTION",
+    "STICKMAN"
+  ],
+  "hashes": {
+    "WHITEBOARD": "a8b5fcfe1d6116f49bcf63a38127fde30f80af0e0be772f873d1c787e5f28338",
+    "EXPLAINER": "d6ab5ff96348517c92459127e1533e0120f1be091ebff2ca7d75c9843c170ce9",
+    "EDITORIAL_MOTION": "5ebb62ba7dd1bd829f2c440ef15be201459e3ed29685e2c213e31aedf00bef29",
+    "STICKMAN": "b4b864a0ba653abf6e544cd9d9bdde6a4659ff230c1fcbccbd273fec5107bdcc"
+  },
+  "checks": [
+    {
+      "name": "WHITEBOARD:schema",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "WHITEBOARD:sole-creative-authority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "WHITEBOARD:deterministic-normalizer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "WHITEBOARD:roundtrip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "WHITEBOARD:stable-hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EXPLAINER:schema",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EXPLAINER:sole-creative-authority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EXPLAINER:deterministic-normalizer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EXPLAINER:roundtrip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EXPLAINER:stable-hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EDITORIAL_MOTION:schema",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EDITORIAL_MOTION:sole-creative-authority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EDITORIAL_MOTION:deterministic-normalizer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EDITORIAL_MOTION:roundtrip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "EDITORIAL_MOTION:stable-hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "STICKMAN:schema",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "STICKMAN:sole-creative-authority",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "STICKMAN:deterministic-normalizer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "STICKMAN:roundtrip",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "STICKMAN:stable-hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "worker-removes-raw-board-before-adapter",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "worker-compiles-once",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "worker-adapters-see-compatibility-only",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "worker-emits-execution-lineage",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ts-bridge-carries-execution-plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "final-lineage-binds-execution-plan",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "source-hash-binds-execution-plan",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

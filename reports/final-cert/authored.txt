@@ -1,0 +1,48 @@
+{
+  "schema": "NexStudioAuthoredArtExecutionQAV1",
+  "evidenceClass": "MECHANICAL_CONTRACT_ONLY_NOT_CREATIVE_QUALITY",
+  "passed": 8,
+  "total": 8,
+  "checks": [
+    {
+      "name": "valid authored plate materializes four staged PNGs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "missing P8 support semantic is rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "unauthored semantic invention is rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "authored scene capability is discovered by capability name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "command transport executes without any provider/model identity",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "request explicitly forbids creative authority in executor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "request locks exact semantic hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "request forbids model/provider identity in output",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

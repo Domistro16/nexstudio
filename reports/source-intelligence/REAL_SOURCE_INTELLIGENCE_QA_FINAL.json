@@ -1,0 +1,139 @@
+{
+  "schema": "StudioRealSourceIntelligenceQAV1",
+  "pass": true,
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "real-pdf: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-pdf: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=a41a175b54d52f7528a34ce5e1ae74ab71c8698f590e21c53cf075e24adf3e11 got=a41a175b54d52f7528a34ce5e1ae74ab71c8698f590e21c53cf075e24adf3e11"
+    },
+    {
+      "name": "real-pdf: provenance segments exist",
+      "ok": true,
+      "detail": "segments=3"
+    },
+    {
+      "name": "real-docx: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-docx: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=e4d8c4779b0ce550a37b39e0f6873d706eb2ea1f9e925c3fc549cc641b111b14 got=e4d8c4779b0ce550a37b39e0f6873d706eb2ea1f9e925c3fc549cc641b111b14"
+    },
+    {
+      "name": "real-docx: provenance segments exist",
+      "ok": true,
+      "detail": "segments=3"
+    },
+    {
+      "name": "real-pptx: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-pptx: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=c43b2b67c9f3ecd4ebb48779a257d473449e36a3e2d908bd3e172811dbcc81cc got=c43b2b67c9f3ecd4ebb48779a257d473449e36a3e2d908bd3e172811dbcc81cc"
+    },
+    {
+      "name": "real-pptx: provenance segments exist",
+      "ok": true,
+      "detail": "segments=3"
+    },
+    {
+      "name": "PDF has full page-render visual coverage",
+      "ok": true,
+      "detail": "coverage=FULL pages=3 visuals=3"
+    },
+    {
+      "name": "DOCX preserves embedded visual evidence",
+      "ok": true,
+      "detail": "visuals=1"
+    },
+    {
+      "name": "PPTX captures embedded SVG/raster artwork",
+      "ok": true,
+      "detail": "visuals=4 unsupported=0"
+    },
+    {
+      "name": "PPTX full-slide composition is rendered when local renderer succeeds",
+      "ok": true,
+      "detail": "coverage=FULL composed=3 pages=3"
+    },
+    {
+      "name": "P8 packet contains all real sources",
+      "ok": true,
+      "detail": "count=3"
+    },
+    {
+      "name": "P8 evidence spans PDF/DOCX/PPTX",
+      "ok": true,
+      "detail": "['real-docx', 'real-pdf', 'real-pptx']"
+    },
+    {
+      "name": "P8 packet retains visual references",
+      "ok": true,
+      "detail": "visuals=8"
+    },
+    {
+      "name": "P8 packet retains source-local hashes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PPTX full visual coverage produces no false partial warning",
+      "ok": true,
+      "detail": "[]"
+    }
+  ],
+  "samples": {
+    "real-pdf": {
+      "name": "source-proof.pdf",
+      "sha256": "a41a175b54d52f7528a34ce5e1ae74ab71c8698f590e21c53cf075e24adf3e11",
+      "segments": 3,
+      "chars": 272,
+      "pages": 3,
+      "visuals": 3,
+      "visualCoverage": "FULL",
+      "warnings": []
+    },
+    "real-docx": {
+      "name": "source-proof.docx",
+      "sha256": "e4d8c4779b0ce550a37b39e0f6873d706eb2ea1f9e925c3fc549cc641b111b14",
+      "segments": 3,
+      "chars": 183,
+      "pages": null,
+      "visuals": 1,
+      "visualCoverage": "INDEXED",
+      "warnings": []
+    },
+    "real-pptx": {
+      "name": "source-proof.pptx",
+      "sha256": "c43b2b67c9f3ecd4ebb48779a257d473449e36a3e2d908bd3e172811dbcc81cc",
+      "segments": 3,
+      "chars": 227,
+      "pages": 3,
+      "visuals": 4,
+      "visualCoverage": "FULL",
+      "warnings": []
+    }
+  },
+  "p8Packet": {
+    "extractedSourceCount": 3,
+    "evidenceCount": 9,
+    "visualReferenceCount": 8,
+    "contextChars": 1642,
+    "warnings": []
+  },
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Real document extraction and P8 evidence-packet proof. PDF pages and PPTX composed slides are rendered completely when the local render stack succeeds. Dedicated live source-reasoning/multimodal judgment is not claimed when no compatible model is configured."
+}

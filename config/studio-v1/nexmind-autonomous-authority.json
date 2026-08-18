@@ -1,0 +1,100 @@
+{
+  "schema": "StudioNexMindAutonomousCreativeAuthorityV1",
+  "date": "2026-08-14",
+  "status": "IMPLEMENTED_NOT_COMMERCIALLY_CERTIFIED",
+  "sole_commit_authority": "NexMindSupremeShowrunnerP8",
+  "decision_slot_authority": {
+    "film_thesis": "StoryDirector",
+    "visual_concept": "VisualConceptDirector",
+    "art_direction": "ArtDirector",
+    "storyboard": "StoryboardCompiler",
+    "cinematography": "CinematographyDirector",
+    "editorial_rhythm": "EditorialRhythmDirector",
+    "storyboard_temporal": "StoryboardCompilerV2",
+    "motion_performance": "MotionPerformanceDirector",
+    "sound_direction": "SoundDirector",
+    "final_producer": "IndependentFinalExecutiveProducer"
+  },
+  "authority_laws": [
+    "SHOWRUNNER_DECIDES__DEPARTMENTS_PROPOSE__PRODUCERS_REVIEW__RUNTIME_EXECUTES",
+    "FAMILY_ENGINES_HAVE_FEASIBILITY_AND_EXECUTION_AUTHORITY_ONLY",
+    "NO_RENDERER_ASSET_RESOLVER_LAYOUT_SOLVER_OR_CHARACTER_ENGINE_MAY_CREATE_A_CREATIVE_COMMIT",
+    "CREATIVE_DEFECTS_CANNOT_BE_LAUNDERED_BY_HUMAN_REVIEW",
+    "QUALITY_GATES_MUST_NEVER_BE_LOWERED_TO_GAIN_AUTONOMY",
+    "LIVE_CREATIVE_MEMORY_ACCEPTS_PROMOTED_PROVENANCE_BOUND_RECORDS_ONLY",
+    "SELF_IMPROVEMENT_IS_OFFLINE_AND_PROMOTION_GATED",
+    "CANONICAL_LIVE_MEMORY_IS_IMMUTABLE_ACCOUNT_BRAND_SERIES_CAST_PRODUCTION_MEMORY_INPUT",
+    "SERIES_CONTINUITY_MAY_CONSTRAIN_BUT_NEVER_REPLACE_STORY_AUTHORITY",
+    "CAST_MEMORY_OWNS_IDENTITY_NOT_SCENE_PERFORMANCE",
+    "FILM_MEMORY_IS_WRITTEN_ONLY_FROM_LOCKED_FINAL_OUTPUT"
+  ],
+  "candidate_competition": {
+    "story": 3,
+    "visual_concept": "3_to_6",
+    "art": "multiple_when_consequential",
+    "cinematography": "multiple_when_consequential",
+    "editorial_rhythm": "multiple_when_consequential",
+    "motion_performance": "multiple_when_consequential",
+    "sound": "multiple_when_consequential",
+    "selection": "producer_accepted_candidates_only_with_blinded_live_candidate_ids"
+  },
+  "final_quality_policy": {
+    "hard_gates_all_pass": true,
+    "craft_mean_floor": 9.0,
+    "taste_mean_floor": 9.0,
+    "every_dimension_floor": 8.5,
+    "critical_dimension_floor": 9.0,
+    "novelty_floor": 6.5,
+    "template_similarity_ceiling": 4.0,
+    "low_confidence_dimensions_allowed": 0,
+    "multimodal_evidence_required": true,
+    "aggregate_quality_score_forbidden": true
+  },
+  "autonomy_calibration": {
+    "correlation_eligibility_min_real_blind_reviews": 12,
+    "autonomous_lock_min_real_blind_reviews": 36,
+    "min_distinct_productions": 12,
+    "min_reviews_per_family": 6,
+    "required_families": [
+      "EXPLAINER",
+      "WHITEBOARD",
+      "STICKMAN",
+      "EDITORIAL_MOTION"
+    ],
+    "mean_correlation_floor": 0.8,
+    "per_dimension_correlation_floor": 0.6,
+    "mean_absolute_error_ceiling": 0.7,
+    "per_dimension_absolute_error_ceiling": 1.0,
+    "machine_optimism_bias_ceiling": 0.35,
+    "machine_false_accept_ceiling": 0,
+    "synthetic_reviews_count": false
+  },
+  "autonomous_repair": {
+    "max_creative_repair_rounds": 2,
+    "third_failed_round": "FAIL_CLOSED",
+    "repair_law": "REPAIR_RESPONSIBLE_CREATIVE_CAUSES__PRESERVE_INTENT__NEVER_LOWER_GATE"
+  },
+  "human_dependency": {
+    "before_calibration": "MANDATORY_BLIND_HUMAN_CALIBRATION_BRIDGE_AFTER_AUTOMATED_QUALITY_PASS",
+    "after_calibration": "EXCEPTIONAL_JUDGMENT_ONLY_WHEN_FINAL_PRODUCER_EXPLICITLY_ESCALATES_PURE_UNCERTAINTY",
+    "human_override_of_failed_machine_quality": false
+  },
+  "creative_memory": {
+    "input_resolution": "ACCOUNT_TO_BRAND_TO_SERIES_TO_CAST_TO_PRODUCTION",
+    "immutable_snapshot": "MEMORY_INPUT_PER_PROJECT_VERSION",
+    "p8_adapter": "StudioProductionMemoryPacketV1 -> PROMOTED provenance-bound CreativeMemory refs",
+    "series_anti_repetition": "BLOCK_OR_AUTONOMOUS_REPAIR_UNLESS_EXPLICIT_CONTINUITY_REASON",
+    "cast_law": "STABLE_IDENTITY_ONLY__PERFORMANCE_RESOLVED_FRESH_BY_NEXMIND_AND_V5_1",
+    "final_output_memory": "FILM_MEMORY_SNAPSHOT",
+    "production_observations": "OFFLINE_ONLY__NO_SELF_PROMOTION"
+  },
+  "current_evidence_status": {
+    "real_blind_calibration_reviews": 0,
+    "sealed_briefs_preflighted": 30,
+    "live_provider_calls_completed": 0,
+    "encoded_blind_films": 0,
+    "commercial_autonomy_certified": false,
+    "public_family_subtypes_enabled": 0,
+    "public_family_subtype_total": 24
+  }
+}

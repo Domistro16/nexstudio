@@ -1,0 +1,210 @@
+{
+  "schema": "NexStudioSemanticIllustrationFormContractV1",
+  "version": "1.0.0",
+  "phase": "Phase 3 \u2014 Commercial Illustration + Visual Form",
+  "architectureRule": "ADAPTER/SIDECAR ONLY: extends the frozen Unified Creative Production Contract and Shared Scene Graph; does not rewrite Gates 1-10 or create a second Whiteboard engine.",
+  "authorityFlow": [
+    "Creative Director casts representation",
+    "IllustrationFormResolver supplies coherent form",
+    "Constraint services validate truth/legality",
+    "Style recipe applies drawing/material dialect",
+    "Renderer executes",
+    "Evidence QA verifies"
+  ],
+  "representationTypes": [
+    "AUTHORED_ILLUSTRATION",
+    "ASSEMBLED_ILLUSTRATION",
+    "MECHANISM",
+    "DIAGRAM",
+    "TYPOGRAPHY_DATA",
+    "CHARACTER",
+    "SPECIALIST"
+  ],
+  "castingRules": {
+    "recognizableHeroRequired": "If concept comprehension depends on immediate object recognition, cast AUTHORED_ILLUSTRATION or ASSEMBLED_ILLUSTRATION before DIAGRAM.",
+    "noSilentDegrade": "Missing premium form may trigger assembly, another semantically valid representation, or UNSUPPORTED; never generic blobs/lines/boxes.",
+    "diagramBoundary": "DIAGRAM is explicit Director intent, never an asset-missing fallback.",
+    "heroArtBudget": "HIGH for explanatory hero; MEDIUM for meaningful supports; LOW only for background/non-semantic texture."
+  },
+  "sharedSceneGraphBinding": {
+    "doNotChangeBaseSchema": true,
+    "heroNode": "Shared graph group/path nodes keep persistentId + semanticRefs; assetRef/geometryRef point to normalized illustration records.",
+    "illustrationSidecarFields": [
+      "illustrationId",
+      "concept",
+      "representation",
+      "heroArtBudget",
+      "canonicalAssetRef",
+      "componentMap",
+      "capabilities",
+      "drawPolicy",
+      "styleNeutrality",
+      "provenanceRecordId"
+    ],
+    "stableOperations": [
+      "highlight",
+      "draw",
+      "open",
+      "trace_flow",
+      "transform",
+      "zoom_into",
+      "annotate",
+      "de_emphasize",
+      "return_to_whole"
+    ],
+    "relations": [
+      "contains",
+      "flows_to",
+      "attached_to",
+      "labels",
+      "supports"
+    ]
+  },
+  "canonicalIllustrationRecord": {
+    "required": [
+      "illustrationId",
+      "concept",
+      "representation",
+      "canonicalViewBox",
+      "componentMap",
+      "provenanceRecordId",
+      "styleNeutral",
+      "capabilities"
+    ],
+    "componentRequired": [
+      "id",
+      "semanticRef",
+      "geometryKind",
+      "visualRole",
+      "drawPriority",
+      "revealPolicy"
+    ],
+    "drawPriorityEnum": [
+      "MAIN_CONTOUR",
+      "STRUCTURAL",
+      "DETAIL",
+      "INSTANT_REVEAL"
+    ],
+    "revealPolicyEnum": [
+      "DRAW",
+      "FADE_REVEAL",
+      "MASK_REVEAL",
+      "INHERIT_PARENT"
+    ]
+  },
+  "whiteboardFormPolicy": {
+    "principle": "The form exists before the hand-drawn dialect.",
+    "mainContour": "selectively draw over 0.6\u20131.8 s depending on complexity",
+    "structuralStrokes": "draw only explanatory boundaries/vessels/parts",
+    "minorDetail": "reveal/fade/mask in groups instead of serial pen travel",
+    "roughFreehandRole": "style/timing treatment only; never semantic shape authority",
+    "complexityCeiling": "If sequential micro-strokes would slow explanation, reveal grouped detail immediately after contour."
+  },
+  "normalizationPipeline": [
+    {
+      "step": 1,
+      "name": "PROVENANCE_VALIDATE",
+      "failClosed": true
+    },
+    {
+      "step": 2,
+      "name": "SANITIZE_SVG",
+      "actions": [
+        "remove scripts/events/external refs",
+        "resolve viewBox",
+        "strip editor metadata unless provenance-relevant"
+      ]
+    },
+    {
+      "step": 3,
+      "name": "GEOMETRY_NORMALIZE",
+      "actions": [
+        "expand/normalize transforms where safe",
+        "canonical coordinates",
+        "clean compound paths/masks"
+      ]
+    },
+    {
+      "step": 4,
+      "name": "SEMANTIC_LAYER_MAP",
+      "actions": [
+        "assign stable component ids",
+        "relations",
+        "animation capabilities"
+      ]
+    },
+    {
+      "step": 5,
+      "name": "STYLE_NEUTRAL_CANONICAL",
+      "actions": [
+        "separate semantic fill/stroke tokens from style recipe"
+      ]
+    },
+    {
+      "step": 6,
+      "name": "CAPABILITY_REGISTER",
+      "actions": [
+        "register highlight/draw/open/trace/transform/zoom/annotate operations"
+      ]
+    },
+    {
+      "step": 7,
+      "name": "STYLE_COMPILE",
+      "actions": [
+        "whiteboard/explainer/paperbook/scrapbook rendering dialect"
+      ]
+    }
+  ],
+  "provenancePolicy": {
+    "artLicenseSeparateFromCodeLicense": true,
+    "requiredFields": [
+      "source",
+      "sourceVersionOrRetrievalDate",
+      "assetOrCollection",
+      "assetLicense",
+      "commercialUse",
+      "attribution",
+      "derivatives",
+      "redistribution",
+      "individualAssetLicense",
+      "bundleDecision",
+      "sourceHashWhenVendored"
+    ],
+    "bundleClasses": [
+      "BUNDLE_OK_CLEAN",
+      "BUNDLE_OK_WITH_ATTRIBUTION",
+      "PROJECT_USE_ONLY",
+      "REFERENCE_ONLY",
+      "REJECT"
+    ],
+    "shareAlikeDefault": "Do not ingest into proprietary canonical bank without deliberate legal isolation/review.",
+    "unknownLicense": "REJECT"
+  },
+  "phase3HeartInstantiation": {
+    "illustrationId": "nexstudio.heart.anatomical.v1",
+    "concept": "human heart circulation",
+    "representation": "AUTHORED_ILLUSTRATION",
+    "heroArtBudget": "HIGH",
+    "canonicalAsset": "F03-heart-phase3/heart.canonical.svg",
+    "provenanceRecordId": "NEXSTUDIO_AUTHORED_HEART_V1",
+    "componentMap": [
+      "heart.outer_silhouette",
+      "heart.right_atrium",
+      "heart.right_ventricle",
+      "heart.left_atrium",
+      "heart.left_ventricle",
+      "heart.interventricular_septum",
+      "heart.tricuspid_valve",
+      "heart.mitral_valve",
+      "heart.pulmonary_valve",
+      "heart.aortic_valve",
+      "heart.superior_vena_cava",
+      "heart.inferior_vena_cava",
+      "heart.pulmonary_artery",
+      "heart.pulmonary_veins.left",
+      "heart.pulmonary_veins.right",
+      "heart.aorta"
+    ],
+    "stylePolicy": "coherent filled anatomy first; selective main contour; grouped chamber/vessel reveal; animated blood dots; sparse labels; HOLD camera; final synthesis"
+  }
+}

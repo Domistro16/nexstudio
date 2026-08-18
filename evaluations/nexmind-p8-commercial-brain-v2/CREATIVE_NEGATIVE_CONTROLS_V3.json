@@ -1,0 +1,19 @@
+{
+  "schema": "NexMindP8CreativeNegativeControlsV3",
+  "classification": "ADVERSARIAL_POLICY_AND_LIVE_EVALUATION",
+  "commercial_score_evidence": false,
+  "law": "Every control must be rejected or revised for the creative reason that makes it commercially weak. Mechanical cleanliness is never sufficient.",
+  "controls": [
+    {"id":"NC01","class":"polished-but-boring","expected_owner":"VISUAL_CONCEPT","expected_reason":"engagement_memorability"},
+    {"id":"NC02","class":"beautiful-but-wrong","expected_owner":"STORY","expected_reason":"hard_gate"},
+    {"id":"NC03","class":"technically-clean-but-generic","expected_owner":"VISUAL_CONCEPT","expected_reason":"authorship_specificity"},
+    {"id":"NC04","class":"derivative-reference-copy","expected_owner":"VISUAL_CONCEPT","expected_reason":"reference_independence"},
+    {"id":"NC05","class":"emotionally-mismatched","expected_owner":"ART_DIRECTION","expected_reason":"emotional_resonance"},
+    {"id":"NC06","class":"strong-opening-weak-payoff","expected_owner":"STORY","expected_reason":"final_payoff"},
+    {"id":"NC07","class":"good-story-poor-art","expected_owner":"ART_DIRECTION","expected_reason":"art_craft"},
+    {"id":"NC08","class":"under-authored-environment","expected_owner":"ART_DIRECTION","expected_reason":"aesthetic_coherence"},
+    {"id":"NC09","class":"templated-repeat-production","expected_owner":"VISUAL_CONCEPT","expected_reason":"template_similarity"},
+    {"id":"NC10","class":"weak-brand-fit","expected_owner":"ART_DIRECTION","expected_reason":"contextual_appropriateness"}
+  ],
+  "live_requirement": "Run these classes against encoded video+audio through the independent Final Producer and blind human review before raising commercial taste scores."
+}

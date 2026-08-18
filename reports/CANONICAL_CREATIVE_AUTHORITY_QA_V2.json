@@ -1,0 +1,64 @@
+{
+  "schema": "StudioCanonicalCreativeAuthorityQA V2",
+  "status": "PASS",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "No physical DirectorV3 implementation remains in canonical source",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Explainer adapter has no retired creative Director/mapper",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Curated nine-topic fixture is regression-only",
+      "pass": true,
+      "detail": {
+        "classification": "CONTRACT_REGRESSION_ONLY",
+        "creative_benchmark_eligible": false,
+        "human_calibration_eligible": false,
+        "live_generalization_evidence": false,
+        "reason": "Recorded provider cases were deliberately shaped generic-V1 / strong-literal-V2 / metaphor-V3 and must never be used as commercial taste or creative-generalization evidence."
+      }
+    },
+    {
+      "name": "Old general fixtures location is absent",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Live Showrunner candidate order is randomized and opaque",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Commercial benchmark policy rejects RecordedModelProvider",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Replacement benchmark has 30 client-like briefs",
+      "pass": true,
+      "detail": 30
+    },
+    {
+      "name": "Replacement brief pack stores no expected creative answers",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "Canonical authority explicitly deletes DirectorV3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "Blind benchmark policy tests pass",
+      "pass": true,
+      "detail": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    }
+  ]
+}

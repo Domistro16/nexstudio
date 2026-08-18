@@ -1,0 +1,54 @@
+{
+  "schema": "StudioFourFamilyCommercialCertificationRunV1",
+  "runDate": "2026-08-14",
+  "authorityIntegrity": "PASS",
+  "freshTechnicalRuns": {
+    "familyEngineSmoke": "PASS",
+    "p14_3UnifiedIntegration": "23/23 PASS",
+    "canonicalCreativeAuthority": "10/10 PASS",
+    "standaloneSourceQA": "PASS"
+  },
+  "liveProvider": {
+    "status": "BLOCKED",
+    "code": "LIVE_PROVIDER_BLOCKED_MISSING_CREDENTIAL",
+    "detail": "Current execution environment has no OPENAI_API_KEY/AGENTROUTER_API_KEY available to the release runner."
+  },
+  "nodeProductionDependencies": {
+    "status": "BLOCKED",
+    "nodeObserved": "v22.16.0",
+    "requiredByArchitectureCore": ">=24",
+    "explainer": "Full encoded P14.3 blind run also requires installed production Node dependencies."
+  },
+  "engineEvidence": {
+    "whiteboard": "EVIDENCE_READY 48k",
+    "editorial-motion": "EVIDENCE_READY 48k",
+    "stickman": "EVIDENCE_READY 48k",
+    "explainer": "SOURCE_AND_SPINE_READY__LIVE_EXECUTION_ENV_REQUIRED"
+  },
+  "blindSubtypeCases": {
+    "attempted": 48,
+    "encodedComplete": 0,
+    "blockedAt": "live P8 provider boundary before creative production",
+    "fabricatedEvidence": 0
+  },
+  "commercialComparisonScores": {
+    "explainer": null,
+    "whiteboard": null,
+    "stickman": null,
+    "editorial-motion": null,
+    "note": "Not scored. A commercial score without fresh end-to-end blind encoded films and human-calibrated review would be fabricated."
+  },
+  "publicEnabledRecommendations": {
+    "explainer": false,
+    "whiteboard": false,
+    "stickman": false,
+    "editorial-motion": false
+  },
+  "showcaseOutputs": {
+    "certifiedHomepageFilms": 0,
+    "certifiedHomepagePosters": 0,
+    "engineProofFilms": 3,
+    "engineProofPosters": 3,
+    "rule": "Engine proof assets are quarantined from homepage showcase slots."
+  }
+}

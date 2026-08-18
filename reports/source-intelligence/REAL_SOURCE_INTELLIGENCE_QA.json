@@ -1,0 +1,141 @@
+{
+  "schema": "StudioRealSourceIntelligenceQAV1",
+  "pass": true,
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "real-pdf: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-pdf: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=2ba8ca09a14d34f7ce3ff3b06f46e6c27a59d2ee5daa567a63ac1beb0bad0b61 got=2ba8ca09a14d34f7ce3ff3b06f46e6c27a59d2ee5daa567a63ac1beb0bad0b61"
+    },
+    {
+      "name": "real-pdf: provenance segments exist",
+      "ok": true,
+      "detail": "segments=16"
+    },
+    {
+      "name": "real-docx: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-docx: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=a76157688d6bb797a9a58df228f69dbfa423141219df2631cb5ea2014ec17a24 got=a76157688d6bb797a9a58df228f69dbfa423141219df2631cb5ea2014ec17a24"
+    },
+    {
+      "name": "real-docx: provenance segments exist",
+      "ok": true,
+      "detail": "segments=283"
+    },
+    {
+      "name": "real-pptx: extraction succeeds",
+      "ok": true,
+      "detail": "EXTRACTED"
+    },
+    {
+      "name": "real-pptx: content hash binds original bytes",
+      "ok": true,
+      "detail": "expected=44b33628fcbe6cda48cb7c263aee1a5ff784ad11f81f01572cc74fe9ad40f18b got=44b33628fcbe6cda48cb7c263aee1a5ff784ad11f81f01572cc74fe9ad40f18b"
+    },
+    {
+      "name": "real-pptx: provenance segments exist",
+      "ok": true,
+      "detail": "segments=28"
+    },
+    {
+      "name": "PDF has full page-render visual coverage",
+      "ok": true,
+      "detail": "coverage=FULL pages=16 visuals=16"
+    },
+    {
+      "name": "DOCX preserves embedded visual evidence",
+      "ok": true,
+      "detail": "visuals=2"
+    },
+    {
+      "name": "PPTX captures embedded SVG/raster artwork",
+      "ok": true,
+      "detail": "visuals=32 unsupported=0"
+    },
+    {
+      "name": "PPTX does not falsely claim full slide-composition coverage",
+      "ok": true,
+      "detail": "coverage=PARTIAL"
+    },
+    {
+      "name": "P8 packet contains all real sources",
+      "ok": true,
+      "detail": "count=3"
+    },
+    {
+      "name": "P8 evidence spans PDF/DOCX/PPTX",
+      "ok": true,
+      "detail": "['real-docx', 'real-pdf', 'real-pptx']"
+    },
+    {
+      "name": "P8 packet retains visual references",
+      "ok": true,
+      "detail": "visuals=50"
+    },
+    {
+      "name": "P8 packet retains source-local hashes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "PPTX partial visual coverage remains visible to P8",
+      "ok": true,
+      "detail": "['real-pptx:SOURCE_VISUAL_COVERAGE_PARTIAL']"
+    }
+  ],
+  "samples": {
+    "real-pdf": {
+      "name": "chatgpt-hyperframes-product-video-creation-2026-08-11-1786412807142.pdf",
+      "sha256": "2ba8ca09a14d34f7ce3ff3b06f46e6c27a59d2ee5daa567a63ac1beb0bad0b61",
+      "segments": 16,
+      "chars": 24267,
+      "pages": 16,
+      "visuals": 16,
+      "visualCoverage": "FULL",
+      "warnings": []
+    },
+    "real-docx": {
+      "name": "Hoodprint_Series_01_Master_Production_Specification.docx",
+      "sha256": "a76157688d6bb797a9a58df228f69dbfa423141219df2631cb5ea2014ec17a24",
+      "segments": 283,
+      "chars": 40234,
+      "pages": null,
+      "visuals": 2,
+      "visualCoverage": "PARTIAL",
+      "warnings": []
+    },
+    "real-pptx": {
+      "name": "NexMarkets_Investor_Deck_Reproduced_v1(1).pptx",
+      "sha256": "44b33628fcbe6cda48cb7c263aee1a5ff784ad11f81f01572cc74fe9ad40f18b",
+      "segments": 28,
+      "chars": 7219,
+      "pages": 14,
+      "visuals": 32,
+      "visualCoverage": "PARTIAL",
+      "warnings": []
+    }
+  },
+  "p8Packet": {
+    "extractedSourceCount": 3,
+    "evidenceCount": 64,
+    "visualReferenceCount": 50,
+    "contextChars": 60760,
+    "warnings": [
+      "real-pptx:SOURCE_VISUAL_COVERAGE_PARTIAL"
+    ]
+  },
+  "commercialScoreEvidence": false,
+  "truthBoundary": "Real user-library document extraction and P8 evidence-packet proof. Dedicated live source-reasoning/multimodal judgment is not claimed when no compatible model is configured; PPTX embedded-art coverage is not equivalent to full slide-composition rendering."
+}
