@@ -44,7 +44,9 @@ else:
     texts=[' '.join(t) for t in texts]
 pad=.15
 with tempfile.TemporaryDirectory() as tmp:
-    src=Path(tmp)/'in';dst=Path(tmp)/'out';src.mkdir();starts=[]
+    # MFA keys its sqlite corpus DB on the source dir NAME under ~/Documents/MFA/
+    # — a fixed 'in' makes concurrent presenter jobs fight over one database.
+    src=Path(tmp)/f'vo{os.getpid()}';dst=Path(tmp)/'out';src.mkdir();starts=[]
     for i,(c,txt) in enumerate(zip(chunks,texts)):
         a=max(0.0,c[0][0]-pad);b=c[-1][1]+pad;starts.append(a)
         subprocess.run(['ffmpeg','-loglevel','error','-y','-ss',f'{a:.3f}','-to',f'{b:.3f}','-i',str(voice),'-ac','1','-ar','16000',str(src/f'c{i:04}.wav')],check=True)

@@ -113,4 +113,9 @@ def fit_text(text: str, bbox: Dict[str, float], role: str, weight: str, canvas: 
     lines = wrap(text, face, floor, w, tracking, stressed)
     if lines is None:
         return Fit(round(floor, 2), [text], round(measure(text, face, floor, tracking, stressed), 1), round(floor * lh, 1), tracking, lh, round(floor, 1), 'WORD_TOO_WIDE')
+    # The decrement loop can step over the narrow window just above the floor
+    # where the wrap first fits — the floor itself is still a legal size, so
+    # a floor wrap that satisfies the box and line cap is a fit, not a breach.
+    if len(lines) <= max_lines and len(lines) * floor * lh <= h + 0.5:
+        return Fit(round(floor, 2), lines, round(max(measure(l, face, floor, tracking, stressed) for l in lines), 1), round(len(lines) * floor * lh, 1), tracking, lh, round(floor, 1), 'FIT')
     return Fit(round(floor, 2), lines, round(max(measure(l, face, floor, tracking, stressed) for l in lines), 1), round(len(lines) * floor * lh, 1), tracking, lh, round(floor, 1), 'FLOOR_BREACH')
