@@ -47,6 +47,17 @@ with tempfile.TemporaryDirectory() as tmp:
     # MFA keys its sqlite corpus DB on the source dir NAME under ~/Documents/MFA/
     # — a fixed 'in' makes concurrent presenter jobs fight over one database.
     src=Path(tmp)/f'vo{os.getpid()}';dst=Path(tmp)/'out';src.mkdir();starts=[]
+    # The corpus name is not the only shared state: MFA also writes a joblib
+    # cache, command history and global config under its root, and lazy model
+    # extraction races as well. Point MFA_ROOT_DIR at a private dir with the
+    # pre-extracted/pretrained model trees linked in so concurrent aligns are
+    # fully isolated while still finding the models.
+    mfa_root=Path(tmp)/'mfa_root';mfa_root.mkdir()
+    shared_root=Path(os.environ.get('MFA_ROOT_DIR',Path.home()/'Documents/MFA'))
+    for sub in ('pretrained_models','extracted_models'):
+        shared_sub=shared_root/sub
+        if shared_sub.exists():
+            (mfa_root/sub).symlink_to(shared_sub,target_is_directory=True)
     for i,(c,txt) in enumerate(zip(chunks,texts)):
         a=max(0.0,c[0][0]-pad);b=c[-1][1]+pad;starts.append(a)
         subprocess.run(['ffmpeg','-loglevel','error','-y','-ss',f'{a:.3f}','-to',f'{b:.3f}','-i',str(voice),'-ac','1','-ar','16000',str(src/f'c{i:04}.wav')],check=True)
@@ -55,7 +66,7 @@ with tempfile.TemporaryDirectory() as tmp:
                     os.environ.get('MFA_DICTIONARY','english_us_arpa'),os.environ.get('MFA_ACOUSTIC','english_us_arpa'),str(dst)]
                    # out-of-dictionary words (brand names) are spelled by the G2P model
                    +['--g2p_model_path',os.environ.get('MFA_G2P','english_us_arpa')],
-                   check=True,env=env,stdout=subprocess.DEVNULL)
+                   check=True,env={**env,'MFA_ROOT_DIR':str(mfa_root)},stdout=subprocess.DEVNULL)
     phones=[];aligned=[];failed=0
     for i,a in enumerate(starts):
         f=dst/f'c{i:04}.json'
