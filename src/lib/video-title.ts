@@ -42,8 +42,8 @@ async function writtenTitle(script: string): Promise<string> {
     { role: "user", content: `Narration:\n${script.slice(0, 3000)}` },
   ], {
     ...provider,
-    maxTokens: 60,
-    timeoutMs: Math.min(provider.timeoutMs, 15_000),
+    maxTokens: 400,
+    timeoutMs: Math.min(provider.timeoutMs, 20_000),
     jsonSchema: {
       name: "video_title",
       schema: { type: "object", additionalProperties: false, required: ["title"], properties: { title: { type: "string", maxLength: 80 } } },
