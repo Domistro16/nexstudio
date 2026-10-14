@@ -3,7 +3,7 @@ import { callNexMindDetailed, parseProviderJson } from "@/lib/nexmind";
 import { consumeRateLimit, requestIpHash } from "@/lib/rate-limit";
 import { requireTrustedOrigin } from "@/lib/route-auth";
 import { json, problem, requestId, zodProblem } from "@/lib/http";
-import { nexMindRoleRouting } from "@/lib/nexmind-routing";
+import { scriptProvider, scriptProviderKey } from "@/lib/studio-script-provider";
 import { checkScriptLines, checkText } from "@/lib/content-guard";
 import { writeLocalScript } from "@/lib/studio-script-local";
 import { normalizeNarration } from "@/lib/narration-text";
@@ -40,24 +40,8 @@ const POLICY = [
   "If the brief asks for content that breaks this policy, do not write a script. The caller treats that as a refusal.",
 ].join("\n");
 
-function apiKey(): string | undefined {
-  return process.env.STUDIO_SCRIPT_OPENAI_API_KEY?.trim()
-    || process.env.STUDIO_PLAN_PREVIEW_OPENAI_API_KEY?.trim()
-    || process.env.OPENAI_API_KEY?.trim();
-}
-
-function scriptTimeoutMs(): number {
-  const configured = Number(process.env.STUDIO_SCRIPT_TIMEOUT_MS);
-  return Number.isInteger(configured) && configured >= 1000 && configured <= 300000 ? configured : 60_000;
-}
-
 async function writeScript(brief: string, family: string, videoType: string, duration: number, beats: { purposeTitle: string; description: string }[] | undefined, extraInstruction?: string) {
-  // Prefer the provider-neutral routing registry; when nothing is configured
-  // fall back to an explicit env model or a small default (local servers ignore it).
-  let model = process.env.STUDIO_SCRIPT_MODEL?.trim() || "gpt-4o-mini";
-  try {
-    model = nexMindRoleRouting("studio_script").model || model;
-  } catch { /* no registry configured — use the env/default model */ }
+  const provider = scriptProvider();
   const beatHint = beats?.length
     ? `\nDirection beats to cover (one line per beat, same order):\n${beats.map((b, i) => `${i + 1}. ${b.purposeTitle}: ${b.description}`).join("\n")}`
     : "";
@@ -77,11 +61,8 @@ async function writeScript(brief: string, family: string, videoType: string, dur
     },
     { role: "user", content: `Customer brief: ${brief}${beatHint}` },
   ], {
-    model,
-    apiUrl: process.env.STUDIO_SCRIPT_OPENAI_API_URL?.trim() || process.env.STUDIO_PLAN_PREVIEW_OPENAI_API_URL?.trim() || "https://api.openai.com/v1",
-    apiKey: apiKey(),
+    ...provider,
     maxTokens: 900,
-    timeoutMs: scriptTimeoutMs(),
     jsonSchema: { name: "studio_script", schema: outputSchema as unknown as Record<string, unknown> },
   });
   return parseProviderJson(result.content) as { lines?: string[]; title?: string; refused?: boolean; reason?: string };
@@ -105,7 +86,7 @@ export async function POST(request: Request) {
 
   // No provider key in this environment → deterministic local writer.
   // The local path still passes the same output guard before anything is shown.
-  if (!apiKey()) {
+  if (!scriptProviderKey()) {
     const local = writeLocalScript(brief, duration, beats);
     const guard = checkScriptLines(local.lines);
     if (!guard.ok) {

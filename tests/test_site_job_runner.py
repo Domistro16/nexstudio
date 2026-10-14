@@ -38,6 +38,15 @@ class SiteJobFailures(unittest.TestCase):
         self.assertEqual(runner._gate_code('TYPE_LAYOUT_UNSATISFIABLE'), 'TYPE_LAYOUT_UNSATISFIABLE')
         self.assertEqual(runner._gate_code('9x16:b01:legible'), 'ENGINE_QA_GATE_FAILED')
 
+    def test_whiteboard_title_is_the_chosen_title_not_the_job_id(self):
+        spec = {'jobId': 'wb-11b40237'}
+        subtype = {'pipeline': 'board-scenes', 'engineFallback': 'engine_sources/whiteboard-board-scenes'}
+        argv, _, _ = runner._whiteboard(Path('/tmp/job'), spec, {'title': 'Banana Bread Basics'}, subtype)
+        self.assertEqual(argv[argv.index('--title') + 1], 'Banana Bread Basics')
+        argv, _, _ = runner._whiteboard(Path('/tmp/job'), spec, {}, subtype)
+        self.assertNotIn('--title', argv)
+        self.assertNotIn('WB-11B40237', argv)
+
     def test_a_previous_layout_failure_does_not_mask_the_current_narration_error(self):
         with tempfile.TemporaryDirectory() as directory:
             job = Path(directory)

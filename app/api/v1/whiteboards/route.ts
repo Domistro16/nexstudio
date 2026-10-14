@@ -8,6 +8,7 @@ import { createEngineDraft, registerCastScope, runningEngineJobs } from "@/lib/e
 import { renderInFlightLimit, submitRenderJob } from "@/lib/render-queue";
 import { engineJobsDir } from "@/lib/engine-paths";
 import { normalizeNarration } from "@/lib/narration-text";
+import { chooseVideoTitle } from "@/lib/video-title";
 
 export const runtime = "nodejs";
 
@@ -77,6 +78,7 @@ export async function POST(request: Request) {
   if (runningEngineJobs() >= renderInFlightLimit())
     return problem(id, 429, "RENDER_AT_CAPACITY", "The render floor is full right now", "A few renders are already running. Try again in a minute. Your brief and direction are saved.");
 
+  const title = await chooseVideoTitle(script, form.get("title"));
   const jobId = `wb-${randomUUID().slice(0, 8)}`;
   const dir = path.join(JOBS, jobId);
   mkdirSync(dir, { recursive: true });
@@ -93,7 +95,7 @@ export async function POST(request: Request) {
 
   writeFileSync(path.join(dir, "request.json"), JSON.stringify({
     userId: auth.session!.userId, type, voice, theme, accent: accent || null, aspects,
-    script: script || null, createdAt: new Date().toISOString(),
+    title: title || null, script: script || null, createdAt: new Date().toISOString(),
   }, null, 1));
   writeFileSync(path.join(dir, "status.json"), JSON.stringify({ status: "running", startedAt: new Date().toISOString() }));
   // All renders dispatch through P8's family-engine surface: the runner resolves
@@ -108,13 +110,13 @@ export async function POST(request: Request) {
       ownerUserId: auth.session!.userId,
       member: { id: member.id, name: member.name, identityKey: member.identityKey, spec: member.spec },
       jobId, kind: "whiteboard", subtype: type,
-      title: script.split("\n")[0]?.split(/\s+/).slice(0, 8).join(" ") || "Whiteboard",
+      title: title || script.split("\n")[0]?.split(/\s+/).slice(0, 8).join(" ") || "Whiteboard",
     }).catch(() => null);
   })() : null;
   writeFileSync(path.join(dir, "engine_request.json"), JSON.stringify({
     schema: "StudioSiteEngineRequestV1", family: "whiteboard", subtype: type, jobId,
     params: {
-      theme, voice, accent: accent || null, aspects,
+      theme, voice, accent: accent || null, aspects, title: title || null,
       duration: durationRaw || null, speed: speedRaw || null,
       scriptPath: script ? scriptPath : null, voiceFile: voicePath,
       cast: castScope && {
@@ -134,6 +136,7 @@ export async function POST(request: Request) {
       jobId,
       videoType: type,
       script: script || "",
+      title,
       duration: durationRaw || null,
       voice: script ? voice : null,
       castMemberId,

@@ -29,6 +29,7 @@ export interface FlowState {
   engine?: { wbType?: string; wbTheme?: string; wbAccent?: string; style?: string; voice?: string; speed?: string };
   script?: string;
   generatedScript?: string;
+  generatedTitle?: string;
   error?: string;
 }
 
@@ -297,7 +298,7 @@ function DirectionStage({ flow, api }: { flow: FlowState; api: FlowApi }) {
     }).then((r) => {
       if (!alive) return;
       if (r.status === "ready" && r.script) {
-        api.patchFlow({ generatedScript: r.script });
+        api.patchFlow({ generatedScript: r.script, generatedTitle: r.title ?? undefined });
         setScriptState("ready");
       } else setScriptState("unavailable");
     }).catch(() => { if (alive) setScriptState("unavailable"); });
@@ -347,6 +348,7 @@ function DirectionStage({ flow, api }: { flow: FlowState; api: FlowApi }) {
       if (kind) {
         const fd = new FormData();
         fd.set("script", narration);
+        if (!flow.script?.trim() && flow.generatedTitle) fd.set("title", flow.generatedTitle);
         fd.set("voice", engine.voice);
         fd.set("aspects", "16x9,1x1,9x16");
         fd.set("duration", String(flow.duration ?? 45));

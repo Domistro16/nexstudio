@@ -96,7 +96,7 @@ def main() -> int:
     ap.add_argument("--type", required=True, choices=sorted(PIPELINES))
     ap.add_argument("--theme", default="light", choices=("light", "dark"))
     ap.add_argument("--accent", default=None, help="highlight hex color (kinetic)")
-    ap.add_argument("--title", default="NEXSTUDIO")
+    ap.add_argument("--title", default="")
     ap.add_argument("--aspects", default="16:9,1x1,9:16")
     ap.add_argument("--duration", type=float, default=None, help="target seconds preference")
     ap.add_argument("--speed", type=float, default=1.0, help="user narration speed multiplier")

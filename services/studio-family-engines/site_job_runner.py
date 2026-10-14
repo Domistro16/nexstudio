@@ -177,9 +177,10 @@ def _whiteboard(j: Path, spec: dict, params: dict, subtype: dict) -> tuple[list[
             "--type", subtype["pipeline"],
             "--theme", params.get("theme", "light"),
             "--voice", params.get("voice", "emma"),
-            "--title", spec["jobId"].upper(),
             "--aspects", ",".join(a.replace("x", ":") for a in params.get("aspects", ["16x9"])),
             "--out", str(j / "out"), "--job-id", spec["jobId"]]
+    if params.get("title"):
+        argv += ["--title", str(params["title"])]
     if params.get("duration"):
         argv += ["--duration", str(params["duration"])]
     if params.get("speed"):
