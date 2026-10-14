@@ -8,7 +8,7 @@ Writes progress.json while running and status.json with the outputs at the end.
 Voice -> phonemes (MFA) -> gesture plan -> Blender motion timeline -> browser point
 cache -> headless Chrome frames -> kinetic captions, background and promo -> MP4.
 """
-import functools, hashlib, http.server, json, os, re, shutil, subprocess, sys, threading, time
+import fcntl, functools, hashlib, http.server, json, os, re, shutil, subprocess, sys, threading, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -128,13 +128,23 @@ def character():
     progress('character')
     key = hashlib.sha256(json.dumps(REQ['config'], sort_keys=True).encode()).hexdigest()
     d = SCENES / key
-    scene = d / 'assembled.blend'
-    if not scene.exists():
-        d.mkdir(parents=True, exist_ok=True)
-        (d / 'request.json').write_text(json.dumps({'config': REQ['config']}))
-        tmp = d / 'assembled.tmp.blend'
-        run(['bash', S / 'cast-preview-render.sh', d / 'request.json', d / 'render.png', '--scene-output', tmp], env=cast_env())
-        tmp.rename(scene)
+    d.mkdir(parents=True, exist_ok=True)
+    # The scene cache is shared across jobs using the same cast config, so the
+    # exists()-check alone lets concurrent jobs write assembled.tmp.blend at
+    # once and each other's rename steals the file (FileNotFoundError) or
+    # caches a half-written scene. Serialize the build under a lock.
+    lock = (d / 'build.lock').open('w')
+    fcntl.flock(lock, fcntl.LOCK_EX)
+    try:
+        scene = d / 'assembled.blend'
+        if not scene.exists():
+            (d / 'request.json').write_text(json.dumps({'config': REQ['config']}))
+            tmp = d / 'assembled.tmp.blend'
+            run(['bash', S / 'cast-preview-render.sh', d / 'request.json', d / 'render.png', '--scene-output', tmp], env=cast_env())
+            tmp.rename(scene)
+    finally:
+        fcntl.flock(lock, fcntl.LOCK_UN)
+        lock.close()
     return scene
 
 
