@@ -269,9 +269,11 @@ function DirectionStage({ flow, api }: { flow: FlowState; api: FlowApi }) {
     studioApi.explainerCatalog()
       .then((c) => {
         if (!alive) return;
-        setExplainerVoices(c.voices.filter((v) => v.engine === "Kokoro" || v.engine === "Microsoft neural").map((v) => ({
+        const voices = c.voices.filter((v) => v.engine === "Kokoro" || v.engine === "Microsoft neural").map((v) => ({
           id: v.id, label: v.name, tag: `${v.accent} · ${v.engine === "Kokoro" ? "local" : "online"}`, preview: v.preview,
-        })));
+        }));
+        setExplainerVoices(voices);
+        if (voices.length) setEngine((e) => voices.some((v) => v.id === e.voice) ? e : { ...e, voice: voices.find((v) => v.id === "emma")?.id ?? voices[0].id });
         if (!c.styles?.length) return;
         setStyles(c.styles);
         setEngine((e) => c.styles.some((s) => s.id === e.style) ? e : { ...e, style: c.styles[0].id });

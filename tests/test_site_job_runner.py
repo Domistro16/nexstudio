@@ -32,6 +32,12 @@ class SiteJobFailures(unittest.TestCase):
             self.assertIn('narration and settings are saved', message)
             self.assertNotIn('engine exited', message)
 
+    def test_gate_failure_code_is_the_gate_rule_not_the_aspect(self):
+        self.assertEqual(runner._gate_code('16x9:b09:ILLUSTRATION_COLLIDES_TEXT:e1_highlight2:3'),
+                         'ILLUSTRATION_COLLIDES_TEXT')
+        self.assertEqual(runner._gate_code('TYPE_LAYOUT_UNSATISFIABLE'), 'TYPE_LAYOUT_UNSATISFIABLE')
+        self.assertEqual(runner._gate_code('9x16:b01:legible'), 'ENGINE_QA_GATE_FAILED')
+
     def test_a_previous_layout_failure_does_not_mask_the_current_narration_error(self):
         with tempfile.TemporaryDirectory() as directory:
             job = Path(directory)

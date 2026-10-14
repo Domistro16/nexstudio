@@ -66,7 +66,10 @@ def style_of(arg):
         return merged
     if arg not in STYLE_MAP:
         sys.exit(f"unknown style '{arg}' — choices: {sorted(STYLE_MAP) + sorted(VARIANT_MAP)}")
-    return STYLE_MAP[arg]
+    base = STYLE_MAP[arg]
+    if base.get("show") and not base.get("shades") and base.get("variants"):
+        return style_of(f'{arg}.{base["variants"][0]["id"]}')
+    return base
 
 
 # ---------- VO ----------
@@ -99,6 +102,42 @@ def _fake_align(wav_dur_s, text, out_json):
             w["start_ms"] = round(w["start_ms"] * scale)
             w["end_ms"] = max(w["start_ms"] + 60, round(w["end_ms"] * scale))
     out_json.write_text(json.dumps({"words": words}, indent=1))
+
+
+def _script_words(heard, text):
+    import difflib
+    key = lambda t: re.sub(r"[^a-z0-9]", "", t.lower())
+    tokens = []
+    for t in text.split():
+        if key(t):
+            tokens.append(t)
+        elif tokens and re.search(r"[.!?,;:]", t):
+            tokens[-1] += re.sub(r"[^.!?,;:]", "", t)
+    hk, tk = [key(w["text"]) for w in heard], [key(t) for t in tokens]
+    sm = difflib.SequenceMatcher(None, hk, tk, autojunk=False)
+    if not tokens or not heard or sm.ratio() < 0.6:
+        return heard
+    out = []
+    for op, h0, h1, t0, t1 in sm.get_opcodes():
+        if op == "equal":
+            out += [{"text": tokens[t0 + k], "start_ms": heard[h0 + k]["start_ms"],
+                     "end_ms": heard[h0 + k]["end_ms"]} for k in range(t1 - t0)]
+            continue
+        if t1 == t0:
+            continue
+        if h1 > h0:
+            start, end = heard[h0]["start_ms"], heard[h1 - 1]["end_ms"]
+        else:
+            start = out[-1]["end_ms"] if out else heard[0]["start_ms"]
+            end = heard[h0]["start_ms"] if h0 < len(heard) else start
+            end = max(end, start)
+        weights = [max(1, len(tk[k])) for k in range(t0, t1)]
+        at = float(start)
+        for k, wgt in zip(range(t0, t1), weights):
+            nxt = at + (end - start) * wgt / sum(weights)
+            out.append({"text": tokens[k], "start_ms": round(at), "end_ms": max(round(at) + 1, round(nxt))})
+            at = nxt
+    return out
 
 
 def _wav_dur_s(p):
@@ -134,8 +173,10 @@ def make_voice(args, fixture_dir):
             log(f"authored script: {data.get('title', args.brief)} ({len(text.split())} words)")
         if not text.strip():
             sys.exit("need --script/--script-file/--brief or --voice-file")
-        from write_script import normalize_tickers
-        text = normalize_tickers(text.strip())  # 'SOL' -> 'Solana' for TTS+captions
+        from write_script import normalize_tickers, plain_narration
+        text = normalize_tickers(plain_narration(text))  # 'SOL' -> 'Solana' for TTS+captions
+        if not text:
+            sys.exit("need --script/--script-file/--brief or --voice-file")
         try:
             dur = synth(text.strip(), args.voice, out_wav, speed=float(args.speed or 1.0))
         except Exception as exc:
@@ -149,6 +190,8 @@ def make_voice(args, fixture_dir):
         log(f"synthesized {dur:.1f}s of VO ({args.voice}), aligning ...")
         try:
             align(out_wav, out_ali)
+            heard = json.loads(out_ali.read_text())["words"]
+            out_ali.write_text(json.dumps({"words": _script_words(heard, text)}, indent=1))
         except Exception as e:
             log(f"whisper alignment unavailable ({e}) — using even word schedule")
             _fake_align(dur, text.strip(), out_ali)

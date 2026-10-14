@@ -8,6 +8,7 @@ import { createEngineDraft, registerCastScope, runningEngineJobs } from "@/lib/e
 import { renderInFlightLimit, submitRenderJob } from "@/lib/render-queue";
 import { engineJobsDir } from "@/lib/engine-paths";
 import { explainerStyles } from "@/lib/explainer-catalog";
+import { normalizeNarration } from "@/lib/narration-text";
 
 export const runtime = "nodejs";
 
@@ -22,6 +23,10 @@ const VOICES = [
   { id: "emily",   name: "Emily",   gender: "female", accent: "Irish",    engine: "Microsoft neural", preview: "/voice-previews/emily.mp3" },
   { id: "andrew",  name: "Andrew",  gender: "male",   accent: "American", engine: "Microsoft neural", preview: "/voice-previews/andrew.mp3" },
   { id: "steffan", name: "Steffan", gender: "male",   accent: "American", engine: "Microsoft neural", preview: "/voice-previews/steffan.mp3" },
+  { id: "ava",     name: "Ava",     gender: "female", accent: "American", engine: "Microsoft neural", preview: "/previews/voices/ava.mp3" },
+  { id: "brian",   name: "Brian",   gender: "male",   accent: "American", engine: "Microsoft neural", preview: "/previews/voices/brian.mp3" },
+  { id: "sonia",   name: "Sonia",   gender: "female", accent: "British",  engine: "Microsoft neural", preview: "/previews/voices/sonia.mp3" },
+  { id: "natasha", name: "Natasha", gender: "female", accent: "Australian", engine: "Microsoft neural", preview: "/previews/voices/natasha.mp3" },
   { id: "david",   name: "David",   gender: "male",   accent: "British",  engine: "Chatterbox clone", preview: "/voice-previews/david.mp3" },
 ];
 const VOICE_IDS = new Set(VOICES.map((v) => v.id));
@@ -51,7 +56,7 @@ export async function POST(request: Request) {
   if (!validStyles.has(style))
     return problem(id, 422, "STYLE_UNKNOWN", "Unknown style", `Pick one of: ${[...validStyles].join(", ")}.`);
 
-  const script = String(form.get("script") ?? "").trim();
+  const script = normalizeNarration(String(form.get("script") ?? ""));
   const voiceFile = form.get("voiceFile");
   if (!script && !(voiceFile instanceof File))
     return problem(id, 422, "VOICE_REQUIRED", "Voice required", "Send 'script' (for a Microsoft voice) or a 'voiceFile' upload.");

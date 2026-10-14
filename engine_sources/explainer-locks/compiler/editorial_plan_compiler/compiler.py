@@ -31,6 +31,7 @@ from .sound import MIX, SoundLibrary, bind_beat_sound, bind_film_music, communit
 from .master_timeline import MasterTimeline, extend_tail, resolve_master
 from .timing import BeatClock, CASCADE_SETTLE_MS, EXIT_MS, LAND_SETTLE_MS, LEAD_IN_MS, MIN_HOLD_MS, beat_clock, find_landing, normalise, readable_close_floor, retime_choreography, window_clock
 from .typefit import fit_text
+from .text_layout import fit_column
 from .voice import VoiceSegment, resolve_voice
 from .show import bands as show_bands, resolve as resolve_show
 
@@ -322,6 +323,9 @@ class BeatCompiler:
                 if j != gi and _overlap(bl['bbox'], blocks[gi]['bbox']) > 0:
                     blocks[j]['bbox'] = _nudge_clear(bl['bbox'], _others(j), native_zone)
         self._stack_in_narration_order(b, blocks, self.safe)
+        groups = {i: unit.replace_group for i, unit in enumerate(b.units)}
+        if not fit_column(blocks, groups, native_zone, DESCENDER_EM):
+            fit_column(blocks, groups, self._free_band(native_zone, comp.get('visual_zone')), DESCENDER_EM)
         if comp.get('typography_hints', {}).get('text_align') == 'center':
             # Centred lockup: every block sits on the zone's vertical axis and sets its lines centred.
             lo = max(native_zone['x'], self.safe['x'])
@@ -372,6 +376,18 @@ class BeatCompiler:
             'transition_carrier': perf['transition_carrier'], 'reading_order': perf['reading_order'], 'focal_order': perf['focal_order'], 'metrics': perf['metrics'],
         }
         return typ, failures, warnings
+
+    def _free_band(self, zone: Dict[str, float], visual: Optional[Dict[str, float]]) -> Dict[str, float]:
+        top, bottom = self.safe['y'], self.safe['y'] + self.safe['h']
+        if visual and min(zone['x'] + zone['w'], visual['x'] + visual['w']) > max(zone['x'], visual['x']):
+            if visual['y'] + visual['h'] <= zone['y']:
+                top = max(top, visual['y'] + visual['h'])
+            elif visual['y'] >= zone['y'] + zone['h']:
+                bottom = min(bottom, visual['y'])
+            else:
+                return zone
+        top, bottom = min(top, zone['y']), max(bottom, zone['y'] + zone['h'])
+        return {'x': zone['x'], 'y': top, 'w': zone['w'], 'h': bottom - top}
 
     @staticmethod
     def _stack_in_narration_order(b: BeatTreatment, blocks: List[Dict[str, Any]], safe: Dict[str, float]) -> None:

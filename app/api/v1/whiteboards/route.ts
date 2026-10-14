@@ -7,6 +7,7 @@ import { getPrisma } from "@/lib/db";
 import { createEngineDraft, registerCastScope, runningEngineJobs } from "@/lib/engine-jobs";
 import { renderInFlightLimit, submitRenderJob } from "@/lib/render-queue";
 import { engineJobsDir } from "@/lib/engine-paths";
+import { normalizeNarration } from "@/lib/narration-text";
 
 export const runtime = "nodejs";
 
@@ -42,7 +43,7 @@ export async function POST(request: Request) {
     return problem(id, 422, "TYPE_UNKNOWN", "Unknown whiteboard type",
       `Pick one of: ${Object.keys(TYPES).join(", ")}.`);
 
-  const script = String(form.get("script") ?? "").trim();
+  const script = normalizeNarration(String(form.get("script") ?? ""), { keepHeadings: true });
   const voiceFile = form.get("voiceFile");
   if (!script && !(voiceFile instanceof File))
     return problem(id, 422, "VOICE_REQUIRED", "Voice required", "Send 'script' (for a Microsoft voice) or a 'voiceFile' upload.");

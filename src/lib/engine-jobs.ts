@@ -30,7 +30,7 @@ export function friendlyEngineError(dir: string): string | undefined {
       if (log.includes("NARRATION_ALIGNMENT_FAILED"))
         return "The narration audio couldn't be prepared for rendering. Try again shortly.";
     }
-    if (direct) return direct;
+    if (direct) return /^(16x9|1x1|9x16):/.test(direct) ? gateFailureMessage(direct) : direct;
     if (statusRaw.status !== "failed") return undefined;
     const outDir = path.join(dir, "out");
     if (!existsSync(outDir)) return undefined;
@@ -39,16 +39,21 @@ export function friendlyEngineError(dir: string): string | undefined {
       if (!existsSync(reportPath)) continue;
       const report = JSON.parse(readFileSync(reportPath, "utf8")) as { failures?: string[] };
       const first = report.failures?.[0];
-      if (!first) continue;
-      const code = first.includes(":") ? first.split(":").slice(1).join(":") : first;
-      if (/LEGIBLE_HOLD|SETTLED_HOLD|CASCADE_OVERRUNS/i.test(code))
-        return "Some lines couldn't stay on screen long enough to read — try a shorter script or a longer duration.";
-      if (/ILLUSTRATION_TOO_FEW_ENTITIES/i.test(code))
-        return "This style couldn't find enough visual elements for the script — try more concrete subjects or a different style.";
-      return `The render didn't pass its quality gate — ${code.split(":")[0]}.`;
+      if (first) return gateFailureMessage(first);
     }
   } catch { /* fall through */ }
   return undefined;
+}
+
+export function gateFailureMessage(failure: string): string {
+  const code = failure.split(":").find((part) => /^[A-Z][A-Z0-9_]+$/.test(part)) ?? failure;
+  if (/LEGIBLE_HOLD|SETTLED_HOLD|CASCADE_OVERRUNS/i.test(code))
+    return "Some lines couldn't stay on screen long enough to read — try a shorter script or a longer duration.";
+  if (/ILLUSTRATION_TOO_FEW_ENTITIES/i.test(code))
+    return "This style couldn't find enough visual elements for the script — try more concrete subjects or a different style.";
+  if (/ILLUSTRATION_COLLIDES_TEXT|TEXT_COLLISION|TEXT_OUTSIDE_SAFE|TYPE_FLOOR_BREACH|TYPE_WORD_TOO_WIDE|FIGURE_COLLIDES/i.test(code))
+    return "Some on-screen text couldn't be laid out cleanly in every video size — try shorter sentences or a different style. Your script is saved.";
+  return `The render didn't pass its quality gate — ${code}.`;
 }
 
 // Renders in flight across both engine families. A job counts as running when

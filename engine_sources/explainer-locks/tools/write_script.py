@@ -203,6 +203,28 @@ def normalize_tickers(text: str) -> str:
     return _TICKER_RX.sub(lambda m: _TICKERS[m.group(1)], text)
 
 
+_MD_LINE = re.compile(r"^\s*(?:#{1,6}\s+|>\s*|[-*+•]\s+|\d{1,3}[.)]\s+)")
+
+
+def plain_narration(text: str) -> str:
+    lines = []
+    for line in text.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        if re.match(r"^\s*(```|~~~|([-*_])(\s*\2){2,}\s*$)", line):
+            continue
+        marked = bool(_MD_LINE.match(line)) and not re.match(r"^\s*>", line)
+        line = _MD_LINE.sub("", line)
+        line = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", line)
+        line = re.sub(r"`+([^`]+)`+", r"\1", line)
+        line = re.sub(r"\*{2,}|_{2,}|~~", "", line)
+        line = re.sub(r"(^|[^\w*])\*(?=\S)([^*]*?\S)\*(?![\w*])", r"\1\2", line)
+        line = re.sub(r"(^|\s)\*(?=\S)|(?<=\S)\*(?=\s|$|[.,!?;:])", r"\1", line)
+        line = re.sub(r"[ \t]{2,}", " ", line).strip()
+        if marked and line and not re.search(r"[.!?:;,…][\"'”’)\]]*$", line):
+            line += "."
+        lines.append(line)
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(lines)).strip()
+
+
 def _coverage_report(script: str) -> tuple[str, list[str]]:
     """Sentence-level entity coverage — feedback for a second pass."""
     import make_reel as mr

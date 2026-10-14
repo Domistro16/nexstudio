@@ -6,6 +6,7 @@ import { json, problem, requestId, zodProblem } from "@/lib/http";
 import { nexMindRoleRouting } from "@/lib/nexmind-routing";
 import { checkScriptLines, checkText } from "@/lib/content-guard";
 import { writeLocalScript } from "@/lib/studio-script-local";
+import { normalizeNarration } from "@/lib/narration-text";
 
 export const runtime = "nodejs";
 
@@ -116,13 +117,13 @@ export async function POST(request: Request) {
 
   try {
     let out = await writeScript(brief, family, videoType, duration, beats);
-    let lines = (out.lines ?? []).map((l) => l.trim()).filter(Boolean);
+    let lines = (out.lines ?? []).map((l) => normalizeNarration(l)).filter(Boolean);
     let guard = checkScriptLines(lines);
     if (!guard.ok) {
       // One retry with the flagged content removed; if it still fails, refuse.
       out = await writeScript(brief, family, videoType, duration, beats,
         `Your previous draft contained disallowed content (${guard.categories.join(", ")}): "${guard.flagged[0]}". Rewrite it cleanly.`);
-      lines = (out.lines ?? []).map((l) => l.trim()).filter(Boolean);
+      lines = (out.lines ?? []).map((l) => normalizeNarration(l)).filter(Boolean);
       guard = checkScriptLines(lines);
       if (!guard.ok) {
         return problem(id, 422, "SCRIPT_NOT_ALLOWED", "NexMind couldn't write a safe script for this brief", "Rephrase the brief and try again.");

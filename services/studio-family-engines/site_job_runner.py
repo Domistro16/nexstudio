@@ -15,7 +15,7 @@ collects the manifest artifacts into JOB_DIR/files/, and writes:
 """
 from __future__ import annotations
 
-import hashlib, json, os, shutil, subprocess, sys, time
+import hashlib, json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -124,6 +124,11 @@ def _first_gate_failure(j: Path) -> str | None:
             if failures:
                 return failures[0]
     return None
+
+
+def _gate_code(gate: str) -> str:
+    return next((part for part in gate.split(":") if re.fullmatch(r"[A-Z][A-Z0-9_]+", part)),
+                "ENGINE_QA_GATE_FAILED")
 
 
 def _engine_failure(j: Path, code: int) -> tuple[str, str]:
@@ -282,7 +287,7 @@ def main() -> int:
     gate = _first_gate_failure(j)
     failure_code, failure_message = _engine_failure(j, code)
     _write_status(j, status="failed", exitCode=code,
-                  failureCode=(gate.split(":")[0] if gate else failure_code),
+                  failureCode=(_gate_code(gate) if gate else failure_code),
                   error=gate or failure_message,
                   finishedAt=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
     _result(j, "TECHNICAL_RETRY_REQUIRED", family=family_id, subtype=subtype_id,

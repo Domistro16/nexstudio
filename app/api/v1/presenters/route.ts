@@ -10,6 +10,7 @@ import { castRenderConfig } from "@/studio-v2/cast/render-config";
 import { normalizeCastSpec, type CastSpec } from "@/studio-v2/cast/spec";
 import { ENVIRONMENTS } from "@/studio-v2/cast/environments";
 import { castPreset } from "@/lib/cast-presets";
+import { normalizeNarration } from "@/lib/narration-text";
 import type { Prisma } from "@/generated/prisma/client";
 
 export const runtime = "nodejs";
@@ -68,7 +69,7 @@ export async function POST(request: Request) {
   if (!member || !member.spec)
     return problem(id, 422, "CAST_REQUIRED", "Pick a character", "Choose a studio character or one of your saved characters to present this video.");
 
-  const script = String(form.get("script") ?? "").trim();
+  const script = normalizeNarration(String(form.get("script") ?? ""));
   const voiceFile = form.get("voiceFile");
   if (!script && !(voiceFile instanceof File))
     return problem(id, 422, "VOICE_REQUIRED", "Script required", "Send 'script' (for a Microsoft voice) or a 'voiceFile' upload.");
