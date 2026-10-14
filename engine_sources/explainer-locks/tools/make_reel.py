@@ -314,6 +314,7 @@ def display_units(gwords, entity_words=None):
     HOLD_MIN_MS = 500  # conservative: compiler floors observed at 100-200ms
     while len(clauses) > 1 and beat_end - gwords[pairs[-1][1]]["start_ms"] < HOLD_MIN_MS:
         clauses[-2] = clauses[-2] + " " + clauses[-1]
+        clauses.pop()
         pairs.pop()
     chunked = chunked_split(clauses)
     units, seen = [], set()
