@@ -5,7 +5,7 @@ explainer library can draw (a bike, a leaf, a wallet) or states a number with
 a unit ("three thousand miles"). At most one card on screen, cards at least
 MIN_GAP seconds apart, never on a word the caption already turned into an icon.
 """
-import json, math, re, subprocess
+import json, math, re, shutil, subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter
 
@@ -118,8 +118,14 @@ def raster(svg, side, ink, cache):
     if not png.exists():
         src = cache / f'{svg.stem}.svg'
         src.write_text(svg.read_text().replace('currentColor', '#%02x%02x%02x' % ink))
-        subprocess.run(['inkscape', str(src), '--export-type=png', f'--export-width={side}', '-o', str(png)],
-                       check=True, capture_output=True)
+        # inkscape lives on dev boxes but not the render image; the shipped
+        # cairosvg (cairo+rsvg are installed) covers the same simple icon art.
+        if shutil.which('inkscape'):
+            subprocess.run(['inkscape', str(src), '--export-type=png', f'--export-width={side}', '-o', str(png)],
+                           check=True, capture_output=True)
+        else:
+            import cairosvg
+            cairosvg.svg2png(url=str(src), write_to=str(png), output_width=side)
     return Image.open(png).convert('RGBA')
 
 
